@@ -15,21 +15,6 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
-        <defName>GW_AM_Bullet_Stubround</defName>
-        <label>stub round</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Small</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>16</damageAmountBase>
-            <stoppingPower>1</stoppingPower>
-            <speed>55</speed>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_Shotgungrim</defName>
         <label>shotgun blast</label>
         <graphicData>
@@ -481,7 +466,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_Bullet_Stubround</defaultProjectile>
+                <defaultProjectile>GW_Bullet_HeavyStubber</defaultProjectile>
                 <warmupTime>2</warmupTime>
                 <range>27.9</range>
                 <ticksBetweenBurstShots>9</ticksBetweenBurstShots>
@@ -826,8 +811,8 @@
                 <warmupTime>0.9</warmupTime>
                 <range>36</range>
 				<burstShotCount>4</burstShotCount>
-                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <soundCast>GW_Bolt_Gun_Sound</soundCast>
+                <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
