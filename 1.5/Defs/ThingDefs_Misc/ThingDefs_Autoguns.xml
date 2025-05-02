@@ -325,7 +325,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_Bullet_Stubround</defaultProjectile>
+                <defaultProjectile>GW_Bullet_HeavyStubber</defaultProjectile>
                 <warmupTime>1</warmupTime>
                 <range>25.9</range>
                 <soundCast>GW_AM_Gun_Zarona</soundCast>
@@ -807,7 +807,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_Bullet_Bolter</defaultProjectile>
+                <defaultProjectile>GW_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
                 <range>36</range>
 				<burstShotCount>4</burstShotCount>

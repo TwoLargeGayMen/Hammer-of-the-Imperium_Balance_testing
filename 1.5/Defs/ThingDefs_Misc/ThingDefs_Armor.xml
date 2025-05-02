@@ -112,48 +112,6 @@
 	    </modExtensions>
     </ThingDef>  
   
-            <!-- Krieger Flak Armor  -->
-
-    <ThingDef ParentName="GW_AM_ArmorBase">
-        <defName>ODZ_40k_IG_DKOK_GrenadierArmor</defName>
-        <label>Death Korps grenadier armor</label>
-        <description>A vest of black Flak Armor. This particular model is worn by the elite Death Korps Grenadiers, but performance is roughly the same as standard Flak Armor. \n\nThe Grenadiers are generally formed from the survivors of units that suffer massive battle casualties, such that it would be better to form a new unit instead of reconstituting the old. While it is an honor (and an obligation, if asked) to become one, the Grenadiers are sometimes said to be soldiers who have “lived too long” - they must now either earn a promotion to a commanding rank or die as martyrs in battle.</description>
-        <techLevel>Industrial</techLevel>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/DeathKorps/Middle/GrenadierArmor_Male_south</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>9000</WorkToMake>
-            <MaxHitPoints>200</MaxHitPoints>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-            <Insulation_Cold>1</Insulation_Cold>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.2</MoveSpeed>
-        </equippedStatOffsets>
-		<costList>
-            <Steel>100</Steel>
-        </costList>		
-        <apparel>
-            <wornGraphicPath>Things/DeathKorps/Middle/GrenadierArmor</wornGraphicPath>
-            <tags>
-                <li>40kDeathKorps</li>
-                <li>40kDeathKorpsArmor</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
-  
             <!-- Catachan Armor  -->
 
     <ThingDef ParentName="GW_AM_ArmorBase">

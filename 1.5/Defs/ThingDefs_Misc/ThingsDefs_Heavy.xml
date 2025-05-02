@@ -427,7 +427,7 @@
                 <warmupTime>0.9</warmupTime>
                 <range>32</range>
 				<burstShotCount>3</burstShotCount>
-                <soundCast>HP_Bolt_Gun_Sound</soundCast>
+                <soundCast>GW_Bolt_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
