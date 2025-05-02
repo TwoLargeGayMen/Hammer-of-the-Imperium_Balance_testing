@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
     <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_AM_HelmetBase">
-        <techLevel>Spacer</techLevel>
+        <techLevel>Industrial</techLevel>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -38,6 +38,48 @@
             <defaultOutfitTags>
                 <li>Soldier</li>
             </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Helmets with built in Gas mask -->
+    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_HOI_HelmetMaskBase">
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HPHelmet</li>
+            <li>GW_AM_Helmet</li>
+        </tradeTags>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <uiIconScale>1.6</uiIconScale>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>0.25</Flammability>
+            <Insulation_Cold>0.5</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+				<li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>
         </apparel>
     </ThingDef>
 
@@ -113,76 +155,6 @@
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kKasrkinHelmet</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
-    <!-- Krieger Helmet -->
-
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>ODZ_40k_IG_DKOK_Helmet</defName>
-        <label>Death Korps helmet</label>
-        <description>A helmet of the Death Korps of Krieg. It fits perfectly with their gas masks, providing a seal against enemy chemical and biological agents. \n\nThe Kriegsmen are always on the offensive - either grinding the enemy down in prolonged trench warfare, or storming enemy defenses with inhuman discipline.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/DeathKorps/Headgear/KriegHelmet_south</texPath>
-        </graphicData>
-        <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Cloth>10</Cloth>
-            <Steel>70</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>2500</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/DeathKorps/Headgear/KriegHelmet</wornGraphicPath>
-            <tags>
-                <li>40kDeathKorps</li>
-                <li>40kDeathKorpsHelmet</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
-    <!-- Krieger Helmet Grenadier -->
-
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>ODZ_40k_IG_DKOK_GrenadierHelmet</defName>
-        <label>Death Korps grenadier helmet</label>
-        <description>A slightly improved helmet meant for Death Korps Grenadiers. They look only slightly different compared to regular helmets - enough that a Kriegsman can distinguish the two quickly while the enemy cannot. \n\nThe soldiers of Krieg are rather socially-stunted, but they have found kinship in some of the other Guardsmen - particularly the Valhallan Ice Warriors and the Mordian Iron Guard. All three are storied regiments, possessed of a grim determination to succeed whatever the cost.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/DeathKorps/Headgear/KriegGrenadierHelmet_south</texPath>
-        </graphicData>
-        <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <DevilstrandCloth>50</DevilstrandCloth>
-            <Steel>70</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>3500</WorkToMake>
-            <Mass>1.4</Mass>
-            <ArmorRating_Sharp>0.87</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-            <EquipDelay>1.3</EquipDelay>
-        </statBases>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/DeathKorps/Headgear/KriegGrenadierHelmet</wornGraphicPath>
-            <tags>
-                <li>40kDeathKorps</li>
-                <li>40kDeathKorpsGrenadierHelmet</li>
             </tags>
         </apparel>
     </ThingDef>

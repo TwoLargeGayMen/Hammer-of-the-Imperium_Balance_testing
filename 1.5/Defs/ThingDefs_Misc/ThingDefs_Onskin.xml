@@ -78,35 +78,6 @@
         </apparel>
     </ThingDef> 
 
-            <!-- Krieger Uniform -->
-
-    <ThingDef ParentName="GW_AM_OnSkinBase">
-        <defName>ODZ_40k_IG_DKOK_KriegUniform</defName>
-        <label>Death Korps uniform</label>
-	<description>Standard dark gray fatigues of the Death Korps of Krieg. It is impregnated with chemicals to protect against biological and chemical warfare, which also gives the uniform a strong, unpleasant smell. \n\nThe rulers of Krieg once attempted to break away from the Imperium, only to be defeated by a global nuclear bombardment and a 500-year civil war to reclaim the planet. Ever since then, the Death Korps of Krieg has felt that they needed to atone for their sin of rebellion, throwing themselves into battle without heed of casualties.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/DeathKorps/Onskin/DeathKorpsUniform_Male_south</texPath>
-        </graphicData>
-        <costStuffCount>90</costStuffCount>
-        <statBases>
-            <MaxHitPoints>180</MaxHitPoints>
-            <WorkToMake>6000</WorkToMake>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
-        </statBases>
-        <apparel>
-            <wornGraphicPath>Things/DeathKorps/Onskin/DeathKorpsUniform</wornGraphicPath>
-            <tags>
-                <li>40kDeathKorps</li>
-                <li>40kDeathKorpsUniform</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
             <!-- Steel Legion Uniform -->
 
     <ThingDef ParentName="GW_AM_OnSkinBase">

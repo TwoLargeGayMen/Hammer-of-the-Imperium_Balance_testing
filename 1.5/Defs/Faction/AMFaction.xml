@@ -94,22 +94,6 @@
                 </options>
             </li>
 
-            <!--Death Korps-->
-            <li>
-                <kindDef>Combat</kindDef>
-                <commonality>1</commonality>
-                <options>
-                    <GW_AM_DeathKorps_RangedTier1>5</GW_AM_DeathKorps_RangedTier1>
-                    <GW_AM_DeathKorps_MeleeTier1>3</GW_AM_DeathKorps_MeleeTier1>
-                    <GW_AM_DeathKorps_RangedTier2>7</GW_AM_DeathKorps_RangedTier2>
-                    <GW_AM_DeathKorps_MeleeTier2>5</GW_AM_DeathKorps_MeleeTier2>
-                    <GW_AM_DeathKorps_RangedTier3>10</GW_AM_DeathKorps_RangedTier3>
-                    <GW_AM_DeathKorps_MeleeTier3>7</GW_AM_DeathKorps_MeleeTier3>
-                    <GW_AM_DeathKorps_Grenadier>3</GW_AM_DeathKorps_Grenadier>
-                    <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
-                </options>
-            </li>
-
             <!--Steel Legion-->
             <li>
                 <kindDef>Combat</kindDef>
@@ -245,7 +229,6 @@
                 <guards>
                     <GW_AM_Cadian_RangedTier1>3</GW_AM_Cadian_RangedTier1>
                     <GW_AM_Catachan_MeleeTier1>3</GW_AM_Catachan_MeleeTier1>
-                    <GW_AM_DeathKorps_MeleeTier1>3</GW_AM_DeathKorps_MeleeTier1>
                     <GW_AM_SteelLegion_RangedTier1>3</GW_AM_SteelLegion_RangedTier1>
                     <GW_AM_TallarnDesertRaiders_RangedTier1>3</GW_AM_TallarnDesertRaiders_RangedTier1>
                     <GW_AM_TempestusScion_RangedTier1>3</GW_AM_TempestusScion_RangedTier1>
@@ -253,7 +236,6 @@
                     <GW_AM_Valhallan_RangedTier1>3</GW_AM_Valhallan_RangedTier1>
                     <GW_AM_Cadian_RangedTier2>3</GW_AM_Cadian_RangedTier2>
                     <GW_AM_Catachan_MeleeTier2>3</GW_AM_Catachan_MeleeTier2>
-                    <GW_AM_DeathKorps_MeleeTier2>3</GW_AM_DeathKorps_MeleeTier2>
                     <GW_AM_SteelLegion_RangedTier2>3</GW_AM_SteelLegion_RangedTier2>
                     <GW_AM_TallarnDesertRaiders_RangedTier2>3</GW_AM_TallarnDesertRaiders_RangedTier2>
                     <GW_AM_TempestusScion_RangedTier2>3</GW_AM_TempestusScion_RangedTier2>
@@ -269,7 +251,6 @@
                 <options>
                     <GW_AM_Cadian_RangedTier1>3</GW_AM_Cadian_RangedTier1>
                     <GW_AM_Catachan_MeleeTier1>3</GW_AM_Catachan_MeleeTier1>
-                    <GW_AM_DeathKorps_MeleeTier1>3</GW_AM_DeathKorps_MeleeTier1>
                     <GW_AM_SteelLegion_RangedTier1>3</GW_AM_SteelLegion_RangedTier1>
                     <GW_AM_TallarnDesertRaiders_RangedTier1>3</GW_AM_TallarnDesertRaiders_RangedTier1>
                     <GW_AM_TempestusScion_RangedTier1>3</GW_AM_TempestusScion_RangedTier1>
@@ -277,7 +258,6 @@
                     <GW_AM_Valhallan_RangedTier1>3</GW_AM_Valhallan_RangedTier1>
                     <GW_AM_Cadian_RangedTier2>3</GW_AM_Cadian_RangedTier2>
                     <GW_AM_Catachan_MeleeTier2>3</GW_AM_Catachan_MeleeTier2>
-                    <GW_AM_DeathKorps_MeleeTier2>3</GW_AM_DeathKorps_MeleeTier2>
                     <GW_AM_SteelLegion_RangedTier2>3</GW_AM_SteelLegion_RangedTier2>
                     <GW_AM_TallarnDesertRaiders_RangedTier2>3</GW_AM_TallarnDesertRaiders_RangedTier2>
                     <GW_AM_TempestusScion_RangedTier2>3</GW_AM_TempestusScion_RangedTier2>
@@ -293,7 +273,6 @@
                 <options>
                     <GW_AM_Cadian_RangedTier1>3</GW_AM_Cadian_RangedTier1>
                     <GW_AM_Catachan_MeleeTier1>3</GW_AM_Catachan_MeleeTier1>
-                    <GW_AM_DeathKorps_MeleeTier1>3</GW_AM_DeathKorps_MeleeTier1>
                     <GW_AM_SteelLegion_RangedTier1>3</GW_AM_SteelLegion_RangedTier1>
                     <GW_AM_TallarnDesertRaiders_RangedTier1>3</GW_AM_TallarnDesertRaiders_RangedTier1>
                     <GW_AM_TempestusScion_RangedTier1>3</GW_AM_TempestusScion_RangedTier1>
@@ -301,7 +280,6 @@
                     <GW_AM_Valhallan_RangedTier1>3</GW_AM_Valhallan_RangedTier1>
                     <GW_AM_Cadian_RangedTier2>3</GW_AM_Cadian_RangedTier2>
                     <GW_AM_Catachan_MeleeTier2>3</GW_AM_Catachan_MeleeTier2>
-                    <GW_AM_DeathKorps_MeleeTier2>3</GW_AM_DeathKorps_MeleeTier2>
                     <GW_AM_SteelLegion_RangedTier2>3</GW_AM_SteelLegion_RangedTier2>
                     <GW_AM_TallarnDesertRaiders_RangedTier2>3</GW_AM_TallarnDesertRaiders_RangedTier2>
                     <GW_AM_TempestusScion_RangedTier2>3</GW_AM_TempestusScion_RangedTier2>
