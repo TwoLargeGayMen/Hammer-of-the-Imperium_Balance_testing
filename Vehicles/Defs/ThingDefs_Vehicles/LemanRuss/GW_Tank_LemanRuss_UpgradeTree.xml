@@ -849,7 +849,7 @@
 				<key>PintleStormBolterUpgrade</key>
 				<label>Pintle Storm Bolter</label>
 				<description>WIP</description>
-				<icon>Things/Item/Turrets/StormBolter/GW_HOI_PintleMounted_StormBolter</icon>
+				<icon>Things/Item/Turrets/StormBolter/GW_PintleMounted_StormBolter</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 20)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
