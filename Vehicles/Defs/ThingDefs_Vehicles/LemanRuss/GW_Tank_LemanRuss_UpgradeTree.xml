@@ -854,7 +854,7 @@
 				<gridCoordinate>(15, 20)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				<disableIfUpgradeNodesEnabled>
-
+					<li>PintleHeavyStubberUpgrade</li>
 				</disableIfUpgradeNodesEnabled>
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
@@ -868,6 +868,44 @@
 								</renderProperties>
 								<drawLayer>6</drawLayer>
 								<gizmoLabel>Storm Bolter</gizmoLabel>
+								<angleRestricted>(295, 65)</angleRestricted>
+								<aimPieOffset>(0, 0)</aimPieOffset>
+								<key>pintleTurret</key>
+								<parentKey>mainTurret</parentKey>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+				 	<Steel>100</Steel>
+			    	<GW_VehicleSideTurret>1</GW_VehicleSideTurret>
+			     	<HP_Ceramite>40</HP_Ceramite>
+				 	<ComponentIndustrial>2</ComponentIndustrial>
+				</ingredients>
+			</li>
+			<li>
+				<key>PintleHeavyStubberUpgrade</key>
+				<label>Pintle Heavy Stubber</label>
+				<description>WIP</description>
+				<icon>Things/Item/Turrets/HeavyStubber/GW_PintleMount_HeavyStubber</icon>
+				<work>7500</work>
+				<gridCoordinate>(20, 20)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled>
+					<li>PintleStormBolterUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<upgrades>
+					<li Class = "Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Vehicle_HeavyStubber</turretDef>
+								<renderProperties>
+									<north>(0, 0.4)</north>
+									<south>(0, -0.4)</south>
+									<east>(0.4, 0)</east>
+								</renderProperties>
+								<drawLayer>6</drawLayer>
+								<gizmoLabel>Heavy Stubber</gizmoLabel>
 								<angleRestricted>(295, 65)</angleRestricted>
 								<aimPieOffset>(0, 0)</aimPieOffset>
 								<key>pintleTurret</key>
