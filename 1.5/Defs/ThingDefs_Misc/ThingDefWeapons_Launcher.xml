@@ -185,7 +185,7 @@
 			<WorkToMake>20000</WorkToMake>
 			<Mass>10</Mass>
 			<RangedWeapon_Cooldown>2.1</RangedWeapon_Cooldown>
-			<marketvalue>350</marketvalue>
+			<MarketValue>350</MarketValue>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.10</MoveSpeed>
