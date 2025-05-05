@@ -204,7 +204,7 @@
 				<warmupTime>3</warmupTime>
 				<range>26</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -250,7 +250,7 @@
 				<warmupTime>3</warmupTime>
 				<range>32</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -296,7 +296,7 @@
 				<warmupTime>3</warmupTime>
 				<range>36</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -342,7 +342,7 @@
 				<warmupTime>3</warmupTime>
 				<range>32</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -388,7 +388,7 @@
 				<warmupTime>3</warmupTime>
 				<range>36</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
+				<soundCast>Shot_IncendiaryLauncher</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
