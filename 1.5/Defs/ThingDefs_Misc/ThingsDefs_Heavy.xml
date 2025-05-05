@@ -276,7 +276,7 @@
 	
 	<ThingDef ParentName="GW_AM_BolterBase">
         <defName>GW_HOI_Gun_BoltPistol</defName>
-        <label>Bolt pistol (Guard)</label>
+        <label>Bolt Pistol (Guard)</label>
         <description>A semi-automatic pistol firing smaller, but still powerful bolts. A common sidearm of Space Marines, but human-scaled versions can be found in use by the Imperial Guard. \n\nThese pistols are also infamous as the weapons of Imperial Commissars - when executing a cowardly Guardsman, a bolt pistol produces a much bigger (and thus more impactful on morale) spray of blood and gore than a mere laspistol.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
@@ -326,7 +326,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_Bullet_BoltPistol</defaultProjectile>
                 <warmupTime>0.4</warmupTime>
-                <range>24</range>
+                <range>22</range>
 				<burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
