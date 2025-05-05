@@ -392,21 +392,22 @@
             <li>ShortShots</li>
         </weaponTags>
         <statBases>
-            <WorkToMake>18000</WorkToMake>
-            <Mass>7</Mass>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>6</Mass>
             <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.68</AccuracyShort>
-            <AccuracyMedium>0.84</AccuracyMedium>
-            <AccuracyLong>0.72</AccuracyLong>
-            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.55</AccuracyMedium>
+            <AccuracyLong>0.45</AccuracyLong>
+            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
+			<MarketValue>1200</MarketValue>
         </statBases>
 		<equippedStatOffsets>
       <MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
         <costList>
-            <Steel>225</Steel>
-            <ComponentIndustrial>16</ComponentIndustrial>
-			<HP_Ceramite>15</HP_Ceramite>
+            <Steel>100</Steel>
+            <ComponentSpacer>2</ComponentSpacer>
+			<HP_Ceramite>20</HP_Ceramite>
         </costList>
         <recipeMaker>
 		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -425,31 +426,33 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
-                <range>32</range>
-				<burstShotCount>3</burstShotCount>
+                <range>28</range>
+				<burstShotCount>1</burstShotCount>
                 <soundCast>GW_Bolt_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
         <tools>
-            <li>
-                <label>grip</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>10</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>10</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.13</armorPenetration>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.13</armorPenetration>
+			</li>
         </tools>
     </ThingDef>
 	
