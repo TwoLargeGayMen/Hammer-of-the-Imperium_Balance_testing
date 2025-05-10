@@ -306,7 +306,7 @@
 		</equippedStatOffsets>
         <costList>
             <Steel>70</Steel>
-            <ComponentSpacer>1</Componentspacer>
+            <ComponentSpacer>1</ComponentSpacer>
 			<HP_Ceramite>10</HP_Ceramite>
         </costList>
         <recipeMaker>
