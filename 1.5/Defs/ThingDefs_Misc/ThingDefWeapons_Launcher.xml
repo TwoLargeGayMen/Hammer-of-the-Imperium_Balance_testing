@@ -207,7 +207,7 @@
 				<warmupTime>2.1</warmupTime>
 				<range>22</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>GW_Grenade_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -252,7 +252,7 @@
 				<warmupTime>3</warmupTime>
 				<range>22</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>GW_Grenade_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -297,7 +297,7 @@
 				<warmupTime>3</warmupTime>
 				<range>22</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>GW_Grenade_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -342,7 +342,7 @@
 				<warmupTime>3</warmupTime>
 				<range>22</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>GW_Grenade_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
@@ -387,7 +387,7 @@
 				<warmupTime>3</warmupTime>
 				<range>22</range>
 				<burstShotCount>1</burstShotCount>
-				<soundCast>Shot_IncendiaryLauncher</soundCast>
+				<soundCast>GW_Grenade_Gun_Sound</soundCast>
 				<soundCastTail>GunTail_Medium</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
 				<targetParams>
