@@ -67,4 +67,21 @@
           </li>
         </subSounds>
 	</SoundDef>	
+
+  <SoundDef>
+    <defName>GW_EarthshakerArty_Reload</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipFolderPath>Earthshaker/GW_EarthshakerReload</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>1~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
 </Defs>
