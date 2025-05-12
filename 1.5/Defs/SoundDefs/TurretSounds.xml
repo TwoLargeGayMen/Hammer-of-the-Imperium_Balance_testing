@@ -76,7 +76,7 @@
       <li>
         <grains>
           <li Class="AudioGrain_Clip">
-            <clipFolderPath>Earthshaker/GW_EarthshakerReload</clipFolderPath>
+            <clipPath>Earthshaker/GW_EarthshakerReload</clipPath>
           </li>
         </grains>      
         <volumeRange>15~15</volumeRange>      
