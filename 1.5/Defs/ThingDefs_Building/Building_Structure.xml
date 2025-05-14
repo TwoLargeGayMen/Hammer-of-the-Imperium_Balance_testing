@@ -37,19 +37,18 @@
 		<!-- </li> -->
 		<!-- </uiIconPathsStuff> -->
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>190</WorkToBuild>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
 			<Flammability>0.0</Flammability>
 		</statBases>
 		<researchPrerequisites>
 			<li>GW_AM_ImperiumDefense</li>
 		</researchPrerequisites>
-		<costStuffCount>5</costStuffCount>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.70</fillPercent>
+		<fillPercent>0.60</fillPercent>
 		<coversFloor>true</coversFloor>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<tickerType>Never</tickerType>
@@ -64,7 +63,10 @@
 		<blockLight>false</blockLight>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
 		</stuffCategories>
+		<costStuffCount>7</costStuffCount>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
 			<isInert>true</isInert>
@@ -116,19 +118,19 @@
 		<!-- </li> -->
 		<!-- </uiIconPathsStuff> -->
 		<statBases>
-			<MaxHitPoints>250</MaxHitPoints>
-			<WorkToBuild>190</WorkToBuild>
+			<MaxHitPoints>410</MaxHitPoints>
+			<WorkToBuild>600</WorkToBuild>
 			<Flammability>0.0</Flammability>
 		</statBases>
 		<researchPrerequisites>
 			<li>GW_AM_ImperiumDefense</li>
 		</researchPrerequisites>
-		<costStuffCount>5</costStuffCount>
+		<costStuffCount>17</costStuffCount>
 		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<castEdgeShadows>true</castEdgeShadows>
-		<fillPercent>0.70</fillPercent>
+		<fillPercent>0.60</fillPercent>
 		<coversFloor>true</coversFloor>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<tickerType>Never</tickerType>
@@ -143,6 +145,8 @@
 		<blockLight>false</blockLight>
 		<stuffCategories>
 			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
 		</stuffCategories>
 		<building>
 			<ai_chillDestination>false</ai_chillDestination>
