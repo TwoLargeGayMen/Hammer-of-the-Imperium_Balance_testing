@@ -1,19 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
-        <defName>VWEL_Bullet_Lasbolt</defName>
-        <label>lasbolt</label>
-        <description>A beam of focused light that burns the target.</description>
-        <textures>
-            <li>Projectiles/Las_Bolt</li>
-        </textures>
-        <seam>0</seam>
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>GW_HOI_Bullet_Lasgun</defName>
+        <label>Laser</label>
+        <description>a laser</description>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Projectiles/Las_Bolt</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
         <projectile>
             <damageDef>Burn</damageDef>
-            <damageAmountBase>18</damageAmountBase>
-            <armorPenetrationBase>0.56</armorPenetrationBase>
-            <stoppingPower>1.5</stoppingPower>
+            <damageAmountBase>12</damageAmountBase>
+            <armorPenetrationBase>0.20</armorPenetrationBase>
+            <stoppingPower>0.3</stoppingPower>
+            <speed>1000</speed>
         </projectile>
+        <modExtensions>
+            <li Class="taranchuk_lasers.LaserProperties">
+                <damageTickRate>9</damageTickRate>
+                <lifetimeTicks>8</lifetimeTicks>
+                <beamWidth>1</beamWidth>
+                <beamWidthDrawScale>1</beamWidthDrawScale>
+                <sweepRatePerTick>0</sweepRatePerTick>
+                <maxSweepAngle>0</maxSweepAngle>
+                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+                <debugCells>false</debugCells>
+                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <lockOnTarget>false</lockOnTarget>
+            </li>
+        </modExtensions>
     </ThingDef>
     
 	<ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
@@ -152,17 +173,18 @@
             <texPath>Weapons/Kantrael MG</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>20000</WorkToMake>
-            <Mass>3.8</Mass>
+            <WorkToMake>15000</WorkToMake>
+            <Mass>3.5</Mass>
             <AccuracyTouch>0.60</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.85</AccuracyMedium>
-            <AccuracyLong>0.75</AccuracyLong>
-            <RangedWeapon_Cooldown>1.70</RangedWeapon_Cooldown>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.65</AccuracyMedium>
+            <AccuracyLong>0.55</AccuracyLong>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+            <MarketValue>400</MarketValue>
         </statBases>
         <costList>
-            <Steel>120</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <Steel>60</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <weaponClasses>
             <li>LongShots</li>
@@ -174,11 +196,11 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
                 <warmupTime>1.00</warmupTime>
-                <range>35.0</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <range>30.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Gun_Kantrael</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -195,6 +217,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -204,6 +227,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
@@ -306,7 +330,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
                 <warmupTime>1.2</warmupTime>
                 <range>26.0</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -372,7 +396,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
                 <warmupTime>1.40</warmupTime>
                 <range>30.0</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>

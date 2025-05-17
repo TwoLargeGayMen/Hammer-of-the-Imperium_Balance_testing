@@ -67,9 +67,9 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
                 <warmupTime>0.90</warmupTime>
-                <range>40.0</range>
+                <range>35.0</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>3</burstShotCount>
                 <soundCast>GW_AM_Gun_Kantrael</soundCast>
@@ -137,7 +137,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
                 <warmupTime>0.80</warmupTime>
                 <range>30.0</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
@@ -207,7 +207,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
                 <warmupTime>1.20</warmupTime>
                 <range>34.0</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
