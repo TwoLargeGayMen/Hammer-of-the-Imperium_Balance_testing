@@ -80,7 +80,7 @@
         <defName>GW_AM_MeleeWeapon_PowerSword</defName>
         <label>Militarum power sword</label>
         <graphicData>
-            <texPath>Weapons/PowerSword</texPath>
+            <texPath>Weapons/GW_HOI_CadianPowerSword</texPath>
         </graphicData>
     </ThingDef>
 	
