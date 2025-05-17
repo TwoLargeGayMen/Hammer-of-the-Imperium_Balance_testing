@@ -80,19 +80,10 @@
         <defName>GW_AM_MeleeWeapon_PowerSword</defName>
         <label>Militarum power sword</label>
         <graphicData>
-            <texPath>Weapons/Power Sword</texPath>
+            <texPath>Weapons/PowerSword</texPath>
         </graphicData>
     </ThingDef>
 	
-	 <!-- ====================== Power Sword Crossguard ===================== -->
-  
-    <ThingDef ParentName="GW_AM_PowerSwordBase">
-        <defName>GW_AM_MeleeWeapon_PowerSwordtwo</defName>
-        <label>Crossguard power sword</label>
-        <graphicData>
-            <texPath>Weapons/Power Sword 2</texPath>
-        </graphicData>
-    </ThingDef>
 
 	<!-- ====================== Power Fist ===================== -->
   
