@@ -75,6 +75,7 @@
         <description>Magnacore pattern plasma gun for use by the Imperial Guard. Even though it is scaled for a baseline human, the plasma it fires is still a big threat even to armored targets.\n\nBeing a squad’s plasma gunner is a dubious honor. While a plasma gunner has the power of the sun in their hands, that same power could also blast them to pieces with one too many trigger pulls.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
+            <drawSize>1.2</drawSize>
             <texPath>Weapons/GW_HOI_CadianPlasmaGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -160,42 +161,62 @@
     </ThingDef>
 
   <!-- ====================== Melta Gun  ===================== -->
-
     <ThingDef ParentName="BaseBullet">
-        <defName>HP_AM_Bullet_MeltaGun</defName>
-        <label>Meltagun shot</label>
+        <defName>GW_HOI_Bullet_MeltaGun</defName>
+        <label>Melta</label>
+        <description>melta beam</description>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
         <graphicData>
-            <texPath>Things/Projectiles/Melta_Projectile</texPath>
             <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Projectiles/Melta_Projectile</texPath>
             <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
         </graphicData>
-        <thingClass>Projectile_Explosive</thingClass>
         <projectile>
             <damageDef>Burn</damageDef>
-            <damageAmountBase>90</damageAmountBase>
-            <stoppingPower>3</stoppingPower>
-            <armorPenetrationBase>2.5</armorPenetrationBase>
-            <speed>70</speed>
+            <damageAmountBase>30</damageAmountBase>
+            <armorPenetrationBase>0.70</armorPenetrationBase>
+            <stoppingPower>2.0</stoppingPower>
+            <speed>50</speed>
+            <explosionRadius>1.1</explosionRadius>
         </projectile>
+        <thingClass>Projectile_Explosive</thingClass>
+        <modExtensions>
+            <li Class="taranchuk_lasers.LaserProperties">
+                <damageTickRate>9</damageTickRate>
+                <lifetimeTicks>25</lifetimeTicks>
+                <beamWidth>2</beamWidth>
+                <beamWidthDrawScale>1</beamWidthDrawScale>
+                <sweepRatePerTick>0</sweepRatePerTick>
+                <maxSweepAngle>0</maxSweepAngle>
+                <damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+                <debugCells>false</debugCells>
+                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <lockOnTarget>false</lockOnTarget>
+            </li>
+        </modExtensions>
     </ThingDef>
 
     <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>HP_AM_Gun_MeltaGun</defName>
+        <defName>GW_HOI_Gun_MeltaGun</defName>
         <label>Cadian meltagun</label>
         <description>A smaller meltagun for use by the Imperial Guard. Even though it is scaled for a baseline human, it remains a potent anti-armor weapon in close-quarters. \n\nMelta weapons are often considered an alternative to plasma weapons. While their range is significantly less than their plasma counterparts, no one has ever seen a meltagun overheat and explode like a plasma gun.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
+            <drawSize>1.1</drawSize>
             <texPath>Weapons/GW_HOI_CadianMeltaGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>25000</WorkToMake>
-            <Mass>5</Mass>
-            <AccuracyTouch>0.90</AccuracyTouch>
-            <AccuracyShort>0.70</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.50</AccuracyLong>
+            <WorkToMake>60000</WorkToMake>
+            <Mass>7.5</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.65</AccuracyShort>
+            <AccuracyMedium>0.30</AccuracyMedium>
+            <AccuracyLong>0.10</AccuracyLong>
             <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
         </statBases>
 		<equippedStatOffsets>
@@ -211,14 +232,15 @@
             </skillRequirements>
         </recipeMaker>
         <costList>
-            <Plasteel>180</Plasteel>
-            <Steel>300</Steel>
-            <ComponentIndustrial>20</ComponentIndustrial>
-            <HP_Ceramite>50</HP_Ceramite>
+            <Plasteel>40</Plasteel>
+            <Steel>50</Steel>
+            <ComponentSpacer>3</ComponentSpacer>
+            <HP_Ceramite>20</HP_Ceramite>
         </costList>
         <weaponTags>
             <li>SpacerGun</li>
             <li>GW_AM_SpacerRanged</li>
+            <li>GW_HOI_SpecialWeapons</li>
         </weaponTags>
         <tradeTags>
             <li>HPRanged</li>
@@ -231,8 +253,8 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>HP_AM_Bullet_MeltaGun</defaultProjectile>
-                <warmupTime>3</warmupTime>
+                <defaultProjectile>GW_HOI_Bullet_MeltaGun</defaultProjectile>
+                <warmupTime>2</warmupTime>
                 <range>16</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
 				<forcedMissRadius>1</forcedMissRadius>
@@ -240,6 +262,9 @@
                 <soundCast>HP_AM_Melta_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>		
+                <targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
             </li>
         </verbs>
         <tools>
@@ -250,6 +275,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -259,8 +285,10 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
+        <equippedAngleOffset>45</equippedAngleOffset>
     </ThingDef>
   
     <!--===== Plasma Pistol =====-->
