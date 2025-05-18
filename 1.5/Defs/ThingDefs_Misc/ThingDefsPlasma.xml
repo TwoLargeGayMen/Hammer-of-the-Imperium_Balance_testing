@@ -141,7 +141,7 @@
         <modExtensions>
             <li Class="taranchuk_lasers.LaserProperties">
                 <damageTickRate>9</damageTickRate>
-                <lifetimeTicks>25</lifetimeTicks>
+                <lifetimeTicks>100</lifetimeTicks>
                 <beamWidth>2</beamWidth>
                 <beamWidthDrawScale>1</beamWidthDrawScale>
                 <sweepRatePerTick>0</sweepRatePerTick>
