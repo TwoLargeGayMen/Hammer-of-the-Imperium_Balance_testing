@@ -207,7 +207,7 @@
 			<li>
 				<verbClass>Verb_ShootOneUse</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_AM_Missile</defaultProjectile>
+				<defaultProjectile>GW_HOI_Missile</defaultProjectile>
 				<warmupTime>5</warmupTime>
 				<range>36</range>
 				<forcedMissRadius>1.4</forcedMissRadius>
