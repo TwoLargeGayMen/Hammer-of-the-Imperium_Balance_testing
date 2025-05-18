@@ -37,6 +37,42 @@
         </modExtensions>
     </ThingDef>
 	
+    <ThingDef ParentName="BaseBullet">
+        <defName>GW_HOI_Bullet_LasgunMGT</defName>
+        <label>Laser</label>
+        <description>a laser</description>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Projectiles/Las_Bolt</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.20</armorPenetrationBase>
+            <stoppingPower>0.3</stoppingPower>
+            <speed>1000</speed>
+        </projectile>
+        <modExtensions>
+            <li Class="taranchuk_lasers.LaserProperties">
+                <damageTickRate>9</damageTickRate>
+                <lifetimeTicks>8</lifetimeTicks>
+                <beamWidth>1</beamWidth>
+                <beamWidthDrawScale>1</beamWidthDrawScale>
+                <sweepRatePerTick>0</sweepRatePerTick>
+                <maxSweepAngle>0</maxSweepAngle>
+                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+                <debugCells>false</debugCells>
+                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <lockOnTarget>false</lockOnTarget>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
 	<ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWELMG_Bullet_Lasbolt</defName>
         <label>lasbolt</label>
@@ -226,20 +262,21 @@
             <texPath>Weapons/Kantrael MG-t</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>20500</WorkToMake>
-            <Mass>3.8</Mass>
+            <WorkToMake>16000</WorkToMake>
+            <Mass>3.5</Mass>
             <AccuracyTouch>0.65</AccuracyTouch>
             <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
+            <AccuracyMedium>0.60</AccuracyMedium>
             <AccuracyLong>0.50</AccuracyLong>
-            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+            <MarketValue>450</MarketValue>
         </statBases>
         <costList>
-            <Steel>120</Steel>
-            <ComponentIndustrial>12</ComponentIndustrial>
+            <Steel>60</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <weaponClasses>
-            <li>RangedLight</li>
+            <li>LongShots</li>
         </weaponClasses>
         <weaponTags>
             <li>SpacerGun</li>
@@ -248,11 +285,11 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWELMG_Bullet_Lasbolt</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_LasgunMGT</defaultProjectile>
                 <warmupTime>1.00</warmupTime>
-                <range>28.0</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
+                <range>27.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
                 <soundCast>GW_AM_Gun_Kantrael</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -269,6 +306,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -278,142 +316,10 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
-  
-  <!-- ====================== MK4 Lascarbine ===================== -->
-
-    <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_Lascarbinefour</defName>
-        <label>MK4 lascarbine</label>
-        <description>A shortened lasgun, better suited for combat in denser environments. This particular model of lasgun is popular with the Catachan Jungle Fighters. \n\nJungle worlds can be found across the Imperium, and many are so deadly that they can be considered an enemy in themselves. They often pale in comparison to Catachan, however - some Jungle Fighters deployed to the Ork-infested Equatorial Jungle of Armageddon described their situation as being akin to paid leave.</description>
-        <graphicData>
-            <texPath>Weapons/MK4 Lascarbine</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>20000</WorkToMake>
-            <Mass>3.4</Mass>
-            <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.80</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.60</AccuracyLong>
-            <RangedWeapon_Cooldown>1.35</RangedWeapon_Cooldown>
-        </statBases>
-        <costList>
-            <Steel>100</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
-        </costList>
-        <weaponClasses>
-            <li>LongShots</li>
-        </weaponClasses>
-        <weaponTags>
-            <li>SpacerGun</li>
-        </weaponTags>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
-                <warmupTime>1.2</warmupTime>
-                <range>26.0</range>
-                <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-                <burstShotCount>2</burstShotCount>
-                <soundCast>GW_AM_Gun_Lascarbinefour</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-            </li>
-        </verbs>
-		<recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
-		</recipeMaker>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-  
-  <!-- ====================== Voss MKI ===================== -->
-
-    <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_VossPattern</defName>
-        <label>Voss MKI</label>
-        <description>The standard-issue lasgun of the Armageddon Steel Legion. It fires a burst of lasbolts at the target, with respectable range and firepower. \n\nEven outside of their tanks and armored vehicles, Armageddon’s Guardsmen are no slouches in infantry fighting. As the Orks of WAAAGH! Ghazghkull warred for control of the planet, the opening of the Great Rift turned the battle into a three-way contest as orks, daemons, and the Imperium clashed.</description>
-        <graphicData>
-            <texPath>Weapons/Voss MKI</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>18000</WorkToMake>
-            <Mass>3.2</Mass>
-            <AccuracyTouch>0.50</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
-            <RangedWeapon_Cooldown>1.40</RangedWeapon_Cooldown>
-        </statBases>
-        <costList>
-            <Steel>110</Steel>
-            <ComponentIndustrial>8</ComponentIndustrial>
-        </costList>
-        <weaponClasses>
-            <li>LongShots</li>
-        </weaponClasses>
-        <weaponTags>
-            <li>SpacerGun</li>
-        </weaponTags>
-        <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
-                <warmupTime>1.40</warmupTime>
-                <range>30.0</range>
-                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
-                <burstShotCount>3</burstShotCount>
-                <soundCast>GW_AM_Gun_VossPattern</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>12</muzzleFlashScale>
-            </li>
-        </verbs>
-		<recipeMaker>
-            <researchPrerequisite>GW_AM_SteelLegion</researchPrerequisite>
-		</recipeMaker>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-            </li>
-        </tools>
-    </ThingDef>
-
   
   <!-- ====================== Kantrael MG Defender  ===================== -->
   
