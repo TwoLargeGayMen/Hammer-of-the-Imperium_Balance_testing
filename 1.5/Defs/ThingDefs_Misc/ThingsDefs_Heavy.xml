@@ -290,6 +290,7 @@
         <weaponTags>
 			<li>HPRanged</li>
             <li>ShortShots</li>
+			<li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <statBases>
             <WorkToMake>13000</WorkToMake>
@@ -374,6 +375,7 @@
         <weaponTags>
 			<li>HPRanged</li>
             <li>ShortShots</li>
+			<li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <statBases>
             <WorkToMake>20000</WorkToMake>

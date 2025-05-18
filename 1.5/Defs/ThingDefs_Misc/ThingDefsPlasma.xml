@@ -302,6 +302,7 @@
         </costList>
         <weaponTags>
             <li>SpacerGun</li>
+            <li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <tradeTags>
             <li>HPRanged</li>

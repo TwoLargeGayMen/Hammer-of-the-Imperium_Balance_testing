@@ -166,7 +166,7 @@
 <!-- ====================== Kantrael MG  ===================== -->
 
     <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_Kantrael</defName>
+        <defName>GW_HOI_Gun_Kantrael</defName>
         <label>Kantrael MG</label>
         <description>The standard-issue lasgun of the Cadian Shock Troops, and widely copied by other Astra Militarum regiments. Lasguns fire a pulsed beam of laser light at the target, and are powered by rechargeable power packs. \n\nDuring one of the first deployments of Primaris Space Marines, one reckless Unnumbered Son decided to charge across open ground against a trench line of heretic Guardsmen. While their lasguns stood no chance of truly penetrating the Marine’s ceramite at first, each lasbolt dug a small pit in his armor. The Primaris Marine was essentially eroded to death in front of the Imperial battleline - a sobering sight for his peers, who now knew that even an Angel of Death can be cut down by mere mortals.</description>
         <graphicData>

@@ -236,6 +236,94 @@
         </skills>
     </PawnKindDef>
 
+    <PawnKindDef Name="GW_HOI_Officer" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>200</combatPower>
+        <apparelMoney>2000~4000</apparelMoney>
+        <weaponTags>
+            <li>GW_HOI_CommissarRanged</li>
+        </weaponTags>
+        <weaponMoney>1500~3500</weaponMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>2000~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~12</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.9</generateChance>
+						<sidearmMoney>
+							<min>750</min>
+							<max>2500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GW_HOI_CommissarMelee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_HOI_Commissar" ParentName="GW_AM_PawnBase" Abstract="True">
+        <combatPower>200</combatPower>
+        <apparelMoney>2000~4000</apparelMoney>
+        <weaponTags>
+            <li>GW_HOI_CommissarRanged</li>
+        </weaponTags>
+        <weaponMoney>1500~4000</weaponMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>2000~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~14</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~14</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.9</generateChance>
+						<sidearmMoney>
+							<min>750</min>
+							<max>3000</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GW_HOI_CommissarMelee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
             <!-- Pawns -->
 
         <!--Cadian-->

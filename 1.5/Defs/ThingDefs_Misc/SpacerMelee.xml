@@ -79,6 +79,9 @@
     <ThingDef ParentName="GW_AM_PowerSwordBase">
         <defName>GW_AM_MeleeWeapon_PowerSword</defName>
         <label>Militarum power sword</label>
+        <weaponTags>
+            <li>GW_HOI_CommissarMelee</li>
+        </weaponTags>
         <graphicData>
             <texPath>Weapons/GW_HOI_CadianPowerSword</texPath>
         </graphicData>
@@ -124,6 +127,7 @@
         <weaponTags>
             <li>SpacerMeleeDecent</li>
             <li>GW_AM_SpacerMelee</li>
+            <li>GW_HOI_CommissarMelee</li>
         </weaponTags>
         <tradeTags>
             <li>HPMelee</li>

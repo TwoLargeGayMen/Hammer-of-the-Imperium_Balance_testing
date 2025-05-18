@@ -53,6 +53,9 @@
             <Plasteel>5</Plasteel>
             <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
+        <weaponTags>
+            <li>GW_HOI_CommissarMelee</li>
+        </weaponTags>
         <tools>
             <li>
                 <label>handle</label>
