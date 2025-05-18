@@ -120,7 +120,6 @@
         <defName>GW_HOI_Bullet_MeltaGun</defName>
         <label>Melta</label>
         <description>melta beam</description>
-        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <drawOffscreen>true</drawOffscreen>
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
@@ -137,7 +136,7 @@
             <speed>50</speed>
             <explosionRadius>1.1</explosionRadius>
         </projectile>
-        <thingClass>Projectile_Explosive</thingClass>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <modExtensions>
             <li Class="taranchuk_lasers.LaserProperties">
                 <damageTickRate>9</damageTickRate>
