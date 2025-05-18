@@ -170,20 +170,23 @@
             <texPath>Things/Cadian/Middle/FlakArmor_Male_south</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>9000</WorkToMake>
-            <MaxHitPoints>250</MaxHitPoints>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-            <Insulation_Cold>1</Insulation_Cold>
+            <WorkToMake>40000</WorkToMake>
+            <MaxHitPoints>800</MaxHitPoints>
+            <Mass>4</Mass>
+            <ArmorRating_Sharp>0.79</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.41</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.48</ArmorRating_Heat>
+            <Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.2</MoveSpeed>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
         </equippedStatOffsets>
         <costList>
-            <Steel>100</Steel>
+            <Steel>55</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>20</HP_Ceramite>
         </costList>	
         <apparel>
             <wornGraphicPath>Things/Cadian/Middle/FlakArmor</wornGraphicPath>

@@ -1,0 +1,27 @@
+<Defs>
+
+	<HediffDef>
+		<defName>GW_TrenchSlow</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Trench Slowed</label>
+		<description>This pawn is slow from moving in trench</description>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<isBad>true</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600</disappearsAfterTicks>
+				<showRemainingTime>true</showRemainingTime>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<MoveSpeed>-1.5</MoveSpeed>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+</Defs>
