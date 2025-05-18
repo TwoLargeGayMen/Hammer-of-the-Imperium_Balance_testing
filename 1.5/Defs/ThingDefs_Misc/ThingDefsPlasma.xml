@@ -3,29 +3,6 @@
   
     <!--===== Projectiles =====-->
     
-        <!--===== Plasma Pistol Projectile =====-->
-        
-    <ThingDef ParentName="BaseBullet">
-        <defName>GW_AM_PlasmaPistol_Bullet</defName>
-        <label>plasma pistol shot</label>
-        <graphicData>
-            <texPath>Things/Projectiles/Plasma_Projectile</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1.1</drawSize>
-        </graphicData>
-        <thingClass>Projectile_Explosive</thingClass>
-        <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>12</damageAmountBase>
-            <stoppingPower>2</stoppingPower>
-            <armorPenetrationBase>0.7</armorPenetrationBase>
-            <explosionRadius>1</explosionRadius>
-            <speed>100</speed>
-			<explosionEffect>GW_PlasmaEffecter</explosionEffect>
-        </projectile>
-    </ThingDef>
-    
         <!--===== Inferno Pistol Projectile =====-->
         
     <ThingDef ParentName="BaseBullet">
@@ -88,6 +65,7 @@
             <AccuracyMedium>0.70</AccuracyMedium>
             <AccuracyLong>0.55</AccuracyLong>
             <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <MarketValue>1400</MarketValue>
         </statBases>
 		<equippedStatOffsets>
             <MoveSpeed>-0.20</MoveSpeed>
@@ -218,6 +196,7 @@
             <AccuracyMedium>0.30</AccuracyMedium>
             <AccuracyLong>0.10</AccuracyLong>
             <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+            <MarketValue>1400</MarketValue>
         </statBases>
 		<equippedStatOffsets>
             <MoveSpeed>-0.20</MoveSpeed>
@@ -292,7 +271,28 @@
     </ThingDef>
   
     <!--===== Plasma Pistol =====-->
-    
+        
+    <ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_PlasmaPistol_Bullet</defName>
+        <label>plasma pistol shot</label>
+        <graphicData>
+            <texPath>Things/Projectiles/Plasma_Projectile</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1.0</drawSize>
+        </graphicData>
+        <thingClass>Projectile_Explosive</thingClass>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>20</damageAmountBase>
+            <stoppingPower>0.6</stoppingPower>
+            <armorPenetrationBase>0.35</armorPenetrationBase>
+            <explosionRadius>1.2</explosionRadius>
+            <speed>60</speed>
+			<explosionEffect>GW_PlasmaEffecter</explosionEffect>
+        </projectile>
+    </ThingDef>
+
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_AM_PlasmaPistol</defName>
         <label>Ryza plasma pistol</label>
@@ -304,13 +304,14 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>26000</WorkToMake>
-            <Mass>3.8</Mass>
-            <AccuracyTouch>0.85</AccuracyTouch>
-            <AccuracyShort>0.90</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.62</AccuracyLong>
-            <RangedWeapon_Cooldown>1</RangedWeapon_Cooldown>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>3</Mass>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <MarketValue>800</MarketValue>
         </statBases>
 		<equippedStatOffsets>
             <MoveSpeed>0.10</MoveSpeed>
@@ -325,10 +326,10 @@
             </skillRequirements>
         </recipeMaker>
         <costList>
-            <Plasteel>110</Plasteel>
-            <Steel>140</Steel>
-            <ComponentIndustrial>10</ComponentIndustrial>
-            <HP_Ceramite>20</HP_Ceramite>
+            <Plasteel>15</Plasteel>
+            <Steel>25</Steel>
+            <ComponentSpacer>1</ComponentSpacer>
+            <HP_Ceramite>5</HP_Ceramite>
         </costList>
         <weaponTags>
             <li>SpacerGun</li>
@@ -345,10 +346,10 @@
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_AM_PlasmaPistol_Bullet</defaultProjectile>
-                <warmupTime>4</warmupTime>
-                <range>22</range>
+                <warmupTime>0.6</warmupTime>
+                <range>18</range>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
-                <forcedMissRadius>1.9</forcedMissRadius>
+                <forcedMissRadius>0.8</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Plasma_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
@@ -360,12 +361,13 @@
         </verbs>
         <tools>
             <li>
-                <label>grip</label>
+                <label>stock</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
                 <power>5</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -373,8 +375,9 @@
                     <li>Blunt</li>
                     <li>Poke</li>
                 </capacities>
-                <power>6</power>
+                <power>5</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
