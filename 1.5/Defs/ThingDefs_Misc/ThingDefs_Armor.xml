@@ -344,44 +344,7 @@
             </tags>
         </apparel>
     </ThingDef>
-	
-        <!--Elysian-->
-
-    <ThingDef ParentName="GW_AM_ArmorBase">
-        <defName>GW_AM_Elysian_Armor</defName>
-        <label>Elysian flak armor</label>
-        <description>Flak armor designed for the Elysian Drop Troops. As well as protecting against lasbolts and solid projectiles just as well as standard armor, it can also protect better against blunt impacts, both from the ground and from enemy melee weapons. \n\nElysia is a Civilised World - pleasant in environmental conditions, but surrounded by wilderness space infested with Orks, pirates, and Ork pirates. As such, the Elysians are a strong people, producing excellent Guardsmen.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>8</Crafting>
-            </skillRequirements>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/ElysianDrop/Armor/ElysianArmor_Display</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>9000</WorkToMake>
-            <MaxHitPoints>250</MaxHitPoints>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.38</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-            <Insulation_Cold>1</Insulation_Cold>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <costList>
-            <Steel>100</Steel>
-        </costList>	
-        <apparel>
-            <wornGraphicPath>Things/ElysianDrop/Armor/ElysianArmor</wornGraphicPath>
-            <tags>
-                <li>40kElysian</li>
-                <li>40kElysianArmor</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
+    
 		<!-- Priest Gear -->
 		
 	<ThingDef ParentName="GW_AM_ArmorBase">

@@ -273,7 +273,7 @@
     <!--===== Plasma Pistol =====-->
         
     <ThingDef ParentName="BaseBullet">
-        <defName>GW_AM_PlasmaPistol_Bullet</defName>
+        <defName>GW_HOI_PlasmaPistol_Bullet</defName>
         <label>plasma pistol shot</label>
         <graphicData>
             <texPath>Things/Projectiles/Plasma_Projectile</texPath>
@@ -294,7 +294,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>GW_AM_PlasmaPistol</defName>
+        <defName>GW_HOI_PlasmaPistol</defName>
         <label>Ryza plasma pistol</label>
         <description>A human-sized plasma pistol, designed on the Forge World of Ryza. Its relatively tiny size cuts deeply into its firepower and range, but a plasma weapon is still a plasma weapon. \n\nThis particular pattern of plasma pistol was popular with Inquisitors and their retinue. Hunters of aliens, mutants, and heretics across the galaxy, the Holy Orders of the Emperor’s Inquisition acted as the secret police of the Imperium of Man.</description>
         <techLevel>Spacer</techLevel>
@@ -345,7 +345,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_PlasmaPistol_Bullet</defaultProjectile>
+                <defaultProjectile>GW_HOI_PlasmaPistol_Bullet</defaultProjectile>
                 <warmupTime>0.6</warmupTime>
                 <range>18</range>
                 <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
