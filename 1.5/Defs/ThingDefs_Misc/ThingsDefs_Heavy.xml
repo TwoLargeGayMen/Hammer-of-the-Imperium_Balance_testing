@@ -459,9 +459,8 @@
 		<label>Accatran flamer</label>
 		<description>An Imperial flamer design hailing from the forge world of Accatran, used by the Elysian Drop Troops of the Astra Militarum. Instead of using a canister of promethium held by the flamer, this design features a promethium tank worn on the user’s back. \n\nFlamers are useful when fighting certain xenos species such as Orks and Tyranids, which require thorough destruction to defeat permanently. The former, as a fungoid species, can regrow itself even when reduced to spores, while the latter feeds on biomass (including corpses from both sides) to reproduce and sustain itself.</description>
 		<graphicData>
-			<texPath>Weapons/Accatran_Flamer</texPath>
+			<texPath>Weapons/GW_HOI_CadianFlamer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>0.8</drawSize>
 		</graphicData>
 		<tools>
 			<li>

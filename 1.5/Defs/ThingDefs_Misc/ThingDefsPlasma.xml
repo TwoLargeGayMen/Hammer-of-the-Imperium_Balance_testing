@@ -71,11 +71,11 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>HP_AM_Gun_PlasmaGun</defName>
-        <label>Militarum plasma gun</label>
+        <label>Cadian plasma gun</label>
         <description>A smaller plasma gun for use by the Imperial Guard. Even though it is scaled for a baseline human, the plasma it fires is still a big threat even to armored targets.\n\nBeing a squad’s plasma gunner is a dubious honor. While a plasma gunner has the power of the sun in their hands, that same power could also blast them to pieces with one too many trigger pulls.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
-            <texPath>Weapons/PlasmaGun</texPath>
+            <texPath>Weapons/GW_HOI_CadianPlasmaGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
@@ -179,11 +179,11 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>HP_AM_Gun_MeltaGun</defName>
-        <label>Astra Militarum meltagun</label>
+        <label>Cadian meltagun</label>
         <description>A smaller meltagun for use by the Imperial Guard. Even though it is scaled for a baseline human, it remains a potent anti-armor weapon in close-quarters. \n\nMelta weapons are often considered an alternative to plasma weapons. While their range is significantly less than their plasma counterparts, no one has ever seen a meltagun overheat and explode like a plasma gun.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
-            <texPath>Weapons/MeltaGun</texPath>
+            <texPath>Weapons/GW_HOI_CadianMeltaGun</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>

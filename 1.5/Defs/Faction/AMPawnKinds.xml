@@ -242,7 +242,7 @@
         <weaponTags>
             <li>GW_HOI_CommissarRanged</li>
         </weaponTags>
-        <weaponMoney>1500~3500</weaponMoney>
+        <weaponMoney>800~3000</weaponMoney>
         <techHediffsChance>0.2</techHediffsChance>
         <techHediffsMoney>2000~2500</techHediffsMoney>
         <techHediffsTags>
@@ -286,7 +286,7 @@
         <weaponTags>
             <li>GW_HOI_CommissarRanged</li>
         </weaponTags>
-        <weaponMoney>1500~4000</weaponMoney>
+        <weaponMoney>1000~3500</weaponMoney>
         <techHediffsChance>0.2</techHediffsChance>
         <techHediffsMoney>2000~2500</techHediffsMoney>
         <techHediffsTags>
@@ -302,6 +302,9 @@
                 <range>8~14</range>
             </li>
         </skills>
+        <disallowedTraits>
+            <li>volatile</li>
+        </disallowedTraits>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
 			    <primaryMagazineCount>
