@@ -344,7 +344,7 @@
     </ThingDef>
   
     <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_Kantraeldefender</defName>
+        <defName>GW_HOI_Gun_Kantraeldefender</defName>
         <label>Kantrael MG Defender</label>
         <description>A laspistol used by NCOs and officers of the Astra Militarum, particularly the Cadian Shock Troops. While its smaller size results in a lasbolt of lower power, its compactness makes it a useful sidearm. \n\nLasguns are often derided as “flashlights” - sometimes even by their own users. However, a Chaos Space Marine once made a wise observation - he who scoffs at the power of a lasgun has not charged across a field of a hundred of them.</description>
         <graphicData>
@@ -361,6 +361,7 @@
         <weaponTags>
             <li>SpacerGun</li>
             <li>Autopistol</li>
+            <li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <weaponClasses>
             <li>RangedLight</li>
@@ -419,8 +420,44 @@
   
   <!-- ====================== Kantrael MG-t Defender  ===================== -->
   
+    <ThingDef ParentName="BaseBullet">
+        <defName>GW_HOI_Bullet_LaspistolMGT</defName>
+        <label>Laser</label>
+        <description>a laser</description>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Projectiles/Las_Bolt</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>9</damageAmountBase>
+            <armorPenetrationBase>0.18</armorPenetrationBase>
+            <stoppingPower>0.3</stoppingPower>
+            <speed>1000</speed>
+        </projectile>
+        <modExtensions>
+            <li Class="taranchuk_lasers.LaserProperties">
+                <damageTickRate>9</damageTickRate>
+                <lifetimeTicks>8</lifetimeTicks>
+                <beamWidth>1</beamWidth>
+                <beamWidthDrawScale>1</beamWidthDrawScale>
+                <sweepRatePerTick>0</sweepRatePerTick>
+                <maxSweepAngle>0</maxSweepAngle>
+                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+                <debugCells>false</debugCells>
+                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <lockOnTarget>false</lockOnTarget>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
     <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_Kantraeldefendert</defName>
+        <defName>GW_HOI_Gun_Kantraeldefendert</defName>
         <label>Kantrael MG-t Defender</label>
         <description>A Tertium-modified Kantrael MG Defender laspistol. Accuracy at longer distances is slightly compromised, but it hits a little bit harder and is slightly more maneuverable than its standard counterpart. \n\nTertium is home to the Cult of Admonition, a Chaos cult that worships Nurgle, the god of disease, decay, and despair. As the hive city decayed around them and the corrupt nobles squabbled with each other for power and riches, it was inevitable that the oppressed citizenry turned to higher powers.</description>
         <graphicData>
@@ -438,46 +475,49 @@
         <weaponTags>
             <li>SpacerGun</li>
             <li>Autopistol</li>
+            <li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <weaponClasses>
             <li>RangedLight</li>
         </weaponClasses>
         <statBases>
-            <WorkToMake>14500</WorkToMake>
-            <Mass>1.6</Mass>
-            <AccuracyTouch>0.78</AccuracyTouch>
-            <AccuracyShort>0.76</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>0.80</RangedWeapon_Cooldown>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.20</AccuracyMedium>
+            <AccuracyLong>0.10</AccuracyLong>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <MarketValue>240</MarketValue>
         </statBases>
 		<equippedStatOffsets>
             <MoveSpeed>0.10</MoveSpeed>
         </equippedStatOffsets>
         <costList>
-            <Steel>110</Steel>
-            <ComponentIndustrial>7</ComponentIndustrial>
+            <Steel>30</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Lasboltsmalll</defaultProjectile>
-                <warmupTime>0.3</warmupTime>
-                <range>24.0</range>
-                <soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
+        <li>
+            <verbClass>Verb_Shoot</verbClass>
+            <hasStandardCommand>true</hasStandardCommand>
+            <defaultProjectile>GW_HOI_Bullet_LaspistolMGT</defaultProjectile>
+            <warmupTime>0.3</warmupTime>
+            <range>18.0</range>
+            <soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
+            <soundCastTail>GunTail_Heavy</soundCastTail>
+            <muzzleFlashScale>9</muzzleFlashScale>
+        </li>
         </verbs>
         <tools>
             <li>
-                <label>grip</label>
+                <label>stock</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>9</power>
+                <power>5</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -485,32 +525,70 @@
                     <li>Blunt</li>
                     <li>Poke</li>
                 </capacities>
-                <power>9</power>
+                <power>5</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
   
   <!-- ====================== Ryza Hellgun  ===================== -->
 
+    <ThingDef ParentName="BaseBullet">
+        <defName>GW_HOI_Bullet_hellgun</defName>
+        <label>Laser</label>
+        <description>a laser</description>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Projectiles/Las_Bolt</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>13</damageAmountBase>
+            <armorPenetrationBase>0.22</armorPenetrationBase>
+            <stoppingPower>0.3</stoppingPower>
+            <speed>1000</speed>
+        </projectile>
+        <modExtensions>
+            <li Class="taranchuk_lasers.LaserProperties">
+                <damageTickRate>9</damageTickRate>
+                <lifetimeTicks>8</lifetimeTicks>
+                <beamWidth>1</beamWidth>
+                <beamWidthDrawScale>1</beamWidthDrawScale>
+                <sweepRatePerTick>0</sweepRatePerTick>
+                <maxSweepAngle>0</maxSweepAngle>
+                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+                <debugCells>false</debugCells>
+                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <lockOnTarget>false</lockOnTarget>
+            </li>
+        </modExtensions>
+    </ThingDef>
+
     <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_Hellgun</defName>
+        <defName>GW_HOI_Gun_Hellgun</defName>
         <label>Ryza hellgun</label>
         <description>Hellguns are a special type of high-powered lasgun, also known as a “hot-shot lasgun”. Instead of a standard power pack, hellguns feed from a backpack, allowing it to unleash a long burst of potent lasbolts. \n\nHellguns are generally seen only in the hands of elite Astra Militarum forces, such as the Tempestus Scions and the Cadian Kasrkin. Their superior penetration over normal lasguns gives hellguns a decent chance even against opponents wearing Power Armor.</description>
         <graphicData>
             <texPath>Weapons/Hellgun</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>32000</WorkToMake>
-            <Mass>7.4</Mass>
+            <WorkToMake>25000</WorkToMake>
+            <Mass>5</Mass>
             <AccuracyTouch>0.40</AccuracyTouch>
-            <AccuracyShort>0.48</AccuracyShort>
-            <AccuracyMedium>0.35</AccuracyMedium>
-            <AccuracyLong>0.26</AccuracyLong>
-            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+            <AccuracyShort>0.50</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.30</AccuracyLong>
+            <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
+            <MarketValue>650</MarketValue>
         </statBases>
 		<equippedStatOffsets>
-            <MoveSpeed>-0.20</MoveSpeed>
+            <MoveSpeed>-0.10</MoveSpeed>
         </equippedStatOffsets>
         <recipeMaker>
 		<researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
@@ -519,8 +597,8 @@
             </skillRequirements>
         </recipeMaker>
         <costList>
-            <Steel>150</Steel>
-            <ComponentIndustrial>14</ComponentIndustrial>
+            <Steel>75</Steel>
+            <ComponentIndustrial>5</ComponentIndustrial>
         </costList>
         <thingSetMakerTags>
             <li>RewardStandardQualitySuper</li>
@@ -535,11 +613,11 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>VWEL_Bullet_Hellbolt</defaultProjectile>
-                <warmupTime>1.20</warmupTime>
-                <range>30.0</range>
-                <ticksBetweenBurstShots>8</ticksBetweenBurstShots>
-                <burstShotCount>12</burstShotCount>
+                <defaultProjectile>GW_HOI_Bullet_hellgun</defaultProjectile>
+                <warmupTime>1.10</warmupTime>
+                <range>27.0</range>
+                <ticksBetweenBurstShots>7</ticksBetweenBurstShots>
+                <burstShotCount>3</burstShotCount>
                 <soundCast>GW_AM_Gun_Hellgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>12</muzzleFlashScale>
@@ -553,6 +631,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -562,6 +641,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
