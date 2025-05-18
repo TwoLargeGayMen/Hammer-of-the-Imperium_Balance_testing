@@ -123,9 +123,9 @@
 			<WorkToMake>35000</WorkToMake>
             <Mass>8</Mass>
             <AccuracyTouch>0.20</AccuracyTouch>
-            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyShort>0.60</AccuracyShort>
             <AccuracyMedium>0.80</AccuracyMedium>
-            <AccuracyLong>0.90</AccuracyLong>
+            <AccuracyLong>0.80</AccuracyLong>
             <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
 			<MarketValue>1900</MarketValue>
 		</statBases>
