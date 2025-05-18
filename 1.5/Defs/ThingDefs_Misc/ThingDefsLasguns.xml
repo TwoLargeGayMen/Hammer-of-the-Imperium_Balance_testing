@@ -121,22 +121,6 @@
             <stoppingPower>1.8</stoppingPower>
         </projectile>
     </ThingDef>
-
-    <ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
-        <defName>VWEL_Bullet_Lasboltsmall</defName>
-        <label>lasbolt</label>
-        <description>A reduced beam of focused light.</description>
-        <textures>
-            <li>Projectiles/Las_Bolt</li>
-        </textures>
-        <seam>0</seam>
-        <projectile>
-            <damageDef>Burn</damageDef>
-            <damageAmountBase>13</damageAmountBase>
-            <armorPenetrationBase>0.40</armorPenetrationBase>
-            <stoppingPower>1.2</stoppingPower>
-        </projectile>
-    </ThingDef>
 	
 	<ThingDef ParentName="GW_LaserBullet" Class="VanillaWeaponsExpandedLaser.LaserBeamDef">
         <defName>VWEL_Bullet_Lasboltsmalll</defName>
@@ -322,6 +306,42 @@
     </ThingDef>
   
   <!-- ====================== Kantrael MG Defender  ===================== -->
+
+      <ThingDef ParentName="BaseBullet">
+        <defName>GW_HOI_Bullet_Laspistol</defName>
+        <label>Laser</label>
+        <description>a laser</description>
+        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <seeThroughFog>true</seeThroughFog>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Projectiles/Las_Bolt</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>8</damageAmountBase>
+            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <stoppingPower>0.3</stoppingPower>
+            <speed>1000</speed>
+        </projectile>
+        <modExtensions>
+            <li Class="taranchuk_lasers.LaserProperties">
+                <damageTickRate>9</damageTickRate>
+                <lifetimeTicks>8</lifetimeTicks>
+                <beamWidth>1</beamWidth>
+                <beamWidthDrawScale>1</beamWidthDrawScale>
+                <sweepRatePerTick>0</sweepRatePerTick>
+                <maxSweepAngle>0</maxSweepAngle>
+                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
+                <debugCells>false</debugCells>
+                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <lockOnTarget>false</lockOnTarget>
+            </li>
+        </modExtensions>
+    </ThingDef>
   
     <ThingDef ParentName="GW_AM_LasgunBase">
         <defName>GW_AM_Gun_Kantraeldefender</defName>
@@ -346,28 +366,29 @@
             <li>RangedLight</li>
         </weaponClasses>
         <statBases>
-            <WorkToMake>14000</WorkToMake>
-            <Mass>1.6</Mass>
-            <AccuracyTouch>0.78</AccuracyTouch>
-            <AccuracyShort>0.76</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <AccuracyTouch>0.85</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.35</AccuracyMedium>
+            <AccuracyLong>0.15</AccuracyLong>
+            <RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+            <MarketValue>210</MarketValue>
         </statBases>
 		<equippedStatOffsets>
             <MoveSpeed>0.10</MoveSpeed>
         </equippedStatOffsets>
         <costList>
-            <Steel>120</Steel>
-            <ComponentIndustrial>6</ComponentIndustrial>
+            <Steel>30</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
         <verbs>
         <li>
             <verbClass>Verb_Shoot</verbClass>
             <hasStandardCommand>true</hasStandardCommand>
-            <defaultProjectile>VWEL_Bullet_Lasboltsmall</defaultProjectile>
+            <defaultProjectile>GW_HOI_Bullet_Laspistol</defaultProjectile>
             <warmupTime>0.3</warmupTime>
-            <range>24.0</range>
+            <range>20.0</range>
             <soundCast>GW_AM_Gun_Kantraeldefender</soundCast>
             <soundCastTail>GunTail_Heavy</soundCastTail>
             <muzzleFlashScale>9</muzzleFlashScale>
@@ -375,12 +396,13 @@
         </verbs>
         <tools>
             <li>
-                <label>grip</label>
+                <label>stock</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>9</power>
+                <power>5</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -388,8 +410,9 @@
                     <li>Blunt</li>
                     <li>Poke</li>
                 </capacities>
-                <power>9</power>
+                <power>5</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
