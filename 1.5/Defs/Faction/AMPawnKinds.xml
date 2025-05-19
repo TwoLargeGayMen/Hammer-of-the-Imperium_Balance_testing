@@ -302,9 +302,6 @@
                 <range>8~14</range>
             </li>
         </skills>
-        <disallowedTraits>
-            <li>volatile</li>
-        </disallowedTraits>
         <modExtensions>
             <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
 			    <primaryMagazineCount>
