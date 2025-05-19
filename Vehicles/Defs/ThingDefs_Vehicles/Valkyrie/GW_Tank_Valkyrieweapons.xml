@@ -57,7 +57,7 @@
 		</fireModes>
 
 		<graphicData>
-			<texPath>Things/Vehicles/OverlordGunship/lasy</texPath>
+			<texPath>Things/invisibleTurret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
 			<shaderType>CutoutComplexPattern</shaderType>
 			<drawSize>(0, 0)</drawSize>
