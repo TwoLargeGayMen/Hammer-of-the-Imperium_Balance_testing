@@ -111,7 +111,7 @@
 		<description>A coaxial autocannon slaved to the Baneblade Cannon. Fires 0.787 cal autocannon rounds.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>
-		<projectile>Bullet_Predator_MainTurret</projectile>
+		<projectile>GW_Bullet_Autocannon</projectile>
 		<reloadTimer>10.0</reloadTimer>
 		<warmUpTimer>0.0</warmUpTimer>
 		<magazineCapacity>30</magazineCapacity>
