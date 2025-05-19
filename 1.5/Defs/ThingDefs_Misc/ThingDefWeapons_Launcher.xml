@@ -198,6 +198,9 @@
 		<weaponClasses>
 			<li>RangedHeavy</li>
 		</weaponClasses>
+		<weaponTags>
+            <li>GW_HOI_CadianGrenaeLauncer</li>
+        </weaponTags>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>

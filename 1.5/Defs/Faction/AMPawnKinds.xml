@@ -179,7 +179,7 @@
         <weaponTags>
             <li>GW_AM_SpacerRanged</li>
         </weaponTags>
-        <weaponMoney>2800~3100</weaponMoney>
+        <weaponMoney>1000~3000</weaponMoney>
         <techHediffsChance>0.1</techHediffsChance>
         <techHediffsMoney>1800~2300</techHediffsMoney>
         <techHediffsTags>
@@ -333,6 +333,9 @@
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
         </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GW_HOI_CadianLasGun</li>
+        </weaponTags>
         <apparelRequired>
             <li>ODZ_40k_IG_Cadian_FlakArmor</li>
             <li>ODZ_40k_IG_Cadian_Helmet</li>
@@ -359,6 +362,27 @@
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
         </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GW_HOI_CadianLasGun</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
+            <li>ODZ_40k_IG_Cadian_Helmet</li>
+            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+     <PawnKindDef ParentName="GW_AM_RangedTier2">
+        <defName>GW_HOI_Cadian_RangedSpecialWeapon</defName>
+        <label>cadian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <weaponMoney>750~2500</weaponMoney>
+        <weaponTags Inherit="False">
+            <li>GW_HOI_SpecialWeapons</li>
+            <li>GW_HOI_CadianGrenaeLauncer</li>
+        </weaponTags>
         <apparelRequired>
             <li>ODZ_40k_IG_Cadian_FlakArmor</li>
             <li>ODZ_40k_IG_Cadian_Helmet</li>
@@ -381,7 +405,7 @@
 
     <PawnKindDef ParentName="GW_AM_RangedTier3">
         <defName>GW_AM_Cadian_RangedTier3</defName>
-        <label>cadian sergeant</label>
+        <label>Kasrkin Trooper</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
         </apparelTags>
@@ -394,7 +418,7 @@
 
     <PawnKindDef ParentName="GW_AM_MeleeTier3">
         <defName>GW_AM_Cadian_MeleeTier3</defName>
-        <label>cadian sergeant</label>
+        <label>Kasrkin Trooper</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
         </apparelTags>
@@ -410,6 +434,7 @@
         <label>Cadian Officer</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
+            <li>40kCadianOfficer</li>
         </apparelTags>
         <trader>true</trader>
         <factionLeader>true</factionLeader>

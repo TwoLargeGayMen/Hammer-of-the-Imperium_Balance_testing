@@ -145,6 +145,7 @@
             <li>LongShots</li>
         </weaponClasses>
         <weaponTags>
+            <li>GW_HOI_CadianLasGun</li>
             <li>SpacerGun</li>
         </weaponTags>
         <verbs>
@@ -557,8 +558,9 @@
         <weaponClasses>
             <li>RangedHeavy</li>
         </weaponClasses>
-        <weaponTags>
+        <weaponTags Inherit="False">
             <li>SpacerGun</li>
+            <li>GW_AM_SpacerRanged</li>
         </weaponTags>
         <verbs>
             <li>

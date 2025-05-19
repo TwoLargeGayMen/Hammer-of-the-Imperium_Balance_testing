@@ -496,6 +496,9 @@
 			</skillRequirements>
 			<workSkill>Crafting</workSkill>
 		</recipeMaker>
+		<weaponTags>
+            <li>GW_HOI_SpecialWeapons</li>
+        </weaponTags>
 		<costList>
 			<Plasteel>90</Plasteel>
 			<Steel>135</Steel>
