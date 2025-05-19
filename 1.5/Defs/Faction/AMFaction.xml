@@ -42,7 +42,7 @@
             <li>GW_HOI_Trader</li>
         </baseTraderKinds>
         <caravanTraderKinds>
-            <li>GW_AM_Trader_Caravan</li>
+            <li>GW_HOI_Trader_Caravan</li>
         </caravanTraderKinds>
         <raidLootMaker>GW_AM_RaidLootMaker</raidLootMaker>
         <xenotypeSet>

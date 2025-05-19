@@ -141,7 +141,7 @@
     </TraderKindDef>
 
     <TraderKindDef>
-        <defName>GW_AM_Trader_Caravan</defName>
+        <defName>GW_HOI_Trader_Caravan</defName>
         <label>militarum trader</label>
         <commonality>1</commonality>
         <faction>GW_AM_AstraMilitarum</faction>
