@@ -39,7 +39,7 @@
             <li>(0.35, 0.44, 0.26)</li>
         </colorSpectrum>
         <baseTraderKinds>
-            <li>GW_AM_Trader</li>
+            <li>GW_HOI_Trader</li>
         </baseTraderKinds>
         <caravanTraderKinds>
             <li>GW_AM_Trader_Caravan</li>
@@ -74,8 +74,9 @@
                     <GW_AM_Cadian_MeleeTier2>5</GW_AM_Cadian_MeleeTier2>
                     <GW_AM_Cadian_RangedTier3>10</GW_AM_Cadian_RangedTier3>
                     <GW_AM_Cadian_MeleeTier3>7</GW_AM_Cadian_MeleeTier3>
-                    <GW_AM_Cadian_Lieutenant>3</GW_AM_Cadian_Lieutenant>
+                    <GW_HOI_Cadian_Officer>3</GW_HOI_Cadian_Officer>
                     <GW_AM_LordGeneral>1</GW_AM_LordGeneral>
+                    <GW_HOI_Commissar>1</GW_HOI_Commissar>
                 </options>
             </li>
 
@@ -218,7 +219,7 @@
             <li>
                 <kindDef>Trader</kindDef>
                 <traders>
-                    <GW_AM_Trader>1</GW_AM_Trader>
+                    <GW_HOI_Cadian_Officer>1</GW_HOI_Cadian_Officer>
                 </traders>
                 <carriers>
                     <Muffalo>6</Muffalo>
@@ -227,20 +228,12 @@
                     <Elephant>1</Elephant>
                 </carriers>
                 <guards>
-                    <GW_AM_Cadian_RangedTier1>3</GW_AM_Cadian_RangedTier1>
-                    <GW_AM_Catachan_MeleeTier1>3</GW_AM_Catachan_MeleeTier1>
-                    <GW_AM_SteelLegion_RangedTier1>3</GW_AM_SteelLegion_RangedTier1>
-                    <GW_AM_TallarnDesertRaiders_RangedTier1>3</GW_AM_TallarnDesertRaiders_RangedTier1>
-                    <GW_AM_TempestusScion_RangedTier1>3</GW_AM_TempestusScion_RangedTier1>
-                    <GW_AM_Mordian_RangedTier1>13</GW_AM_Mordian_RangedTier1>
-                    <GW_AM_Valhallan_RangedTier1>3</GW_AM_Valhallan_RangedTier1>
                     <GW_AM_Cadian_RangedTier2>3</GW_AM_Cadian_RangedTier2>
-                    <GW_AM_Catachan_MeleeTier2>3</GW_AM_Catachan_MeleeTier2>
-                    <GW_AM_SteelLegion_RangedTier2>3</GW_AM_SteelLegion_RangedTier2>
-                    <GW_AM_TallarnDesertRaiders_RangedTier2>3</GW_AM_TallarnDesertRaiders_RangedTier2>
+                    <GW_AM_Cadian_MeleeTier2>2</GW_AM_Cadian_MeleeTier2>
+                    <GW_AM_Cadian_RangedTier3>4</GW_AM_Cadian_RangedTier3>
+                    <GW_AM_Cadian_MeleeTier3>2</GW_AM_Cadian_MeleeTier3>
+                    <GW_AM_TempestusScion_RangedTier1>2</GW_AM_TempestusScion_RangedTier1>
                     <GW_AM_TempestusScion_RangedTier2>3</GW_AM_TempestusScion_RangedTier2>
-                    <GW_AM_Mordian_RangedTier2>13</GW_AM_Mordian_RangedTier2>
-                    <GW_AM_Valhallan_RangedTier2>3</GW_AM_Valhallan_RangedTier2>
                     <GW_OgrynEnforcer MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynEnforcer>
                     <GW_OgrynGunner MayRequire="Phonicmas.40kAbhumans">2</GW_OgrynGunner>
                     <GW_RatlingSniper MayRequire="Phonicmas.40kAbhumans">4</GW_RatlingSniper>

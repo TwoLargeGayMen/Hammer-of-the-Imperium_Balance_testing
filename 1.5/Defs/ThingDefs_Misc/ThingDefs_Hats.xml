@@ -862,7 +862,7 @@
 	<!-- Commissar Cap -->
   
 	<ThingDef ParentName="GW_AM_Hat_CapBase">
-		<defName>GW_AM_CommissarCap</defName>
+		<defName>GW_HOI_CommissarCap</defName>
 		<label>Commissar cap</label>
 		<description>The black peaked cap of an Imperial Commissar. It is such a symbol of their status that Orks like to take them as battlefield trophies. \n\nThe Commissars in the Astra Militarum remnant are hard-pressed to keep order. The Guardsmen are spending too much time in contact with the local population for the Commissariat's liking, hearing too much about heretic and apostate ideoligions. Such insidious ideas as “democracy” and “freedom” must not take root in the Guard, lest disorder sweep through the ranks.</description>
 		<graphicData>

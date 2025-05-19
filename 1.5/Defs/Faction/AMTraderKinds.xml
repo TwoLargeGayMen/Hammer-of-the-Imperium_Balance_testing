@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
     <TraderKindDef>
-        <defName>GW_AM_Trader</defName>
+        <defName>GW_HOI_Trader</defName>
         <label>militarum trader</label>
         <faction>GW_AM_AstraMilitarum</faction>
         <stockGenerators>

@@ -320,7 +320,7 @@
 	<!-- Commissar Uniform -->
 
     <ThingDef ParentName="GW_AM_OnSkinBase">
-        <defName>GW_AM_CommissarUniform</defName>
+        <defName>GW_HOI_CommissarUniform</defName>
         <label>Commissar uniform</label>
 	<description>A distinctive uniform made for an Imperial Commissar of the Astra Militarum. \n\nCommissars are political officers, ensuring the loyalty of their Guardsmen to the Imperium. As well as providing oratory and in-battle inspiration, they also have absolute authority to punish heresy, cowardice, and gross incompetence - all the way to summary execution, and all the way up to the Regimental Commander they were assigned to.</description>
        <recipeMaker>
