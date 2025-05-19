@@ -76,17 +76,17 @@
 				<armorPenetration>0.9</armorPenetration>
                 <extraMeleeDamages>
                     <li>
-                        <Def>Cut</Def>
+                        <def>Cut</def>
                         <amount>4</amount>
                         <chance>1</chance>
                     </li>
                     <li>
-                        <Def>Cut</Def>
+                        <def>Cut</def>
                         <amount>4</amount>
                         <chance>1</chance>
                     </li>
                     <li>
-                        <Def>Cut</Def>
+                        <def>Cut</def>
                         <amount>4</amount>
                         <chance>1</chance>
                     </li>

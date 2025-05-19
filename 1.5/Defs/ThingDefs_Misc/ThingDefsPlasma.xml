@@ -212,7 +212,6 @@
                 <warmupTime>2</warmupTime>
                 <range>16</range>
                 <ticksBetweenBurstShots>12</ticksBetweenBurstShots>
-				<forcedMissRadius>1</forcedMissRadius>
                 <burstShotCount>1</burstShotCount>
                 <soundCast>HP_AM_Melta_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
