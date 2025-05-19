@@ -10,7 +10,7 @@
 		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
 		
 		<turretType>Rotatable</turretType>
-		<shotSound>OverlordLascannon</shotSound>
+		<shotSound>GW_Lascannon_Gun_Sound</shotSound>
 		
 		<projectile>GW_LascanonShot</projectile>
 		<reloadTimer>3.5</reloadTimer>
@@ -76,7 +76,7 @@
 			<description>The Heavy Bolter, a formidable weapon in the Warhammer 40,000 universe, is often mounted on vehicles to enhance their firepower. This versatile weapon, characterized by its rapid and powerful firepower, serves as a potent anti-infantry and suppressive tool on the battlefield. When mounted on a vehicle, it becomes a symbol of mobile and devastating firepower, capable of mowing down enemy infantry and providing valuable support in diverse combat scenarios.</description>
 			<turretType>Rotatable</turretType>
 
-			<shotSound>OverlordHBolter</shotSound>
+			<shotSound>GW_Heavy_Bolt_Gun_Sound</shotSound>
 
 			<projectile>GW_Bullet_HeavyBolter</projectile>
 

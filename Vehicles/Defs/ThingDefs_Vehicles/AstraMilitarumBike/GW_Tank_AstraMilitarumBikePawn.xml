@@ -7,7 +7,7 @@
 		<label>bike Heavy Bolter Main</label>
 		<description>A fixed, front-mounted heavy bolter attached to the front of an Astra Militarum Bike. Fires 0.998 cal bolts.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>OverlordHBolter</shotSound>
+		<shotSound>GW_Heavy_Bolt_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>

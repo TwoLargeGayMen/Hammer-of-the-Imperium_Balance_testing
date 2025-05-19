@@ -69,7 +69,7 @@
 		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
 		
 		<turretType>Rotatable</turretType>
-		<shotSound>OverlordLascannon</shotSound>
+		<shotSound>GW_Lascannon_Gun_Sound</shotSound>
 		
 		<projectile>GW_LascanonShot</projectile>
 		<reloadTimer>3.5</reloadTimer>
@@ -124,7 +124,7 @@
 		<label>Stormhammer main cannon</label>
 		<description>Armored Boltor Baneblade cannon.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>Shot_TurretSniper</shotSound>
+		<shotSound>GW_Heavy_Bolt_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
@@ -181,7 +181,7 @@
 		<label>Stormhammer main cannon</label>
 		<description>Armored Boltor Baneblade cannon.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>Shot_TurretSniper</shotSound>
+		<shotSound>GW_Heavy_Bolt_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>

@@ -169,7 +169,7 @@
 		<description>A turret-mounted lascannon, used on the Baneblade as secondary turrets. Consumes lascannon battery packs.</description>
 		
 		<turretType>Rotatable</turretType>
-		<shotSound>OverlordLascannon</shotSound>
+		<shotSound>GW_Lascannon_Gun_Sound</shotSound>
 		
 		<projectile>GW_LascanonShot</projectile>
 		<reloadTimer>3.5</reloadTimer>
@@ -221,7 +221,7 @@
 		<label>Baneblade main cannon</label>
 		<description>A turret-mounted twin-linked heavy bolter, used as a secondary turret on the Baneblade. Fires 0.998 cal bolts.</description>
 		<turretType>Rotatable</turretType>
-		<shotSound>Shot_TurretSniper</shotSound>
+		<shotSound>GW_Heavy_Bolt_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_HeavyBolter</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.0</warmUpTimer>
