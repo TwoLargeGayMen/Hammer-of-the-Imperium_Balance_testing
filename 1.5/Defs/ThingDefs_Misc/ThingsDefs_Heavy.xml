@@ -342,7 +342,7 @@
                 <warmupTime>0.4</warmupTime>
                 <range>22</range>
 				<burstShotCount>1</burstShotCount>
-                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+                <soundCast>GW_Bolt_Pistol_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -373,7 +373,7 @@
 	<!--===== Locke Bolter =====-->
 	
 	<ThingDef ParentName="GW_AM_BolterBase">
-        <defName>GW_AM_Gun_Bolter</defName>
+        <defName>GW_HOI_Gun_Bolter</defName>
         <label>Locke bolter</label>
         <description>A scaled-down bolter of the Locke pattern. The weapon’s smaller size makes it suitable for use by baseline humans. While it is indeed powerful, its recoil and weight is high.\n\nThis pattern of bolter was common in the Koronus Expanse, seeing use by a wide variety of characters - Rogue Traders, pirates, Chaos cultists, and more.</description>
         <possessionCount>1</possessionCount>
