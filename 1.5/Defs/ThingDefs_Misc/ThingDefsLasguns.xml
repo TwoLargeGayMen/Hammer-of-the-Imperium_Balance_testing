@@ -10,7 +10,7 @@
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Projectiles/Las_Bolt</texPath>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
@@ -46,7 +46,7 @@
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Projectiles/Las_Bolt</texPath>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
@@ -78,7 +78,7 @@
         <label>lasbolt</label>
         <description>A beam of focused light that burns the target.</description>
         <textures>
-            <li>Projectiles/Las_Bolt</li>
+            <li>Things/Projectiles/Las_Bolt</li>
         </textures>
         <seam>0</seam>
         <projectile>
@@ -268,7 +268,7 @@
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Projectiles/Las_Bolt</texPath>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
@@ -381,7 +381,7 @@
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Projectiles/Las_Bolt</texPath>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
@@ -495,7 +495,7 @@
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Projectiles/Las_Bolt</texPath>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
         </graphicData>
@@ -610,7 +610,7 @@
         <seeThroughFog>true</seeThroughFog>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Projectiles/Las_Bolt</texPath>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
             <shaderType>TransparentPostLight</shaderType>
             <drawSize>1</drawSize>
         </graphicData>

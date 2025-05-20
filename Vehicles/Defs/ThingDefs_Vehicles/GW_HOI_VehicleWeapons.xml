@@ -82,7 +82,7 @@
 		<description>A sponson-mounted heavy flamer used on the Imperial vehicles.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_AM_Flamer_Sound</shotSound>
-		<projectile>GW_AM_Bullet_Flamer</projectile>
+		<projectile>GW_Bullet_HeavyFlamer</projectile>
 		<reloadTimer>7.8</reloadTimer>
 		<warmUpTimer>1.25</warmUpTimer>
 		<magazineCapacity>25</magazineCapacity>
