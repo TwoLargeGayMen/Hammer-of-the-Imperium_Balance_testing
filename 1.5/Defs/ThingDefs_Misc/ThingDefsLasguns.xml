@@ -31,7 +31,7 @@
                 <maxSweepAngle>0</maxSweepAngle>
                 <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
             </li>
         </modExtensions>
@@ -67,7 +67,7 @@
                 <maxSweepAngle>0</maxSweepAngle>
                 <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
             </li>
         </modExtensions>
@@ -289,7 +289,7 @@
                 <maxSweepAngle>0</maxSweepAngle>
                 <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
             </li>
         </modExtensions>
@@ -402,7 +402,7 @@
                 <maxSweepAngle>0</maxSweepAngle>
                 <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
             </li>
         </modExtensions>
@@ -516,7 +516,7 @@
                 <maxSweepAngle>0</maxSweepAngle>
                 <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
             </li>
         </modExtensions>
@@ -631,7 +631,7 @@
                 <maxSweepAngle>0</maxSweepAngle>
                 <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
+                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
             </li>
         </modExtensions>
