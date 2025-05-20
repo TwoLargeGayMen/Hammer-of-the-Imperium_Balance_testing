@@ -117,7 +117,6 @@
 		<autoSnapTargeting>false</autoSnapTargeting>
 		<rotationSpeed>1.5</rotationSpeed>
 		<projectileOffset>2.5</projectileOffset>
-		<spread>0</spread>
 		<projectileShifting>
 			<li>-0.2</li>
 			<li>0.2</li>
