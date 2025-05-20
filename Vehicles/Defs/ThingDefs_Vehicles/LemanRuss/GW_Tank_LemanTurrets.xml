@@ -131,6 +131,7 @@
 				<ticksBetweenShots>0</ticksBetweenShots>
 				<ticksBetweenBursts>10</ticksBetweenBursts>
 				<label>Single</label>
+				<spreadRadius>0</spreadRadius>
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
