@@ -484,7 +484,7 @@
   <!-- ====================== Militarum Shotgun  ===================== -->
   
     <ThingDef ParentName="GW_AM_AutogunBase">
-        <defName>Gun_MilitarumShotgun</defName>
+        <defName>GW_HOI_Shotgun</defName>
         <label>Militarum shotgun</label>
         <description>A pump-action shotgun used by the Astra Militarum and the Navis Imperialis. These weapons are harder-hitting than typical shotguns found on the rimworlds. \n\nImperial Guardsmen have also been known to use double-barrel shotguns. Some Elysian Drop Troopers, seeing close-combat much more frequently than a typical Guardsman, even prefer their shotguns over lasguns.</description>
         <possessionCount>1</possessionCount>
@@ -500,20 +500,18 @@
             <li>ShortShots</li>
         </weaponTags>
         <statBases>
-            <WorkToMake>14000</WorkToMake>
+            <WorkToMake>12000</WorkToMake>
             <Mass>4</Mass>
             <AccuracyTouch>0.80</AccuracyTouch>
-            <AccuracyShort>0.84</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.50</AccuracyLong>
-            <RangedWeapon_Cooldown>1.25</RangedWeapon_Cooldown>
+            <AccuracyShort>0.85</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <MarketValue>600</MarketValue>
         </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>-0.10</MoveSpeed>
-        </equippedStatOffsets>
         <costList>
             <Steel>70</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <ComponentIndustrial>3</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <skillRequirements>
@@ -522,16 +520,18 @@
             <displayPriority>430</displayPriority>
         </recipeMaker>
         <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
+            <li Class="Shotgunz.Verb_Properties_Shotgunz">
+                <verbClass>Shotgunz.Verb_Shoot_Shotgunz</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_Bullet_Shotgungrim</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
-                <range>18</range>
-                <soundCast>GW_AM_Gun_MilitarumShotgun</soundCast>
+                <defaultProjectile>GW_HOI_ShotgunPellet</defaultProjectile>
+                <warmupTime>0.65</warmupTime>
+                <range>15</range>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
+                <pellets>6</pellets>
+      </li>
         </verbs>
         <tools>
             <li>
@@ -541,6 +541,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -550,6 +551,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
@@ -557,7 +559,7 @@
   <!-- ====================== Sawn Off Militarum Shotgun  ===================== -->
   
     <ThingDef ParentName="GW_AM_AutogunBase">
-        <defName>Gun_MilitarumShotgunSawn</defName>
+        <defName>GW_HOI_SawedShotgun</defName>
         <label>Sawn-off militarum shotgun</label>
         <description>A cut-down combat shotgun used in close-quarters by the Astra Militarum and Navis Imperialis. It is better in tight areas such as trench lines and voidships because of its shorter barrel, though range is further decreased. \n\nThe Adeptus Mechanicus frowns on improvisation, believing that it is disrespectful and damaging to the Machine Spirits within. Even so, a lot of Guardsmen customize their equipment (and even vehicles) as long as a more dogmatic tech-priest is nowhere nearby.</description>
         <possessionCount>1</possessionCount>
@@ -575,11 +577,12 @@
         <statBases>
             <WorkToMake>13000</WorkToMake>
             <Mass>3</Mass>
-            <AccuracyTouch>0.90</AccuracyTouch>
-            <AccuracyShort>0.80</AccuracyShort>
-            <AccuracyMedium>0.42</AccuracyMedium>
-            <AccuracyLong>0.30</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <AccuracyTouch>0.80</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.40</AccuracyMedium>
+            <AccuracyLong>0.20</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+            <MarketValue>400</MarketValue>
         </statBases>
         <costList>
             <Steel>50</Steel>
@@ -592,16 +595,19 @@
             <displayPriority>430</displayPriority>
         </recipeMaker>
         <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
+            <li Class="Shotgunz.Verb_Properties_Shotgunz">
+                <verbClass>Shotgunz.Verb_Shoot_Shotgunz</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_Bullet_Shotgungrim</defaultProjectile>
-                <warmupTime>0.6</warmupTime>
+                <defaultProjectile>GW_HOI_ShotgunPellet</defaultProjectile>
+                <warmupTime>0.80</warmupTime>
                 <range>12</range>
-                <soundCast>GW_AM_Gun_MilitarumShotgunSawn</soundCast>
+                <burstShotCount>2</burstShotCount>
+                <ticksBetweenBurstShots>35</ticksBetweenBurstShots>
+                <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
+                <pellets>5</pellets>
+      </li>
         </verbs>
         <tools>
             <li>
@@ -611,6 +617,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -620,6 +627,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
@@ -650,7 +658,7 @@
             <AccuracyShort>0.75</AccuracyShort>
             <AccuracyMedium>0.40</AccuracyMedium>
             <AccuracyLong>0.20</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
         </statBases>
         <costList>
             <Steel>300</Steel>

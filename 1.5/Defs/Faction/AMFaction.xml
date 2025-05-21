@@ -38,6 +38,15 @@
         <colorSpectrum>
             <li>(0.35, 0.44, 0.26)</li>
         </colorSpectrum>
+        <!---
+        <backstoryFilters>
+            <li>
+                <categories>
+                    <li>GW_HOI_Backgrounds</li>
+                </categories>
+            </li>
+        </backstoryFilters>
+        -->
         <baseTraderKinds>
             <li>GW_HOI_Trader</li>
         </baseTraderKinds>
