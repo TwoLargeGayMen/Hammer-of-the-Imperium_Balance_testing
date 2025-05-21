@@ -96,11 +96,12 @@
             <Steel>70</Steel>
         </costList>
         <statBases>
-            <WorkToMake>4000</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.57</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <recipeMaker>
