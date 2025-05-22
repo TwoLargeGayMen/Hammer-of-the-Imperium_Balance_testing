@@ -141,7 +141,7 @@
     <ThingDef ParentName="GW_AM_OnSkinBase">
         <defName>ODZ_40k_IG_Cadian_Fatigues</defName>
         <label>Cadian fatigues</label>
-	<description>Combat fatigues used by the Cadian Shock Troops. Cadia stands. \n\nThe planet of Cadia was situated next to the infamous Eye of Terror, the largest Warp rift in the galaxy. As such, it was under constant siege, and every single Cadian was trained to fight for their Fortress World - one in ten Cadians were assigned to the Cadian Interior Guard, the world’s Planetary Defense Force.</description>
+	    <description>Combat fatigues used by the Cadian Shock Troops. Cadia stands. \n\nThe planet of Cadia was situated next to the infamous Eye of Terror, the largest Warp rift in the galaxy. As such, it was under constant siege, and every single Cadian was trained to fight for their Fortress World - one in ten Cadians were assigned to the Cadian Interior Guard, the world’s Planetary Defense Force.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>
@@ -156,6 +156,7 @@
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <MarketValue>150</MarketValue>
         </statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
@@ -165,6 +166,39 @@
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kCadianUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_OnSkinBase">
+        <defName>GW_HOI_CadianCommanderFatigues</defName>
+        <label>Cadian Commander Uniform</label>
+	    <description>WIP.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/CadianCommander/Onskin/GW_HOI_CadianCommanderOnskin</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>15000</WorkToMake>
+			<Mass>2</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <MarketValue>170</MarketValue>
+        </statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.10</SocialImpact>
+            <SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
+            <MentalBreakThreshold>0.05</MentalBreakThreshold>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Cadian/CadianCommander/Onskin/GW_HOI_CadianCommander</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuardOfficer</li>
             </tags>
         </apparel>
     </ThingDef>
