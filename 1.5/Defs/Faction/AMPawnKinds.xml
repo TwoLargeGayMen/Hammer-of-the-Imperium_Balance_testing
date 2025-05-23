@@ -439,7 +439,6 @@
         <trader>true</trader>
         <factionLeader>true</factionLeader>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_OfficerGorget</li>
             <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
             <li>ODZ_40k_IG_Cadian_CrusherCap</li>
             <li>40kCadianGuardOfficer</li>
@@ -454,6 +453,7 @@
             <li>40kCommissarOnSkin</li>
         </apparelTags>
         <apparelRequired>
+            <li>GW_HOI_CommissarAttachment</li>
             <li>GW_HOI_CommissarOuter</li>
             <li>GW_HOI_CommissarCap</li>
             <li>GW_HOI_CommissarUniform</li>
@@ -1067,7 +1067,6 @@
             <li>GW_AM_SpacerRanged</li>
         </weaponTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_OfficerGorget</li>
             <li>ODZ_40k_IG_Cadian_Fatigues</li>
             <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
             <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
