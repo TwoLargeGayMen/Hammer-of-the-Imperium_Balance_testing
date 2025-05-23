@@ -180,7 +180,7 @@
         <graphicData>
             <texPath>Things/Cadian/CadianCommander/Onskin/GW_HOI_CadianCommanderOnskin</texPath>
         </graphicData>
-        <costStuffCount>80</costStuffCount>
+        <costStuffCount>90</costStuffCount>
         <statBases>
             <MaxHitPoints>200</MaxHitPoints>
             <WorkToMake>15000</WorkToMake>
