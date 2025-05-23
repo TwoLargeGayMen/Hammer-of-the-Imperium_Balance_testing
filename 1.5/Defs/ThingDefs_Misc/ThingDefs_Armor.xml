@@ -213,22 +213,26 @@
             <texPath>Things/Cadian/Middle/KasrkinFlakArmor_Male_south</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>12000</WorkToMake>
-            <MaxHitPoints>280</MaxHitPoints>
-            <Mass>6</Mass>
-            <ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.62</ArmorRating_Heat>
-            <Insulation_Cold>28.0</Insulation_Cold>
-			<Insulation_Heat>7</Insulation_Heat>
+            <WorkToMake>52000</WorkToMake>
+            <MaxHitPoints>1100</MaxHitPoints>
+			<MarketValue>1500</MarketValue>
+            <Mass>9</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.48</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.55</ArmorRating_Heat>
+            <Insulation_Cold>30.0</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
         <equippedStatOffsets>
             <MoveSpeed>-0.1</MoveSpeed>
         </equippedStatOffsets>
 		<costList>
-			<Steel>90</Steel>
-            <DevilstrandCloth>10</DevilstrandCloth>
+			<Steel>100</Steel>
+			<Plasteel>60</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<HP_Ceramite>25</HP_Ceramite>
+            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
         </costList>
         <apparel>
             <bodyPartGroups>
