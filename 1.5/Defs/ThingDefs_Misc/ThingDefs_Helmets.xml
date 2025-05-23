@@ -93,10 +93,14 @@
             <texPath>Things/Cadian/Headgear/CadianHelmet_south</texPath>
         </graphicData>
         <costList>
-            <Steel>70</Steel>
+            <Steel>35</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>5</HP_Ceramite>
         </costList>
         <statBases>
             <WorkToMake>30000</WorkToMake>
+			<MarketValue>400</MarketValue>
+			<MaxHitPoints>280</MaxHitPoints>
             <Mass>2</Mass>
             <ArmorRating_Sharp>0.57</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
@@ -126,23 +130,26 @@
             <texPath>Things/Cadian/Headgear/KasrkinHelmet_south</texPath>
         </graphicData>
         <costList>
-            <ComponentIndustrial>4</ComponentIndustrial>
-            <DevilstrandCloth>10</DevilstrandCloth>
             <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
+            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
         </costList>
         <statBases>
-            <WorkToMake>6000</WorkToMake>
-            <MaxHitPoints>200</MaxHitPoints>
-            <Mass>1.7</Mass>
-            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.44</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.62</ArmorRating_Heat>
-            <Insulation_Cold>3.8</Insulation_Cold>
-            <Insulation_Heat>1.8</Insulation_Heat>
+            <WorkToMake>40000</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>550</MarketValue>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.48</ArmorRating_Heat>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
             <EquipDelay>2.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
