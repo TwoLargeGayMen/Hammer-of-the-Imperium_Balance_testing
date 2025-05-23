@@ -438,7 +438,7 @@
 	
 	<ThingDef ParentName="GW_AM_FlamerBase">
 		<defName>GW_HOI_Gun_Flamer</defName>
-		<label>Cadian flamer</label>
+		<label>Kantrael Flamer</label>
 		<description>WIP.</description>
 		<graphicData>
 			<texPath>Weapons/GW_HOI_CadianFlamer</texPath>
