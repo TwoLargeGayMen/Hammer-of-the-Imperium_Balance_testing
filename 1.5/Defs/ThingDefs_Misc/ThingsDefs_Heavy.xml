@@ -437,23 +437,13 @@
 	<!--===== Flamer =====-->
 	
 	<ThingDef ParentName="GW_AM_FlamerBase">
-		<defName>GW_AM_Gun_Flamer</defName>
+		<defName>GW_HOI_Gun_Flamer</defName>
 		<label>Accatran flamer</label>
 		<description>An Imperial flamer design hailing from the forge world of Accatran, used by the Elysian Drop Troops of the Astra Militarum. Instead of using a canister of promethium held by the flamer, this design features a promethium tank worn on the user’s back. \n\nFlamers are useful when fighting certain xenos species such as Orks and Tyranids, which require thorough destruction to defeat permanently. The former, as a fungoid species, can regrow itself even when reduced to spores, while the latter feeds on biomass (including corpses from both sides) to reproduce and sustain itself.</description>
 		<graphicData>
 			<texPath>Weapons/GW_HOI_CadianFlamer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
-		<tools>
-			<li>
-				<label>barrel</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>11.7</power>
-				<cooldownTime>2.6</cooldownTime>
-			</li>
-		</tools>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 			<recipeUsers Inherit="False">
@@ -469,15 +459,15 @@
             <li>GW_HOI_SpecialWeapons</li>
         </weaponTags>
 		<costList>
-			<Plasteel>90</Plasteel>
-			<Steel>135</Steel>
-			<ComponentIndustrial>15</ComponentIndustrial>
-			<HP_Ceramite>30</HP_Ceramite>
+			<Chemfuel>20</Chemfuel>
+			<Steel>60</Steel>
+			<HP_Ceramite>5</HP_Ceramite>
 		</costList>
 		<statBases>
-			<Mass>14</Mass>
-			<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
-			<WorkToMake>38000</WorkToMake>
+			<Mass>6</Mass>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+			<WorkToMake>25000</WorkToMake>
+			<MarketValue>600</MarketValue>
 		</statBases>
 		<verbs>
 			<li>
@@ -485,8 +475,8 @@
 				<hasStandardCommand>true</hasStandardCommand>
 				<defaultProjectile>GW_Bullet_Flamer</defaultProjectile>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-				<warmupTime>1.25</warmupTime>
-				<range>14</range>
+				<warmupTime>1.30</warmupTime>
+				<range>11</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>GW_AM_Flamer_Sound</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
@@ -496,6 +486,27 @@
 				</targetParams>
 			</li>
 		</verbs>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+				<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.13</armorPenetration>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+				<li>Blunt</li>
+				<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2.0</cooldownTime>
+				<armorPenetration>0.13</armorPenetration>
+			</li>
+		</tools>
 	</ThingDef>
 	
 </Defs>
