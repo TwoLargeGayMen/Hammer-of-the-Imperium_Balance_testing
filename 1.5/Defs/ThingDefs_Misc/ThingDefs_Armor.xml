@@ -196,6 +196,52 @@
             </tags>
         </apparel>
     </ThingDef>
+	
+	<!-- Cadian Commander -->
+
+    <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>ODZ_40k_IG_Cadian_CommanderArmor</defName>
+        <label>Cadian Commander armor</label>
+        <description>WIP.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/CadianCommander/Middle/GW_HOI_CadianCommanderMiddle_Male_south</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>42000</WorkToMake>
+            <MaxHitPoints>850</MaxHitPoints>
+			<MarketValue>1250</MarketValue>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.50</ArmorRating_Heat>
+            <Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>60</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<HP_Ceramite>25</HP_Ceramite>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Cadian/CadianCommander/Middle/GW_HOI_CadianCommanderMiddle</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
   
             <!-- Kasrkin Flak Armor  -->
 

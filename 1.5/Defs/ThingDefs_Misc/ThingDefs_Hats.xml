@@ -871,33 +871,32 @@
 		<graphicData>
 			<texPath>Things/Commissar/Display/CommissarCap</texPath>
 		</graphicData>
-		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<DevilstrandCloth>10</DevilstrandCloth>
-			<Steel>100</Steel>
-		</costList>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
 		<statBases>
-			<WorkToMake>7500</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>1</Mass>
-			<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.42</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.64</ArmorRating_Heat>
-			<Insulation_Cold>3.8</Insulation_Cold>
-			<Insulation_Heat>1.8</Insulation_Heat>
+			<WorkToMake>5000</WorkToMake>
+			<MaxHitPoints>120</MaxHitPoints>
+			<MarketValue>120</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>60</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
 		<equippedStatOffsets>
 			<SocialImpact>0.1</SocialImpact>
-			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
 			<wornGraphicPath>Things/Commissar/Headgear/CommissarCap</wornGraphicPath>
@@ -906,19 +905,6 @@
 				<li>40kCommissarCap</li>
 			</tags>
 		</apparel>
-		
-		<modExtensions>
-			<!-- <li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
-			<!-- <apparelDrawSettings> -->
-			<!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
-			<!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
-			<!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
-			<!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
-			<!-- </apparelDrawSettings> -->
-			<!-- <isUnifiedApparel>true</isUnifiedApparel> -->
-			<!-- <hideHead>false</hideHead> -->
-			<!-- </li> -->
-		</modExtensions>
 	</ThingDef>
 	
 	<!-- Tanith 1st -->
