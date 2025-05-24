@@ -35,7 +35,7 @@
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>
         <statBases>
-            <WorkToMake>50000</WorkToMake>
+            <WorkToMake>46000</WorkToMake>
             <Mass>7</Mass>
             <AccuracyTouch>0.60</AccuracyTouch>
             <AccuracyShort>0.80</AccuracyShort>
