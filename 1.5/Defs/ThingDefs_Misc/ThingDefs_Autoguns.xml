@@ -499,7 +499,7 @@
         </costList>
         <recipeMaker>
             <skillRequirements>
-                <Crafting>5</Crafting>
+                <Crafting>6</Crafting>
             </skillRequirements>
             <displayPriority>430</displayPriority>
         </recipeMaker>
@@ -865,7 +865,7 @@
 	<!--===== Ripper gun =====-->
 	
 	<ThingDef ParentName="GW_AM_AutogunBase">
-        <defName>GW_AM_Gun_Rippergun</defName>
+        <defName>GW_HOI_Gun_Rippergun</defName>
         <label>Ripper Gun</label>
         <description>A heavy automatic shotgun used by Ogryns of the Astra Militarum. A rough-and-ready design that excels in close combat, this is about as complex as Ogryn weaponry can get. \n\nRipper guns are built solidly to withstand the rough handling of its unintelligent user. This includes being used as a club to bludgeon the nearest enemy to death.</description>
         <possessionCount>1</possessionCount>
@@ -882,17 +882,17 @@
             <li>GW_Rippergun</li>
         </weaponTags>
         <statBases>
-            <WorkToMake>13000</WorkToMake>
-            <Mass>8.4</Mass>
-            <AccuracyTouch>0.95</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
+            <WorkToMake>10000</WorkToMake>
+            <AccuracyTouch>0.70</AccuracyTouch>
+            <AccuracyShort>0.60</AccuracyShort>
             <AccuracyMedium>0.40</AccuracyMedium>
             <AccuracyLong>0.20</AccuracyLong>
-            <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
+            <MarketValue>450</MarketValue>
         </statBases>
         <costList>
-            <Steel>50</Steel>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <Steel>60</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
         </costList>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
@@ -902,17 +902,18 @@
             <displayPriority>430</displayPriority>
         </recipeMaker>
         <verbs>
-            <li>
-                <verbClass>Verb_Shoot</verbClass>
+            <li Class="Shotgunz.Verb_Properties_Shotgunz">
+                <verbClass>Shotgunz.Verb_Shoot_Shotgunz</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_AM_Bullet_Shotgungrim</defaultProjectile>
-                <warmupTime>0.9</warmupTime>
-                <range>16</range>
-				<burstShotCount>4</burstShotCount>
-                <soundCast>GW_AM_Gun_MilitarumShotgun</soundCast>
+                <defaultProjectile>GW_HOI_ShotgunPellet</defaultProjectile>
+                <warmupTime>0.8</warmupTime>
+                <range>12</range>
+                <burstShotCount>3</burstShotCount>
+                <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>9</muzzleFlashScale>
-            </li>
+                <muzzleFlashScale>10</muzzleFlashScale>
+                <pellets>5</pellets>
+      </li>
         </verbs>
         <tools>
             <li>
@@ -922,6 +923,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>barrel</label>
@@ -931,6 +933,7 @@
                 </capacities>
                 <power>9</power>
                 <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
     </ThingDef>
