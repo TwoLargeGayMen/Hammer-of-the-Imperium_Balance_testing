@@ -9,16 +9,10 @@
     </graphicData>
     <projectile>
       <damageDef>Bullet</damageDef>
-      <damageAmountBase>4</damageAmountBase>
+      <damageAmountBase>5</damageAmountBase>
       <armorPenetrationBase>0.12</armorPenetrationBase>
       <speed>65</speed>
       <stoppingPower>0.15</stoppingPower>
-	  <extraDamages>
-       <li>
-        <def>Blunt</def>
-        <amount>1</amount>
-       </li>
-      </extraDamages>
     </projectile>
   </ThingDef>
 </Defs>

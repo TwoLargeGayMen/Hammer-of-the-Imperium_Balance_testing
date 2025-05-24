@@ -15,22 +15,6 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseBullet">
-        <defName>GW_AM_Bullet_Shotgungrim</defName>
-        <label>shotgun blast</label>
-        <graphicData>
-            <texPath>Things/Projectile/Bullet_Shotgun</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <projectile>
-            <damageDef>Bullet</damageDef>
-            <damageAmountBase>25</damageAmountBase>
-            <stoppingPower>4</stoppingPower>
-            <armorPenetrationBase>0.14</armorPenetrationBase>
-            <speed>55</speed>
-        </projectile>
-    </ThingDef>
-
-    <ThingDef ParentName="BaseBullet">
         <defName>GW_AM_Bullet_Autopistolgrim</defName>
         <label>autopistol round</label>
         <graphicData>
