@@ -200,7 +200,7 @@
 	<!-- Cadian Commander -->
 
     <ThingDef ParentName="GW_AM_ArmorBase">
-        <defName>ODZ_40k_IG_Cadian_CommanderArmor</defName>
+        <defName>GW_HOI_CadianCommanderArmor</defName>
         <label>Cadian Commander armor</label>
         <description>WIP.</description>
         <recipeMaker>
@@ -237,8 +237,7 @@
         <apparel>
             <wornGraphicPath>Things/Cadian/CadianCommander/Middle/GW_HOI_CadianCommanderMiddle</wornGraphicPath>
             <tags>
-                <li>40kCadianGuard</li>
-                <li>40kCadianArmor</li>
+                <li>40kCadianOfficer</li>
             </tags>
         </apparel>
     </ThingDef>
