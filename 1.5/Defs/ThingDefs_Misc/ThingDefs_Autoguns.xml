@@ -882,6 +882,7 @@
             <li>GW_Rippergun</li>
         </weaponTags>
         <statBases>
+            <Mass>4.3</Mass>
             <WorkToMake>10000</WorkToMake>
             <AccuracyTouch>0.70</AccuracyTouch>
             <AccuracyShort>0.60</AccuracyShort>
