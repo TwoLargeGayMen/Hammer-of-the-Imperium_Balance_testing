@@ -82,23 +82,19 @@
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
-        <costStuffCount>30</costStuffCount>
+        <costStuffCount>80</costStuffCount>
 		<statBases>
-			<WorkToMake>3500</WorkToMake>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Mass>2</Mass>
+			<WorkToMake>16800</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>250</MarketValue>
+			<Mass>0.7</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.1</MoveSpeed>
-            <CarryingCapacity>15</CarryingCapacity>
-			<VEF_MassCarryCapacity>15</VEF_MassCarryCapacity>
+            <CarryingCapacity>20</CarryingCapacity>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
             <CarryBulk MayRequire="CETeam.CombatExtended">15</CarryBulk>
 		</equippedStatOffsets>
 		<apparel>
@@ -134,23 +130,19 @@
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
-        <costStuffCount>100</costStuffCount>
+        <costStuffCount>160</costStuffCount>
 		<statBases>
-			<WorkToMake>3500</WorkToMake>
-			<MaxHitPoints>500</MaxHitPoints>
+			<WorkToMake>36000</WorkToMake>
+			<MaxHitPoints>220</MaxHitPoints>
+			<MarketValue>450</MarketValue>
 			<Mass>2</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.4</MoveSpeed>
-            <CarryingCapacity>30</CarryingCapacity>
-			<VEF_MassCarryCapacity>30</VEF_MassCarryCapacity>
+			<MoveSpeed>-0.35</MoveSpeed>
+            <CarryingCapacity>40</CarryingCapacity>
+			<VEF_MassCarryCapacity>40</VEF_MassCarryCapacity>
             <CarryBulk MayRequire="CETeam.CombatExtended">30</CarryBulk>
 		</equippedStatOffsets>
 		<apparel>
@@ -186,29 +178,20 @@
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
-        <costStuffCount>60</costStuffCount>
+        <costStuffCount>150</costStuffCount>
 		<statBases>
-			<WorkToMake>3500</WorkToMake>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Mass>2</Mass>
+			<WorkToMake>25000</WorkToMake>
+			<MaxHitPoints>190</MaxHitPoints>
+			<Mass>1</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-            <CarryingCapacity>7</CarryingCapacity>
-			<VEF_MassCarryCapacity>7</VEF_MassCarryCapacity>
-            <CarryBulk MayRequire="CETeam.CombatExtended">7</CarryBulk>
-            <ConstructionSpeed>0.2</ConstructionSpeed>
-			<ConstructSuccessChance>0.1</ConstructSuccessChance>
+			<WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+            <CarryingCapacity>5</CarryingCapacity>
+			<VEF_MassCarryCapacity>5</VEF_MassCarryCapacity>
+            <CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
 		</equippedStatOffsets>
-		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
 		<apparel>
 			<wornGraphicPath>Things/Backpacks/Battleline_Backpack</wornGraphicPath>
 			<drawData>
@@ -243,24 +226,21 @@
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Mass>2</Mass>
+			<WorkToMake>20200</WorkToMake>
+			<MaxHitPoints>190</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<Mass>1.5</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MedicalTendSpeed>0.2</MedicalTendSpeed>
-            <MedicalTendQuality>0.1</MedicalTendQuality>
-            <MedicalOperationSpeed>0.2</MedicalOperationSpeed>
-            <MedicalSurgerySuccessChance>0.1</MedicalSurgerySuccessChance>
+			<MedicalTendSpeed>0.5</MedicalTendSpeed>
+            <MedicalTendQuality>0.3</MedicalTendQuality>
+            <!-- <MedicalOperationSpeed>0.2</MedicalOperationSpeed> -->
+            <MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
 		</equippedStatOffsets>
 		<costList>
+			<Cloth>150</Cloth>
 			<MedicineIndustrial>10</MedicineIndustrial>
 		</costList>
 		<apparel>
@@ -297,21 +277,17 @@
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
-			<WorkToMake>7000</WorkToMake>
-			<MaxHitPoints>500</MaxHitPoints>
-			<Mass>2</Mass>
+			<WorkToMake>44000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<MarketValue>660</MarketValue>
+			<Mass>1.7</Mass>
 			<Flammability>0.2</Flammability>
-			<ArmorRating_Sharp>0.45</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.35</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.4</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<costList>
-			<ComponentIndustrial>10</ComponentIndustrial>
-            <ComponentSpacer>3</ComponentSpacer>
-			<Cloth>10</Cloth>			
+			<!-- <ComponentIndustrial>10</ComponentIndustrial> -->
+            <ComponentSpacer>1</ComponentSpacer>
+			<Steel>200</Steel>			
 		</costList>
 		<costStuffCount Inherit="False" />
         <stuffCategories Inherit="False" />
