@@ -664,7 +664,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_Bullet_Bolter</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
                 <range>36</range>
 				<burstShotCount>4</burstShotCount>

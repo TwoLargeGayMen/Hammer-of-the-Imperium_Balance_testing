@@ -15,4 +15,23 @@
       <stoppingPower>0.15</stoppingPower>
     </projectile>
   </ThingDef>
+
+
+ <!-- 0.50 Cal-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_Bullet_Bolter</defName>
+    <label>bolter round</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Bolter_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>0.4</stoppingPower>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
 </Defs>
