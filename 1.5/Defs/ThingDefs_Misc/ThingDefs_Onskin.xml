@@ -221,13 +221,15 @@
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_TallarnDesertRaiders</researchPrerequisite>
 		</recipeMaker>
-		<costStuffCount>80</costStuffCount>
+		<costStuffCount>85</costStuffCount>
 		<statBases>
 			<MaxHitPoints>150</MaxHitPoints>
-			<WorkToMake>7000</WorkToMake>
-			<StuffEffectMultiplierArmor>0.25</StuffEffectMultiplierArmor>
+			<WorkToMake>8000</WorkToMake>
+			<MarketValue>150</MarketValue>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
 			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>1.2</StuffEffectMultiplierInsulation_Heat>
+			<StuffEffectMultiplierInsulation_Heat>0.9</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<apparel>
 			<wornGraphicPath>Things/Tallarn/OnSkin/DesertFatigues</wornGraphicPath>
@@ -250,13 +252,21 @@
         <graphicData>
             <texPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn_Male_south</texPath>
         </graphicData>
-        <costStuffCount>90</costStuffCount>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
+        </costList>	        
         <statBases>
-            <MaxHitPoints>180</MaxHitPoints>
-            <WorkToMake>6000</WorkToMake>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.50</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+            <WorkToMake>3500</WorkToMake>
+            <MaxHitPoints>450</MaxHitPoints>
+			<MarketValue>700</MarketValue>
+            <Mass>6</Mass>
+            <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.46</ArmorRating_Heat>
+            <Insulation_Cold>25.0</Insulation_Cold>
+			<Insulation_Heat>5.0</Insulation_Heat>
         </statBases>
         <apparel>
             <wornGraphicPath>Things/VostoyanFirstborn/OnSkin/VostoyanFirstborn</wornGraphicPath>

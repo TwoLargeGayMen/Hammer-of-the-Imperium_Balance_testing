@@ -288,22 +288,26 @@
 			<texPath>Things/Tallarn/Middle/DesertGear_Male_south</texPath>
 		</graphicData>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>175</MaxHitPoints>
-			<Mass>5</Mass>
-			<ArmorRating_Sharp>1.00</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.40</ArmorRating_Heat>
-			<Insulation_Cold>0.10</Insulation_Cold>
+			<WorkToMake>60000</WorkToMake>
+			<MaxHitPoints>550</MaxHitPoints>
+			<MarketValue>900</MarketValue>
+			<Mass>6</Mass>
+			<ArmorRating_Sharp>0.89</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.56</ArmorRating_Heat>
+			<Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>8</Insulation_Heat>
 			<EquipDelay>5</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<CarryingCapacity>30</CarryingCapacity>
-            <MoveSpeed>-0.02</MoveSpeed>
+			<SocialImpact>0.1</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="ludeon.rimworld.ideology">0.1</SlaveSuppressionOffset>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<PainShockThreshold>0.15</PainShockThreshold>
 		</equippedStatOffsets>
 		<costList>
-			<Cloth>50</Cloth>
-			<Steel>60</Steel>
+			<HP_Ceramite>20</HP_Ceramite>
+			<Steel>55</Steel>
 			<ComponentIndustrial>1</ComponentIndustrial>
 		</costList>
 		<apparel>
