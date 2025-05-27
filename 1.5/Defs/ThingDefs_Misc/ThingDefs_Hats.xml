@@ -148,11 +148,18 @@
 		<graphicData>
 			<texPath>Things/TempestusScions/Headgear/TempestusScionBeret_south</texPath>
 		</graphicData>
+		<costStuffCount>60</costStuffCount>
 		<statBases>
-			<WorkToMake>1500</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<WorkToMake>2500</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.7</SocialImpact>
+			<SocialImpact>0.15</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="ludeon.rimworld.ideology">0.1</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
@@ -247,14 +254,18 @@
 		<graphicData>
 			<texPath>Things/Mordian/Headgear/MordianHat_south</texPath>
 		</graphicData>
-		<costStuffCount>10</costStuffCount>
+		<costStuffCount>30</costStuffCount>
 		<statBases>
-			<WorkToMake>1000</WorkToMake>
-			<StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<WorkToMake>5500</WorkToMake>
+			<Mass>0.5</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>90</MarketValue>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.4</SocialImpact>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_Mordian</researchPrerequisite>
@@ -314,10 +325,15 @@
 		<graphicData>
 			<texPath>Things/Valhallan/Headgear/ushanka_south</texPath>
 		</graphicData>
+		<costStuffCount>55</costStuffCount>
 		<statBases>
-			<WorkToMake>1200</WorkToMake>
-			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<WorkToMake>9200</WorkToMake>
+			<MaxHitPoints>200</MaxHitPoints>
+			<MarketValue>90</MarketValue>
+			<Mass>0.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
@@ -341,13 +357,19 @@
 		<graphicData>
 			<texPath>Things/Valhallan/Headgear/officerushanka_south</texPath>
 		</graphicData>
+		<costStuffCount>50</costStuffCount>
 		<statBases>
-			<WorkToMake>1600</WorkToMake>
-			<StuffEffectMultiplierInsulation_Cold>0.35</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>230</MaxHitPoints>
+			<Mass>0.6</Mass>
+			<MarketValue>110</MarketValue>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>			
+			<StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
 		</statBases>
 		<equippedStatOffsets>
-			<SocialImpact>0.25</SocialImpact>
+			<SocialImpact>0.05</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="ludeon.rimworld.ideology"></SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_Valhallan</researchPrerequisite>
@@ -774,24 +796,24 @@
 			<texPath>Things/Priestgear/Priesthood</texPath>
 		</graphicData>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>5</Mass>
-			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.20</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>90</MarketValue>
+			<Mass>.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+			<!-- <MentalBreakThreshold>-0.2</MentalBreakThreshold> -->
 			<PainShockThreshold>-0.2</PainShockThreshold>
 		</equippedStatOffsets>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>55</costStuffCount>
 		<apparel>
 			<wornGraphicPath>Things/Priestgear/Priesthood</wornGraphicPath>
 			<tags>
@@ -828,24 +850,24 @@
 			<texPath>Things/Priestgear/PriesthoodDown_south</texPath>
 		</graphicData>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>5</Mass>
-			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.20</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>90</MarketValue>
+			<Mass>.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+			<!-- <MentalBreakThreshold>-0.2</MentalBreakThreshold> -->
 			<PainShockThreshold>-0.2</PainShockThreshold>
 		</equippedStatOffsets>
 		<stuffCategories>
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>55</costStuffCount>
 		<apparel>
 			<wornGraphicPath>Things/Priestgear/PriesthoodDown</wornGraphicPath>
 			<tags>
@@ -880,15 +902,15 @@
 		<stuffCategories>
 			<li>Fabric</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>40</costStuffCount>
 		<statBases>
-			<WorkToMake>5000</WorkToMake>
-			<MaxHitPoints>120</MaxHitPoints>
-			<MarketValue>120</MarketValue>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>50</MarketValue>
 			<Mass>0.5</Mass>
 			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<recipeMaker>
@@ -899,8 +921,8 @@
 			<li>Leathery</li>
 		</stuffCategories>
 		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SocialImpact>0.05</SocialImpact>
+			<!-- <MentalBreakThreshold>-0.05</MentalBreakThreshold> -->
 			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
@@ -928,22 +950,24 @@
             <texPath>Things/Tanith1st/Goggles_south</texPath>
 		</graphicData>
 		<statBases>
-			<WorkToMake>9000</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<Mass>5</Mass>
-			<ArmorRating_Sharp>0.4</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.2</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.1</ArmorRating_Heat>
-			<Insulation_Cold>0.1</Insulation_Cold>
+			<WorkToMake>5500</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>95</MarketValue>
+			<Mass>0.3</Mass>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.03</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.08</ArmorRating_Heat>
+			<!-- <Insulation_Cold>0.1</Insulation_Cold> -->
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<costList>
-            <Steel>200</Steel>
-            <Plasteel>40</Plasteel>
-            <ComponentIndustrial>2</ComponentIndustrial>
+            <Steel>50</Steel>
+            <!-- <Plasteel>40</Plasteel> -->
+            <ComponentIndustrial>1</ComponentIndustrial>
         </costList>
 		<equippedStatOffsets>
-			<AimingDelayFactor>-0.3</AimingDelayFactor>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<ShootingAccuracyPawn>2</ShootingAccuracyPawn>
 		</equippedStatOffsets>
 		<stuffCategories Inherit="False" />
 		<costStuffCount Inherit="False" />

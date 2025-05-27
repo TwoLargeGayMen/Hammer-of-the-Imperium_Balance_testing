@@ -57,25 +57,36 @@
             <texPath>Things/Commissar/Display/CommissarPlate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <costStuffCount>70</costStuffCount>
-        <stuffCategories>
-		<li>Metallic</li>
-        </stuffCategories>
+        <!-- <costStuffCount>70</costStuffCount> -->
+        <!-- <stuffCategories> -->
+		<!-- <li>Metallic</li> -->
+        <!-- </stuffCategories> -->
+		<costList>
+			<Steel>60</Steel>			
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<HP_Ceramite>25</HP_Ceramite>
+        </costList>	
         <thingCategories>
             <li>ApparelMisc</li>
         </thingCategories>
         <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToMake>10000</WorkToMake>
-            <Mass>1.5</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <MaxHitPoints>350</MaxHitPoints>
+            <WorkToMake>12000</WorkToMake>
+			<MarketValue>340</MarketValue>
+            <Mass>2.5</Mass>
+			<ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.50</ArmorRating_Heat>
+            <Insulation_Cold>15.0</Insulation_Cold>
+			<Insulation_Heat>5.0</Insulation_Heat>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.1</SocialImpact>
-			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+            <SocialImpact>0.05</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Things/Commissar/Middle/CommissarPlate</wornGraphicPath>

@@ -60,23 +60,26 @@
             <texPath>Things/TempestusScions/Middle/CarapaceArmor_Male_south</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>25000</WorkToMake>
-            <MaxHitPoints>250</MaxHitPoints>
-            <Mass>7</Mass>
-            <ArmorRating_Sharp>1.10</ArmorRating_Sharp>
+            <WorkToMake>70000</WorkToMake>
+            <MaxHitPoints>550</MaxHitPoints>
+            <Mass>9</Mass>
+            <ArmorRating_Sharp>1.01</ArmorRating_Sharp>
             <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.65</ArmorRating_Heat>
-            <Insulation_Cold>15.0</Insulation_Cold>
-			<Insulation_Heat>8.0</Insulation_Heat>
+            <ArmorRating_Heat>0.48</ArmorRating_Heat>
+            <Insulation_Cold>34.0</Insulation_Cold>
+			<Insulation_Heat>10.0</Insulation_Heat>
             <EquipDelay>6</EquipDelay>
         </statBases>
 		<equippedStatOffsets>
             <MoveSpeed>-0.1</MoveSpeed>
+			<PainShockThreshold>0.15</PainShockThreshold>
         </equippedStatOffsets>
         <costStuffCount>90</costStuffCount>		
         <costList>
-			<Steel>100</Steel>
-            <DevilstrandCloth>10</DevilstrandCloth>
+			<Steel>150</Steel>
+			<Plasteel>80</Plasteel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<HP_Ceramite>30</HP_Ceramite>
         </costList>	
         <apparel>
 			<bodyPartGroups>
@@ -373,20 +376,25 @@
             <texPath>Things/Valhallan/Middle/armor_Male_south</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>9000</WorkToMake>
-            <MaxHitPoints>250</MaxHitPoints>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.20</ArmorRating_Heat>
-            <Insulation_Cold>10</Insulation_Cold>
+            <WorkToMake>40500</WorkToMake>
+            <MaxHitPoints>310</MaxHitPoints>
+			<MarketValue>1000</MarketValue>
+            <Mass>5.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.34</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.33</ArmorRating_Heat>
+            <Insulation_Cold>6</Insulation_Cold>
+			<Insulation_Heat>9</Insulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MoveSpeed>-0.1</MoveSpeed>
+            <!-- <MoveSpeed>-0.1</MoveSpeed> -->
         </equippedStatOffsets>
         <costList>
             <Steel>100</Steel>
+			<Cloth>40</Cloth>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>10</HP_Ceramite>
         </costList>	
         <apparel>
             <wornGraphicPath>Things/Valhallan/Middle/armor</wornGraphicPath>
@@ -413,29 +421,29 @@
             <texPath>Things/Priestgear/Priest</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>9000</WorkToMake>
+            <WorkToMake>8500</WorkToMake>
             <MaxHitPoints>250</MaxHitPoints>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>1.0</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.36</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.20</ArmorRating_Heat>
-            <Insulation_Cold>10</Insulation_Cold>
+			<MarketValue>150</MarketValue>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <MentalBreakThreshold>-0.2</MentalBreakThreshold>
-            <PainShockThreshold>-0.2</PainShockThreshold>
+            <!-- <MentalBreakThreshold>-0.2</MentalBreakThreshold> -->
+            <PainShockThreshold>0.1</PainShockThreshold>
         </equippedStatOffsets>
-        <costList>
-            <Steel>240</Steel>
-            <ComponentIndustrial>7</ComponentIndustrial>
-        </costList>
+        <!-- <costList> -->
+            <!-- <Steel>240</Steel> -->
+            <!-- <ComponentIndustrial>7</ComponentIndustrial> -->
+        <!-- </costList> -->
 		<stuffCategories>
 			<!-- <li>Metallic</li> -->
 			<li>Fabric</li>
 			<li>Leathery</li>
 		</stuffCategories>
-		<costStuffCount>50</costStuffCount>
+		<costStuffCount>90</costStuffCount>
         <apparel>
             <wornGraphicPath>Things/Priestgear/Priest</wornGraphicPath>
             <tags>
@@ -488,6 +496,52 @@
             <tags>
                 <li>40kLucifer</li>
                 <li>40kLuciferArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+	<!-- Elysian -->
+	
+	 <ThingDef ParentName="GW_AM_ArmorBase">
+        <defName>GW_AM_Elysian_Armor</defName>
+        <label>Elysian armor</label>
+        <description>WIP.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>12</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/ElysianDrop/Armor/ElysianArmor_Display</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>52000</WorkToMake>
+            <MaxHitPoints>440</MaxHitPoints>
+            <Mass>3.5</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.5</ArmorRating_Heat>
+            <Insulation_Cold>32</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>0.1</MoveSpeed>
+			<PainShockThreshold>0.05</PainShockThreshold>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>75</Steel>
+            <ComponentIndustrial>3</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
+            <!-- <ComponentSpacer>1</ComponentSpacer> -->
+            <!-- <Plasteel>90</Plasteel> -->
+        </costList>
+        <apparel>
+            <wornGraphicPath>Things/ElysianDrop/Armor/ElysianArmor</wornGraphicPath>
+            <tags>
+                <li>40kElysian</li>
+                <li>40kElysianArmor</li>
             </tags>
         </apparel>
     </ThingDef>

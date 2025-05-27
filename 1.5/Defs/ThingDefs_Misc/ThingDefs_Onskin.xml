@@ -61,13 +61,14 @@
         <graphicData>
             <texPath>Things/TempestusScions/Onskin/TempestusScionFatigues_Male_south</texPath>
         </graphicData>
-        <costStuffCount>85</costStuffCount>
+        <costStuffCount>100</costStuffCount>
         <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <WorkToMake>4500</WorkToMake>
-            <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.48</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.15</StuffEffectMultiplierInsulation_Heat>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>30000</WorkToMake>
+			<Mass>1</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <apparel>
             <wornGraphicPath>Things/TempestusScions/Onskin/TempestusScionFatigues</wornGraphicPath>
@@ -121,12 +122,18 @@
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <statBases>
-            <MaxHitPoints>180</MaxHitPoints>
-            <WorkToMake>6000</WorkToMake>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+            <MaxHitPoints>220</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+			<Mass>1.5</Mass>
+			<MarketValue>150</MarketValue>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
         </statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.1</MentalBreakThreshold>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Things/Mordian/OnSkin/Mordian</wornGraphicPath>
             <tags>
@@ -304,13 +311,15 @@
         <graphicData>
             <texPath>Things/Valhallan/OnSkin/greatcoat_Male_south</texPath>
         </graphicData>
-        <costStuffCount>80</costStuffCount>
+        <costStuffCount>90</costStuffCount>
         <statBases>
-            <MaxHitPoints>120</MaxHitPoints>
-            <WorkToMake>4000</WorkToMake>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.50</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <WorkToMake>12000</WorkToMake>
+            <MaxHitPoints>300</MaxHitPoints>
+			<MarketValue>150</MarketValue>
+			<Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>1.8</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <apparel>
             <wornGraphicPath>Things/Valhallan/OnSkin/greatcoat</wornGraphicPath>
@@ -363,17 +372,19 @@
         <graphicData>
             <texPath>Things/Commissar/Display/CommissarUniform</texPath>
         </graphicData>
-        <costStuffCount>100</costStuffCount>
+        <costStuffCount>90</costStuffCount>
         <equippedStatOffsets>
-            <SocialImpact>0.1</SocialImpact>
-			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+            <SocialImpact>0.05</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
         </equippedStatOffsets>	
         <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <WorkToMake>5000</WorkToMake>
-            <StuffEffectMultiplierArmor>0.4</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.10</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+			<MarketValue>200</MarketValue>
+			<Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <apparel>
             <wornGraphicPath>Things/Commissar/Onskin/CommissarUniform</wornGraphicPath>
@@ -398,7 +409,7 @@
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
 		<tickerType>Normal</tickerType>
-        <costStuffCount>70</costStuffCount>
+        <costStuffCount>90</costStuffCount>
         <stuffCategories>
             <li>Fabric</li>
             <li>Leathery</li>
@@ -407,12 +418,13 @@
             <li>ApparelMisc</li>
         </thingCategories>
         <statBases>
-            <MaxHitPoints>200</MaxHitPoints>
-            <WorkToMake>10000</WorkToMake>
+            <MaxHitPoints>220</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+			<MarketValue>150</MarketValue>
             <Mass>1.5</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>1.0</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
