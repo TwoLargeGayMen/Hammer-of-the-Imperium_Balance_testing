@@ -305,7 +305,7 @@
                 <hasStandardCommand>true</hasStandardCommand>
                 <defaultProjectile>GW_HOI_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
-                <range>28</range>
+                <range>26</range>
 				<burstShotCount>1</burstShotCount>
                 <soundCast>GW_Bolt_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
