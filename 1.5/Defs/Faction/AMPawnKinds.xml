@@ -337,9 +337,9 @@
             <li>GW_HOI_CadianLasGun</li>
         </weaponTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
-            <li>ODZ_40k_IG_Cadian_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -350,9 +350,9 @@
             <li>40kCadianGuard</li>
         </apparelTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
-            <li>ODZ_40k_IG_Cadian_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -366,9 +366,9 @@
             <li>GW_HOI_CadianLasGun</li>
         </weaponTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
-            <li>ODZ_40k_IG_Cadian_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -384,9 +384,9 @@
             <li>GW_HOI_CadianGrenaeLauncer</li>
         </weaponTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
-            <li>ODZ_40k_IG_Cadian_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -397,9 +397,9 @@
             <li>40kCadianGuard</li>
         </apparelTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_FlakArmor</li>
-            <li>ODZ_40k_IG_Cadian_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -410,9 +410,9 @@
             <li>40kCadianGuard</li>
         </apparelTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
-            <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_CadianKasrkin_FlakArmor</li>
+            <li>GW_HOI_CadianKasrkin_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -423,9 +423,9 @@
             <li>40kCadianGuard</li>
         </apparelTags>
         <apparelRequired>
-            <li>ODZ_40k_IG_CadianKasrkin_FlakArmor</li>
-            <li>ODZ_40k_IG_CadianKasrkin_Helmet</li>
-            <li>ODZ_40k_IG_Cadian_Fatigues</li>
+            <li>GW_HOI_CadianKasrkin_FlakArmor</li>
+            <li>GW_HOI_CadianKasrkin_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
         </apparelRequired>
     </PawnKindDef>
 
@@ -439,9 +439,9 @@
         <trader>true</trader>
         <factionLeader>true</factionLeader>
         <apparelRequired>
-            <li>ODZ_40k_IG_Cadian_OfficerGorget</li>
+            <li>GW_HOI_Cadian_OfficerGorget</li>
             <li>GW_HOI_CadianCommanderArmor</li>
-            <li>ODZ_40k_IG_Cadian_CrusherCap</li>
+            <li>GW_HOI_Cadian_CrusherCap</li>
             <li>GW_HOI_CadianCommanderFatigues</li>
         </apparelRequired>
     </PawnKindDef>
@@ -459,92 +459,7 @@
             <li>GW_HOI_CommissarUniform</li>
         </apparelRequired>
     </PawnKindDef>
-
-        <!--Catachan-->
-    <PawnKindDef ParentName="GW_AM_RangedTier1">
-        <defName>GW_AM_Catachan_RangedTier1</defName>
-        <label>catachan conscript</label>
-        <apparelTags Inherit="False">
-            <li>40kCatachan</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>GW_AM_CatachanArmor</li>
-            <li>GW_AM_CatachanBandana</li>
-            <li>GW_AM_CatachanFatigues</li>
-            <li>GW_AM_CatachanOuter</li>
-        </apparelRequired>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="GW_AM_MeleeTier1">
-        <defName>GW_AM_Catachan_MeleeTier1</defName>
-        <label>catachan conscript</label>
-        <apparelTags Inherit="False">
-            <li>40kCatachan</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>GW_AM_CatachanArmor</li>
-            <li>GW_AM_CatachanBandana</li>
-            <li>GW_AM_CatachanFatigues</li>
-            <li>GW_AM_CatachanOuter</li>
-        </apparelRequired>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="GW_AM_RangedTier2">
-        <defName>GW_AM_Catachan_RangedTier2</defName>
-        <label>catachan trooper</label>
-        <apparelTags Inherit="False">
-            <li>40kCatachan</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>GW_AM_CatachanArmor</li>
-            <li>GW_AM_CatachanBandana</li>
-            <li>GW_AM_CatachanFatigues</li>
-            <li>GW_AM_CatachanOuter</li>
-        </apparelRequired>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="GW_AM_MeleeTier2">
-        <defName>GW_AM_Catachan_MeleeTier2</defName>
-        <label>catachan trooper</label>
-        <apparelTags Inherit="False">
-            <li>40kCatachan</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>GW_AM_CatachanArmor</li>
-            <li>GW_AM_CatachanBandana</li>
-            <li>GW_AM_CatachanFatigues</li>
-            <li>GW_AM_CatachanOuter</li>
-        </apparelRequired>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="GW_AM_RangedTier3">
-        <defName>GW_AM_Catachan_RangedTier3</defName>
-        <label>catachan sergeant</label>
-        <apparelTags Inherit="False">
-            <li>40kCatachan</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>GW_AM_CatachanArmor</li>
-            <li>GW_AM_CatachanBandana</li>
-            <li>GW_AM_CatachanFatigues</li>
-            <li>GW_AM_CatachanOuter</li>
-        </apparelRequired>
-    </PawnKindDef>
-
-    <PawnKindDef ParentName="GW_AM_MeleeTier3">
-        <defName>GW_AM_Catachan_MeleeTier3</defName>
-        <label>catachan sergeant</label>
-        <apparelTags Inherit="False">
-            <li>40kCatachan</li>
-        </apparelTags>
-        <apparelRequired>
-            <li>GW_AM_CatachanArmor</li>
-            <li>GW_AM_CatachanBandana</li>
-            <li>GW_AM_CatachanFatigues</li>
-            <li>GW_AM_CatachanOuter</li>
-        </apparelRequired>
-    </PawnKindDef>
-
+    
         <!--Steel Legion-->
     <PawnKindDef ParentName="GW_AM_RangedTier1">
         <defName>GW_AM_SteelLegion_RangedTier1</defName>

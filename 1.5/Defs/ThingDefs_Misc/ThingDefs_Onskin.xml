@@ -210,38 +210,6 @@
         </apparel>
     </ThingDef>
 
-            <!-- Catachan -->
-
-    <ThingDef ParentName="GW_AM_OnSkinBase">
-        <defName>GW_AM_CatachanFatigues</defName>
-        <label>Catachan fatigues</label>
-	<description>Lightweight and breathable fatigues, suitable for jungle warfare. Almost all Catachan Jungle Fighters cut away the sleeves, but rarely the trouser legs, as they protect against various leeches and other creatures that inhabit the jungle floor. \n\nThe Jungle Fighters feel right at home on the rimworld jungles - quite literally, as their home planet is a jungle-covered Death World. Many consider it to be quite relaxing, as the fauna and flora here are much less punishing than that of Catachan.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_Catachan</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Catachan/CatachanSkin/CatachanSkin_Male_south</texPath>
-        </graphicData>
-        <costStuffCount>70</costStuffCount>
-        <statBases>
-            <MaxHitPoints>180</MaxHitPoints>
-            <WorkToMake>6000</WorkToMake>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.25</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>1.50</StuffEffectMultiplierInsulation_Heat>
-        </statBases>
-        <equippedStatOffsets>
-            <MoveSpeed>0.1</MoveSpeed>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Catachan/CatachanSkin/CatachanSkin</wornGraphicPath>
-            <tags>
-                <li>40kCatachan</li>
-                <li>40kCatachanFatigues</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
             <!-- Tallarn Desert Raiders -->
     <ThingDef ParentName="GW_AM_OnSkinBase">
 	<defName>GW_AM_TDR_DesertFatigues</defName>
