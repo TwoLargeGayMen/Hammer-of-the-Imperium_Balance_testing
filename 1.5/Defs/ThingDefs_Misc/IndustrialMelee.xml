@@ -94,66 +94,6 @@
             </li>
         </tools>
     </ThingDef>
-  
-  <!-- ====================== Chain Shortsword ===================== -->
-
-    <ThingDef ParentName="GW_HOI_IndustrialSharpBase">
-        <defName>GW_HOI_MeleeChainshortsword</defName>
-        <label>Short chainsword</label>
-        <description>A shorter chainsword scaled for use by soldiers of the Astra Militarum. While somewhat weaker than their full-length counterparts, they make up for it with faster movement speed. \n\nThis design’s short length has earned it the favor of Navis Imperialis (Imperial Navy) voidsmen. Fighting in the tight confines of a voidship means that longer weapons can become unwieldy, potentially causing the user’s death.</description>
-        <graphicData>
-            <texPath>Weapons/Chain Shortsword</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>14000</WorkToMake>
-            <Mass>2.25</Mass>
-            <MarketValue>150</MarketValue>
-        </statBases>
-		<equippedStatOffsets>
-      <MoveSpeed>0.10</MoveSpeed>
-		</equippedStatOffsets>
-        <costList>
-            <Steel>45</Steel>
-            <Plasteel>5</Plasteel>
-            <ComponentIndustrial>3</ComponentIndustrial>
-        </costList>
-        <tools>
-            <li>
-                <label>handle</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>6</power>
-                <cooldownTime>1.3</cooldownTime>
-            </li>
-            <li>
-                <label>edge</label>
-                <capacities>
-                    <li>6</li>
-                </capacities>
-                <power>20</power>
-                <cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.15</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>Cut</def>
-                        <amount>2</amount>
-                        <chance>1</chance>
-                    </li>
-                    <li>
-                        <def>Cut</def>
-                        <amount>2</amount>
-                        <chance>1</chance>
-                    </li>
-                    <li>
-                        <def>Cut</def>
-                        <amount>2</amount>
-                        <chance>1</chance>
-                    </li>
-                </extraMeleeDamages>
-            </li>
-        </tools>
-    </ThingDef>
 	
 	<!-- ===== Combat Knife =====-->
 	
