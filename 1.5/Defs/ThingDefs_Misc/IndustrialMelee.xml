@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Abstract="true" Name="GW_AM_IndustrialSharpBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <ThingDef Abstract="true" Name="GW_HOI_IndustrialSharpBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
         <possessionCount>1</possessionCount>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -36,8 +36,8 @@
 
 <!-- ====================== Chainsword ===================== -->
 
-    <ThingDef ParentName="GW_AM_IndustrialSharpBase">
-        <defName>GW_AM_MeleeWeapon_Chainsword</defName>
+    <ThingDef ParentName="GW_HOI_IndustrialSharpBase">
+        <defName>GW_HOI_Melee_Chainsword</defName>
         <label>Militarum chainsword</label>
         <description>A one-handed chainsword fit for use by a baseline human. While it is smaller and thus less deadly than an Astartes chainsword, it can still rip through enemy flesh with horrifying efficiency. \n\nChainswords are sometimes granted to officers of the Astra Militarum, including some Commissars. Various mercenary outfits and particularly well-equipped gangers can also be found using them.</description>
         <graphicData>
@@ -97,8 +97,8 @@
   
   <!-- ====================== Chain Shortsword ===================== -->
 
-    <ThingDef ParentName="GW_AM_IndustrialSharpBase">
-        <defName>GW_AM_MeleeWeapon_Chainshortsword</defName>
+    <ThingDef ParentName="GW_HOI_IndustrialSharpBase">
+        <defName>GW_HOI_MeleeChainshortsword</defName>
         <label>Short chainsword</label>
         <description>A shorter chainsword scaled for use by soldiers of the Astra Militarum. While somewhat weaker than their full-length counterparts, they make up for it with faster movement speed. \n\nThis design’s short length has earned it the favor of Navis Imperialis (Imperial Navy) voidsmen. Fighting in the tight confines of a voidship means that longer weapons can become unwieldy, potentially causing the user’s death.</description>
         <graphicData>
@@ -157,8 +157,8 @@
 	
 	<!-- ===== Combat Knife =====-->
 	
-	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
-        <defName>GW_AM_MeleeWeapon_CombatKnife</defName>
+	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
+        <defName>GW_HOI_Melee_CombatKnife</defName>
         <label>Combat knife</label>
         <description>A simple fighting knife of Imperial design, suitable for a baseline human. Slight improvements have given it an edge over the typical knives found on rimworlds. \n\nDespite the power of the horrifying monstrosities that the Astra Militarum has been pitted against, knives like these have saved an uncountable number of Guardsmen from a gruesome death.</description>
         <graphicData>
@@ -206,8 +206,8 @@
     
 	<!-- ===== Eviscerator =====-->
 	
-	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
-        <defName>GW_AM_MeleeWeapon_Eviscerator</defName>
+	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
+        <defName>GW_HOI_Melee_Eviscerator</defName>
         <label>Eviscerator</label>
         <description>A towering two-handed chainsword. The teeth are imbued with a crude version of the disruption field of power weapons, allowing it to rend enemy flesh slightly easier. \n\nChainswords like these came to symbolize religious wrath in the Imperium. They are often seen in the hands of Sisters Repentia of the Adepta Sororitas (also known as the Sisters of Battle), and by Priests of the Astra Militarum. Other users include some Assault Marines, Chaos Space Marines of the World Eaters Legion, and high-ranking Kroot of the T’au Empire.</description>
         <graphicData>
@@ -268,8 +268,8 @@
         </tools>
     </ThingDef>
 	
-	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
-        <defName>GW_AM_MeleeWeapon_OmniAxe</defName>
+	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
+        <defName>GW_HOI_Melee_OmniAxe</defName>
         <label>Omnissiah axe</label>
         <description>A serrated power axe wielded by some tech-priests. It is somewhat slow to swing, but is able to cut through enemy armor and flesh to an impressive degree. \n\nThe axe is inscribed with sacred equations as an act of worship, for the Adeptus Mechanicus treats knowledge as a form of holy relic.</description>
         <graphicData>
@@ -336,5 +336,4 @@
 			</li>
 		</modExtensions>
     </ThingDef>
-	
 </Defs>

@@ -91,7 +91,7 @@
 
 <!-- ====================== Lasgun Bases  ===================== -->
 
-    <ThingDef Abstract="true" Name="GW_AM_LasgunBase" ParentName="BaseHumanMakeableGun">
+    <ThingDef Abstract="true" Name="GW_HOI_LasgunBase" ParentName="BaseHumanMakeableGun">
         <techLevel>Spacer</techLevel>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -120,7 +120,7 @@
 
 <!-- ====================== Kantrael MG  ===================== -->
 
-    <ThingDef ParentName="GW_AM_LasgunBase">
+    <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Kantrael</defName>
         <label>Kantrael MG</label>
         <description>The standard-issue lasgun of the Cadian Shock Troops, and widely copied by other Astra Militarum regiments. Lasguns fire a pulsed beam of laser light at the target, and are powered by rechargeable power packs. \n\nDuring one of the first deployments of Primaris Space Marines, one reckless Unnumbered Son decided to charge across open ground against a trench line of heretic Guardsmen. While their lasguns stood no chance of truly penetrating the Marine’s ceramite at first, each lasbolt dug a small pit in his armor. The Primaris Marine was essentially eroded to death in front of the Imperial battleline - a sobering sight for his peers, who now knew that even an Angel of Death can be cut down by mere mortals.</description>
@@ -190,8 +190,8 @@
   
   <!-- ====================== Kantrael MG-t ===================== -->
 
-    <ThingDef ParentName="GW_AM_LasgunBase">
-        <defName>GW_AM_Gun_Kantraelt</defName>
+    <ThingDef ParentName="GW_HOI_LasgunBase">
+        <defName>GW_HOI_Gun_Kantraelt</defName>
         <label>Kantrael MG-t</label>
         <description>A modified Kantrael MG lasgun, used in the hive city of Tertium. Well-suited to close-quarters battle, it has slightly boosted firepower, better handling, and increased accuracy up close, but suffers at longer distances.</description>
         <graphicData>
@@ -295,7 +295,7 @@
         </modExtensions>
     </ThingDef>
   
-    <ThingDef ParentName="GW_AM_LasgunBase">
+    <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Kantraeldefender</defName>
         <label>Kantrael MG Defender</label>
         <description>A laspistol used by NCOs and officers of the Astra Militarum, particularly the Cadian Shock Troops. While its smaller size results in a lasbolt of lower power, its compactness makes it a useful sidearm. \n\nLasguns are often derided as “flashlights” - sometimes even by their own users. However, a Chaos Space Marine once made a wise observation - he who scoffs at the power of a lasgun has not charged across a field of a hundred of them.</description>
@@ -408,7 +408,7 @@
         </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="GW_AM_LasgunBase">
+    <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Kantraeldefendert</defName>
         <label>Kantrael MG-t Defender</label>
         <description>A Tertium-modified Kantrael MG Defender laspistol. Accuracy at longer distances is slightly compromised, but it hits a little bit harder and is slightly more maneuverable than its standard counterpart. \n\nTertium is home to the Cult of Admonition, a Chaos cult that worships Nurgle, the god of disease, decay, and despair. As the hive city decayed around them and the corrupt nobles squabbled with each other for power and riches, it was inevitable that the oppressed citizenry turned to higher powers.</description>
@@ -522,7 +522,7 @@
         </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="GW_AM_LasgunBase">
+    <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Hellgun</defName>
         <label>Ryza hellgun</label>
         <description>Hellguns are a special type of high-powered lasgun, also known as a “hot-shot lasgun”. Instead of a standard power pack, hellguns feed from a backpack, allowing it to unleash a long burst of potent lasbolts. \n\nHellguns are generally seen only in the hands of elite Astra Militarum forces, such as the Tempestus Scions and the Cadian Kasrkin. Their superior penetration over normal lasguns gives hellguns a decent chance even against opponents wearing Power Armor.</description>
@@ -637,7 +637,7 @@
         </modExtensions>
     </ThingDef>
 
-    <ThingDef ParentName="GW_AM_LasgunBase">
+    <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Longlas</defName>
         <label>Longlas</label>
         <description>A variant of the lasgun built for long-range combat, formally known as the “Sniper Variant Lasgun”. Longlas power packs are more expensive than a standard power pack, but the lasbolts they power are far more potent. \n\nRatlings, an abhuman subspecies, are generally not employed often by the Astra Militarum due to their lower strength and hedonistic attitude. However, their short stature makes them excellent snipers and infiltrators. \n\nHowever, ratlings are also well-known as black marketeers. Many Guardsmen in need of extra rations, alcohol, and a few weapons that fell off the back of a truck have found luck in buying from a nearby ratling entrepreneur.</description>
