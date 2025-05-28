@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_AM_HelmetBase">
+    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_HOI_HelmetBase">
         <techLevel>Industrial</techLevel>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -85,8 +85,8 @@
 
     <!-- Cadian Helmet -->
 
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>ODZ_40k_IG_Cadian_Helmet</defName>
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_Cadian_Helmet</defName>
         <label>Cadian helmet</label>
         <description>A Cadian Shock Troops-style helmet, used to protect against shrapnel and weak autogun fire. The symbol on the front is usually a variation on the Imperial Aquila - a skull with wings, known as the “Imperialis”. \n\nThe Cadian Shock Troops are seen as an ideal across the Imperium. Such is their image that the generic Imperial Guardsman is, or is dressed similarly to, a Cadian Shock Trooper. Many regiments of the Astra Militarum copy their equipment, tactics, and livery.</description>
         <graphicData>
@@ -122,8 +122,8 @@
 
     <!-- Kasrkin Helmet -->
 
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>ODZ_40k_IG_CadianKasrkin_Helmet</defName>
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_CadianKasrkin_Helmet</defName>
         <label>Kasrkin helmet</label>
         <description>A Kasrkin helmet with an integrated gas mask. Stands up to anything short of a Hellgun. \n\nUnlike the Tempestus Scions, the Kasrkin are pulled from the best of the Cadian Shock Troopers, making them highly respected as a sort of “older brother” force. The fact that the rimworld fleet's Storm Troopers have adopted the same policy but retain exclusive rights to Schola Progenium graduates has only deepened the rivalry.</description>
         <graphicData>
@@ -167,174 +167,10 @@
         </apparel>
     </ThingDef>
 
-    <!-- Tempestus Scion Helmet -->
-
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>ODZ_40k_IM_TempestusScion_Helmet</defName>
-        <label>Tempestus Scion helmet</label>
-        <description>A Carapace Armor helmet worn by the Tempestus Scions. Just like the armor they wear, their helmets are more protective than their Guard equivalents. \n\nThe rivalry between the Tempestus Scions and the regular Astra Militarum is well-known, and continues even on this distant rimworld. The Guardsmen deride the Scions as “glory boys”, snapping up all of the best equipment and taking the glory for themselves as the regulars die in the mud. The Storm Troopers regard the regulars as lesser warriors - while most Guardsmen sign up at around 16 years of age, most of the Scions have trained from infancy under maximum pressure, and endure hardships to match.</description>
-        <graphicData>
-            <texPath>Things/TempestusScions/Headgear/TempestusScionHelmet_south</texPath>
-        </graphicData>
-        <costList>
-            <Steel>120</Steel>
-			<Plasteel>60</Plasteel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-			<HP_Ceramite>10</HP_Ceramite>
-        </costList>
-        <statBases>
-            <WorkToMake>50000</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
-            <Mass>1.5</Mass>
-            <ArmorRating_Sharp>0.96</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.48</ArmorRating_Heat>
-            <Insulation_Cold>5</Insulation_Cold>
-            <Insulation_Heat>3</Insulation_Heat>
-            <EquipDelay>2</EquipDelay>
-        </statBases>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/TempestusScions/Headgear/TempestusScionHelmet</wornGraphicPath>
-            <tags>
-                <li>EVA</li>
-                <li>40kTempestusScion</li>
-                <li>40kTempestusScionHelmet</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
-    <!-- Lucifer Black -->
-
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>GW_AM_LuciferBlackSkull</defName>
-        <label>Lucifer Black helmet (a)</label>
-        <description>A black helmet, modelled after a human skull, worn by Guardsmen of the Lucifer Blacks. It is of sturdy build and can withstand considerable punishment. \n\nThe Lucifer Blacks date back even beyond the Great Crusade, being formed during the Unification Wars.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/LuciferBlack/Helmet/Lucifer_Skull_south</texPath>
-        </graphicData>
-        <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Cloth>10</Cloth>
-            <Steel>70</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>2500</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-		<equippedStatOffsets>
-			<ToxicResistance>1</ToxicResistance>
-		</equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_Skull</wornGraphicPath>
-            <tags>
-                <li>40kLucifer</li>
-                <li>40kLuciferHelmet</li>
-            </tags>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-        </apparel>
-    </ThingDef>
-
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>GW_AM_LuciferBlackAlt</defName>
-        <label>Lucifer Black helmet (b)</label>
-        <description>A black helmet, modelled after a human skull, worn by Guardsmen of the Lucifer Blacks. It is of sturdy build and can withstand considerable punishment. \n\nThe Lucifer Blacks date back even beyond the Great Crusade, being formed during the Unification Wars.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/LuciferBlack/Helmet/Lucifer_AltHelmet_south</texPath>
-        </graphicData>
-        <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Cloth>10</Cloth>
-            <Steel>70</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>2500</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-			<Insulation_Cold>4</Insulation_Cold>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-		<equippedStatOffsets>
-			<ToxicResistance>1</ToxicResistance>
-		</equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_AltHelmet</wornGraphicPath>
-            <tags>
-                <li>40kLucifer</li>
-                <li>40kLuciferHelmet</li>
-            </tags>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-        </apparel>
-    </ThingDef>
-
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>GW_AM_LuciferBlackMask</defName>
-        <label>Lucifer Black mask</label>
-        <description>A skull-faced mask, typical of the Lucifer Blacks. As well as being greatly intimidating to the enemy, it provides decent protection to the wearer’s face. \n\nDuring the War of the Beast, the Imperial Fists’ Chapter Master, Koorland, announced that he would replace the ineffectual Udin Macht Udo as Lord Commander of the Imperium. Udo responded by ordering the Lucifer Blacks to disarm and capture Koorland and his retinue. Elite as they are, the Lucifer Blacks would have been no match for the Space Marines, and the unit refused to apprehend the heroes who had saved Terra from an Ork invasion.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/LuciferBlack/Helmet/Lucifer_SkullMask_south</texPath>
-        </graphicData>
-        <costList>
-            <ComponentIndustrial>2</ComponentIndustrial>
-            <Cloth>10</Cloth>
-            <Steel>70</Steel>
-        </costList>
-        <statBases>
-            <WorkToMake>2500</WorkToMake>
-            <Mass>1.2</Mass>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.60</ArmorRating_Heat>
-			<Insulation_Cold>3</Insulation_Cold>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-		<equippedStatOffsets>
-			<ToxicResistance>1</ToxicResistance>
-		</equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_SkullMask</wornGraphicPath>
-            <renderSkipFlags>
-                <li>None</li>
-            </renderSkipFlags>
-            <tags>
-                <li>40kLucifer</li>
-                <li>40kLuciferHelmet</li>
-            </tags>
-			<bodyPartGroups>
-				<li>FullHead</li>
-			</bodyPartGroups>
-        </apparel>
-    </ThingDef>
-
 	<!-- Engineer -->
 	
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>GW_AM_EngineseererHood</defName>
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_EngineseererHood</defName>
         <label>Enginseer hood</label>
         <description>A red hood adorned with the cog-patterns of the Adeptus Mechanicus. This hood is fit for an enginseer of the Imperial Guard. \n\nEnginseers are somewhat looked-down on in the hierarchy of the Adeptus Mechanicus, because they do not usually contribute to the holy quest for knowledge.</description>
         <techLevel>Industrial</techLevel>
@@ -373,8 +209,8 @@
         </apparel>
     </ThingDef>
 	
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>GW_AM_EngineseererMask</defName>
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_EngineseererMask</defName>
         <label>Enginseer mask</label>
         <description>A respirator worn by Imperial Enginseers. It protects very well against environmental toxins, as well as being resistant to enemy attack. \n\nMany Enginseers are members of the mighty Titan Legions, their every hour dedicated to repairing and maintaining those holy avatars of the Omnissiah.</description>
         <techLevel>Industrial</techLevel>
@@ -436,48 +272,4 @@
             </tags>
         </apparel>
     </ThingDef>
-	
-	<!-- Tanith -->
-	
-    <ThingDef ParentName="GW_AM_HelmetBase">
-        <defName>GW_AM_Tanith1stHood</defName>
-        <label>Tanith hood</label>
-        <description>A simple, green cloth hood of the Tanith First and Only. Vital for breaking up the silhouette of a marksman - to be detected at the wrong time is almost equal to death. \n\nTanith was a beautiful Forest World in the Sabbat Worlds, in the Segmentum Pacificus to the galactic west of Terra. \n\nEmphasis on “was”.</description>
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <texPath>Things/Tanith1st/Hood_south</texPath>
-        </graphicData>
-		<costStuffCount>30</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <statBases>
-			<MaxHitPoints>110</MaxHitPoints>
-			<MarketValue>75</MarketValue>
-            <WorkToMake>4500</WorkToMake>
-            <Mass>0.5</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>1.2</EquipDelay>
-        </statBases>
-		<equippedStatOffsets>
-			<HuntingStealth>0.2</HuntingStealth>			
-		</equippedStatOffsets>
-        <recipeMaker>
-            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
-        </recipeMaker>
-        <apparel>
-            <wornGraphicPath>Things/Tanith1st/Hood</wornGraphicPath>
-            <renderSkipFlags>
-                <li>None</li>
-            </renderSkipFlags>
-            <tags>
-                <li>40kTanith</li>
-                <li>40kTanithHood</li>
-            </tags>
-        </apparel>
-    </ThingDef>
-
 </Defs>

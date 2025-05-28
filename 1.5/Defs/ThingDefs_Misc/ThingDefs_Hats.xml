@@ -348,7 +348,7 @@
 	</ThingDef>
 	
 	<ThingDef ParentName="GW_HOI_Hat_CapBase">
-		<defName>GW_AM_PriestHoodDown</defName>
+		<defName>GW_HOI_PriestHoodDown</defName>
 		<label>Priest hood (down)</label>
 		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
 		<recipeMaker>

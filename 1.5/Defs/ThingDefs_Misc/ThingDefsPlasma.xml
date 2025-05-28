@@ -379,7 +379,7 @@
     </ThingDef>
 
     <ThingDef ParentName="BaseHumanMakeableGun">
-        <defName>GW_AM_InfernoPistol</defName>
+        <defName>GW_HOI_InfernoPistol</defName>
         <label>Mars Inferno pistol</label>
         <description>An Inferno gun scaled down to the size of mortal hands. Not suitable for Space Marine use, but a handy anti-armor weapon for adventurous Inquisitors or zealot Battle-Sisters. \n\nSuch weapons used to be too rare to be “wasted” on the Imperial Guard, but after the design was rediscovered, some examples began appearing in their ranks.</description>
         <techLevel>Spacer</techLevel>
