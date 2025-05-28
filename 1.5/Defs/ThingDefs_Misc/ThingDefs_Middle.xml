@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_AM_MiddleBase">
+    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_HOI_MiddleBase">
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -46,8 +46,8 @@
 	
 	<!-- Commissar Plate -->
 
-	<ThingDef ParentName="GW_AM_MiddleBase">
-        <defName>GW_AM_CommissarMiddle</defName>
+	<ThingDef ParentName="GW_HOI_MiddleBase">
+        <defName>GW_HOI_CommissarMiddle</defName>
         <label>commissar armor plate</label>
         <description>A breastplate designed to be worn in a Commissar’s uniform. It is decorated to fit in with the rest of the Commissar’s apparel. \n\nCommissars are not shy of battle - after all, it is they who set the example for their Guardsmen. If they are not supervising the local command staff, they are on the front lines, rending apart xenos and heretics alongside their troops.</description>
         <recipeMaker>

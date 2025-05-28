@@ -457,6 +457,7 @@
             <li>GW_HOI_CommissarOuter</li>
             <li>GW_HOI_CommissarCap</li>
             <li>GW_HOI_CommissarUniform</li>
+            <li>GW_HOI_CommissarMiddle</li>
         </apparelRequired>
     </PawnKindDef>
 

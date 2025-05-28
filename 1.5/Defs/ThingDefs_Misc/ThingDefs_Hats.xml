@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef Abstract="true" ParentName="HatMakeableBase" Name="GW_AM_HatBase">
+	<ThingDef Abstract="true" ParentName="HatMakeableBase" Name="GW_HOI_HatBase">
 		<techLevel>Industrial</techLevel>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -42,7 +42,7 @@
 
 	<!-- Caps/Berets -->
 
-	<ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_CapBase">
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_CapBase">
 		<costStuffCount>40</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -62,8 +62,8 @@
 
 	<!-- Cadian Fieldcap -->
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
-		<defName>ODZ_40k_IG_Cadian_Fieldcap</defName>
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_Cadian_Fieldcap</defName>
 		<label>Cadian fieldcap</label>
 		<description>An unarmored field cap worn by Guardsmen of the Cadian Shock Troops. \n\nThe Cadian Shock Troops did not die alongside their planet. Evacuating to several Imperial worlds according to the contingencies of Ursarkar E. Creed, they continue the fight against Chaos.</description>
 		<graphicData>
@@ -99,8 +99,8 @@
   
 	<!-- Cadian Crusher Cap -->
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
-		<defName>ODZ_40k_IG_Cadian_CrusherCap</defName>
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_Cadian_CrusherCap</defName>
 		<label>Cadian crusher cap</label>
 		<description>An officer’s cap, worn by high-ranking Cadian Shock Troopers. \n\nThe Astra Militarum forces here, like the rest of the stranded Imperial fleet, are in dire straits. Without Warp travel, the Guard’s strongest assets - their sheer weight in manpower - can no longer be counted upon.</description>
 		<graphicData>
@@ -141,8 +141,8 @@
 
 	<!-- Tempestus Scion Beret -->
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
-		<defName>ODZ_40k_IM_TempestusScion_Beret</defName>
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_TempestusScion_Beret</defName>
 		<label>Tempestus Scion beret</label>
 		<description>A red beret with a golden eagle insignia, a symbol of the Tempestus Scions. \n\nThe Scions are generally kept in orbit, running their own combat exercises to stay on their toes. They are at the disposal of the General commanding the Imperial Guard remnant, with a single squad of them being sufficient to wipe out a tribal village or an outlander town that significantly displeases them. \n\nFor the ultratech-level Shattered Empire, however, greater forces should be employed - or the General could ask the Adeptus Astartes for a favor.</description>
 		<graphicData>
@@ -178,7 +178,7 @@
 
 	<!-- Mordian Hat -->
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_MordianHat</defName>
 		<label>mordian hat</label>
 		<description>The standard peaked cap of the Mordian Iron Guard. This particular one bears an Imperialis on the front. \n\nIf one word is to describe the Mordian Iron Guard, it is “disciplined”. Whether on the parade ground or the battlefield, they serve with perfect precision. Many enemies have made the error of believing them to be merely ceremonial troops - a fatal error indeed.</description>
@@ -216,7 +216,7 @@
 
 	<!-- Valhallan Cap -->
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_Valhallan_GarrisonCap</defName>
 		<label>valhallan garrison cap</label>
 		<description>A garrison cap with a chin strap, worn by Valhallan Ice Warriors. No winter wind will disturb it from its place on the wearer’s head. \n\nThe greatest nemesis of the Valhallans are the Orks, for it was they who invaded the planet during a time of grave food shortages. The desperate struggle for food and shelter against the cold made the Ice Warriors into expert Ork-slayers.</description>
@@ -249,7 +249,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_Valhallan_Ushanka</defName>
 		<label>valhallan ushanka</label>
 		<description>A furred hat with earflaps, best worn in cold weather. Valhallan Ice Warriors typically eschew metal helmets, which chill easily and can stick painfully to skin. \n\nSome Valhallan Guardsmen have made tentative, but friendly contact with tribes and outlanders living in the colder regions. Although the Guardsmen are intimidating with their uniforms and (relatively) high-tech weaponry, the overall feeling is that the ice and snow makes an equal of them all.</description>
@@ -281,7 +281,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_Valhallan_OfficerUshanka</defName>
 		<label>Valhallan officer ushanka</label>
 		<description>A variant of the normal Valhallan ushanka. The untrained eye can distinguish little between them, but any Valhallan Guardsman knows an officer’s hat when they see one. \n\nThe Valhallan 597th Regiment has the honor of being the home unit of Commissar Ciaphas Cain - Hero of the Imperium - for many years. A fusion of two sundered regiments, there was at first much friction between the combined Guardsmen, even to the point of violence. \n\nThe Commissar, upon his arrival in the middle of a riot, forced them to integrate at the squad level and heavily incentivised teamwork in combat exercises. By the time of their first deployment on Gravalax, the 597th was completely combat-effective.</description>
@@ -321,7 +321,7 @@
 	</ThingDef>
 
 	<!-- Eyes -->
-	<ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_EyesBase">
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_EyesBase">
 		<generateCommonality>0.25</generateCommonality>
 		<statBases>
 			<MaxHitPoints>75</MaxHitPoints>
@@ -350,7 +350,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_AM_Hat_EyesBase">
+	<ThingDef ParentName="GW_HOI_Hat_EyesBase">
 		<defName>GW_AM_TDR_Goggles</defName>
 		<label>Tallarn desert goggles</label>
 		<description>Goggles unique to the Tallarn Desert Raiders. Provides much-needed protection for the eyes against sand - useful when operating under cover of a sandstorm. \n\nThe Guardsmen of Tallarn suffered greatly in the Warp disaster, with their Sentinel walkers ending up as little more than Chaos-tainted scrap metal. Nonetheless, they have transitioned fairly well into light infantry, and the deserts are mostly the same whatever planet they are on.</description>
@@ -379,7 +379,7 @@
 
 	<!-- Full Head -->
 
-	<ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_FullWrapBase">
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_FullWrapBase">
 		<costStuffCount>30</costStuffCount>
 		<stuffCategories>
 			<li>Fabric</li>
@@ -404,7 +404,7 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
+	<ThingDef ParentName="GW_HOI_Hat_FullWrapBase">
 		<defName>GW_AM_TDR_GogglesHeadwrap</defName>
 		<label>Tallarn goggled headwrap</label>
 		<description>A combination of a headwrap and goggles, perfect for fast-paced desert warfare. \n\nRecently, some Guardsmen of Tallarn have requested deployment not in the deserts, but in the forests of the rimworld. Much speculation has been made about this phenomenon - the leading theory is that it gives the Desert Raiders a glimpse into what Tallarn once was, before war had razed their whole planet into a wasteland.</description>
@@ -437,7 +437,7 @@
 		<colorGenerator Class="ColorGenerator_StandardApparel"/>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
+	<ThingDef ParentName="GW_HOI_Hat_FullWrapBase">
 		<defName>GW_AM_TDR_OfficerHeadwrap</defName>
 		<label>Tallarn officer headwrap</label>
 		<description>A headwrap and goggles combination, distinctly colored to show that the wearer is a Tallarnian officer. \n\nOn the planet of Tallarn, the people live in many tribes, each with their own alliances and enemies. A society of honor, vendettas are a grave matter and even the smallest slight must be avenged in equal measures.</description>
@@ -470,7 +470,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_AM_Hat_FullWrapBase">
+	<ThingDef ParentName="GW_HOI_Hat_FullWrapBase">
 		<defName>GW_AM_TDR_Headwrap</defName>
 		<label>Tallarn headwrap</label>
 		<description>A headwrap, or “shemagh”, worn by the Tallarn Desert Raiders. It provides no protection against enemy fire, but it is good to wear in hot weather, and the Desert Raiders prefer not to be shot in the first place. \n\nAfter the desolation of Tallarn, the planet could provide the Imperium nothing but manpower. The population lives both above and below ground, keeping in touch with the endless desert.</description>
@@ -504,7 +504,7 @@
 
 	<!-- Gas Masks -->
 
-	<ThingDef Abstract="true" ParentName="GW_AM_HatBase" Name="GW_AM_Hat_GasMaskBase">
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_GasMaskBase">
 		<costStuffCount>20</costStuffCount>
 		<costList>
 			<ComponentIndustrial>2</ComponentIndustrial>
@@ -544,7 +544,7 @@
 
 	<!-- Steel legion Gas Mask -->
   
-	<ThingDef ParentName="GW_AM_Hat_GasMaskBase">
+	<ThingDef ParentName="GW_HOI_Hat_GasMaskBase">
 		<defName>GW_AM_SL_GasMask</defName>
 		<label>Steel Legion gas mask</label>
 		<description>A gas mask perfect for the Armageddon Steel Legion. Filters out exhaust fumes as well as toxic gas. \n\nVehicle specialists without vehicles are a sad thing indeed. Out of all of the regiments, morale is worst in the Steel Legion, who have found themselves shoved into an awkward light infantry role. Were it not for the General's orders, they would likely have dissolved entirely and dispersed into the other regiments.</description>
@@ -580,7 +580,7 @@
 
 	<!-- Tempestus Scion Omni Mask -->
   
-	<ThingDef ParentName="GW_AM_Hat_GasMaskBase">
+	<ThingDef ParentName="GW_HOI_Hat_GasMaskBase">
 		<defName>ODZ_40k_IM_TempestusScion_Mask</defName>
 		<label>Scion Omni mask</label>
 		<description>A high-quality gas mask with ominously-glowing green lenses, worn only by the Tempestus Scions. It protects the user against the most dangerous of enemy chemical and biological attacks, allowing the Scion inside to operate at peak performance. \n\nThe Scions recruit from the Schola Progenia - special training academies for the orphans of dead Imperial officials. This continues even in the stranded fleet, with a Schola Progenium being run on board a voidship, but the Storm Troopers have also been recruiting the very best of the Imperial Guard as well.</description>
@@ -611,7 +611,7 @@
     
 	<!-- Vostroyan Firstborn Headgear -->
 
-	<ThingDef ParentName="GW_AM_HatBase">
+	<ThingDef ParentName="GW_HOI_HatBase">
 		<defName>GW_AM_VostoyanFirstbornHeadgear</defName>
 		<label>vostroyan firstborn headgear</label>
 		<description>A tall, bearskin (the style, not necessarily the actual material) hat worn by Guardsmen of the Vostroyan Firstborn. \n\nThe story goes that the planet of Vostroya failed to provide troops to the Imperium during the Horus Heresy, so the people of the planet have atoned ever since by sending their firstborn sons (and, recently, daughters) to the Imperial Guard without exception - hence the regiment’s name.</description>
@@ -659,7 +659,7 @@
 				
 	<!-- Priest Gear -->
 		
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_PriestHat</defName>
 		<label>Priest hat</label>
 		<description>A hat, akin to that of a 2nd Millennium bishop, that shows the wearer is a Ministorum Priest - a religious leader attached to the Astra Militarum. \n\nThe various priests of the Adeptus Ministorum - more commonly known as the Ecclesiarchy - preach the Imperial Cult to the Guardsmen, worshiping the Emperor as a god. Their teachings strengthen resolve and ensure faith, keeping the Guard a motivated fighting force.</description>
@@ -713,7 +713,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_PriestHood</defName>
 		<label>Priest hood</label>
 		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
@@ -767,7 +767,7 @@
 		</modExtensions>
 	</ThingDef>
 	
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_PriestHoodDown</defName>
 		<label>Priest hood (down)</label>
 		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
@@ -823,7 +823,7 @@
 	
 	<!-- Commissar Cap -->
   
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_HOI_CommissarCap</defName>
 		<label>Commissar cap</label>
 		<description>The black peaked cap of an Imperial Commissar. It is such a symbol of their status that Orks like to take them as battlefield trophies. \n\nThe Commissars in the Astra Militarum remnant are hard-pressed to keep order. The Guardsmen are spending too much time in contact with the local population for the Commissariat's liking, hearing too much about heretic and apostate ideoligions. Such insidious ideas as “democracy” and “freedom” must not take root in the Guard, lest disorder sweep through the ranks.</description>
@@ -867,7 +867,7 @@
 	
 	<!-- Tanith 1st -->
 	
-	<ThingDef ParentName="GW_AM_Hat_CapBase">
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
 		<defName>GW_AM_Tanith1stGoggle</defName>
 		<label>Tanith monocular</label>
 		<description>An aiming device worn by Tanith First and Only sharpshooters over one eye. It assists in aiming, allowing the user to take the shot faster. \n\nThe one thing that keeps the men of Tanith going is the Right of Settlement - an Imperial Guard tradition where a long-serving regiment is given ownership of a world they conquer or colonise. The commanding officer becomes the new Planetary Governor, and the troops are reclassified as the local Planetary Defense Force. \n\nOne day, they swear, they will have their new home - their New Tanith.</description>

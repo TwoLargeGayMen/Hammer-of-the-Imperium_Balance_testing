@@ -93,7 +93,7 @@
 	<!-- Engineer -->
 	
 	<ThingDef ParentName="GW_HOI_OuterBase">
-        <defName>GW_AM_Engineseerer</defName>
+        <defName>GW_HOI_Engineseerer</defName>
         <label>Enginseer robe</label>
         <description>A rugged robe of the Adeptus Mechanicus, fit for dirty battlefield work. This outfit is common for Enginseers. \n\nAn outside observer would be confused at the practices of Enginseers, as it more resembles an arcane religious ritual than an engineer fixing a piece of equipment. That is because it is - a great deal of Adeptus Mechanicus practices are about “placating the Machine Spirits”, with little solid understanding of what they are actually doing. \n\nHowever, despite how it looks, it all remains completely effective.</description>
         <recipeMaker>
@@ -157,107 +157,4 @@
 			<!-- </li> -->
 		</comps>
     </ThingDef>
-	
-	<!-- Tanith 1st -->
-	
-	<ThingDef ParentName="GW_HOI_OuterBase">
-        <defName>GW_AM_Tanith1stCloak</defName>
-        <label>Tanith cloak</label>
-        <description>A cloth cloak worn by Guardsmen of the Tanith First and Only. As well as helping the soldiers stay warm, it also breaks up their silhouettes, making them harder to detect. \n\nUnusually, their commanding officer is also a Commissar - the Colonel-Commissar Ibram Gaunt. He is a warrior almost without equal in the Astra Militarum, and his trust in his men is absolute, just as his men’s trust is of him.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Tanith1st/Cloak_Male_south</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <costStuffCount>30</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>190</MaxHitPoints>
-            <WorkToMake>10000</WorkToMake>
-            <Mass>1</Mass>
-            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-            <SocialImpact>0.1</SocialImpact>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Tanith1st/Cloak</wornGraphicPath>
-            <tags>
-                <li>40kTanith</li>
-                <li>40kTanithOuter</li>
-            </tags>
-			<bodyPartGroups>
-                <li>Torso</li>
-                <li>Neck</li>
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
-            </bodyPartGroups>
-        </apparel>
-        <tradeTags>
-            <li>HPOuter</li>
-        </tradeTags>
-		<comps />
-    </ThingDef>	
-	
-	<ThingDef ParentName="GW_HOI_OuterBase">
-        <defName>GW_AM_Tanith1stGhili</defName>
-        <label>Tanith ghillie suit</label>
-        <description>A ghillie suit, constructed from regional foliage and worn by snipers of the Tanith First and Only. Camouflage is vital for remaining undetected, allowing the sniper to wait for the perfect shot. \n\nOn the founding day of three Imperial Guard regiments of Tanith, a Chaos splinter fleet attacked, razing the entire planet and its people into ash. Only about 3,500 Guardsmen escaped the horror of that day, who were refounded as a single regiment - the Tanith First and Only.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Tanith1st/Ghili_Male_south</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <costStuffCount>55</costStuffCount>
-        <stuffCategories>
-            <li>Fabric</li>
-            <li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <WorkToMake>8000</WorkToMake>
-			<MarketValue>110</MarketValue>
-            <Mass>1.3</Mass>
-            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.9</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-			<HuntingStealth>0.3</HuntingStealth>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Tanith1st/Ghili</wornGraphicPath>
-			<layers>
-                <!-- <li>Middle</li> -->
-            </layers>
-            <tags>
-                <li>40kTanith</li>
-                <li>40kTanithOuter</li>
-            </tags>
-        </apparel>
-        <tradeTags>
-            <li>HPOuter</li>
-        </tradeTags>
-		<comps />
-    </ThingDef>
-	
-    
 </Defs>
