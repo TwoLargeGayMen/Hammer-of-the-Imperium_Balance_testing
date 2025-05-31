@@ -98,7 +98,7 @@
 			<HP_Ceramite>5</HP_Ceramite>
         </costList>
         <statBases>
-            <WorkToMake>30000</WorkToMake>
+            <WorkToMake>10000</WorkToMake>
 			<MarketValue>400</MarketValue>
 			<MaxHitPoints>280</MaxHitPoints>
             <Mass>2</Mass>

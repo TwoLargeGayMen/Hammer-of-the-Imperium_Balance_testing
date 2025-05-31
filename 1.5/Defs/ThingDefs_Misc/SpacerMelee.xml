@@ -16,6 +16,11 @@
             <li>SpacerMeleeDecent</li>
             <li>GW_AM_SpacerMelee</li>
         </weaponTags>
+        <costList>
+            <HP_Adamantium>20</HP_Adamantium>
+            <Plasteel>50</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
         <stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
@@ -24,37 +29,39 @@
             <li>GW_AM_SpacerMelee</li>
         </tradeTags>
         <statBases>
-            <WorkToMake>32000</WorkToMake>
-            <Mass>3</Mass>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>4.5</Mass>
+            <MarketValue>900</MarketValue>
         </statBases>
         <relicChance>2</relicChance>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <tools>
             <li>
-                <label>handle</label>
+                <label>fist</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>14</power>
-                <cooldownTime>1.6</cooldownTime>
+                <power>9</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
             </li>
             <li>
                 <label>point</label>
                 <capacities>
                     <li>Stab</li>
                 </capacities>
-                <power>30</power>
+                <power>29</power>
                 <cooldownTime>2</cooldownTime>
-				<armorPenetration>1.0</armorPenetration>
+				<armorPenetration>0.70</armorPenetration>
             </li>
             <li>
                 <label>edge</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>30</power>
+                <power>28</power>
                 <cooldownTime>2</cooldownTime>
-				<armorPenetration>1.0</armorPenetration>
+				<armorPenetration>0.70</armorPenetration>
             </li>
         </tools>
         <recipeMaker>
@@ -102,8 +109,9 @@
         <uiIconScale>1.2</uiIconScale>
         <techLevel>Spacer</techLevel>
         <statBases>
-            <WorkToMake>36000</WorkToMake>
+            <WorkToMake>30000</WorkToMake>
             <Mass>4</Mass>
+            <MarketValue>1000</MarketValue>
         </statBases>
         <equippedAngleOffset>-65</equippedAngleOffset>
         <recipeMaker>
@@ -116,13 +124,10 @@
             </recipeUsers>
             <displayPriority>400</displayPriority>
         </recipeMaker>
-        <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-        <costStuffCount>60</costStuffCount>
         <costList>
+            <HP_Adamantium>25</HP_Adamantium>
             <Plasteel>80</Plasteel>
-            <ComponentSpacer>1</ComponentSpacer>
+            <ComponentSpacer>2</ComponentSpacer>
         </costList>
         <weaponTags>
             <li>SpacerMeleeDecent</li>
@@ -137,20 +142,23 @@
             <li>Melee</li>
         </weaponClasses>
         <tools>
-            <li>
+           <li>
                 <label>fist</label>
-                <labelUsedInLogging>false</labelUsedInLogging>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>42</power>
+                <power>34</power>
                 <cooldownTime>3</cooldownTime>
-				<extraMeleeDamages>
-					<li>
-						<def>Bomb</def>
-						<amount>3</amount>
-					</li>
-				</extraMeleeDamages>
+                <armorPenetration>0.80</armorPenetration>
+            </li>
+            <li>
+                <label>gript</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.50</armorPenetration>
             </li>
         </tools>
     </ThingDef>
