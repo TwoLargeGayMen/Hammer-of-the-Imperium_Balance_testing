@@ -22,7 +22,7 @@
 	
 	<!--===== Base Launcher =====-->
 	
-	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_LauncherBase">
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_HOI_LauncherBase">
 		<graphicData>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -45,7 +45,7 @@
 	
 	<!--===== Missile Launcher =====-->
 	
-	<ThingDef ParentName="GW_AM_LauncherBase">
+	<ThingDef ParentName="GW_HOI_LauncherBase">
 		<defName>GW_HOI_Gun_MissileLauncher</defName>
 		<label>Militarum missile launcher</label>
 		<description>A single-shot, shoulder-fired guided missile launcher used by the Astra Militarum. A favorite of Heavy Weapons Teams, these launchers can sling a potent, high-speed missile far outside the range of hand grenades and grenade launchers.\n\nHeavy Weapons Teams aim to destroy what massive volleys of lasgun fire cannot. A direct hit from a krak missile will destroy even a Space Marine Terminator.</description>
@@ -146,7 +146,7 @@
 	
 	<!--===== Bolt pistol base =====-->
 	
-	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_BolterBase">
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_HOI_BolterBase">
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -167,7 +167,7 @@
 	
 	<!--===== Bolt Pistol =====-->
 	
-	<ThingDef ParentName="GW_AM_BolterBase">
+	<ThingDef ParentName="GW_HOI_BolterBase">
         <defName>GW_HOI_Gun_BoltPistol</defName>
         <label>Bolt Pistol (Guard)</label>
         <description>A semi-automatic pistol firing smaller, but still powerful bolts. A common sidearm of Space Marines, but human-scaled versions can be found in use by the Imperial Guard. \n\nThese pistols are also infamous as the weapons of Imperial Commissars - when executing a cowardly Guardsman, a bolt pistol produces a much bigger (and thus more impactful on morale) spray of blood and gore than a mere laspistol.</description>
@@ -252,7 +252,7 @@
 	
 	<!--===== Locke Bolter =====-->
 	
-	<ThingDef ParentName="GW_AM_BolterBase">
+	<ThingDef ParentName="GW_HOI_BolterBase">
         <defName>GW_HOI_Gun_Bolter</defName>
         <label>Locke bolter</label>
         <description>A scaled-down bolter of the Locke pattern. The weapon’s smaller size makes it suitable for use by baseline humans. While it is indeed powerful, its recoil and weight is high.\n\nThis pattern of bolter was common in the Koronus Expanse, seeing use by a wide variety of characters - Rogue Traders, pirates, Chaos cultists, and more.</description>
@@ -337,7 +337,7 @@
 	
 	<!--===== Flamer Base =====-->
 	
-	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="GW_AM_FlamerBase">
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="GW_HOI_FlamerBase">
 		<smeltable>false</smeltable>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0.5</generateCommonality>
@@ -347,7 +347,7 @@
 	
 	<!--===== Flamer =====-->
 	
-	<ThingDef ParentName="GW_AM_FlamerBase">
+	<ThingDef ParentName="GW_HOI_FlamerBase">
 		<defName>GW_HOI_Gun_Flamer</defName>
 		<label>Kantrael Flamer</label>
 		<description>WIP.</description>

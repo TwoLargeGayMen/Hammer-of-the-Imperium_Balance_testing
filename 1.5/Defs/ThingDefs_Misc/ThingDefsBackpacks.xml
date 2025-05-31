@@ -119,7 +119,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_HOI_BackpackBasee">
+	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_LargeBackpack</defName>
 		<label>large backpack</label>
 		<description>A larger backpack for Astra Militarum use. While it helps carry even more equipment than smaller backpacks do, it slows down the user due to its bulk. \n\nThe veteran Guardsman knows that on the battlefield, supplies from the Munitorum are irregular at best and nonexistent at worst. Going through the pockets of the dead during a lull in the fighting may turn the stomach of a rookie, but it can and has saved lives - many a salvaged plasma pistol has been the salvation of a wise Guardsman.</description>
@@ -167,7 +167,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_HOI_BackpackBasee">
+	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_BattlelineBackpack</defName>
 		<label>battleline backpack</label>
 		<description>A combat engineer’s pack, containing construction tools. It allows the wearer to build and repair objects faster. \n\nEvery soldier of the Death Korps of Krieg knows how to dig a good trench, but for stronger defenses, the Death Korps Engineers are ready and willing. They can quickly set up fighting positions of surprising strength, helping the Kriegsmen limit their casualties while maximizing the attrition of enemy forces.</description>
@@ -214,7 +214,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_HOI_BackpackBasee">
+	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_MedicalBackpack</defName>
 		<label>medicae backpack</label>
 		<description>An Imperial Guard backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nHuman resources are the one thing the Imperium of Man is never short of, but only a foolish commander would consider the supply infinite. While the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost to infection.</description>
@@ -265,7 +265,7 @@
 		</apparel>
 	</ThingDef>
 
-	<ThingDef ParentName="GW_HOI_BackpackBasee">
+	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_VoxBackpack</defName>
 		<label>vox backpack</label>
 		<description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster communicates with all nearby soldiers, increasing their mobility and shooting accuracy. \n\nVox-casters are vital to maintaining battlefield communication within Imperial Guard units. Without them, commanders would have no way of sending orders to their units, and enemy forces would quickly isolate and destroy them in piecemeal fashion.</description>
@@ -318,7 +318,7 @@
 		</apparel>
 	</ThingDef>
 	
-	<!-- <ThingDef ParentName="GW_HOI_BackpackBasee"> -->
+	<!-- <ThingDef ParentName="GW_HOI_BackpackBase"> -->
 	<!-- <defName>GW_AM_LuciferCape</defName> -->
 	<!-- <label>lucifer cape</label> -->
 	<!-- <description>People with this pack can call in an orbital strike once every 5 days.</description> -->
@@ -372,7 +372,7 @@
 	<!-- </apparel> -->
 	<!-- </ThingDef> -->
 	
-	<ThingDef ParentName="GW_HOI_BackpackBasee">
+	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_EngineseererBackpack</defName>
 		<label>Enginseer backpack</label>
 		<description>The backpack of an Imperial Guard Enginseer, complete with an additional arm (or “mechadendrite”) and a servo skull. Though the mechadendrite is wired into the central nervous system, it is strangely modified into a more “plug-and-play” format, allowing any user to wear it and benefit from increased work speed. \n\nEnginseers are low-ranking tech-priests that are assigned to repair equipment and vehicles, and are a common sight in the Imperial Guard and Imperial Navy. This includes field repairs - enginseers are no stranger to enemy contact and will fight hard for the Omnissiah.</description>
@@ -403,7 +403,7 @@
 		<costStuffCount Inherit="False"/>
 		<stuffCategories Inherit="False"/>
 		<costList>
-			<Steel>100</Steel>>			
+			<Steel>100</Steel>			
 			<ComponentIndustrial>5</ComponentIndustrial>
 			<HP_Ceramite>10</HP_Ceramite>
 		</costList>

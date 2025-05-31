@@ -410,9 +410,6 @@
 		<graphicData>
 			<texPath>Things/Commissar/Display/CommissarCap</texPath>
 		</graphicData>
-		<stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
 		<costStuffCount>40</costStuffCount>
 		<statBases>
 			<WorkToMake>2500</WorkToMake>

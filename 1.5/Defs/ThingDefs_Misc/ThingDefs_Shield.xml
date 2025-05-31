@@ -41,7 +41,6 @@
             <ArmorRating_Heat>0.35</ArmorRating_Heat>
             <!-- <Insulation_Cold>6</Insulation_Cold> -->
 			<!-- <Insulation_Heat>9</Insulation_Heat> -->
-			<Mass>7</Mass>
 			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">5</WornBulk>
 		</statBases>

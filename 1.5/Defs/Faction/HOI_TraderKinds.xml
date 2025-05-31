@@ -3,7 +3,7 @@
     <TraderKindDef>
         <defName>GW_HOI_Trader</defName>
         <label>militarum trader</label>
-        <faction>GW_AM_AstraMilitarum</faction>
+        <faction>GW_HOI_AstraMilitarum</faction>
         <stockGenerators>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Silver</thingDef>
@@ -144,7 +144,7 @@
         <defName>GW_HOI_Trader_Caravan</defName>
         <label>militarum trader</label>
         <commonality>1</commonality>
-        <faction>GW_AM_AstraMilitarum</faction>
+        <faction>GW_HOI_AstraMilitarum</faction>
         <stockGenerators>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Silver</thingDef>

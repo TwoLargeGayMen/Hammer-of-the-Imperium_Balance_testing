@@ -3,7 +3,7 @@
             <!-- Pawn Bases -->
     <PawnKindDef Name="GW_HOI_PawnBase" Abstract="True">
         <race>Human</race>
-        <defaultFactionType>GW_AM_AstraMilitarum</defaultFactionType>
+        <defaultFactionType>GW_HOI_AstraMilitarum</defaultFactionType>
         <invNutrition>2.55</invNutrition>
         <chemicalAddictionChance>0</chemicalAddictionChance>
         <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
@@ -328,7 +328,7 @@
 
         <!--Cadian-->
     <PawnKindDef ParentName="GW_HOI_RangedTier1">
-        <defName>GW_AM_Cadian_RangedTier1</defName>
+        <defName>GW_HOI_Cadian_RangedTier1</defName>
         <label>cadian conscript</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
@@ -344,7 +344,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="GW_HOI_MeleeTier1">
-        <defName>GW_AM_Cadian_MeleeTier1</defName>
+        <defName>GW_HOI_Cadian_MeleeTier1</defName>
         <label>cadian conscript</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
@@ -357,7 +357,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="GW_HOI_RangedTier2">
-        <defName>GW_AM_Cadian_RangedTier2</defName>
+        <defName>GW_HOI_Cadian_RangedTier2</defName>
         <label>cadian trooper</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
@@ -391,7 +391,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="GW_HOI_MeleeTier2">
-        <defName>GW_AM_Cadian_MeleeTier2</defName>
+        <defName>GW_HOI_Cadian_MeleeTier2</defName>
         <label>cadian trooper</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
@@ -404,7 +404,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="GW_HOI_RangedTier3">
-        <defName>GW_AM_Cadian_RangedTier3</defName>
+        <defName>GW_HOI_Cadian_RangedTier3</defName>
         <label>Kasrkin Trooper</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
@@ -417,7 +417,7 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="GW_HOI_MeleeTier3">
-        <defName>GW_AM_Cadian_MeleeTier3</defName>
+        <defName>GW_HOI_Cadian_MeleeTier3</defName>
         <label>Kasrkin Trooper</label>
         <apparelTags Inherit="False">
             <li>40kCadianGuard</li>
@@ -462,8 +462,8 @@
     </PawnKindDef>
 
         <!--Leader-->
-    <PawnKindDef ParentName="GW_AM_PawnBase">
-        <defName>GW_AM_LordGeneral</defName>
+    <PawnKindDef ParentName="GW_HOI_PawnBase">
+        <defName>GW_HOI_LordGeneral</defName>
         <label>lord general</label>
         <labelPlural>lord generals</labelPlural>
         <combatPower>180</combatPower>
