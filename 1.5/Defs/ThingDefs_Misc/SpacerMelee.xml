@@ -75,10 +75,6 @@
             <displayPriority>400</displayPriority>
         </recipeMaker>
         <costStuffCount>60</costStuffCount>
-	    <costList>
-            <Plasteel>60</Plasteel>
-            <ComponentSpacer>2</ComponentSpacer>
-        </costList>
     </ThingDef>
   
   <!-- ====================== Power Sword ===================== -->
