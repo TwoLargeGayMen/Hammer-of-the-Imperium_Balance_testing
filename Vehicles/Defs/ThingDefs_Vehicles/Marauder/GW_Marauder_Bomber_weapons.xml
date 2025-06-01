@@ -6,7 +6,7 @@
 	
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_Marauder_Bomber_Las</defName>
-		<label>lasgun</label>
+		<label>lascannon</label>
 		<description>The Lascannon, a devastating energy weapon, is mounted on a formidable vehicle in the war-ridden GrimWorld 40,000. With a sleek design and ominous presence, this armament is affixed to the vehicle's battle-hardened chassis, embodying precision and destructive power against heavily armored foes. Bearing the Imperial Aquila, it symbolizes the unwavering might of the Imperium in the relentless struggle against darkness.</description>
 		
 		<turretType>Rotatable</turretType>
@@ -62,7 +62,7 @@
 
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 			<defName>GW_Marauder_Bolter</defName>
-			<label>Heavy Bolter Turret</label>
+			<label>heavy bolter turret</label>
 			<description>The Heavy Bolter, a formidable weapon in the Warhammer 40,000 universe, is often mounted on vehicles to enhance their firepower. This versatile weapon, characterized by its rapid and powerful firepower, serves as a potent anti-infantry and suppressive tool on the battlefield. When mounted on a vehicle, it becomes a symbol of mobile and devastating firepower, capable of mowing down enemy infantry and providing valuable support in diverse combat scenarios.</description>
 			<turretType>Rotatable</turretType>
 
@@ -133,7 +133,7 @@
 
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 			<defName>GW_Marauder_Assault</defName>
-			<label>Assault Cannon Turret</label>
+			<label>assault cannon turret</label>
 			<description>Mo Dakka, WIP</description>
 			<turretType>Rotatable</turretType>
 
@@ -204,7 +204,7 @@
 
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 			<defName>GW_Marauder_NoseAutoCannons</defName>
-			<label>3x Fixed Twin-linked Autocannons</label>
+			<label>twin-linked autocannons</label>
 			<description>Mo Dakka, WIP</description>
 			<turretType>Static</turretType>
 
