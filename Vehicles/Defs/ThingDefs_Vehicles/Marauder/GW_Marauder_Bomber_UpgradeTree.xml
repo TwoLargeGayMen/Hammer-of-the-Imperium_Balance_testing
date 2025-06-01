@@ -7,7 +7,7 @@
 			<li>
 				<key>GW_Marauder_NoseBolterTurretUpgrade</key>
 				<label>Nose Heavy Bolters</label>
-				<description>WIP</description>
+				<description>Adds an additional heavy bolter to the nose of the Marauder, providing additional anti-infantry firepower. It must be manned by a nose gunner to function.</description>
 				<icon>Things/Vehicles/Marauder/marauderHBT</icon>
 				<work>7500</work>
 				<gridCoordinate>(5, 5)</gridCoordinate>
@@ -60,7 +60,7 @@
 			<li>
 				<key>GW_Marauder_NoseLasTurretUpgrade</key>
 				<label>Nose Lascannons</label>
-				<description>WIP</description>
+				<description>Adds lascannons to the nose of the Marauder, allowing it to crack open heavy infantry more easily. It must be manned by a nose gunner to function.</description>
 				<icon>Things/Vehicles/Marauder/marauderlasyT</icon>
 				<work>7500</work>
 				<gridCoordinate>(10, 5)</gridCoordinate>
@@ -113,7 +113,7 @@
 			<li>
 				<key>GW_Marauder_DorsalBolterTurretUpgrade</key>
 				<label>Dorsal Bolters</label>
-				<description>WIP</description>
+				<description>Adds additional bolters to the sides of the Marauder, allowing for even more deadly strafes on a flyby.</description>
 				<icon>Things/Vehicles/Marauder/marauderHBT</icon>
 				<work>7500</work>
 				<gridCoordinate>(5, 10)</gridCoordinate>
@@ -148,7 +148,7 @@
 		    <li>
 				<key>GW_Marauder_TailBolterTurretUpgrade</key>
 				<label>Tail Bolters</label>
-				<description>WIP</description>
+				<description>Adds a set of heavy bolters to the tail of the Marauder, providing reliable anti-infantry firepower. It must be manned by a tail gunner to function.</description>
 				<icon>Things/Vehicles/Marauder/marauderHBT</icon>
 				<work>7500</work>
 				<gridCoordinate>(5, 15)</gridCoordinate>
@@ -186,7 +186,7 @@
 		    <li>
 				<key>GW_Marauder_TailAsssaultTurretUpgrade</key>
 				<label>Tail Assault Cannons</label>
-				<description>WIP</description>
+				<description>Adds assault cannons to the rear of the Marauder, covering its back against any hostile forces. It must be manned by a tail gunner to function.</description>
 				<icon>Things/Vehicles/Marauder/MarauderAssaultCannons</icon>
 				<work>7500</work>
 				<gridCoordinate>(10, 15)</gridCoordinate>
@@ -224,7 +224,7 @@
 			<li>
 				<key>GW_Marauder_NoseAutoCannonUpgrade</key>
 				<label>Fixed Forward Autocannons</label>
-				<description>3x Twin-linked Autocannons fixed forward</description>
+				<description>Adds three fixed autocannons to the front of the Marauder, allowing it to fire high-explosive rounds at enemies in front of it.</description>
 				<icon>Things/Vehicles/Marauder/MarauderFrontCannons</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 5)</gridCoordinate>
