@@ -224,7 +224,7 @@
 			<li>
 				<key>GW_Marauder_NoseAutoCannonUpgrade</key>
 				<label>Fixed Forward Autocannons</label>
-				<description>Adds three fixed autocannons to the front of the Marauder, allowing it to fire high-explosive rounds at enemies in front of it.</description>
+				<description>Adds three fixed twin-linked autocannons to the front of the Marauder, allowing it to fire high-explosive rounds at enemies in front of it.</description>
 				<icon>Things/Vehicles/Marauder/MarauderFrontCannons</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 5)</gridCoordinate>
