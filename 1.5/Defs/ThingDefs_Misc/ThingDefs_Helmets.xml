@@ -272,4 +272,53 @@
             </tags>
         </apparel>
     </ThingDef>
+	
+	<!-- Cadian Psyker Helmet -->
+
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_CadianPsyker_Helmet</defName>
+        <label>Cadian psyker helmet</label>
+        <description>WIP.</description>
+        <graphicData>
+            <texPath>Things/Cadian/CadianPsyker/CadianPsykerHelmet/GW_HOI_CadianPsykerHelmet</texPath>
+        </graphicData>
+        <costList>
+            <Steel>35</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>10</HP_Ceramite>
+            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
+        </costList>
+        <statBases>
+            <WorkToMake>32000</WorkToMake>
+            <MaxHitPoints>300</MaxHitPoints>
+			<MarketValue>450</MarketValue>
+            <Mass>3</Mass>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.34</ArmorRating_Heat>
+            <Insulation_Cold>0.5</Insulation_Cold>
+            <!-- <Insulation_Heat>0</Insulation_Heat> -->
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<PsychicEntropyMax MayRequire="ludeon.rimworld.royalty">4</PsychicEntropyMax>
+			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royalty">0.15</PsychicSensitivityOffset>
+			<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.1</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <!-- <immuneToToxGasExposure>true</immuneToToxGasExposure> -->
+            <wornGraphicPath>Things/Cadian/CadianPsyker/CadianPsykerHelmet/GW_HOI_CadianPsykerHelmet</wornGraphicPath>
+            <bodyPartGroups Inherit="False">
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <tags>
+                <li>40kCadianPsyker</li>
+                <li>40kCadianPsykerHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
 </Defs>
