@@ -134,14 +134,15 @@
             <armorPenetrationBase>0.70</armorPenetrationBase>
             <stoppingPower>2.0</stoppingPower>
             <speed>50</speed>
-            <explosionRadius>1.1</explosionRadius>
+            <explosionRadius>0.5</explosionRadius>
+            <explosionEffect>GW_PlasmaEffecter</explosionEffect>
         </projectile>
         <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <modExtensions>
             <li Class="taranchuk_lasers.LaserProperties">
                 <damageTickRate>9</damageTickRate>
                 <lifetimeTicks>40</lifetimeTicks>
-                <beamWidth>2</beamWidth>
+                <beamWidth>1.5</beamWidth>
                 <beamWidthDrawScale>1</beamWidthDrawScale>
                 <sweepRatePerTick>0</sweepRatePerTick>
                 <maxSweepAngle>0</maxSweepAngle>
