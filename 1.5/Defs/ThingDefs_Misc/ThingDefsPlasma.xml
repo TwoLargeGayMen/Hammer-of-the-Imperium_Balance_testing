@@ -135,7 +135,7 @@
             <stoppingPower>2.0</stoppingPower>
             <speed>50</speed>
             <explosionRadius>0.5</explosionRadius>
-            <explosionEffect>GW_PlasmaEffecter</explosionEffect>
+            <explosionEffect>GW_MeltaEffecter</explosionEffect>
         </projectile>
         <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <modExtensions>
