@@ -134,8 +134,6 @@
             <armorPenetrationBase>0.70</armorPenetrationBase>
             <stoppingPower>2.0</stoppingPower>
             <speed>50</speed>
-            <explosionRadius>0.5</explosionRadius>
-            <explosionEffect>GW_MeltaEffecter</explosionEffect>
         </projectile>
         <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <modExtensions>
@@ -150,6 +148,7 @@
                 <debugCells>false</debugCells>
                 <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
+                <endEffecterDef>GW_MeltaEffecter</endEffecterDef> 
             </li>
         </modExtensions>
     </ThingDef>
