@@ -27,7 +27,7 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<tags>
-				<li>RoyalTier2</li>
+				<li>GW_HOI_Armor</li>
 			</tags>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<bodyPartGroups>
