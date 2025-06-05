@@ -584,8 +584,8 @@
     <!-- Earthshaker Artillery -->
       <ThingDef ParentName="BaseArtilleryBuilding">
     <defName>GW_HOI_Turret_Earthshaker</defName>
-    <label>earthshaker</label>
-    <description>Earthshaker, WIP.</description>
+    <label>Earthshaker cannon</label>
+    <description>An emplaced Earthshaker cannon, the standard artillery gun of the Astra Militarum. It fires powerful 132mm rounds, pounding targets to dust at long range. Though it is not the most accurate artillery in the galaxy, it makes up for it with its large blast radius and its simplicity, allowing it to be deployed in large numbers by the Guard. Though the typical round is high-explosive, other rounds can be used, such as smoke, incendiary, and even diamantine-tipped armor-piercing rounds for the heaviest of targets. \n\nThese guns are typically mounted on a dedicated vehicle chassis, forming the Basilisk self-propelled artillery piece. Other notable artillery pieces includes the Manticore missile tank, the Griffon heavy mortar carrier, and the Deathstrike tactical ballistic missile launcher - the latter of which can fire payloads powerful enough to obliterate entire armored companies.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Emplacement/GW_Earthshaker_Base</texPath>
@@ -654,8 +654,8 @@
 
   <ThingDef ParentName="BaseArtilleryWeapon">
     <defName>GW_HOI_Artillery_Earthshaker</defName>
-    <label>earthshaker</label>
-    <description>Earthshaker, WIP.</description>
+    <label>Earthshaker</label>
+    <description>An emplaced Earthshaker cannon, the standard artillery gun of the Astra Militarum. It fires powerful 132mm rounds, pounding targets to dust at long range. Though it is not the most accurate artillery in the galaxy, it makes up for it with its large blast radius and its simplicity, allowing it to be deployed in large numbers by the Guard. Though the typical round is high-explosive, other rounds can be used, such as smoke, incendiary, and even diamantine-tipped armor-piercing rounds for the heaviest of targets. \n\nThese guns are typically mounted on a dedicated vehicle chassis, forming the Basilisk self-propelled artillery piece. Other notable artillery pieces includes the Manticore missile tank, the Griffon heavy mortar carrier, and the Deathstrike tactical ballistic missile launcher - the latter of which can fire payloads powerful enough to obliterate entire armored companies.</description>
     <recoilPower>5</recoilPower>
 	<recoilRelaxation>5</recoilRelaxation>
     <graphicData>
