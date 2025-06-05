@@ -212,7 +212,7 @@
 			<EquipDelay>1.2</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>

@@ -65,6 +65,9 @@
             <Insulation_Cold>0.5</Insulation_Cold>
             <Insulation_Heat>0</Insulation_Heat>
         </statBases>
+        <equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
             <countsAsClothingForNudity>true</countsAsClothingForNudity>
