@@ -45,7 +45,7 @@
   <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_HighExplosive</defName>
     <label>132mm high-explosive shell</label>
-    <description>A 132mm high-explosive shell for the Earthshaker cannon, complete with a time fuze and fragmentation case. The most common round used by the Earthshaker by the Astra Militarum, suitable for blasting apart infantry, vehicles, and fortifications alike.</description>
+    <description>A 132mm high-explosive shell for the Earthshaker cannon, complete with a time fuze and fragmentation case. The most common round used in the Earthshaker by the Astra Militarum, suitable for blasting apart infantry, vehicles, and fortifications alike.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/HE</texPath>
