@@ -45,7 +45,7 @@
   <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_HighExplosive</defName>
     <label>132mm high-explosive shell</label>
-    <description>132mm, Earthshaker. big boom. WIP</description>
+    <description>A 132mm high-explosive shell for the Earthshaker cannon, complete with a time fuze and fragmentation case. The most common round used by the Earthshaker by the Astra Militarum, suitable for blasting apart infantry, vehicles, and fortifications alike.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/HE</texPath>
@@ -98,7 +98,7 @@
     <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_Smoke</defName>
     <label>132mm smoke shell</label>
-    <description>132mm, Earthshaker. Obscurant. WIP</description>
+    <description>A 132mm smoke shell for the Earthshaker cannon. For the subtler commander, this can be very useful for concealing troop movements - including an imminent ground assault.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/Smoke</texPath>
@@ -149,7 +149,7 @@
     <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_Incendiary</defName>
     <label>132mm Incendiary shell</label>
-    <description>132mm, Earthshaker. Burns bright. WIP</description>
+    <description>A 132mm incendiary shell for the Earthshaker cannon. These ones contain an oxy-phosphor gel core, allowing batteries of Earthshaker cannons to set whole grid squares ablaze.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/Incendiary</texPath>
@@ -205,7 +205,7 @@
   <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_AP</defName>
     <label>132mm AP shell</label>
-    <description>132mm, Earthshaker. Anti armor. WIP</description>
+    <description>A 132mm armor-piercing shell for the Earthshaker cannon, with a diamantine tip. It trades some of its blast radius for an increased ability to penetrate armor, making the gun able to damage and destroy even heavily-armored vehicles with a solid hit.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/AP</texPath>
@@ -232,7 +232,7 @@
   
   <ThingDef ParentName="BaseBullet">
     <defName>GW_HOI_Bullet_132mm_AP</defName>
-    <label>high-explosive shell</label>
+    <label>armor-piercing shell</label>
     <graphicData>
       <texPath>Things/Projectile/ShellHighExplosive</texPath>
       <graphicClass>Graphic_Single</graphicClass>
