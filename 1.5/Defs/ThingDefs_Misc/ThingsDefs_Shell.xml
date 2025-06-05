@@ -148,7 +148,7 @@
 <!--Incendiary-->
     <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_Incendiary</defName>
-    <label>132mm Incendiary shell</label>
+    <label>132mm incendiary shell</label>
     <description>A 132mm incendiary shell for the Earthshaker cannon. These ones contain an oxy-phosphor gel core, allowing batteries of Earthshaker cannons to set whole grid squares ablaze.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
