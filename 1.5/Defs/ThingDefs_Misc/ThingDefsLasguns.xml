@@ -25,7 +25,7 @@
             <li Class="taranchuk_lasers.LaserProperties">
                 <damageTickRate>9</damageTickRate>
                 <lifetimeTicks>8</lifetimeTicks>
-                <beamWidth>1</beamWidth>
+                <beamWidth>0.5</beamWidth>
                 <beamWidthDrawScale>1</beamWidthDrawScale>
                 <sweepRatePerTick>0</sweepRatePerTick>
                 <maxSweepAngle>0</maxSweepAngle>
