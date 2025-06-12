@@ -418,6 +418,7 @@
 				<armorPenetration>0.13</armorPenetration>
 			</li>
 		</tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
 	
 </Defs>
