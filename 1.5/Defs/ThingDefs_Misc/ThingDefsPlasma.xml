@@ -274,7 +274,7 @@
         <description>A human-sized plasma pistol, designed on the Forge World of Ryza. Its relatively tiny size cuts deeply into its firepower and range, but a plasma weapon is still a plasma weapon. \n\nThis particular pattern of plasma pistol was popular with Inquisitors and their retinue. Hunters of aliens, mutants, and heretics across the galaxy, the Holy Orders of the Emperor’s Inquisition acted as the secret police of the Imperium of Man.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
-            <texPath>Weapons/GW_HOI_PlasmaPistol</texPath>
+            <texPath>Weapons/GW_HOI_CadianPlasmaPistol</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <soundInteract>Interact_ChargeRifle</soundInteract>

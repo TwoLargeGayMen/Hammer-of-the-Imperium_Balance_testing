@@ -50,7 +50,7 @@
 		<label>Militarum missile launcher</label>
 		<description>A single-shot, shoulder-fired guided missile launcher used by the Astra Militarum. A favorite of Heavy Weapons Teams, these launchers can sling a potent, high-speed missile far outside the range of hand grenades and grenade launchers.\n\nHeavy Weapons Teams aim to destroy what massive volleys of lasgun fire cannot. A direct hit from a krak missile will destroy even a Space Marine Terminator.</description>
 		<graphicData>
-			<texPath>Weapons/MissileLauncher</texPath>
+			<texPath>Weapons/GW_HOI_CadianMissileLauncher</texPath>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<recipeMaker>
@@ -174,7 +174,7 @@
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.1</drawSize>
-            <texPath>Weapons/GW_HOI_BoltPistol</texPath>
+            <texPath>Weapons/GW_HOI_CadianBoltPistol</texPath>
         </graphicData>
         <soundInteract>Interact_Autopistol</soundInteract>
         <weaponClasses>
@@ -259,7 +259,7 @@
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.1</drawSize>
-            <texPath>Weapons/Locke_Bolt</texPath>
+            <texPath>Weapons/GW_HOI_CadianBolter</texPath>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
