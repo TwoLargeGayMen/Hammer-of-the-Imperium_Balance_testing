@@ -269,7 +269,7 @@
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.2</drawSize>
-            <texPath>Weapons/Rippergun</texPath>
+            <texPath>Weapons/GW_HOI_AH_RipperGun</texPath>
         </graphicData>
         <soundInteract>Interact_Shotgun</soundInteract>
         <weaponClasses>
