@@ -102,7 +102,7 @@
         <label>Combat knife</label>
         <description>A simple fighting knife of Imperial design, suitable for a baseline human. Slight improvements have given it an edge over the typical knives found on rimworlds. \n\nDespite the power of the horrifying monstrosities that the Astra Militarum has been pitted against, knives like these have saved an uncountable number of Guardsmen from a gruesome death.</description>
         <graphicData>
-            <texPath>Weapons/CombatKnife</texPath>
+            <texPath>Weapons/GW_HOI_CombatKnife</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>3200</WorkToMake>
