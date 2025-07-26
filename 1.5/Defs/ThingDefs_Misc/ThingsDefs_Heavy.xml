@@ -1,9 +1,40 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
+
+	<!--===== Flamer Projectile =====-->
+
+	<VFECore.ExpandableProjectileDef ParentName="BaseBullet">
+		<defName>GW_AM_Bullet_Flamer</defName>
+		<label>flamer shot</label>
+		<thingClass>VFECore.FlamethrowProjectile</thingClass>
+		<graphicData>
+			<texPath>Projectiles/AMFlamer_Flame</texPath>
+			<texPathFadeOut>Projectiles/AMFlamer_End</texPathFadeOut>
+			<shaderType>MoteGlow</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<speed>45</speed>
+			<damageAmountBase>3</damageAmountBase>
+		</projectile>
+
+		<drawOffscreen>true</drawOffscreen>
+		<lifeTimeDuration>55</lifeTimeDuration>
+		<widthScaleFactor>0.65</widthScaleFactor>
+		<heightScaleFactor>1</heightScaleFactor>
+		<startingPositionOffset>(0, 0, -1)</startingPositionOffset>
+		<totalSizeScale>1.15</totalSizeScale>
+		<tickFrameRate>2</tickFrameRate>
+		<finalTickFrameRate>5</finalTickFrameRate>
+		<tickDamageRate>20</tickDamageRate>
+		<dealsDamageOnce>true</dealsDamageOnce>
+		<minDistanceToAffect>2</minDistanceToAffect>
+	</VFECore.ExpandableProjectileDef>
+
 	<!--===== missile Projectile =====-->
 	
 	<ThingDef ParentName="BaseBullet">
-		<defName>GW_HOI_Missile</defName>
+		<defName>GW_AM_Missile</defName>
 		<label>missile</label>
 		<graphicData>
 			<texPath>Things/Projectile/Rocket_Big</texPath>
@@ -12,17 +43,53 @@
 		</graphicData>
 		<thingClass>Projectile_Explosive</thingClass>
 		<projectile>
-			<damageAmountBase>55</damageAmountBase>
-			<armorPenetrationBase>0.40</armorPenetrationBase>
+			<damageAmountBase>100</damageAmountBase>
 			<damageDef>Bomb</damageDef>
 			<explosionRadius>6.8</explosionRadius>
-			<speed>40</speed>
+			<speed>65</speed>
 		</projectile>
 	</ThingDef>
 	
+	<!--===== Bolt Pistol Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_Bullet_BoltPistol</defName>
+        <label>bolt</label>
+        <graphicData>
+            <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>18</damageAmountBase>
+			<stoppingPower>0.7</stoppingPower>
+			<armorPenetrationBase>0.35</armorPenetrationBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+	
+	<!--===== Bolter Projectile =====-->
+	
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_AM_Bullet_Bolter</defName>
+        <label>bolt</label>
+        <graphicData>
+            <texPath>Projectiles/AM_BoltPistol_Proj</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+            <damageDef>Bullet</damageDef>
+            <damageAmountBase>30</damageAmountBase>
+			<stoppingPower>1.2</stoppingPower>
+			<armorPenetrationBase>0.55</armorPenetrationBase>
+            <speed>50</speed>
+        </projectile>
+    </ThingDef>
+	
 	<!--===== Base Launcher =====-->
 	
-	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_HOI_LauncherBase">
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_LauncherBase">
 		<graphicData>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -45,12 +112,12 @@
 	
 	<!--===== Missile Launcher =====-->
 	
-	<ThingDef ParentName="GW_HOI_LauncherBase">
-		<defName>GW_HOI_Gun_MissileLauncher</defName>
+	<ThingDef ParentName="GW_AM_LauncherBase">
+		<defName>GW_AM_Gun_MissileLauncher</defName>
 		<label>Militarum missile launcher</label>
 		<description>A single-shot, shoulder-fired guided missile launcher used by the Astra Militarum. A favorite of Heavy Weapons Teams, these launchers can sling a potent, high-speed missile far outside the range of hand grenades and grenade launchers.\n\nHeavy Weapons Teams aim to destroy what massive volleys of lasgun fire cannot. A direct hit from a krak missile will destroy even a Space Marine Terminator.</description>
 		<graphicData>
-			<texPath>Weapons/GW_HOI_CadianMissileLauncher</texPath>
+			<texPath>Weapons/MissileLauncher</texPath>
 		</graphicData>
 		<soundInteract>Interact_ChargeRifle</soundInteract>
 		<recipeMaker>
@@ -64,9 +131,9 @@
 			<workSkill>Crafting</workSkill>
 		</recipeMaker>
 		<costList>
-			<Plasteel>40</Plasteel>
-			<Steel>200</Steel>
-			<ComponentIndustrial>4</ComponentIndustrial>
+			<Plasteel>75</Plasteel>
+			<Steel>250</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
 		</costList>
 		<weaponClasses>
 			<li>RangedHeavy</li>
@@ -75,10 +142,10 @@
 			<li>
 				<verbClass>Verb_ShootOneUse</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_HOI_Missile</defaultProjectile>
-				<warmupTime>3.2</warmupTime>
-				<range>32</range>
-				<forcedMissRadius>2</forcedMissRadius>
+				<defaultProjectile>GW_AM_Missile</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<range>36</range>
+				<forcedMissRadius>1.4</forcedMissRadius>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>InfernoCannon_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
@@ -89,34 +156,111 @@
 			</li>
 		</verbs>
 		<statBases>
-			<WorkToMake>35000</WorkToMake>
-            <Mass>8</Mass>
-            <AccuracyTouch>0.20</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
+			<WorkToMake>37000</WorkToMake>
+            <Mass>7.5</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
             <AccuracyMedium>0.80</AccuracyMedium>
-            <AccuracyLong>0.80</AccuracyLong>
+            <AccuracyLong>0.90</AccuracyLong>
             <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
-			<MarketValue>1900</MarketValue>
 		</statBases>
 		<tools>
             <li>
-                <label>stock</label>
+                <label>barrel</label>
                 <capacities>
-                    <li>Blunt</li>
+					<li>Blunt</li>
                 </capacities>
-                <power>9</power>
+				<power>12</power>
                 <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
             </li>
+        </tools>
+		<equippedAngleOffset>45</equippedAngleOffset>
+		<modExtensions>
+			<!-- <li Class="VFECore.ThingDefExtension"> -->
+				<!-- <weaponCarryDrawOffsets> -->
+					<!-- <north> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </north> -->
+					<!-- <east> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </east> -->
+					<!-- <west> -->
+						<!-- <drawOffset>(0.25,-0.1,0.4)</drawOffset> -->
+						<!-- <angleOffset>760</angleOffset> -->
+					<!-- </west> -->
+					<!-- <south> -->
+						<!-- <drawOffset>(-0.25,0,0.4)</drawOffset> -->
+						<!-- <angleOffset>-230</angleOffset> -->
+					<!-- </south> -->
+				<!-- </weaponCarryDrawOffsets> -->
+			<!-- </li> -->
+		</modExtensions>
+	</ThingDef>
+	
+	<!--===== Rocket Launcher =====-->
+	
+	<ThingDef ParentName="GW_AM_LauncherBase">
+		<defName>GW_AM_Gun_RocketLauncher1Grey</defName>
+		<label>Militarum rocket launcher</label>
+		<description>A single-shot, shoulder-fired guided missile launcher used by the Astra Militarum. A favorite of Heavy Weapons Teams, these launchers can sling a potent, high-speed missile far outside the range of hand grenades and grenade launchers.\n\nHeavy Weapons Teams aim to destroy what massive volleys of lasgun fire cannot. A direct hit from a krak missile will destroy even a Space Marine Terminator.</description>
+		<graphicData>
+			<texPath>Weapons/RocketLauncher1Grey</texPath>
+		</graphicData>
+		<soundInteract>Interact_ChargeRifle</soundInteract>
+		<recipeMaker>
+			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
+			<recipeUsers Inherit="False">
+				<li>HP_AM_MilitarumFabricationBench</li>
+			</recipeUsers>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<workSkill>Crafting</workSkill>
+		</recipeMaker>
+		<costList>
+			<Plasteel>75</Plasteel>
+			<Steel>250</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+		</costList>
+		<weaponClasses>
+			<li>RangedHeavy</li>
+		</weaponClasses>
+		<verbs>
+			<li>
+				<verbClass>Verb_ShootOneUse</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>GW_AM_Missile</defaultProjectile>
+				<warmupTime>5</warmupTime>
+				<range>36</range>
+				<forcedMissRadius>1.4</forcedMissRadius>
+				<burstShotCount>1</burstShotCount>
+				<soundCast>InfernoCannon_Fire</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+				</targetParams>
+				<muzzleFlashScale>14</muzzleFlashScale>
+			</li>
+		</verbs>
+		<statBases>
+			<WorkToMake>37000</WorkToMake>
+            <Mass>7.5</Mass>
+            <AccuracyTouch>0.55</AccuracyTouch>
+            <AccuracyShort>0.64</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>0.90</AccuracyLong>
+            <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+		</statBases>
+		<tools>
             <li>
                 <label>barrel</label>
                 <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
+					<li>Blunt</li>
                 </capacities>
-                <power>9</power>
+				<power>12</power>
                 <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
             </li>
         </tools>
 		<equippedAngleOffset>45</equippedAngleOffset>
@@ -146,7 +290,7 @@
 	
 	<!--===== Bolt pistol base =====-->
 	
-	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_HOI_BolterBase">
+	<ThingDef Abstract="true" ParentName="BaseHumanMakeableGun" Name="GW_AM_BolterBase">
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
@@ -167,14 +311,14 @@
 	
 	<!--===== Bolt Pistol =====-->
 	
-	<ThingDef ParentName="GW_HOI_BolterBase">
-        <defName>GW_HOI_Gun_BoltPistol</defName>
-        <label>Bolt Pistol (Guard)</label>
+	<ThingDef ParentName="GW_AM_BolterBase">
+        <defName>GW_AM_Gun_BoltPistol</defName>
+        <label>Bolt pistol</label>
         <description>A semi-automatic pistol firing smaller, but still powerful bolts. A common sidearm of Space Marines, but human-scaled versions can be found in use by the Imperial Guard. \n\nThese pistols are also infamous as the weapons of Imperial Commissars - when executing a cowardly Guardsman, a bolt pistol produces a much bigger (and thus more impactful on morale) spray of blood and gore than a mere laspistol.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.1</drawSize>
-            <texPath>Weapons/GW_HOI_CadianBoltPistol</texPath>
+            <texPath>Weapons/bolt_pistol</texPath>
         </graphicData>
         <soundInteract>Interact_Autopistol</soundInteract>
         <weaponClasses>
@@ -183,25 +327,23 @@
         <weaponTags>
 			<li>HPRanged</li>
             <li>ShortShots</li>
-			<li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <statBases>
-            <WorkToMake>13000</WorkToMake>
-            <Mass>2.5</Mass>
-            <AccuracyTouch>0.80</AccuracyTouch>
-            <AccuracyShort>0.65</AccuracyShort>
-            <AccuracyMedium>0.30</AccuracyMedium>
-            <AccuracyLong>0.25</AccuracyLong>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>2.8</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
+            <AccuracyMedium>0.80</AccuracyMedium>
+            <AccuracyLong>0.75</AccuracyLong>
             <RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
-			<MarketValue>800</MarketValue>
         </statBases>
 		<equippedStatOffsets>
       <MoveSpeed>0.10</MoveSpeed>
 		</equippedStatOffsets>
         <costList>
-            <Steel>70</Steel>
-            <ComponentSpacer>1</ComponentSpacer>
-			<HP_Ceramite>10</HP_Ceramite>
+            <Steel>150</Steel>
+            <ComponentIndustrial>9</ComponentIndustrial>
+			<HP_Ceramite>5</HP_Ceramite>
         </costList>
         <recipeMaker>
 		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -218,48 +360,46 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_Bullet_BoltPistol</defaultProjectile>
-                <warmupTime>0.4</warmupTime>
-                <range>22</range>
+                <defaultProjectile>GW_AM_Bullet_BoltPistol</defaultProjectile>
+                <warmupTime>0.9</warmupTime>
+                <range>24</range>
 				<burstShotCount>1</burstShotCount>
-                <soundCast>GW_Bolt_Pistol_Sound</soundCast>
+                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
         <tools>
-			<li>
-				<label>grip</label>
-				<capacities>
-				<li>Blunt</li>
-				</capacities>
-				<power>7</power>
-				<cooldownTime>2.0</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-				<li>Blunt</li>
-				<li>Poke</li>
-				</capacities>
-				<power>5</power>
-				<cooldownTime>2.0</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-			</li>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
         </tools>
     </ThingDef>
 	
 	<!--===== Locke Bolter =====-->
 	
-	<ThingDef ParentName="GW_HOI_BolterBase">
-        <defName>GW_HOI_Gun_Bolter</defName>
+	<ThingDef ParentName="GW_AM_BolterBase">
+        <defName>GW_AM_Gun_Bolter</defName>
         <label>Locke bolter</label>
         <description>A scaled-down bolter of the Locke pattern. The weapon’s smaller size makes it suitable for use by baseline humans. While it is indeed powerful, its recoil and weight is high.\n\nThis pattern of bolter was common in the Koronus Expanse, seeing use by a wide variety of characters - Rogue Traders, pirates, Chaos cultists, and more.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>1.1</drawSize>
-            <texPath>Weapons/GW_HOI_CadianBolter</texPath>
+            <texPath>Weapons/Locke_Bolt</texPath>
         </graphicData>
         <soundInteract>Interact_Rifle</soundInteract>
         <weaponClasses>
@@ -268,25 +408,23 @@
         <weaponTags>
 			<li>HPRanged</li>
             <li>ShortShots</li>
-			<li>GW_HOI_CommissarRanged</li>
         </weaponTags>
         <statBases>
-            <WorkToMake>20000</WorkToMake>
-            <Mass>6</Mass>
+            <WorkToMake>18000</WorkToMake>
+            <Mass>7</Mass>
             <AccuracyTouch>0.55</AccuracyTouch>
-            <AccuracyShort>0.65</AccuracyShort>
-            <AccuracyMedium>0.55</AccuracyMedium>
-            <AccuracyLong>0.45</AccuracyLong>
-            <RangedWeapon_Cooldown>1.4</RangedWeapon_Cooldown>
-			<MarketValue>1200</MarketValue>
+            <AccuracyShort>0.68</AccuracyShort>
+            <AccuracyMedium>0.84</AccuracyMedium>
+            <AccuracyLong>0.72</AccuracyLong>
+            <RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
         </statBases>
 		<equippedStatOffsets>
       <MoveSpeed>-0.10</MoveSpeed>
 		</equippedStatOffsets>
         <costList>
-            <Steel>100</Steel>
-            <ComponentSpacer>2</ComponentSpacer>
-			<HP_Ceramite>20</HP_Ceramite>
+            <Steel>225</Steel>
+            <ComponentIndustrial>16</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
         </costList>
         <recipeMaker>
 		<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
@@ -303,41 +441,39 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_HOI_Bullet_Bolter</defaultProjectile>
+                <defaultProjectile>GW_AM_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.9</warmupTime>
-                <range>26</range>
-				<burstShotCount>1</burstShotCount>
-                <soundCast>GW_Bolt_Gun_Sound</soundCast>
-                <soundCastTail>GunTail_Medium</soundCastTail>
+                <range>32</range>
+				<burstShotCount>3</burstShotCount>
+                <soundCast>GW_AM_Bolt_Pistol_Sound</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
         </verbs>
         <tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-				<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.0</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-				<li>Blunt</li>
-				<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.0</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-			</li>
+            <li>
+                <label>grip</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
         </tools>
     </ThingDef>
 	
 	<!--===== Flamer Base =====-->
 	
-	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="GW_HOI_FlamerBase">
+	<ThingDef Abstract="True" ParentName="BaseGunWithQuality" Name="GW_AM_FlamerBase">
 		<smeltable>false</smeltable>
 		<techLevel>Spacer</techLevel>
 		<generateCommonality>0.5</generateCommonality>
@@ -347,14 +483,25 @@
 	
 	<!--===== Flamer =====-->
 	
-	<ThingDef ParentName="GW_HOI_FlamerBase">
-		<defName>GW_HOI_Gun_Flamer</defName>
-		<label>Kantrael Flamer</label>
-		<description>WIP.</description>
+	<ThingDef ParentName="GW_AM_FlamerBase">
+		<defName>GW_AM_Gun_Flamer</defName>
+		<label>Accatran flamer</label>
+		<description>An Imperial flamer design hailing from the forge world of Accatran, used by the Elysian Drop Troops of the Astra Militarum. Instead of using a canister of promethium held by the flamer, this design features a promethium tank worn on the user’s back. \n\nFlamers are useful when fighting certain xenos species such as Orks and Tyranids, which require thorough destruction to defeat permanently. The former, as a fungoid species, can regrow itself even when reduced to spores, while the latter feeds on biomass (including corpses from both sides) to reproduce and sustain itself.</description>
 		<graphicData>
-			<texPath>Weapons/GW_HOI_CadianFlamer</texPath>
+			<texPath>Weapons/Accatran_Flamer</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>0.8</drawSize>
 		</graphicData>
+		<tools>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>11.7</power>
+				<cooldownTime>2.6</cooldownTime>
+			</li>
+		</tools>
 		<recipeMaker>
 			<unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 			<recipeUsers Inherit="False">
@@ -366,28 +513,25 @@
 			</skillRequirements>
 			<workSkill>Crafting</workSkill>
 		</recipeMaker>
-		<weaponTags>
-            <li>GW_HOI_SpecialWeapons</li>
-        </weaponTags>
 		<costList>
-			<Chemfuel>20</Chemfuel>
-			<Steel>60</Steel>
-			<HP_Ceramite>5</HP_Ceramite>
+			<Plasteel>90</Plasteel>
+			<Steel>135</Steel>
+			<ComponentIndustrial>15</ComponentIndustrial>
+			<HP_Ceramite>30</HP_Ceramite>
 		</costList>
 		<statBases>
-			<Mass>6</Mass>
-			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
-			<WorkToMake>25000</WorkToMake>
-			<MarketValue>600</MarketValue>
+			<Mass>14</Mass>
+			<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
+			<WorkToMake>38000</WorkToMake>
 		</statBases>
 		<verbs>
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>GW_Bullet_Flamer</defaultProjectile>
+				<defaultProjectile>GW_AM_Bullet_Flamer</defaultProjectile>
 				<ai_AvoidFriendlyFireRadius>3</ai_AvoidFriendlyFireRadius>
-				<warmupTime>1.30</warmupTime>
-				<range>11</range>
+				<warmupTime>1.25</warmupTime>
+				<range>14</range>
 				<burstShotCount>1</burstShotCount>
 				<soundCast>GW_AM_Flamer_Sound</soundCast>
 				<soundCastTail>GunTail_Light</soundCastTail>
@@ -397,28 +541,6 @@
 				</targetParams>
 			</li>
 		</verbs>
-		<tools>
-			<li>
-				<label>stock</label>
-				<capacities>
-				<li>Blunt</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.0</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-			</li>
-			<li>
-				<label>barrel</label>
-				<capacities>
-				<li>Blunt</li>
-				<li>Poke</li>
-				</capacities>
-				<power>9</power>
-				<cooldownTime>2.0</cooldownTime>
-				<armorPenetration>0.13</armorPenetration>
-			</li>
-		</tools>
-		<equippedAngleOffset>45</equippedAngleOffset>
 	</ThingDef>
 	
 </Defs>

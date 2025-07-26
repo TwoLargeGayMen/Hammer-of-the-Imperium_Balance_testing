@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_HOI_HelmetBase">
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HPHelmet</li>
+            <li>GW_AM_Helmet</li>
+        </tradeTags>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <uiIconScale>1.6</uiIconScale>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>0.25</Flammability>
+            <Insulation_Cold>0.5</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+        </statBases>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Helmets with built in Gas mask -->
+    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_HOI_HelmetMaskBase">
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <tradeTags>
+            <li>HPHelmet</li>
+            <li>GW_AM_Helmet</li>
+        </tradeTags>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <uiIconScale>1.6</uiIconScale>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <Flammability>0.25</Flammability>
+            <Insulation_Cold>0.5</Insulation_Cold>
+            <Insulation_Heat>0</Insulation_Heat>
+        </statBases>
+        <equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <countsAsClothingForNudity>true</countsAsClothingForNudity>
+            <bodyPartGroups>
+                <li>UpperHead</li>
+                <li>FullHead</li>
+				<li>Neck</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Overhead</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>
+        </apparel>
+    </ThingDef>
+
+    <!-- Cadian Helmet -->
+
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_Cadian_Helmet</defName>
+        <label>Cadian helmet</label>
+        <description>A Cadian Shock Troops-style helmet, used to protect against shrapnel and weak autogun fire. The symbol on the front is usually a variation on the Imperial Aquila - a skull with wings, known as the “Imperialis”. \n\nThe Cadian Shock Troops are seen as an ideal across the Imperium. Such is their image that the generic Imperial Guardsman is, or is dressed similarly to, a Cadian Shock Trooper. Many regiments of the Astra Militarum copy their equipment, tactics, and livery.</description>
+        <graphicData>
+            <texPath>Things/Cadian/Headgear/CadianHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <Steel>35</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>5</HP_Ceramite>
+        </costList>
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+			<MarketValue>400</MarketValue>
+			<MaxHitPoints>280</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.57</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Headgear/CadianHelmet</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Kasrkin Helmet -->
+
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_CadianKasrkin_Helmet</defName>
+        <label>Kasrkin helmet</label>
+        <description>A Kasrkin helmet with an integrated gas mask. Stands up to anything short of a Hellgun. \n\nUnlike the Tempestus Scions, the Kasrkin are pulled from the best of the Cadian Shock Troopers, making them highly respected as a sort of “older brother” force. The fact that the rimworld fleet's Storm Troopers have adopted the same policy but retain exclusive rights to Schola Progenium graduates has only deepened the rivalry.</description>
+        <graphicData>
+            <texPath>Things/Cadian/Headgear/KasrkinHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <Steel>70</Steel>
+			<Plasteel>50</Plasteel>
+            <ComponentIndustrial>2</ComponentIndustrial>
+			<HP_Ceramite>15</HP_Ceramite>
+            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
+        </costList>
+        <statBases>
+            <WorkToMake>40000</WorkToMake>
+            <MaxHitPoints>400</MaxHitPoints>
+			<MarketValue>550</MarketValue>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.48</ArmorRating_Heat>
+            <Insulation_Cold>5</Insulation_Cold>
+            <Insulation_Heat>3</Insulation_Heat>
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <immuneToToxGasExposure>true</immuneToToxGasExposure>
+            <wornGraphicPath>Things/Cadian/Headgear/KasrkinHelmet</wornGraphicPath>
+            <bodyPartGroups Inherit="False">
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kKasrkinHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+	<!-- Engineer -->
+	
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_EngineseererHood</defName>
+        <label>Enginseer hood</label>
+        <description>A red hood adorned with the cog-patterns of the Adeptus Mechanicus. This hood is fit for an enginseer of the Imperial Guard. \n\nEnginseers are somewhat looked-down on in the hierarchy of the Adeptus Mechanicus, because they do not usually contribute to the holy quest for knowledge.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/MilitarumEngineseerer/Hood_south</texPath>
+        </graphicData>
+        <stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+        <statBases>
+			<WorkToMake>4500</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<MarketValue>150</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/MilitarumEngineseerer/Hood</wornGraphicPath>
+            <renderSkipFlags>
+                <li>Hair</li>
+            </renderSkipFlags>
+            <tags>
+                <li>40kEngineer</li>
+                <li>40kEngineerHood</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_EngineseererMask</defName>
+        <label>Enginseer mask</label>
+        <description>A respirator worn by Imperial Enginseers. It protects very well against environmental toxins, as well as being resistant to enemy attack. \n\nMany Enginseers are members of the mighty Titan Legions, their every hour dedicated to repairing and maintaining those holy avatars of the Omnissiah.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/MilitarumEngineseerer/Mask_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Chemfuel>30</Chemfuel>
+            <Steel>80</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>3500</WorkToMake>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>175</MarketValue>
+            <Mass>0.3</Mass>
+            <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.07</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>2</Insulation_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>0.75</ToxicResistance>
+		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/MilitarumEngineseerer/Mask</wornGraphicPath>
+            <renderSkipFlags>
+                <li>Beard</li>
+            </renderSkipFlags>
+			<layers Inherit="False">
+				<li>EyeCover</li>
+			</layers>
+			<drawData>
+				<dataSouth>
+					<layer>55</layer>
+                    <offset>(0.0, 0.0, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<layer>55</layer>
+					<!-- <offset>(0.2, 0.0, 0.4)</offset> -->
+				</dataWest>
+				<dataEast>
+					<layer>55</layer>
+					<offset>(-0.1, 0.0, 0.0)</offset>
+				</dataEast>
+				<dataNorth>
+					<!-- <layer>1</layer> -->
+					<!-- <offset>(0.0, -0.0001, 0.0)</offset> -->
+				</dataNorth>
+			</drawData>
+            <tags>
+                <li>40kEngineer</li>
+                <li>40kEngineerHood</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+	<!-- Cadian Psyker Helmet -->
+
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_CadianPsyker_Helmet</defName>
+        <label>Cadian psyker helmet</label>
+        <description>WIP.</description>
+        <graphicData>
+            <texPath>Things/Cadian/CadianPsyker/CadianPsykerHelmet/GW_HOI_CadianPsykerHelmet</texPath>
+        </graphicData>
+        <costList>
+            <Steel>35</Steel>
+            <ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>10</HP_Ceramite>
+            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
+        </costList>
+        <statBases>
+            <WorkToMake>32000</WorkToMake>
+            <MaxHitPoints>300</MaxHitPoints>
+			<MarketValue>450</MarketValue>
+            <Mass>3</Mass>
+            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.26</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.34</ArmorRating_Heat>
+            <Insulation_Cold>0.5</Insulation_Cold>
+            <!-- <Insulation_Heat>0</Insulation_Heat> -->
+            <EquipDelay>2.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<PsychicEntropyMax MayRequire="ludeon.rimworld.royalty">4</PsychicEntropyMax>
+			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royalty">0.15</PsychicSensitivityOffset>
+			<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.1</PsychicEntropyRecoveryRate>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <!-- <immuneToToxGasExposure>true</immuneToToxGasExposure> -->
+            <wornGraphicPath>Things/Cadian/CadianPsyker/CadianPsykerHelmet/GW_HOI_CadianPsykerHelmet</wornGraphicPath>
+            <bodyPartGroups Inherit="False">
+                <li>FullHead</li>
+            </bodyPartGroups>
+            <tags>
+                <li>40kCadianPsyker</li>
+                <li>40kCadianPsykerHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+</Defs>

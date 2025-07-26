@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Abstract="true" Name="GW_HOI_IndustrialSharpBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+    <ThingDef Abstract="true" Name="GW_AM_IndustrialSharpBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
         <possessionCount>1</possessionCount>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
@@ -36,118 +36,262 @@
 
 <!-- ====================== Chainsword ===================== -->
 
-    <ThingDef ParentName="GW_HOI_IndustrialSharpBase">
-        <defName>GW_HOI_Melee_Chainsword</defName>
+    <ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_Chainsword</defName>
         <label>Militarum chainsword</label>
         <description>A one-handed chainsword fit for use by a baseline human. While it is smaller and thus less deadly than an Astartes chainsword, it can still rip through enemy flesh with horrifying efficiency. \n\nChainswords are sometimes granted to officers of the Astra Militarum, including some Commissars. Various mercenary outfits and particularly well-equipped gangers can also be found using them.</description>
         <graphicData>
-            <texPath>Weapons/GW_HOI_ChainSword</texPath>
+            <texPath>Weapons/Chainsword</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>18000</WorkToMake>
             <Mass>6</Mass>
-            <MarketValue>260</MarketValue>
         </statBases>
+        <costStuffCount>60</costStuffCount>
         <costList>
-            <Steel>80</Steel>
-            <Plasteel>5</Plasteel>
-            <ComponentIndustrial>5</ComponentIndustrial>
+            <Plasteel>20</Plasteel>
+            <ComponentIndustrial>6</ComponentIndustrial>
         </costList>
-        <weaponTags>
-            <li>GW_HOI_CommissarMelee</li>
-        </weaponTags>
         <tools>
             <li>
                 <label>handle</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>9</power>
-                <cooldownTime>1.9</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
+                <power>10</power>
+                <cooldownTime>1.8</cooldownTime>
             </li>
             <li>
                 <label>edge</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>9</power>
-                <cooldownTime>2.6</cooldownTime>
-				<armorPenetration>0.9</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>Cut</def>
-                        <amount>4</amount>
-                        <chance>1</chance>
-                    </li>
-                    <li>
-                        <def>Cut</def>
-                        <amount>4</amount>
-                        <chance>1</chance>
-                    </li>
-                    <li>
-                        <def>Cut</def>
-                        <amount>4</amount>
-                        <chance>1</chance>
-                    </li>
-                </extraMeleeDamages>
+                <power>26</power>
+                <cooldownTime>2.4</cooldownTime>
+				<armorPenetration>0.4</armorPenetration>
             </li>
+        </tools>
+    </ThingDef>
+  
+  <!-- ====================== Chain Shortsword ===================== -->
+
+    <ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_Chainshortsword</defName>
+        <label>Short chainsword</label>
+        <description>A shorter chainsword scaled for use by soldiers of the Astra Militarum. While somewhat weaker than their full-length counterparts, they make up for it with faster movement speed. \n\nThis design’s short length has earned it the favor of Navis Imperialis (Imperial Navy) voidsmen. Fighting in the tight confines of a voidship means that longer weapons can become unwieldy, potentially causing the user’s death.</description>
+        <graphicData>
+            <texPath>Weapons/Chain Shortsword</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>14000</WorkToMake>
+            <Mass>2.25</Mass>
+        </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>0.10</MoveSpeed>
+		</equippedStatOffsets>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <Plasteel>16</Plasteel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>10</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>0.3</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+  
+   <!-- ====================== Trench Shovel ===================== -->
+   
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_AM_MeleeWeapon_TrenchShovel</defName>
+        <label>Trench shovel</label>
+        <description>An entrenching tool used by Imperial Guardsmen to dig in, and as a sturdy melee weapon. A solid strike to the head from one of these shovels can do considerable damage to an enemy heretic. \n\nThe Death Korps of Krieg, being specialists in trench warfare, are heavily associated with these shovels.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/Trench Shovel</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Industrial</techLevel>
+        <statBases>
+            <WorkToMake>8000</WorkToMake>
+            <Mass>1.5</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>4</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="False">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <WoodLog>60</WoodLog>
+        </costList>
+        <weaponTags>
+            <li>IndustrialMeleeDecent</li>
+            <li>GW_AM_IndustrialMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_IndustrialMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+            <li>
+                <label>head</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>17.7</power>
+                <cooldownTime>2</cooldownTime>
+            </li>
+			<li>
+				<label>edge</label>
+                <labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>2</cooldownTime>
+			</li>
         </tools>
     </ThingDef>
 	
 	<!-- ===== Combat Knife =====-->
 	
-	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
-        <defName>GW_HOI_Melee_CombatKnife</defName>
+	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_CombatKnife</defName>
         <label>Combat knife</label>
         <description>A simple fighting knife of Imperial design, suitable for a baseline human. Slight improvements have given it an edge over the typical knives found on rimworlds. \n\nDespite the power of the horrifying monstrosities that the Astra Militarum has been pitted against, knives like these have saved an uncountable number of Guardsmen from a gruesome death.</description>
         <graphicData>
-            <texPath>Weapons/GW_HOI_CombatKnife</texPath>
+            <texPath>Weapons/CombatKnife</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>3200</WorkToMake>
             <Mass>1.0</Mass>
-            <MarketValue>150</MarketValue>
         </statBases>
 		<equippedStatOffsets>
       <MoveSpeed>0.20</MoveSpeed>
 		</equippedStatOffsets>
-        <costStuffCount>40</costStuffCount>
+        <costStuffCount>45</costStuffCount>
+        <costList>
+            <Plasteel>8</Plasteel>
+        </costList>
         <tools>
             <li>
                 <label>handle</label>
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
+                <power>10</power>
+                <cooldownTime>1.6</cooldownTime>
             </li>
             <li>
                 <label>edge</label>
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>12</power>
-                <cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.18</armorPenetration>
+                <power>14</power>
+                <cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.25</armorPenetration>
             </li>
 			<li>
 				<label>point</label>
 				<capacities>
 					<li>Stab</li>
 				</capacities>
-				<power>13</power>
-				<cooldownTime>2</cooldownTime>
-				<armorPenetration>0.20</armorPenetration>
+				<power>15</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.28</armorPenetration>
 			</li>
         </tools>
     </ThingDef>
-    
+	
+	<!-- ===== Catachan Fang =====-->
+	
+	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_CatachanFang</defName>
+        <label>Catachan fang</label>
+        <description>A unique design of combat knife, created by the Catachan Jungle Fighters of the Astra Militarum. Its 20-inch blade makes it more akin to a machete than any regular knife, and gives it the weight necessary to cut through thick jungle undergrowth - or enemy flesh and bone. \n\nCatachan knives are traditionally forged by their owners, as an important rite-of-passage into adulthood.</description>
+        <graphicData>
+            <texPath>Weapons/CatachanKnife</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>6400</WorkToMake>
+            <Mass>1.0</Mass>
+        </statBases>
+		<equippedStatOffsets>
+      <MoveSpeed>0.20</MoveSpeed>
+		</equippedStatOffsets>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Plasteel>12</Plasteel>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>11</power>
+                <cooldownTime>1.6</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>18</power>
+                <cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.36</armorPenetration>
+            </li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>16</power>
+				<cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.38</armorPenetration>
+			</li>
+        </tools>
+    </ThingDef>
+	
 	<!-- ===== Eviscerator =====-->
 	
-	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
-        <defName>GW_HOI_Melee_Eviscerator</defName>
+	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_Eviscerator</defName>
         <label>Eviscerator</label>
         <description>A towering two-handed chainsword. The teeth are imbued with a crude version of the disruption field of power weapons, allowing it to rend enemy flesh slightly easier. \n\nChainswords like these came to symbolize religious wrath in the Imperium. They are often seen in the hands of Sisters Repentia of the Adepta Sororitas (also known as the Sisters of Battle), and by Priests of the Astra Militarum. Other users include some Assault Marines, Chaos Space Marines of the World Eaters Legion, and high-ranking Kroot of the T’au Empire.</description>
         <graphicData>
@@ -156,19 +300,17 @@
         <statBases>
             <WorkToMake>6400</WorkToMake>
             <Mass>1.0</Mass>
-            <MarketValue>350</MarketValue>
         </statBases>
 		<equippedAngleOffset>25</equippedAngleOffset>
 		<equippedStatOffsets>
-			<MoveSpeed>-0.10</MoveSpeed>
+			<MoveSpeed>0.20</MoveSpeed>
 		</equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
+        <costStuffCount>55</costStuffCount>
         <costList>
-            <Steel>95</Steel>
-            <Plasteel>30</Plasteel>
-            <ComponentIndustrial>8</ComponentIndustrial>
+            <Plasteel>12</Plasteel>
         </costList>
         <tools>
             <li>
@@ -176,71 +318,7 @@
                 <capacities>
                     <li>Blunt</li>
                 </capacities>
-                <power>12</power>
-                <cooldownTime>3</cooldownTime>
-            </li>
-            <li>
-                <label>edge</label>
-                <capacities>
-                    <li>Cut</li>
-                </capacities>
-                <power>18</power>
-                <cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.25</armorPenetration>
-                <extraMeleeDamages>
-                    <li>
-                        <def>Cut</def>
-                        <amount>6</amount>
-                        <chance>1</chance>
-                    </li>
-                    <li>
-                        <def>Cut</def>
-                        <amount>6</amount>
-                        <chance>1</chance>
-                    </li>
-                    <li>
-                        <def>Cut</def>
-                        <amount>6</amount>
-                        <chance>1</chance>
-                    </li>
-                </extraMeleeDamages>
-            </li>
-        </tools>
-    </ThingDef>
-	
-	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
-        <defName>GW_HOI_Melee_OmniAxe</defName>
-        <label>Omnissiah axe</label>
-        <description>A serrated power axe wielded by some tech-priests. It is somewhat slow to swing, but is able to cut through enemy armor and flesh to an impressive degree. \n\nThe axe is inscribed with sacred equations as an act of worship, for the Adeptus Mechanicus treats knowledge as a form of holy relic.</description>
-        <graphicData>
-            <texPath>Weapons/OmniAxe</texPath>
-        </graphicData>
-        <statBases>
-            <WorkToMake>6400</WorkToMake>
-            <Mass>7</Mass>
-            <MarketValue>440</MarketValue>
-        </statBases>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
-        </recipeMaker>
-        <equippedStatOffsets>
-			<FixBrokenDownBuildingSuccessChance>0.05</FixBrokenDownBuildingSuccessChance>
-            <PlantWorkSpeed>0.10</PlantWorkSpeed>
-            <ConstructionSpeed>0.10</ConstructionSpeed>
-		</equippedStatOffsets>
-		<equippedAngleOffset>25</equippedAngleOffset>
-        <costList>
-            <Plasteel>55</Plasteel>
-            <HP_Adamantium>20</HP_Adamantium>
-            <ComponentSpacer>2</ComponentSpacer>
-        </costList>
-        <tools>
-            <li>
-                <label>handle</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>8</power>
+                <power>20</power>
                 <cooldownTime>2.5</cooldownTime>
             </li>
             <li>
@@ -248,10 +326,71 @@
                 <capacities>
                     <li>Cut</li>
                 </capacities>
-                <power>30</power>
+                <power>50</power>
                 <cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.15</armorPenetration>
+				<armorPenetration>1.5</armorPenetration>
             </li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
+        </tools>
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_AM_IndustrialSharpBase">
+        <defName>GW_AM_MeleeWeapon_OmniAxe</defName>
+        <label>Omnissiah axe</label>
+        <description>A serrated power axe wielded by some tech-priests. It is somewhat slow to swing, but is able to cut through enemy armor and flesh to an impressive degree. \n\nThe axe is inscribed with sacred equations as an act of worship, for the Adeptus Mechanicus treats knowledge as a form of holy relic.</description>
+        <graphicData>
+            <texPath>Weapons/OmniAxe</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>6400</WorkToMake>
+            <Mass>1.0</Mass>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+		<equippedAngleOffset>25</equippedAngleOffset>
+		<equippedStatOffsets>
+			<MoveSpeed>0.20</MoveSpeed>
+		</equippedStatOffsets>
+        <costStuffCount>55</costStuffCount>
+        <costList>
+            <Plasteel>12</Plasteel>
+        </costList>
+        <tools>
+            <li>
+                <label>handle</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>20</power>
+                <cooldownTime>2.5</cooldownTime>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>50</power>
+                <cooldownTime>1.5</cooldownTime>
+				<armorPenetration>1.5</armorPenetration>
+            </li>
+			<li>
+				<label>point</label>
+				<capacities>
+					<li>Stab</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2.5</cooldownTime>
+				<armorPenetration>0.5</armorPenetration>
+			</li>
         </tools>
 		<modExtensions>
 			<li Class="VFECore.ThingDefExtension">
@@ -276,4 +415,5 @@
 			</li>
 		</modExtensions>
     </ThingDef>
+	
 </Defs>

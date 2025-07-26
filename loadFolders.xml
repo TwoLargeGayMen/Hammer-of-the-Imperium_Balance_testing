@@ -11,4 +11,11 @@
     <li IfModActive = "SmashPhil.VehicleFramework">Vehicles</li>
     <li IfModActive="Phonicmas.40kAbhumans">1.5/Mods/Abhumans</li>
   </v1.5>
+  <v1.6>
+    <li>/</li>
+    <li>1.6</li>
+    <!-- <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li> -->
+    <!-- <li IfModActive = "SmashPhil.VehicleFramework">Vehicles</li> -->
+    <!-- <li IfModActive="Phonicmas.40kAbhumans">1.5/Mods/Abhumans</li> -->
+  </v1.6>
 </loadFolders>

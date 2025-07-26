@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_HOI_OuterBase">
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>1.3</drawSize>
+        </graphicData>
+        <thingCategories>
+            <li>Apparel</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPOuter</li>
+            <li>GW_AM_Outer</li>
+        </tradeTags>
+        <statBases>
+            <Mass>0.3</Mass>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+		<uiIconScale>1.6</uiIconScale>
+        <recipeMaker>
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>
+        </recipeMaker>
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>		
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Neck</li>
+                <li>Shoulders</li>
+                <li>Arms</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+        </apparel>
+    </ThingDef>
+	
+	<ThingDef ParentName="GW_HOI_OuterBase">
+        <defName>GW_HOI_CommissarOuter</defName>
+        <label>Commissar jacket</label>
+        <description>A greatcoat with golden epaulets and a red lining, clearly identifying the wearer as an Imperial Commissar. \n\nA Commissar should be respected and must be feared, but never hated - otherwise, they will not last long. Some of the more free-spirited regiments, such as the Catachan Jungle Fighters, are notorious for “battlefield accidents”.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Commissar/Display/ComissarJacket</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <costStuffCount>90</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToMake>9000</WorkToMake>
+			<MarketValue>150</MarketValue>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.05</SocialImpact>
+			<!-- <MentalBreakThreshold>-0.05</MentalBreakThreshold> -->
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Commissar/Outer/ComissarJacket</wornGraphicPath>
+            <tags>
+                <li>40kCommissar</li>
+                <li>40kCommissarOuter</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HPOuter</li>
+        </tradeTags>
+    </ThingDef>   
+	
+	<!-- Engineer -->
+	
+	<ThingDef ParentName="GW_HOI_OuterBase">
+        <defName>GW_HOI_Engineseerer</defName>
+        <label>Enginseer robe</label>
+        <description>A rugged robe of the Adeptus Mechanicus, fit for dirty battlefield work. This outfit is common for Enginseers. \n\nAn outside observer would be confused at the practices of Enginseers, as it more resembles an arcane religious ritual than an engineer fixing a piece of equipment. That is because it is - a great deal of Adeptus Mechanicus practices are about “placating the Machine Spirits”, with little solid understanding of what they are actually doing. \n\nHowever, despite how it looks, it all remains completely effective.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/MilitarumEngineseerer/MilitarumEngineseerer_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+		<tickerType>Normal</tickerType>
+        <costStuffCount>90</costStuffCount>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <!-- <costList> -->
+            <!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+            <!-- <Steel>70</Steel> -->
+        <!-- </costList> -->
+        <statBases>
+            <MaxHitPoints>250</MaxHitPoints>
+            <WorkToMake>8500</WorkToMake>
+			<MarketValue>200</MarketValue>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset> -->
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+        </equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/MilitarumEngineseerer/MilitarumEngineseerer</wornGraphicPath>
+			<layers>
+                <li>Middle</li>
+            </layers>
+            <tags>
+                <li>40kEngineer</li>
+                <li>40kEngineerOuter</li>
+            </tags>
+        </apparel>
+        <tradeTags>
+            <li>HPMiddle</li>
+            <li>HPOuter</li>
+        </tradeTags>
+		<comps>
+			<!-- <li Class="BM_ApparelSet.CompProperties_ApparelSet"> -->
+				<!-- <apparelSetEffect> -->
+					<!-- <allApparels> -->
+						<!-- <li>GW_AM_EngineseererHood</li> -->
+						<!-- <li>GW_AM_EngineseererBackpack</li> -->
+					<!-- </allApparels> -->
+					<!-- <hediff>GW40k_AM_EngineerSet</hediff> -->
+				<!-- </apparelSetEffect> -->
+			<!-- </li> -->
+		</comps>
+    </ThingDef>
+</Defs>

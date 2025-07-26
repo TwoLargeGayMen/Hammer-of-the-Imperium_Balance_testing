@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" ParentName="BaseGunWithQuality" Name="GW_HOI_SanctifiedLasgunBase">
+        <techLevel>Spacer</techLevel>
+	    <smeltable>False</smeltable>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Interact_ChargeRifle</soundInteract>
+	    <relicChance>3</relicChance>
+        <statBases>
+	        <MarketValue>1200</MarketValue>
+			<WorkToMake>30000</WorkToMake>
+        </statBases>
+        <thingSetMakerTags>
+            <li>RewardStandardQualitySuper</li>
+        </thingSetMakerTags>
+        <tradeTags>
+            <li>ExoticMisc</li>
+            <li>Artifact</li>
+            <li>HPRanged</li>
+        </tradeTags>
+		<recipeMaker>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>200</displayPriority>
+        </recipeMaker>
+    </ThingDef>
+
+            <!-- Sanctified Kantrael MG -->
+
+    <ThingDef ParentName="GW_HOI_SanctifiedLasgunBase">
+        <defName>GW_HOI_Gun_Kantraelsanctified</defName>
+        <label>Sanctified Kantrael MG</label>
+        <description>A Kantrael MG lasgun that has undergone a process of sanctification. The weapon, subject to rituals and blessings, is supposed to perform better when fighting daemons, as belief harms them as much as any lasbolt. \n\nDaemons, or the “Neverborn”, are entities born of the Warp and the Chaos Gods within. They do not exactly have free will - they are slaves of the god that created them, which determines their behavior.</description>
+        <graphicData>
+            <texPath>Weapons/Sanctified Kantrael MG</texPath>
+        </graphicData>
+        <statBases>
+            <Mass>3.7</Mass>
+            <AccuracyTouch>0.65</AccuracyTouch>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.75</AccuracyMedium>
+            <AccuracyLong>0.6</AccuracyLong>
+            <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
+        </statBases>
+		<equippedStatOffsets>
+			<Beauty>5</Beauty> 
+        </equippedStatOffsets>
+		<costList>
+            <Steel>120</Steel>
+            <ComponentIndustrial>8</ComponentIndustrial>
+        </costList>
+        <weaponClasses>
+            <li>LongShots</li>
+        </weaponClasses>
+        <weaponTags>
+            <li>SpacerGun</li>
+        </weaponTags>
+        <verbs>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
+                <hasStandardCommand>true</hasStandardCommand>
+                <defaultProjectile>GW_HOI_Bullet_Lasgun</defaultProjectile>
+                <warmupTime>0.90</warmupTime>
+                <range>32.0</range>
+                <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+                <burstShotCount>1</burstShotCount>
+                <soundCast>GW_AM_Gun_Kantrael</soundCast>
+                <soundCastTail>GunTail_Heavy</soundCastTail>
+                <muzzleFlashScale>12</muzzleFlashScale>
+            </li>
+        </verbs>
+        <tools>
+            <li>
+                <label>stock</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>barrel</label>
+                <capacities>
+                    <li>Blunt</li>
+                    <li>Poke</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>2</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+        </tools>
+		<comps>
+			<li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit">
+				<maxNumberCraftable>5</maxNumberCraftable>
+			</li>
+		</comps>
+    </ThingDef>
+
+</Defs>

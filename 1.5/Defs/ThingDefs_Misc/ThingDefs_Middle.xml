@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_HOI_MiddleBase">
+    <ThingDef Abstract="true" ParentName="ApparelMakeableBase" Name="GW_AM_MiddleBase">
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -46,8 +46,8 @@
 	
 	<!-- Commissar Plate -->
 
-	<ThingDef ParentName="GW_HOI_MiddleBase">
-        <defName>GW_HOI_CommissarMiddle</defName>
+	<ThingDef ParentName="GW_AM_MiddleBase">
+        <defName>GW_AM_CommissarMiddle</defName>
         <label>commissar armor plate</label>
         <description>A breastplate designed to be worn in a Commissar’s uniform. It is decorated to fit in with the rest of the Commissar’s apparel. \n\nCommissars are not shy of battle - after all, it is they who set the example for their Guardsmen. If they are not supervising the local command staff, they are on the front lines, rending apart xenos and heretics alongside their troops.</description>
         <recipeMaker>
@@ -57,36 +57,25 @@
             <texPath>Things/Commissar/Display/CommissarPlate</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <!-- <costStuffCount>70</costStuffCount> -->
-        <!-- <stuffCategories> -->
-		<!-- <li>Metallic</li> -->
-        <!-- </stuffCategories> -->
-		<costList>
-			<Steel>60</Steel>			
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<HP_Ceramite>25</HP_Ceramite>
-        </costList>	
+        <costStuffCount>70</costStuffCount>
+        <stuffCategories>
+		<li>Metallic</li>
+        </stuffCategories>
         <thingCategories>
             <li>ApparelMisc</li>
         </thingCategories>
         <statBases>
-            <MaxHitPoints>350</MaxHitPoints>
-            <WorkToMake>12000</WorkToMake>
-			<MarketValue>340</MarketValue>
-            <Mass>2.5</Mass>
-			<ArmorRating_Sharp>0.82</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.50</ArmorRating_Heat>
-            <Insulation_Cold>15.0</Insulation_Cold>
-			<Insulation_Heat>5.0</Insulation_Heat>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+            <MaxHitPoints>200</MaxHitPoints>
+            <WorkToMake>10000</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.05</SocialImpact>
-			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
+            <SocialImpact>0.1</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
         </equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Things/Commissar/Middle/CommissarPlate</wornGraphicPath>
@@ -100,59 +89,6 @@
                 <li>Shoulders</li>
                 <!-- <li>Arms</li> -->
                 <!-- <li>Legs</li> -->
-            </bodyPartGroups>
-        </apparel>
-    </ThingDef>
-	
-	<!-- Cadian Psyker -->
-
-	<ThingDef ParentName="GW_HOI_MiddleBase">
-        <defName>GW_HOI_CadianPsykerJacket</defName>
-        <label>cadian psyker jacket</label>
-        <description>WIP.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Cadian/CadianPsyker/CadianPsykerMiddle/GW_HOI_CadianPsykerMiddle</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-        </graphicData>
-        <costStuffCount>70</costStuffCount>
-        <stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <WorkToMake>22000</WorkToMake>
-			<MarketValue>175</MarketValue>
-            <Mass>1.5</Mass>
-            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-        <equippedStatOffsets>
-			<PsychicSensitivity>0.1</PsychicSensitivity>
-			<PsychicEntropyMax MayRequire="ludeon.rimworld.royalty">6</PsychicEntropyMax>
-			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royalty">0.15</PsychicSensitivityOffset>
-			<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.1</PsychicEntropyRecoveryRate>
-        </equippedStatOffsets>
-        <apparel>
-            <wornGraphicPath>Things/Cadian/CadianPsyker/CadianPsykerMiddle/GW_HOI_CadianPsykerMiddle</wornGraphicPath>
-            <tags>
-                <li>40kCadianPsyker</li>
-                <li>40kCadianPsykerMiddle</li>
-            </tags>
-			<bodyPartGroups>
-                <li>Torso</li>
-                <!-- <li>Neck</li> -->
-                <li>Shoulders</li>
-                <li>Arms</li>
-                <li>Legs</li>
             </bodyPartGroups>
         </apparel>
     </ThingDef>

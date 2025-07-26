@@ -45,8 +45,8 @@
 			<li>
 				<minSeverity>1</minSeverity>
 				<statOffsets>
-					<PainShockThreshold>0.1</PainShockThreshold>
-					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<MoveSpeed>0.3</MoveSpeed>
+					<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 		</stages>

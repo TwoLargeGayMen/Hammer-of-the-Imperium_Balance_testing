@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_HOI_HelmetBase">
-        <techLevel>Industrial</techLevel>
+    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_AM_HelmetBase">
+        <techLevel>Spacer</techLevel>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -41,74 +41,24 @@
         </apparel>
     </ThingDef>
 
-    <!-- Helmets with built in Gas mask -->
-    <ThingDef Abstract="true" ParentName="ArmorHelmetMakeableBase" Name="GW_HOI_HelmetMaskBase">
-        <techLevel>Industrial</techLevel>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <shaderType>CutoutComplex</shaderType>
-            <drawSize>1.3</drawSize>
-        </graphicData>
-        <tradeTags>
-            <li>HPHelmet</li>
-            <li>GW_AM_Helmet</li>
-        </tradeTags>
-        <recipeMaker>
-            <recipeUsers Inherit="false">
-                <li>GW_AM_MilitarumArmorBench</li>
-            </recipeUsers>
-        </recipeMaker>
-        <uiIconScale>1.6</uiIconScale>
-        <statBases>
-            <MaxHitPoints>150</MaxHitPoints>
-            <Flammability>0.25</Flammability>
-            <Insulation_Cold>0.5</Insulation_Cold>
-            <Insulation_Heat>0</Insulation_Heat>
-        </statBases>
-        <equippedStatOffsets>
-			<ToxicEnvironmentResistance>0.7</ToxicEnvironmentResistance>
-		</equippedStatOffsets>
-        <apparel>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <countsAsClothingForNudity>true</countsAsClothingForNudity>
-            <bodyPartGroups>
-                <li>UpperHead</li>
-                <li>FullHead</li>
-				<li>Neck</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Overhead</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <immuneToToxGasExposure>true</immuneToToxGasExposure>
-        </apparel>
-    </ThingDef>
-
     <!-- Cadian Helmet -->
 
-    <ThingDef ParentName="GW_HOI_HelmetBase">
-        <defName>GW_HOI_Cadian_Helmet</defName>
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>ODZ_40k_IG_Cadian_Helmet</defName>
         <label>Cadian helmet</label>
         <description>A Cadian Shock Troops-style helmet, used to protect against shrapnel and weak autogun fire. The symbol on the front is usually a variation on the Imperial Aquila - a skull with wings, known as the “Imperialis”. \n\nThe Cadian Shock Troops are seen as an ideal across the Imperium. Such is their image that the generic Imperial Guardsman is, or is dressed similarly to, a Cadian Shock Trooper. Many regiments of the Astra Militarum copy their equipment, tactics, and livery.</description>
         <graphicData>
             <texPath>Things/Cadian/Headgear/CadianHelmet_south</texPath>
         </graphicData>
         <costList>
-            <Steel>35</Steel>
-			<ComponentIndustrial>1</ComponentIndustrial>
-			<HP_Ceramite>5</HP_Ceramite>
+            <Steel>70</Steel>
         </costList>
         <statBases>
-            <WorkToMake>10000</WorkToMake>
-			<MarketValue>400</MarketValue>
-			<MaxHitPoints>280</MaxHitPoints>
-            <Mass>2</Mass>
-            <ArmorRating_Sharp>0.57</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.27</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.35</ArmorRating_Heat>
-			<Insulation_Cold>0.5</Insulation_Cold>
+            <WorkToMake>4000</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
             <EquipDelay>1.5</EquipDelay>
         </statBases>
         <recipeMaker>
@@ -125,34 +75,31 @@
 
     <!-- Kasrkin Helmet -->
 
-    <ThingDef ParentName="GW_HOI_HelmetBase">
-        <defName>GW_HOI_CadianKasrkin_Helmet</defName>
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>ODZ_40k_IG_CadianKasrkin_Helmet</defName>
         <label>Kasrkin helmet</label>
         <description>A Kasrkin helmet with an integrated gas mask. Stands up to anything short of a Hellgun. \n\nUnlike the Tempestus Scions, the Kasrkin are pulled from the best of the Cadian Shock Troopers, making them highly respected as a sort of “older brother” force. The fact that the rimworld fleet's Storm Troopers have adopted the same policy but retain exclusive rights to Schola Progenium graduates has only deepened the rivalry.</description>
         <graphicData>
             <texPath>Things/Cadian/Headgear/KasrkinHelmet_south</texPath>
         </graphicData>
         <costList>
+            <ComponentIndustrial>4</ComponentIndustrial>
+            <DevilstrandCloth>10</DevilstrandCloth>
             <Steel>70</Steel>
-			<Plasteel>50</Plasteel>
-            <ComponentIndustrial>2</ComponentIndustrial>
-			<HP_Ceramite>15</HP_Ceramite>
-            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
         </costList>
         <statBases>
-            <WorkToMake>40000</WorkToMake>
-            <MaxHitPoints>400</MaxHitPoints>
-			<MarketValue>550</MarketValue>
-            <Mass>5</Mass>
-            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.48</ArmorRating_Heat>
-            <Insulation_Cold>5</Insulation_Cold>
-            <Insulation_Heat>3</Insulation_Heat>
+            <WorkToMake>6000</WorkToMake>
+            <MaxHitPoints>200</MaxHitPoints>
+            <Mass>1.7</Mass>
+            <ArmorRating_Sharp>0.9</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.44</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.62</ArmorRating_Heat>
+            <Insulation_Cold>3.8</Insulation_Cold>
+            <Insulation_Heat>1.8</Insulation_Heat>
             <EquipDelay>2.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <ToxicEnvironmentResistance>0.75</ToxicEnvironmentResistance>
+            <ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
         </equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -170,33 +117,333 @@
         </apparel>
     </ThingDef>
 
+    <!-- Krieger Helmet -->
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>ODZ_40k_IG_DKOK_Helmet</defName>
+        <label>Death Korps helmet</label>
+        <description>A helmet of the Death Korps of Krieg. It fits perfectly with their gas masks, providing a seal against enemy chemical and biological agents. \n\nThe Kriegsmen are always on the offensive - either grinding the enemy down in prolonged trench warfare, or storming enemy defenses with inhuman discipline.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/DeathKorps/Headgear/KriegHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/DeathKorps/Headgear/KriegHelmet</wornGraphicPath>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Krieger Helmet Grenadier -->
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>ODZ_40k_IG_DKOK_GrenadierHelmet</defName>
+        <label>Death Korps grenadier helmet</label>
+        <description>A slightly improved helmet meant for Death Korps Grenadiers. They look only slightly different compared to regular helmets - enough that a Kriegsman can distinguish the two quickly while the enemy cannot. \n\nThe soldiers of Krieg are rather socially-stunted, but they have found kinship in some of the other Guardsmen - particularly the Valhallan Ice Warriors and the Mordian Iron Guard. All three are storied regiments, possessed of a grim determination to succeed whatever the cost.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/DeathKorps/Headgear/KriegGrenadierHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <DevilstrandCloth>50</DevilstrandCloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>3500</WorkToMake>
+            <Mass>1.4</Mass>
+            <ArmorRating_Sharp>0.87</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.50</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.3</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_DeathKorpsOfKrieg</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/DeathKorps/Headgear/KriegGrenadierHelmet</wornGraphicPath>
+            <tags>
+                <li>40kDeathKorps</li>
+                <li>40kDeathKorpsGrenadierHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Tempestus Scion Helmet -->
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>ODZ_40k_IM_TempestusScion_Helmet</defName>
+        <label>Tempestus Scion helmet</label>
+        <description>A Carapace Armor helmet worn by the Tempestus Scions. Just like the armor they wear, their helmets are more protective than their Guard equivalents. \n\nThe rivalry between the Tempestus Scions and the regular Astra Militarum is well-known, and continues even on this distant rimworld. The Guardsmen deride the Scions as “glory boys”, snapping up all of the best equipment and taking the glory for themselves as the regulars die in the mud. The Storm Troopers regard the regulars as lesser warriors - while most Guardsmen sign up at around 16 years of age, most of the Scions have trained from infancy under maximum pressure, and endure hardships to match.</description>
+        <graphicData>
+            <texPath>Things/TempestusScions/Headgear/TempestusScionHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <DevilstrandCloth>10</DevilstrandCloth>
+            <Steel>100</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>7500</WorkToMake>
+            <MaxHitPoints>250</MaxHitPoints>
+            <Mass>1</Mass>
+            <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.42</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.64</ArmorRating_Heat>
+            <Insulation_Cold>3.8</Insulation_Cold>
+            <Insulation_Heat>1.8</Insulation_Heat>
+            <EquipDelay>2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_TempestusScions</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/TempestusScions/Headgear/TempestusScionHelmet</wornGraphicPath>
+            <tags>
+                <li>EVA</li>
+                <li>40kTempestusScion</li>
+                <li>40kTempestusScionHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Elysian Helmets -->
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_Elysian_Helmet</defName>
+        <label>elysian helmet</label>
+        <description>An Elysian Drop Troops helmet. It holds up pretty well against a hard knock. \n\nNone have heard of an Elysian Guardsman who wasn’t a good shot. After all, they know that resupply can be days or weeks away, so to conserve their resources, all of their soldiers must be expert marksmen to be approved for combat duty.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/ElysianDrop/Helmet/Helmet_Display</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>1</ToxicResistance>
+		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/ElysianDrop/Helmet/Helmet</wornGraphicPath>
+            <tags>
+                <li>40kElysian</li>
+                <li>40kElysianHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_ElysianHelmetOpen</defName>
+        <label>elysian helmet (open)</label>
+        <description>An Elysian Drop Troops helmet. It holds up pretty well against a hard knock. \n\nNone have heard of an Elysian Guardsman who wasn’t a good shot. After all, they know that resupply can be days or weeks away, so to conserve their resources, all of their soldiers must be expert marksmen to be approved for combat duty.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/ElysianDrop/Helmet/HelmetOpen_Display</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_ElysianDropTroopers</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/ElysianDrop/Helmet/HelmetOpen</wornGraphicPath>
+            <tags>
+                <li>40kElysian</li>
+                <li>40kElysianHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <!-- Lucifer Black -->
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_LuciferBlackSkull</defName>
+        <label>Lucifer Black helmet (a)</label>
+        <description>A black helmet, modelled after a human skull, worn by Guardsmen of the Lucifer Blacks. It is of sturdy build and can withstand considerable punishment. \n\nThe Lucifer Blacks date back even beyond the Great Crusade, being formed during the Unification Wars.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Helmet/Lucifer_Skull_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>1</ToxicResistance>
+		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_Skull</wornGraphicPath>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferHelmet</li>
+            </tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_LuciferBlackAlt</defName>
+        <label>Lucifer Black helmet (b)</label>
+        <description>A black helmet, modelled after a human skull, worn by Guardsmen of the Lucifer Blacks. It is of sturdy build and can withstand considerable punishment. \n\nThe Lucifer Blacks date back even beyond the Great Crusade, being formed during the Unification Wars.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Helmet/Lucifer_AltHelmet_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>4</Insulation_Cold>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>1</ToxicResistance>
+		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_AltHelmet</wornGraphicPath>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferHelmet</li>
+            </tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_LuciferBlackMask</defName>
+        <label>Lucifer Black mask</label>
+        <description>A skull-faced mask, typical of the Lucifer Blacks. As well as being greatly intimidating to the enemy, it provides decent protection to the wearer’s face. \n\nDuring the War of the Beast, the Imperial Fists’ Chapter Master, Koorland, announced that he would replace the ineffectual Udin Macht Udo as Lord Commander of the Imperium. Udo responded by ordering the Lucifer Blacks to disarm and capture Koorland and his retinue. Elite as they are, the Lucifer Blacks would have been no match for the Space Marines, and the unit refused to apprehend the heroes who had saved Terra from an Ork invasion.</description>
+        <techLevel>Industrial</techLevel>
+        <graphicData>
+            <texPath>Things/LuciferBlack/Helmet/Lucifer_SkullMask_south</texPath>
+        </graphicData>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
+        <statBases>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+			<Insulation_Cold>3</Insulation_Cold>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<ToxicResistance>1</ToxicResistance>
+		</equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>GW_LuciferBlack</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+            <wornGraphicPath>Things/LuciferBlack/Helmet/Lucifer_SkullMask</wornGraphicPath>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
+            <tags>
+                <li>40kLucifer</li>
+                <li>40kLuciferHelmet</li>
+            </tags>
+			<bodyPartGroups>
+				<li>FullHead</li>
+			</bodyPartGroups>
+        </apparel>
+    </ThingDef>
+
 	<!-- Engineer -->
 	
-    <ThingDef ParentName="GW_HOI_HelmetBase">
-        <defName>GW_HOI_EngineseererHood</defName>
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_EngineseererHood</defName>
         <label>Enginseer hood</label>
         <description>A red hood adorned with the cog-patterns of the Adeptus Mechanicus. This hood is fit for an enginseer of the Imperial Guard. \n\nEnginseers are somewhat looked-down on in the hierarchy of the Adeptus Mechanicus, because they do not usually contribute to the holy quest for knowledge.</description>
         <techLevel>Industrial</techLevel>
         <graphicData>
             <texPath>Things/MilitarumEngineseerer/Hood_south</texPath>
         </graphicData>
-        <stuffCategories>
-			<li>Fabric</li>
-		</stuffCategories>
-		<costStuffCount>55</costStuffCount>
+        <costList>
+            <ComponentIndustrial>2</ComponentIndustrial>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
+        </costList>
         <statBases>
-			<WorkToMake>4500</WorkToMake>
-			<MaxHitPoints>250</MaxHitPoints>
-			<MarketValue>150</MarketValue>
-			<Mass>0.5</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-			<EquipDelay>1.2</EquipDelay>
-		</statBases>
-		<equippedStatOffsets>
-			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
-		</equippedStatOffsets>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
+        </statBases>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
@@ -212,8 +459,8 @@
         </apparel>
     </ThingDef>
 	
-    <ThingDef ParentName="GW_HOI_HelmetBase">
-        <defName>GW_HOI_EngineseererMask</defName>
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_EngineseererMask</defName>
         <label>Enginseer mask</label>
         <description>A respirator worn by Imperial Enginseers. It protects very well against environmental toxins, as well as being resistant to enemy attack. \n\nMany Enginseers are members of the mighty Titan Legions, their every hour dedicated to repairing and maintaining those holy avatars of the Omnissiah.</description>
         <techLevel>Industrial</techLevel>
@@ -222,23 +469,19 @@
         </graphicData>
         <costList>
             <ComponentIndustrial>2</ComponentIndustrial>
-            <Chemfuel>30</Chemfuel>
-            <Steel>80</Steel>
+            <Cloth>10</Cloth>
+            <Steel>70</Steel>
         </costList>
         <statBases>
-            <WorkToMake>3500</WorkToMake>
-			<MaxHitPoints>150</MaxHitPoints>
-			<MarketValue>175</MarketValue>
-            <Mass>0.3</Mass>
-            <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.07</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>2</Insulation_Heat>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
             <EquipDelay>1.2</EquipDelay>
         </statBases>
 		<equippedStatOffsets>
-			<ToxicResistance>0.75</ToxicResistance>
+			<ToxicResistance>1</ToxicResistance>
 		</equippedStatOffsets>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
@@ -276,52 +519,41 @@
         </apparel>
     </ThingDef>
 	
-	<!-- Cadian Psyker Helmet -->
-
-    <ThingDef ParentName="GW_HOI_HelmetBase">
-        <defName>GW_HOI_CadianPsyker_Helmet</defName>
-        <label>Cadian psyker helmet</label>
-        <description>WIP.</description>
+	<!-- Tanith -->
+	
+    <ThingDef ParentName="GW_AM_HelmetBase">
+        <defName>GW_AM_Tanith1stHood</defName>
+        <label>Tanith hood</label>
+        <description>A simple, green cloth hood of the Tanith First and Only. Vital for breaking up the silhouette of a marksman - to be detected at the wrong time is almost equal to death. \n\nTanith was a beautiful Forest World in the Sabbat Worlds, in the Segmentum Pacificus to the galactic west of Terra. \n\nEmphasis on “was”.</description>
+        <techLevel>Industrial</techLevel>
         <graphicData>
-            <texPath>Things/Cadian/CadianPsyker/CadianPsykerHelmet/GW_HOI_CadianPsykerHelmet</texPath>
+            <texPath>Things/Tanith1st/Hood_south</texPath>
         </graphicData>
         <costList>
-            <Steel>35</Steel>
-            <ComponentIndustrial>1</ComponentIndustrial>
-			<HP_Ceramite>10</HP_Ceramite>
-            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
+            <Cloth>150</Cloth>
+            <Steel>70</Steel>
         </costList>
         <statBases>
-            <WorkToMake>32000</WorkToMake>
-            <MaxHitPoints>300</MaxHitPoints>
-			<MarketValue>450</MarketValue>
-            <Mass>3</Mass>
-            <ArmorRating_Sharp>0.55</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.26</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.34</ArmorRating_Heat>
-            <Insulation_Cold>0.5</Insulation_Cold>
-            <!-- <Insulation_Heat>0</Insulation_Heat> -->
-            <EquipDelay>2.5</EquipDelay>
+            <WorkToMake>2500</WorkToMake>
+            <Mass>1.2</Mass>
+            <ArmorRating_Sharp>0.85</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.45</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <EquipDelay>1.2</EquipDelay>
         </statBases>
-        <equippedStatOffsets>
-			<PsychicSensitivity>0.1</PsychicSensitivity>
-			<PsychicEntropyMax MayRequire="ludeon.rimworld.royalty">4</PsychicEntropyMax>
-			<PsychicSensitivityOffset MayRequire="ludeon.rimworld.royalty">0.15</PsychicSensitivityOffset>
-			<PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.1</PsychicEntropyRecoveryRate>
-        </equippedStatOffsets>
         <recipeMaker>
-            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <researchPrerequisite>GW_Tanith1st</researchPrerequisite>
         </recipeMaker>
         <apparel>
-            <!-- <immuneToToxGasExposure>true</immuneToToxGasExposure> -->
-            <wornGraphicPath>Things/Cadian/CadianPsyker/CadianPsykerHelmet/GW_HOI_CadianPsykerHelmet</wornGraphicPath>
-            <bodyPartGroups Inherit="False">
-                <li>FullHead</li>
-            </bodyPartGroups>
+            <wornGraphicPath>Things/Tanith1st/Hood</wornGraphicPath>
+            <renderSkipFlags>
+                <li>None</li>
+            </renderSkipFlags>
             <tags>
-                <li>40kCadianPsyker</li>
-                <li>40kCadianPsykerHelmet</li>
+                <li>40kTanith</li>
+                <li>40kTanithHood</li>
             </tags>
         </apparel>
     </ThingDef>
+
 </Defs>

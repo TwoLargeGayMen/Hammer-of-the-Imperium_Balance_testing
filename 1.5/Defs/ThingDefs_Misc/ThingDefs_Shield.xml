@@ -23,31 +23,17 @@
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
-		<costStuffCount Inherit="False" />
-		<stuffCategories Inherit="False"/>
-		<costList>
-            <Steel>250</Steel>
-			<!-- <Cloth>40</Cloth> -->
-			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
-			<HP_Ceramite>20</HP_Ceramite>
-        </costList>	
+		<costStuffCount>60</costStuffCount>
 		<statBases>
-			<WorkToMake>30000</WorkToMake>
-			<MaxHitPoints>300</MaxHitPoints>
-			<Mass>6</Mass>
-			<MarketValue>250</MarketValue>
-			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.35</ArmorRating_Heat>
-            <!-- <Insulation_Cold>6</Insulation_Cold> -->
-			<!-- <Insulation_Heat>9</Insulation_Heat> -->
+			<StuffEffectMultiplierArmor>1</StuffEffectMultiplierArmor>
+			<Mass>7</Mass>
 			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
 			<WornBulk MayRequire="CETeam.CombatExtended">5</WornBulk>
 		</statBases>
 		<equippedStatOffsets>
 			<ReloadSpeed MayRequire="CETeam.CombatExtended">-0.2</ReloadSpeed>
 			<MeleeHitChance>-1</MeleeHitChance>
-			<ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+			<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
 			<AimingAccuracy MayRequire="CETeam.CombatExtended">-0.08</AimingAccuracy>
 			<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
 			<MeleeCritChance MayRequire="CETeam.CombatExtended">-0.05</MeleeCritChance>
@@ -86,7 +72,7 @@
 		<comps>
 			<li Class="GWParryShield.CompProperties_GW_Parryable">
 				<parryHediff>GW_OgrynShieldParry</parryHediff>
-				<parryChance>0.10</parryChance> <!-- 0.20 = 20% -->
+				<parryChance>0.25</parryChance> <!-- 0.20 = 20% -->
 				<parryWindow>30</parryWindow>
 				<parryCooldown>150</parryCooldown>
 			</li>

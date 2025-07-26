@@ -18,7 +18,7 @@
 				<stunDuration>120</stunDuration>
 				
 				<isNullifyDamage>true</isNullifyDamage>
-				<nullifyDamageChance>0.45</nullifyDamageChance>
+				<nullifyDamageChance>0.05</nullifyDamageChance>
 				
 				<isReduceDamageTakenWhenParry>true</isReduceDamageTakenWhenParry>
 				<damageReduction>0.50</damageReduction>
@@ -28,9 +28,7 @@
 				<debuffHediff>GW_Posebreak</debuffHediff>
 				<debuffDuration>120</debuffDuration>				
 				
-				<isReflectDamage>true</isReflectDamage>
-				<reflectDamageMultiplier>1.00</reflectDamageMultiplier>
-				<reflectDamageChance>0.01</reflectDamageChance>				
+				<isReflectDamage>false</isReflectDamage>
 				
 				<isKnockbackAttacker>true</isKnockbackAttacker>
 				<knockbackDistance>2.0</knockbackDistance>
