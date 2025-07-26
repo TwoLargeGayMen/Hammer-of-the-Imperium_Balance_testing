@@ -12,7 +12,7 @@
             <li>GW_Make_ComponentRelic</li>
         </recipes>
         <graphicData>
-            <texPath>Things/Building/Production/MilitarumWeaponBench/GW_HOI_AstraMilitarumBench_Weapon_</texPath>
+            <texPath>Things/Building/Production/MilitarumWeaponBench/GW_HOI_AstraMilitarumBench_Weapon</texPath>
         </graphicData>
         <researchPrerequisites>
             <li>GW_AM_TacticaImperium</li>

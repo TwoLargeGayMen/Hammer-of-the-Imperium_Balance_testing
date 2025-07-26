@@ -99,9 +99,9 @@
             </li>
         </tools>
 		<comps>
-			<li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit">
-				<maxNumberCraftable>5</maxNumberCraftable>
-			</li>
+			<!-- <li Class="GrimworldItemLimit.CompProperties_ItemCraftingLimit"> -->
+				<!-- <maxNumberCraftable>5</maxNumberCraftable> -->
+			<!-- </li> -->
 		</comps>
     </ThingDef>
 

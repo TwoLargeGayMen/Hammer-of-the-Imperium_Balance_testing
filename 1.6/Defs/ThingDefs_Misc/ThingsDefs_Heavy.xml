@@ -218,7 +218,7 @@
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_Bullet_BoltPistol</defaultProjectile>
+                <defaultProjectile>GW_HOI_Bullet_Bolter</defaultProjectile>
                 <warmupTime>0.4</warmupTime>
                 <range>22</range>
 				<burstShotCount>1</burstShotCount>
@@ -419,6 +419,23 @@
 			</li>
 		</tools>
 		<equippedAngleOffset>45</equippedAngleOffset>
+	</ThingDef>
+	<ThingDef ParentName="BaseBullet">
+		<defName>GW_Bullet_Flamer</defName>
+		<label>flamer</label>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+		<graphicData>
+			<texPath>Things/Projectiles/Melta_Projectile</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<projectile>
+			<damageDef>Burn</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<!-- <explosionRadius>0.1</explosionRadius> -->
+			<armorPenetrationBase>0.1</armorPenetrationBase>
+			<stoppingPower>0.2</stoppingPower>
+			<speed>20</speed>
+		</projectile>
 	</ThingDef>
 	
 </Defs>

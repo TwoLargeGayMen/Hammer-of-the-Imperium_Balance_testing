@@ -148,7 +148,7 @@
                 <debugCells>false</debugCells>
                 <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>
-                <endEffecterDef>GW_MeltaEffecter</endEffecterDef> 
+                <!-- <endEffecterDef>GW_MeltaEffecter</endEffecterDef>  -->
             </li>
         </modExtensions>
     </ThingDef>

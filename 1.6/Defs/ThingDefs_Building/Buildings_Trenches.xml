@@ -84,7 +84,7 @@
 		<castEdgeShadows>false</castEdgeShadows>
 		<fillPercent>0.9</fillPercent>
 		<coversFloor>false</coversFloor>
-		<placingDraggableDimensions>2</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
@@ -142,7 +142,7 @@
 			</blueprintGraphicData>
 			<paintable>true</paintable>
 		</building>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<stuffCategories>
 			<!-- <li>Metallic</li> -->
 			<li>Stony</li>
@@ -225,7 +225,7 @@
 		<researchPrerequisites>
 			<li>GW_AM_ImperiumDefense</li>
 		</researchPrerequisites>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<repairEffect>Repair</repairEffect>
 		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
 		<filthLeaving>Filth_RubbleBuilding</filthLeaving>
@@ -278,7 +278,7 @@
 		<costStuffCount>20</costStuffCount>
 		<canOverlapZones>false</canOverlapZones>
 		<rotatable>false</rotatable>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<building>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>
@@ -330,7 +330,7 @@
 		<costStuffCount>20</costStuffCount>
 		<canOverlapZones>false</canOverlapZones>
 		<rotatable>false</rotatable>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<building>
 			<isInert>true</isInert>
 			<ai_chillDestination>false</ai_chillDestination>

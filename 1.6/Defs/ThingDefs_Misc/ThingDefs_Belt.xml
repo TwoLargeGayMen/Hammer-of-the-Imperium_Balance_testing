@@ -132,7 +132,7 @@
             <li>GW_AM_Utility</li>
         </tradeTags>
 		<modExtensions>
-			<!-- <li Class="VFECore.ApparelDrawPosExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+			<!-- <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
 				<!-- <apparelDrawSettings> -->
                     <!-- <drawPosNorthOffset>(0, 0.0, 0)</drawPosNorthOffset> -->
                     <!-- <drawPosSouthOffset>(0, 0.0, 0)</drawPosSouthOffset> -->

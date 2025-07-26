@@ -254,7 +254,7 @@
             </li>
         </tools>
 		<modExtensions>
-			<li Class="VFECore.ThingDefExtension">
+			<li Class="VEF.Things.ThingDefExtension">
 				<weaponDraftedDrawOffsets>
 					<north>
 						<drawOffset>(0.3, 0, 0.25)</drawOffset>

@@ -50,7 +50,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.60</fillPercent>
 		<coversFloor>true</coversFloor>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
@@ -132,7 +132,7 @@
 		<castEdgeShadows>true</castEdgeShadows>
 		<fillPercent>0.60</fillPercent>
 		<coversFloor>true</coversFloor>
-		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<drawStyleCategory>Walls</drawStyleCategory>
 		<tickerType>Never</tickerType>
 		<rotatable>false</rotatable>
 		<selectable>true</selectable>
