@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ResearchProjectDef Abstract="True" Name="GW_AM_HoITechBase"  ParentName="GW_ImperiumTechBase">
+		<techLevel>Industrial</techLevel>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_TacticaImperium</defName>
+		<label>Tactica Imperium</label>
+        <description>Study the Tactica Imperium, the Astra Militarum’s most prominent manual. Though it is incredibly long and sometimes contradicts itself, it remains highly useful for both the rookie officer, the grizzled NCO, and the newly-minted enlisted troops.</description>
+        <baseCost>1000</baseCost>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewX>2.00</researchViewX>
+		<researchViewY>3.00</researchViewY>
+	</ResearchProjectDef>
+
+	<!-- <ResearchProjectDef ParentName="GW_AM_HoITechBase"> -->
+		<!-- <defName>GW_AM_ImperiumDefense</defName> -->
+		<!-- <label>Imperial fortifications</label> -->
+        <!-- <description>Research and produce Imperium-style defenses. While researching this allows for the construction of basic field fortifications such as trenches and tank traps, it is also a requirement for other defensive emplacements.</description> -->
+        <!-- <baseCost>2000</baseCost> -->
+		<!-- <prerequisites> -->
+			<!-- <li>GW_AM_TacticaImperium</li> -->
+		<!-- </prerequisites> -->
+		<!-- <researchViewX>3.00</researchViewX> -->
+		<!-- <researchViewY>2.00</researchViewY> -->
+	<!-- </ResearchProjectDef> -->
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_MilitariumArmor</defName>
+		<label>militarum armor</label>
+        <description>Produce the standardized Cadian Shock Troops-style weapons and armor used by many regiments of the Imperial Guard.</description>
+        <baseCost>1000</baseCost>
+		<prerequisites>
+			<li>GW_AM_TacticaImperium</li>
+		</prerequisites>
+		<researchViewX>3.00</researchViewX>
+		<researchViewY>3.50</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_RegimentsOfRenown</defName>
+		<label>regiments of renown</label>
+        <description>Discover some of the more unique and specialized regiments of the Astra Militarum.</description>
+        <baseCost>500</baseCost>
+		<prerequisites>
+			<li>GW_AM_MilitariumArmor</li>
+		</prerequisites>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>2.00</researchViewY>
+	</ResearchProjectDef>
+	
+	<!--<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+		<defName>GW_MilitarumAdvancedWeapons</defName>
+		<label>militarum advanced weapons</label>
+        <description>Research advanced weapons of the Astra Militarum, such as the Inferno Pistol.</description>
+		<prerequisites>
+			<li>GW_Cogitator</li>
+			<li>GW_Autoguns</li>
+		</prerequisites>
+        <baseCost>5500</baseCost>
+		<researchViewX>1.00</researchViewX>
+  		<researchViewY>4.00</researchViewY>
+        <modExtensions>
+            <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
+                <StudyLocation>GW_Cogitator</StudyLocation>
+				<longLabel>True</longLabel>
+                <ItemStudyRequirements>
+                    <li Class="GW_Frame.StudyRequirement">
+                        <StudyObject>GW_STC_Fragment</StudyObject>
+                        <NumberRequired>2</NumberRequired>
+                    </li>    
+                </ItemStudyRequirements>
+            </li>
+        </modExtensions>
+	</ResearchProjectDef>!-->
+	
+	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+		<defName>GW_LuciferBlack</defName>
+		<label>Lucifer Blacks</label>
+		<description>Produce the armor and weapons of the Lucifer Blacks - the praetorian guard of Terra.</description>
+		<baseCost>4000</baseCost>
+		<prerequisites>
+			<li MayRequire="grimworld.astramilitarum">GW_AM_RegimentsOfRenown</li>
+		</prerequisites>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.70</researchViewY>
+		<modExtensions>
+			<li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
+				<StudyLocation>GW_Cogitator</StudyLocation>
+				<ItemStudyRequirements>
+					<li Class="GW_Frame.StudyRequirement">
+						<StudyObject>GW_STC_Fragment</StudyObject>
+						<NumberRequired>3</NumberRequired>
+					</li>
+				</ItemStudyRequirements>
+			</li>
+		</modExtensions>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="GW_ImperiumTechBase">
+		<defName>GW_Tanith1st</defName>
+		<label>Tanith First and Only</label>
+		<description>Produce the armor and weapons of the Tanith First and Only - a scout-sniper regiment with no home planet of their own and the will to gain one.</description>
+		<baseCost>4000</baseCost>
+		<prerequisites>
+			<li MayRequire="grimworld.astramilitarum">GW_AM_RegimentsOfRenown</li>
+		</prerequisites>
+ 		<researchViewX>6.00</researchViewX>
+ 		<researchViewY>1.30</researchViewY>
+	</ResearchProjectDef>
+
+		<!--Regiments-->
+    <ResearchProjectDef Abstract="True" Name="GW_AM_RegimentResearchBase" ParentName="GW_AM_HoITechBase">
+        <prerequisites>
+			<li>GW_AM_RegimentsOfRenown</li>
+		</prerequisites>
+        <baseCost>1500</baseCost>
+        <researchViewX>5.00</researchViewX>
+    </ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_Catachan</defName>
+		<label>Catachan Jungle Fighters</label>
+        <description>Produce the armor and weapons of the Catachan Jungle Fighters - deathworlder guerrillas at home in the deadliest jungles of the galaxy.</description>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_DeathKorpsOfKrieg</defName>
+		<label>Death Korps of Krieg</label>
+        <description>Produce the armor and weapons of the Death Korps of Krieg - grim, stoic siege-specialists who atone for their planet’s shame through brutal combat.</description>
+		<researchViewY>0.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_Mordian</defName>
+		<label>Mordian Iron Guard</label>
+        <description>Produce the armor and weapons of the Mordian Iron Guard - disciplined line infantry crushing their enemies under volleys of laser fire.</description>
+		<researchViewY>1.25</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_TallarnDesertRaiders</defName>
+		<label>Tallarn Desert Raiders</label>
+        <description>Produce the armor and weapons of the Tallarn Desert Raiders - fast-moving mechanized infantry specializing in hit-and-run tactics.</description>
+		<researchViewY>1.80</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_TempestusScions</defName>
+		<label>Tempestus Scions</label>
+        <description>Produce the armor and weapons of the Tempestus Scions - elite, precise special-forces soldiers who serve best under maximum pressure.</description>
+		<researchViewY>2.45</researchViewY>
+        <modExtensions>
+            <li Class="GW_Frame.DefModExtension_ExtraPrerequisiteActions">
+                <StudyLocation>GW_Cogitator</StudyLocation>
+                <ItemStudyRequirements>
+                    <li Class="GW_Frame.StudyRequirement">
+                        <StudyObject>GW_STC_Fragment</StudyObject>
+                        <NumberRequired>1</NumberRequired>
+                    </li>    
+                </ItemStudyRequirements>
+            </li>
+        </modExtensions>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_Valhallan</defName>
+		<label>Valhallan Ice Warriors</label>
+        <description>Produce the armor and weapons of the Valhallan Ice Warriors - cold-weather defensive specialists known for holding their ground against the worst odds.</description>
+		<researchViewY>3.00</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_VostoyanFirstborn</defName>
+		<label>Vostroyan Firstborn</label>
+        <description>Produce the armor and weapons of the Vostroyan Firstborn - a storied and disciplined regiment consisting of the firstborn sons and daughters of every family on Vostroya.</description>
+		<researchViewY>3.60</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_CadianShockTroops</defName>
+		<label>Kasrkin Elite Troops</label>
+        <description>Produce the armor and weapons of the Kasrkin - the honored elite of the Cadian Shock Troops equalling even the Tempestus Scions.</description>
+		<researchViewY>4.20</researchViewY>
+	</ResearchProjectDef>
+
+    <ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_SteelLegion</defName>
+		<label>Armageddon Steel Legion</label>
+        <description>Produce the armor and weapons of the Armageddon Steel Legion - expert tankers combined with mechanized infantry.</description>
+		<researchViewY>4.80</researchViewY>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_OfficersOfAM</defName>
+		<label>Officers of astra militarum</label>
+        <description>Produce armor and weapons befitting of Imperial Guard officers - the fearsome Commissar and the charismatic Priest.</description>
+		<researchViewY>0</researchViewY>
+		<researchViewX>4.00</researchViewX>
+	</ResearchProjectDef>
+	
+	<ResearchProjectDef ParentName="GW_AM_RegimentResearchBase">
+		<defName>GW_AM_ElysianDropTroopers</defName>
+		<label>Elysian Drop Troopers</label>
+        <description>Produce the armor and weapons of the Elysian Drop Troopers - fearless airborne infantry who rain from the sky.</description>
+		<researchViewX>6.00</researchViewX>
+		<researchViewY>0.00</researchViewY>
+	</ResearchProjectDef>
+
+			<!--Abhumans-->
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_AbhumanIntegration</defName>
+		<label>abhuman integration</label>
+        <description>Research the Abhumans of the Imperial Guard - stable mutations of the human baseline.</description>
+		<prerequisites>
+			<li>GW_AM_MilitariumArmor</li>
+		</prerequisites>
+        <baseCost>500</baseCost>
+		<researchViewX>4.00</researchViewX>
+		<researchViewY>5.70</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_OgrynIntegration</defName>
+		<label>ogryn integration</label>
+        <description>Produce gear of the Ogryns - huge but unintelligent abhumans evolved on a cold, high-gravity prison planet.</description>
+		<prerequisites>
+			<li>GW_AM_AbhumanIntegration</li>
+		</prerequisites>
+        <baseCost>1500</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>5.40</researchViewY>
+	</ResearchProjectDef>
+
+	<!--<ResearchProjectDef ParentName="GW_AM_HoITechBase">
+		<defName>GW_AM_RatlingIntegration</defName>
+		<label>ratling integration</label>
+        <description>Produce gear used by the small and sneaky Ratling abhumans.</description>
+		<prerequisites>
+			<li>GW_AM_AbhumanIntegration</li>
+		</prerequisites>
+        <baseCost>1500</baseCost>
+		<researchViewX>5.00</researchViewX>
+		<researchViewY>6.00</researchViewY>
+	</ResearchProjectDef>-->
+</Defs>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ <!--__________ Officer Gorget ____________-->  
+
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>GW_HOI_Cadian_OfficerGorget</defName>
+        <label>Officer gorget</label>
+        <description>A special type of collar worn around the neck, acting as a symbol of rank. This particular gorget is made of metal, and is worn by officers of the Cadian Shock Troops. \n\nOfficers of the Imperial Guard are expected to lead from the front - some are in fact the very tip of the spear, carving a path forward with laspistol and power sword. Even the highest ranks have faced the enemy - the legendary Lord Castellan Ursarkar E. Creed, supreme commander of all forces on Cadia, led the defense of the Fortress World from the front lines, until the moment the planet broke apart.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>  
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Attachments/OfficerGorget_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>3</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>800</WorkToMake>
+            <Mass>1</Mass> 
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.8</SocialImpact>
+        </equippedStatOffsets>	
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Attachments/OfficerGorget</wornGraphicPath>
+            <wornGraphicData/>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>40kCadianOfficer</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <min>(97, 113, 51)</min>
+                    <max>(85, 100, 45)</max>
+                </li>
+            </options>
+        </colorGenerator>
+    </ThingDef>  
+	
+	
+	<ThingDef ParentName="ArmorMachineableBase">
+        <defName>GW_HOI_CommissarAttachment</defName>
+        <label>Commissar gorget</label>
+        <description>A Commissar’s gorget, worn around the neck. Unlike the gorget of Cadian officers, this version is made of leather or fabric. \n\nCommissars are graduates of the Schola Progenium. They are typically those with great oratory ability, as well as a healthy (but not quite exceptional) aptitude for combat. While some Commissars are excellent warriors, most of the best soldiers are instead sent to the Tempestus Scions.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Commissar/Display/CommissarGorget</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.5</drawSize>
+        </graphicData>
+        <costStuffCount>10</costStuffCount>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <statBases>
+            <MaxHitPoints>80</MaxHitPoints>
+            <WorkToMake>1500</WorkToMake>
+            <Mass>0.3</Mass>
+            <!-- <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor> -->
+            <!-- <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold> -->
+            <!-- <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat> -->
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <wornGraphicPath>Things/Commissar/Attachments/CommissarGorget</wornGraphicPath>
+			<wornGraphicData>
+				<!-- <renderUtilityAsPack>true</renderUtilityAsPack> -->
+			</wornGraphicData>
+            <tags>
+                <li>40kCommissar</li>
+                <li>40kCommissarGorget</li>
+            </tags>
+			<bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <tradeTags>
+			<li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+		<modExtensions>
+			<!-- <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+				<!-- <apparelDrawSettings> -->
+                    <!-- <drawPosNorthOffset>(0, 0.0, 0)</drawPosNorthOffset> -->
+                    <!-- <drawPosSouthOffset>(0, 0.0, 0)</drawPosSouthOffset> -->
+                    <!-- <drawPosWestOffset>(0.37, 0.0,0.15)</drawPosWestOffset> -->
+                    <!-- <drawPosEastOffset>(-0.37, 0.0,0.15)</drawPosEastOffset> -->
+					<!-- <drawSize>(1.5,1.5)</drawSize> -->
+                <!-- </apparelDrawSettings> -->
+                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+				<!-- <hideHead>false</hideHead> -->
+            <!-- </li> -->
+	    </modExtensions>
+    </ThingDef>
+		
+</Defs>

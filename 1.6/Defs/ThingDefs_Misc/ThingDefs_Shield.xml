@@ -1,0 +1,112 @@
+<Defs>
+
+	<ThingDef ParentName="GWShieldBase" Name="GWHammerShieldBase" Abstract="true">
+		<description>A thick metal slab shield, used by Ogryns of the Imperial Guard. It is extremely durable and protective - one would need anti-armor firepower to get through it. \n\nThese slab shields are standard fare for Bullgryn assault troops. When locked together to form a defensive line, they can advance under thick enemy fire while covering the Guardsmen behind them.</description>
+		<apparel>
+		</apparel>
+		<statBases>
+			<WorkToMake>15000</WorkToMake>
+			<MaxHitPoints>1200</MaxHitPoints>
+		</statBases>
+		<recipeMaker>
+			<recipeUsers>
+				<li>GW_AM_MilitarumArmorBench</li>
+			</recipeUsers>
+		</recipeMaker>
+	</ThingDef>
+	
+	<ThingDef ParentName="GWHammerShieldBase" Name="GWHammerCombatShieldBase">
+		<defName>GM_HotE_ShieldOgryn</defName>
+		<label>Ogryn shield</label>
+		<graphicData>
+			<texPath>Things/Ogryn/Armor/Ogryn Shield Interface</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<costStuffCount Inherit="False" />
+		<stuffCategories Inherit="False"/>
+		<costList>
+            <Steel>250</Steel>
+			<!-- <Cloth>40</Cloth> -->
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+			<HP_Ceramite>20</HP_Ceramite>
+        </costList>	
+		<statBases>
+			<WorkToMake>30000</WorkToMake>
+			<MaxHitPoints>300</MaxHitPoints>
+			<Mass>6</Mass>
+			<MarketValue>250</MarketValue>
+			<ArmorRating_Sharp>0.40</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.25</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.35</ArmorRating_Heat>
+            <!-- <Insulation_Cold>6</Insulation_Cold> -->
+			<!-- <Insulation_Heat>9</Insulation_Heat> -->
+			<Bulk MayRequire="CETeam.CombatExtended">8</Bulk>
+			<WornBulk MayRequire="CETeam.CombatExtended">5</WornBulk>
+		</statBases>
+		<equippedStatOffsets>
+			<ReloadSpeed MayRequire="CETeam.CombatExtended">-0.2</ReloadSpeed>
+			<MeleeHitChance>-1</MeleeHitChance>
+			<ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+			<AimingAccuracy MayRequire="CETeam.CombatExtended">-0.08</AimingAccuracy>
+			<Suppressability MayRequire="CETeam.CombatExtended">-0.25</Suppressability>
+			<MeleeCritChance MayRequire="CETeam.CombatExtended">-0.05</MeleeCritChance>
+			<MeleeParryChance MayRequire="CETeam.CombatExtended">1.0</MeleeParryChance>
+		</equippedStatOffsets>
+		<apparel>
+			<drawData>
+				<defaultData>
+					<layer>75</layer> <!--70-77 is over helmet and under gun-->
+				</defaultData>
+				<dataNorth>
+					<offset>(0.0, -0.4, 0.0)</offset>
+				</dataNorth>
+				<!-- 0.2 the height is just enough that pawn's eyes visible through the port -->
+				<dataSouth>
+					<offset>(0.25, 0.0, -0.2)</offset>
+				</dataSouth>
+                <!-- <dataWest> -->
+                    <!-- <offset>(-0.25, 0.0, 0.0)</offset> -->
+                <!-- </dataWest> -->
+                <dataEast>
+                    <offset>(0.50, 0.0, -0.2)</offset>
+                </dataEast>
+                <scale>0.75</scale>
+                <childScale>1.0</childScale>
+            </drawData>
+			<wornGraphicPath>Things/Ogryn/Armor/Ogryn Shield</wornGraphicPath>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<tags>
+				<li>GW_HotE_CombatShield</li>
+			</tags>
+		</apparel>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
+		</recipeMaker>
+		<comps>
+			<li Class="GWParryShield.CompProperties_GW_Parryable">
+				<parryHediff>GW_OgrynShieldParry</parryHediff>
+				<parryChance>0.10</parryChance> <!-- 0.20 = 20% -->
+				<parryWindow>30</parryWindow>
+				<parryCooldown>150</parryCooldown>
+			</li>
+        </comps>
+		<modExtensions>
+			<li Class="VEF.Apparels.ApparelExtension">
+				<isUnifiedApparel>true</isUnifiedApparel>
+				<hideHead>false</hideHead>
+			</li>
+			<li Class="CombatExtended.ShieldDefExtension" MayRequire="CETeam.CombatExtended">
+				<shieldCoverage>
+					<li>Hands</li>
+					<li>Arms</li>
+					<li>Shoulders</li>
+					<li>Torso</li>
+					<li>Neck</li>
+				</shieldCoverage>
+			</li>
+		</modExtensions>
+	</ThingDef>
+
+
+</Defs>

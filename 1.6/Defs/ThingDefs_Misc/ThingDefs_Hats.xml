@@ -1,0 +1,444 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ThingDef Abstract="true" ParentName="HatMakeableBase" Name="GW_HOI_HatBase">
+		<techLevel>Industrial</techLevel>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<drawSize>1.3</drawSize>
+		</graphicData>
+		<uiIconScale>1.6</uiIconScale>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Mass>0.07</Mass>
+		</statBases>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>4</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="false">
+				<li>GW_AM_MilitarumArmorBench</li>
+			</recipeUsers>
+		</recipeMaker>
+		<tradeTags>
+			<li>HPHat</li>
+			<li>GW_AM_Hat</li>
+		</tradeTags>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<tags>
+				<li>RoyalTier2</li>
+			</tags>
+			<layers>
+				<li>Overhead</li>
+			</layers>
+			<defaultOutfitTags>
+				<li>Soldier</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!-- Caps/Berets -->
+
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_CapBase">
+		<costStuffCount>40</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.10</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>0.8</EquipDelay>
+		</statBases>
+		<apparel>
+			<bodyPartGroups>
+				<li>UpperHead</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+
+	<!-- Cadian Fieldcap -->
+
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_Cadian_Fieldcap</defName>
+		<label>Cadian fieldcap</label>
+		<description>An unarmored field cap worn by Guardsmen of the Cadian Shock Troops. \n\nThe Cadian Shock Troops did not die alongside their planet. Evacuating to several Imperial worlds according to the contingencies of Ursarkar E. Creed, they continue the fight against Chaos.</description>
+		<graphicData>
+			<texPath>Things/Cadian/Headgear/FieldCap_south</texPath>
+		</graphicData>
+		<costStuffCount>95</costStuffCount>
+		<statBases>
+			<WorkToMake>8500</WorkToMake>
+			<MarketValue>120</MarketValue>
+			<MaxHitPoints>120</MaxHitPoints>
+			<Mass>1</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Cadian/Headgear/FieldCap</wornGraphicPath>
+			<tags>
+				<li>40kCadianGuard</li>
+				<li>40kCadianHats</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+  
+	<!-- Cadian Crusher Cap -->
+
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_Cadian_CrusherCap</defName>
+		<label>Cadian crusher cap</label>
+		<description>An officer’s cap, worn by high-ranking Cadian Shock Troopers. \n\nThe Astra Militarum forces here, like the rest of the stranded Imperial fleet, are in dire straits. Without Warp travel, the Guard’s strongest assets - their sheer weight in manpower - can no longer be counted upon.</description>
+		<graphicData>
+			<texPath>Things/Cadian/Headgear/OfficerCap_south</texPath>
+		</graphicData>
+		<costStuffCount>60</costStuffCount>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>0.5</Mass>
+			<MaxHitPoints>150</MaxHitPoints>
+			<MarketValue>150</MarketValue>
+			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+		</statBases>
+		<equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<apparel>
+			<wornGraphicPath>Things/Cadian/Headgear/OfficerCap</wornGraphicPath>
+			<tags>
+				<li>40kCadianGuard</li>
+				<li>40kCadianOfficerHats</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>Worker</li>
+			</defaultOutfitTags>
+		</apparel>
+	</ThingDef>
+
+	<!-- Eyes -->
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_EyesBase">
+		<generateCommonality>0.25</generateCommonality>
+		<statBases>
+			<MaxHitPoints>75</MaxHitPoints>
+			<WorkToMake>1000</WorkToMake>
+			<Mass>0.1</Mass>
+			<Insulation_Cold>1.2</Insulation_Cold>
+			<Insulation_Heat>0</Insulation_Heat>
+			<EquipDelay>1</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.9</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<layers Inherit="False">
+				<li>EyeCover</li>
+			</layers>
+			<drawData>
+				<defaultData>
+					<layer>-3</layer>
+				</defaultData>
+			</drawData>
+			<bodyPartGroups>
+				<li>Eyes</li>
+			</bodyPartGroups>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		</apparel>
+	</ThingDef>
+
+	<!-- Full Head -->
+
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_FullWrapBase">
+		<costStuffCount>30</costStuffCount>
+		<stuffCategories>
+			<li>Fabric</li>
+		</stuffCategories>
+		<statBases>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToMake>2200</WorkToMake>
+			<Mass>0.2</Mass>
+			<StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.25</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<bodyPartGroups>
+				<li>FullHead</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_StandardApparel"/>
+	</ThingDef>
+
+
+	<!-- Gas Masks -->
+
+	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_GasMaskBase">
+		<costStuffCount>20</costStuffCount>
+		<costList>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+		<statBases>
+			<Mass>0.05</Mass>
+			<StuffEffectMultiplierArmor>0.10</StuffEffectMultiplierArmor>
+			<StuffEffectMultiplierInsulation_Cold>0.30</StuffEffectMultiplierInsulation_Cold>
+			<StuffEffectMultiplierInsulation_Heat>0.04</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>1.2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
+		<apparel>
+			<countsAsClothingForNudity>true</countsAsClothingForNudity>
+			<renderSkipFlags>
+				<li>Hair</li>
+			</renderSkipFlags>
+			<layers Inherit="False">
+				<li>EyeCover</li>
+			</layers>
+			<drawData>
+				<defaultData>
+					<layer>71</layer>
+				</defaultData>
+			</drawData>
+			<bodyPartGroups>
+				<li>Eyes</li>
+				<li>Mouth</li>
+				<li>Neck</li>
+			</bodyPartGroups>
+			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+		</apparel>
+	</ThingDef>
+    
+	<!-- Priest Gear -->
+		
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_PriestHat</defName>
+		<label>Priest hat</label>
+		<description>A hat, akin to that of a 2nd Millennium bishop, that shows the wearer is a Ministorum Priest - a religious leader attached to the Astra Militarum. \n\nThe various priests of the Adeptus Ministorum - more commonly known as the Ecclesiarchy - preach the Imperial Cult to the Guardsmen, worshiping the Emperor as a god. Their teachings strengthen resolve and ensure faith, keeping the Guard a motivated fighting force.</description>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Priestgear/Priesthat_south</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>9000</WorkToMake>
+			<MaxHitPoints>250</MaxHitPoints>
+			<Mass>5</Mass>
+			<ArmorRating_Sharp>1.0</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.36</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.20</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<MentalBreakThreshold>-0.2</MentalBreakThreshold>
+			<PainShockThreshold>-0.2</PainShockThreshold>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>50</costStuffCount>
+		<apparel>
+			<wornGraphicPath>Things/Priestgear/Priesthat</wornGraphicPath>
+			<tags>
+				<li>40kPriest</li>
+				<li>40kPriestGear</li>
+			</tags>
+		</apparel>
+		
+		<modExtensions>
+			<!-- <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+			<!-- <apparelDrawSettings> -->
+			<!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+			<!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+			<!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+			<!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+			<!-- </apparelDrawSettings> -->
+			<!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+			<!-- <hideHead>false</hideHead> -->
+			<!-- </li> -->
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_PriestHood</defName>
+		<label>Priest hood</label>
+		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Priestgear/Priesthood</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>90</MarketValue>
+			<Mass>.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.6</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!-- <MentalBreakThreshold>-0.2</MentalBreakThreshold> -->
+			<PainShockThreshold>-0.2</PainShockThreshold>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+		<apparel>
+			<wornGraphicPath>Things/Priestgear/Priesthood</wornGraphicPath>
+			<tags>
+				<li>40kPriest</li>
+				<li>40kPriestGear</li>
+			</tags>
+		</apparel>
+		
+		<modExtensions>
+			<!-- <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+			<!-- <apparelDrawSettings> -->
+			<!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+			<!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+			<!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+			<!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+			<!-- </apparelDrawSettings> -->
+			<!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+			<!-- <hideHead>false</hideHead> -->
+			<!-- </li> -->
+		</modExtensions>
+	</ThingDef>
+	
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_PriestHoodDown</defName>
+		<label>Priest hood (down)</label>
+		<description>A hood suited to Ministorum Priests. Such apparel is more suited to the battlefield, where Priests preach to their followers under enemy fire. \n\nWith a number of Priests dead and no prospect of returning to the Imperium any time soon, some Guardsmen have had their faith shaken. An increasing number of them have started to rediscover the older, atheistic Imperial Truth instead, while others are drifting away to follow the various Chaplains of the Adeptus Astartes instead - most of the Space Marine cults do not worship the Emperor as a god, but merely as the greatest man who has ever and will ever live.</description>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<graphicData>
+			<texPath>Things/Priestgear/PriesthoodDown_south</texPath>
+		</graphicData>
+		<statBases>
+			<WorkToMake>4000</WorkToMake>
+			<MaxHitPoints>100</MaxHitPoints>
+			<MarketValue>90</MarketValue>
+			<Mass>.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<!-- <MentalBreakThreshold>-0.2</MentalBreakThreshold> -->
+			<PainShockThreshold>-0.2</PainShockThreshold>
+		</equippedStatOffsets>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<costStuffCount>55</costStuffCount>
+		<apparel>
+			<wornGraphicPath>Things/Priestgear/PriesthoodDown</wornGraphicPath>
+			<tags>
+				<li>40kPriest</li>
+				<li>40kPriestGear</li>
+			</tags>
+		</apparel>
+		
+		<modExtensions>
+			<!-- <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
+			<!-- <apparelDrawSettings> -->
+			<!-- <drawPosNorthOffset>(0, 0, 0)</drawPosNorthOffset> -->
+			<!-- <drawPosSouthOffset>(0, 0, 0)</drawPosSouthOffset> -->
+			<!-- <drawPosWestOffset>(0, 0, 0)</drawPosWestOffset> -->
+			<!-- <drawPosEastOffset>(0, 0, 0)</drawPosEastOffset> -->
+			<!-- </apparelDrawSettings> -->
+			<!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+			<!-- <hideHead>false</hideHead> -->
+			<!-- </li> -->
+		</modExtensions>
+	</ThingDef>
+	
+	<!-- Commissar Cap -->
+  
+	<ThingDef ParentName="GW_HOI_Hat_CapBase">
+		<defName>GW_HOI_CommissarCap</defName>
+		<label>Commissar cap</label>
+		<description>The black peaked cap of an Imperial Commissar. It is such a symbol of their status that Orks like to take them as battlefield trophies. \n\nThe Commissars in the Astra Militarum remnant are hard-pressed to keep order. The Guardsmen are spending too much time in contact with the local population for the Commissariat's liking, hearing too much about heretic and apostate ideoligions. Such insidious ideas as “democracy” and “freedom” must not take root in the Guard, lest disorder sweep through the ranks.</description>
+		<graphicData>
+			<texPath>Things/Commissar/Display/CommissarCap</texPath>
+		</graphicData>
+		<costStuffCount>40</costStuffCount>
+		<statBases>
+			<WorkToMake>2500</WorkToMake>
+			<MaxHitPoints>80</MaxHitPoints>
+			<MarketValue>50</MarketValue>
+			<Mass>0.5</Mass>
+			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+		</recipeMaker>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Leathery</li>
+		</stuffCategories>
+		<equippedStatOffsets>
+			<SocialImpact>0.05</SocialImpact>
+			<!-- <MentalBreakThreshold>-0.05</MentalBreakThreshold> -->
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
+		</equippedStatOffsets>
+		<apparel>
+			<wornGraphicPath>Things/Commissar/Headgear/CommissarCap</wornGraphicPath>
+			<tags>
+				<li>40kCommissar</li>
+				<li>40kCommissarCap</li>
+			</tags>
+		</apparel>
+	</ThingDef>
+</Defs>

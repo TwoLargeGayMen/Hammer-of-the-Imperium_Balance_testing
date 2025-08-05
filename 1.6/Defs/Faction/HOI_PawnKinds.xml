@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+            <!-- Pawn Bases -->
+    <PawnKindDef Name="GW_HOI_PawnBase" Abstract="True">
+        <race>Human</race>
+        <defaultFactionType>GW_HOI_AstraMilitarum</defaultFactionType>
+        <invNutrition>2.55</invNutrition>
+        <chemicalAddictionChance>0</chemicalAddictionChance>
+        <backstoryCryptosleepCommonality>0.08</backstoryCryptosleepCommonality>
+        <itemQuality>Good</itemQuality>
+        <gearHealthRange>1~1</gearHealthRange>
+        <minGenerationAge>20</minGenerationAge>
+        <maxGenerationAge>35</maxGenerationAge>
+        <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+        <isFighter>true</isFighter>
+        <initialWillRange>3~5</initialWillRange>
+        <initialResistanceRange>7~11</initialResistanceRange>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Baseliner MayRequire="Ludeon.RimWorld.Biotech">999</Baseliner>
+            </xenotypeChances>
+        </xenotypeSet>
+        <useFactionXenotypes>false</useFactionXenotypes>
+        <inventoryOptions>
+            <skipChance>0.9</skipChance>
+            <subOptionsChooseOne>
+                <li>
+                    <thingDef>AdvancedMedkit</thingDef>
+                    <countRange>1</countRange>
+                </li>
+                <li>
+                    <thingDef>FieldMedkit</thingDef>
+                    <countRange>5</countRange>
+                </li>
+            </subOptionsChooseOne>
+        </inventoryOptions>
+    </PawnKindDef>
+
+        <!--Tier 1-->
+    <PawnKindDef Name="GW_HOI_RangedTier1" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>60</combatPower>
+        <apparelMoney>1000~1200</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>HP_Autogun</li>
+            <li>GW_AM_Lasgun</li>
+        </weaponTags>
+        <weaponMoney>550~850</weaponMoney>
+        <techHediffsChance>0.04</techHediffsChance>
+        <techHediffsMoney>750~1050</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>2~8</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.5</generateChance>
+						<sidearmMoney>
+							<min>300</min>
+							<max>500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_HOI_MeleeTier1" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>60</combatPower>
+        <apparelMoney>1000~1200</apparelMoney>
+        <apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>GW_AM_IndustrialMelee</li>
+        </weaponTags>
+        <weaponMoney>550~850</weaponMoney>
+        <techHediffsChance>0.04</techHediffsChance>
+        <techHediffsMoney>750~1050</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>2~8</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+        <!--Tier 2-->
+    <PawnKindDef Name="GW_HOI_RangedTier2" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>100</combatPower>
+        <apparelMoney>1750~2250</apparelMoney>
+        <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>HP_Autogun</li>
+            <li>GW_AM_Lasgun</li>
+        </weaponTags>
+        <weaponMoney>750~1250</weaponMoney>
+        <techHediffsChance>0.07</techHediffsChance>
+        <techHediffsMoney>1300~1700</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.7</generateChance>
+						<sidearmMoney>
+							<min>400</min>
+							<max>700</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_HOI_MeleeTier2" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>100</combatPower>
+        <apparelMoney>1750~2250</apparelMoney>
+        <apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+        <weaponTags>
+            <li>GW_AM_IndustrialMelee</li>
+        </weaponTags>
+        <weaponMoney>750~1250</weaponMoney>
+        <techHediffsChance>0.07</techHediffsChance>
+        <techHediffsMoney>1300~1700</techHediffsMoney>
+        <techHediffsTags>
+            <li>Simple</li>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>6~10</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+        <!--Tier 3-->
+    <PawnKindDef Name="GW_HOI_RangedTier3" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>150</combatPower>
+        <apparelMoney>1500~2000</apparelMoney>
+        <weaponTags>
+            <li>GW_AM_SpacerRanged</li>
+        </weaponTags>
+        <weaponMoney>1000~3000</weaponMoney>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsMoney>1800~2300</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+        <disallowedTraits>
+            <li>Brawler</li>
+        </disallowedTraits>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.9</generateChance>
+						<sidearmMoney>
+							<min>750</min>
+							<max>1000</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_HOI_MeleeTier3" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>150</combatPower>
+        <apparelMoney>2600~2900</apparelMoney>
+        <weaponTags>
+            <li>GW_AM_SpacerMelee</li>
+        </weaponTags>
+        <weaponMoney>1500~2000</weaponMoney>
+        <techHediffsChance>0.1</techHediffsChance>
+        <techHediffsMoney>2000~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~12</range>
+            </li>
+        </skills>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_HOI_Officer" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>200</combatPower>
+        <apparelMoney>2000~4000</apparelMoney>
+        <weaponTags>
+            <li>GW_HOI_CommissarRanged</li>
+        </weaponTags>
+        <weaponMoney>800~3000</weaponMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>2000~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>5~12</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>5~12</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.9</generateChance>
+						<sidearmMoney>
+							<min>750</min>
+							<max>2500</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GW_HOI_CommissarMelee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+    <PawnKindDef Name="GW_HOI_Commissar" ParentName="GW_HOI_PawnBase" Abstract="True">
+        <combatPower>200</combatPower>
+        <apparelMoney>2000~4000</apparelMoney>
+        <weaponTags>
+            <li>GW_HOI_CommissarRanged</li>
+        </weaponTags>
+        <weaponMoney>1000~3500</weaponMoney>
+        <techHediffsChance>0.2</techHediffsChance>
+        <techHediffsMoney>2000~2500</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Melee</skill>
+                <range>8~14</range>
+            </li>
+            <li>
+                <skill>Shooting</skill>
+                <range>8~14</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>0.9</generateChance>
+						<sidearmMoney>
+							<min>750</min>
+							<max>3000</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>GW_HOI_CommissarMelee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+
+            <!-- Pawns -->
+
+        <!--Cadian-->
+    <PawnKindDef ParentName="GW_HOI_RangedTier1">
+        <defName>GW_HOI_Cadian_RangedTier1</defName>
+        <label>cadian conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GW_HOI_CadianLasGun</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_MeleeTier1">
+        <defName>GW_HOI_Cadian_MeleeTier1</defName>
+        <label>cadian conscript</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_RangedTier2">
+        <defName>GW_HOI_Cadian_RangedTier2</defName>
+        <label>cadian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GW_HOI_CadianLasGun</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+     <PawnKindDef ParentName="GW_HOI_RangedTier2">
+        <defName>GW_HOI_Cadian_RangedSpecialWeapon</defName>
+        <label>cadian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <weaponMoney>750~2500</weaponMoney>
+        <weaponTags Inherit="False">
+            <li>GW_HOI_SpecialWeapons</li>
+            <li>GW_HOI_CadianGrenaeLauncer</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_MeleeTier2">
+        <defName>GW_HOI_Cadian_MeleeTier2</defName>
+        <label>cadian trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_FlakArmor</li>
+            <li>GW_HOI_Cadian_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_RangedTier3">
+        <defName>GW_HOI_Cadian_RangedTier3</defName>
+        <label>Kasrkin Trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_HOI_CadianKasrkin_FlakArmor</li>
+            <li>GW_HOI_CadianKasrkin_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_MeleeTier3">
+        <defName>GW_HOI_Cadian_MeleeTier3</defName>
+        <label>Kasrkin Trooper</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_HOI_CadianKasrkin_FlakArmor</li>
+            <li>GW_HOI_CadianKasrkin_Helmet</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_Officer"> <!--Uses this as a base so they have an easier time defending themselves-->
+        <defName>GW_HOI_Cadian_Officer</defName>
+        <label>Cadian Officer</label>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+            <li>40kCadianOfficer</li>
+        </apparelTags>
+        <trader>true</trader>
+        <factionLeader>true</factionLeader>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_OfficerGorget</li>
+            <li>GW_HOI_CadianCommanderArmor</li>
+            <li>GW_HOI_Cadian_CrusherCap</li>
+            <li>GW_HOI_CadianCommanderFatigues</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="GW_HOI_Commissar">
+        <defName>GW_HOI_Commissar</defName>
+        <label>Commissar</label>
+        <apparelTags Inherit="False">
+            <li>40kCommissar</li>
+            <li>40kCommissarOnSkin</li>
+        </apparelTags>
+        <apparelRequired>
+            <li>GW_HOI_CommissarOuter</li>
+            <li>GW_HOI_CommissarCap</li>
+            <li>GW_HOI_CommissarUniform</li>
+            <li>GW_HOI_CommissarMiddle</li>
+        </apparelRequired>
+    </PawnKindDef>
+
+        <!--Leader-->
+    <PawnKindDef ParentName="GW_HOI_PawnBase">
+        <defName>GW_HOI_LordGeneral</defName>
+        <label>lord general</label>
+        <labelPlural>lord generals</labelPlural>
+        <combatPower>180</combatPower>
+        <factionLeader>true</factionLeader>
+        <minGenerationAge>30</minGenerationAge>
+        <maxGenerationAge>45</maxGenerationAge>
+        <itemQuality>Excellent</itemQuality>
+        <apparelMoney>6500~6800</apparelMoney>
+        <weaponMoney>5000~5500</weaponMoney>
+        <apparelTags Inherit="False">
+            <li>40kCadianGuard</li>
+        </apparelTags>
+        <weaponTags>
+            <li>GW_AM_SpacerRanged</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>GW_HOI_Cadian_OfficerGorget</li>
+            <li>GW_HOI_Cadian_Fatigues</li>
+            <li>GW_HOI_CadianKasrkin_Helmet</li>
+            <li>GW_HOI_CadianKasrkin_FlakArmor</li>
+        </apparelRequired>
+        <techHediffsChance>0.5</techHediffsChance>
+        <techHediffsMoney>5800~6000</techHediffsMoney>
+        <techHediffsTags>
+            <li>Advanced</li>
+        </techHediffsTags>
+        <skills>
+            <li>
+                <skill>Shooting</skill>
+                <range>10~15</range>
+            </li>
+            <li>
+                <skill>Melee</skill>
+                <range>10~15</range>
+            </li>
+        </skills>
+        <modExtensions>
+            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
+			    <primaryMagazineCount>
+				    <min>3</min>
+				    <max>5</max>
+			    </primaryMagazineCount>
+				<sidearms>
+					<li>
+						<generateChance>1</generateChance>
+						<sidearmMoney>
+							<min>2500</min>
+							<max>3000</max>
+						</sidearmMoney>
+						<weaponTags>
+							<li>CE_Sidearm_Melee</li>
+						</weaponTags>
+					</li>
+				</sidearms>
+		    </li>
+        </modExtensions>
+    </PawnKindDef>
+</Defs>

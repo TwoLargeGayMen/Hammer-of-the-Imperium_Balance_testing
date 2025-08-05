@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef Abstract="true" Name="GW_HOI_PowerSwordBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
+        <possessionCount>1</possessionCount>
+        <description>An Astra Militarum power sword. Sometimes issued to Imperial Guard officers, the disruptive power field of the blade helps the user to cut through enemy flesh and armor.\n\nWhile baseline humans seem ill-suited for battle in a galaxy of super soldiers, psykers, and high technology, it is only the foolish opponent that underestimates the sheer grit of Humanity.</description>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <thingSetMakerTags>
+			<li>RewardStandardQualitySuper</li>
+		</thingSetMakerTags>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+        </weaponTags>
+        <costList>
+            <HP_Adamantium>20</HP_Adamantium>
+            <Plasteel>50</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <statBases>
+            <WorkToMake>20000</WorkToMake>
+            <Mass>4.5</Mass>
+            <MarketValue>900</MarketValue>
+        </statBases>
+        <relicChance>2</relicChance>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <tools>
+            <li>
+                <label>fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>9</power>
+                <cooldownTime>1.8</cooldownTime>
+                <armorPenetration>0.13</armorPenetration>
+            </li>
+            <li>
+                <label>point</label>
+                <capacities>
+                    <li>Stab</li>
+                </capacities>
+                <power>29</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>0.70</armorPenetration>
+            </li>
+            <li>
+                <label>edge</label>
+                <capacities>
+                    <li>Cut</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>2</cooldownTime>
+				<armorPenetration>0.70</armorPenetration>
+            </li>
+        </tools>
+        <recipeMaker>
+            <researchPrerequisite>GW_PowerMeleeWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <costStuffCount>60</costStuffCount>
+    </ThingDef>
+  
+  <!-- ====================== Power Sword ===================== -->
+  
+    <ThingDef ParentName="GW_HOI_PowerSwordBase">
+        <defName>GW_HOI_Melee_PowerSword</defName>
+        <label>Militarum power sword</label>
+        <weaponTags>
+            <li>GW_HOI_CommissarMelee</li>
+        </weaponTags>
+        <graphicData>
+            <texPath>Weapons/GW_HOI_CadianPowerSword</texPath>
+        </graphicData>
+    </ThingDef>
+	
+
+	<!-- ====================== Power Fist ===================== -->
+  
+    <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_HOI_Melee_PowerFist</defName>
+        <label>Militarum power fist</label>
+        <description>A power fist suited for use by baseline humans. As it requires a somewhat-unwieldy exoskeleton to use, it is rarely seen in battle. Even so, a solid punch from this weapon can injure even an Astartes - assuming that the user can get that punch in. \n\nOther races have similar weapons, such as the Ork Power Klaw. The famous Ork-slaying Commissar, Sebastian Yarrick, used a power klaw as a prosthetic limb, having beheaded its Warboss owner at the cost of his right arm.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/GW_HOI_CadianPowerFist</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>30000</WorkToMake>
+            <Mass>4</Mass>
+            <MarketValue>1000</MarketValue>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>GW_PowerMeleeWeapons</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <costList>
+            <HP_Adamantium>25</HP_Adamantium>
+            <Plasteel>80</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+            <li>GW_HOI_CommissarMelee</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+           <li>
+                <label>fist</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>34</power>
+                <cooldownTime>3</cooldownTime>
+                <armorPenetration>0.80</armorPenetration>
+            </li>
+            <li>
+                <label>gript</label>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>28</power>
+                <cooldownTime>1.8</cooldownTime>
+				<armorPenetration>0.50</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+	
+	<!--===== Power Maul =====-->
+	
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+        <defName>GW_HOI_Melee_PowerMaul</defName>
+        <label>Ogryn power maul</label>
+        <description>A large mace coated in a disruptive power field. A suitable size for an Ogryn’s fist, a strike from this weapon can crack sturdy armor or sweep aside a mass of weaker foes. \n\nOgryns hail from a high-gravity prison world. While their strength is great, their intelligence is lacking, so simpler weapons are better for them.</description>
+        <possessionCount>1</possessionCount>
+        <graphicData>
+            <texPath>Weapons/Power_Maul</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+			<drawSize>1.2</drawSize>
+        </graphicData>
+        <uiIconScale>1.2</uiIconScale>
+        <techLevel>Spacer</techLevel>
+        <statBases>
+            <WorkToMake>42000</WorkToMake>
+            <Mass>4.8</Mass>
+        </statBases>
+        <equippedAngleOffset>-65</equippedAngleOffset>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>10</Crafting>
+            </skillRequirements>
+            <recipeUsers Inherit="false">
+                <li>HP_AM_MilitarumFabricationBench</li>
+            </recipeUsers>
+            <displayPriority>400</displayPriority>
+        </recipeMaker>
+        <stuffCategories>
+			<li>Metallic</li>
+		</stuffCategories>
+        <costStuffCount>75</costStuffCount>
+        <costList>
+            <Plasteel>85</Plasteel>
+            <ComponentSpacer>2</ComponentSpacer>
+        </costList>
+        <weaponTags>
+            <li>SpacerMeleeDecent</li>
+            <li>GW_AM_SpacerMelee</li>
+            <li>GW_PowerMaul</li>
+        </weaponTags>
+        <tradeTags>
+            <li>HPMelee</li>
+            <li>GW_AM_SpacerMelee</li>
+        </tradeTags>
+        <weaponClasses>
+            <li>Melee</li>
+        </weaponClasses>
+        <tools>
+			<li>
+                <label>handle</label>
+                <capacities>
+                    <li>Poke</li>
+                </capacities>
+                <power>16</power>
+                <cooldownTime>1.75</cooldownTime>
+				<armorPenetration>0.24</armorPenetration>
+            </li>
+            <li>
+                <label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+                <capacities>
+                    <li>Blunt</li>
+                </capacities>
+                <power>36</power>
+                <cooldownTime>3.25</cooldownTime>
+				<extraMeleeDamages>
+					<li>
+						<def>Bomb</def>
+						<amount>5</amount>
+					</li>
+				</extraMeleeDamages>
+				<armorPenetration>0.48</armorPenetration>
+            </li>
+        </tools>
+    </ThingDef>
+</Defs>

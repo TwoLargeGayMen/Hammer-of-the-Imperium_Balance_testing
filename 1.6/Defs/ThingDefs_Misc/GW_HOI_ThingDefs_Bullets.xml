@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_ShotgunPellet</defName>
+    <label>Buckshot</label>
+    <graphicData>
+      <texPath>Things/Projectile/Bullet_Small</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>5</damageAmountBase>
+      <armorPenetrationBase>0.12</armorPenetrationBase>
+      <speed>65</speed>
+      <stoppingPower>0.15</stoppingPower>
+    </projectile>
+  </ThingDef>
+
+
+ <!-- 0.50 Cal-->
+  <ThingDef ParentName="BaseBullet">
+    <defName>GW_HOI_Bullet_Bolter</defName>
+    <label>bolter round</label>
+    <graphicData>
+      <texPath>Things/Projectiles/Bolter_Projectile</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <drawSize>0.6</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>Bullet</damageDef>
+      <damageAmountBase>18</damageAmountBase>
+      <stoppingPower>0.4</stoppingPower>
+	  <armorPenetrationBase>0.3</armorPenetrationBase>
+      <speed>80</speed>
+    </projectile>
+  </ThingDef>
+</Defs>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<SoundDef>
+		<defName>GW_AM_HeavyBolter</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>Weapons/HammerOfTheImperium/GWHeavyBolterTurret</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>50~50</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>GW_AM_Autocannon</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>10</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>Weapons/HammerOfTheImperium/GWAutocannon</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>50~50</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>	
+
+    <SoundDef>
+		<defName>GW_AM_Lascannon</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>1</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Folder">
+                <clipPath>Weapons/HammerOfTheImperium/Lascannon</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>50~50</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>	
+
+  	<SoundDef>
+		<defName>GW_EarthshakerArty</defName>
+		<context>MapOnly</context>
+		<eventNames />  
+		<maxSimultaneous>5</maxSimultaneous>  
+        <subSounds>
+          <li>
+            <grains>
+              <li Class="AudioGrain_Clip">
+                <clipPath>Earthshaker/GW_EarthshakerArtillery</clipPath>
+              </li>
+            </grains>      
+            <volumeRange>65~65</volumeRange>      
+          </li>
+        </subSounds>
+	</SoundDef>	
+
+  <SoundDef>
+    <defName>GW_EarthshakerArty_Reload</defName>  
+    <context>MapOnly</context>  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Earthshaker/GW_EarthshakerReload</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>15~15</volumeRange>      
+        <pitchRange>1~1.1</pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+</Defs>

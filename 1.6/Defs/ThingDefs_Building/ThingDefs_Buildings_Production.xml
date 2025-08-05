@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+    <ThingDef ParentName="GrimworldFabricationBenchBase">
+        <defName>HP_AM_MilitarumFabricationBench</defName>
+        <label>Militarum weapon workbench</label>
+        <description>A workbench for assembling the weapons of the Astra Militarum. \n\nWhile the lasgun remains the typical armament of Imperial Guardsmen, the conditions of the rimworld have let other weapons flourish as well, such as autoguns.</description>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <recipes>
+            <li>GW_Make_ComponentRelic</li>
+        </recipes>
+        <graphicData>
+            <texPath>Things/Building/Production/MilitarumWeaponBench/GW_HOI_AstraMilitarumBench_Weapon</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>GW_AM_TacticaImperium</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <ThingDef ParentName="GrimworldFabricationBenchBase">
+        <defName>GW_AM_MilitarumArmorBench</defName>
+        <label>Militarum armor workbench</label>
+        <description>A workbench for assembling the armor of the Astra Militarum. \n\nFor once, the Imperial Guard can match their enemies man-for-man. Flak armor, once derided as near-useless by their own wearers, has found itself in a comfortably average place on this planet.</description>
+        <costList>
+            <Steel>200</Steel>
+            <ComponentIndustrial>4</ComponentIndustrial>
+        </costList>
+        <recipes>
+            <li>GW_Make_ComponentRelic</li>
+        </recipes>
+        <graphicData>
+            <texPath>Things/Building/Production/MilitarumArmorBench/GW_HOI_AstraMilitarumBench_Armor</texPath>
+        </graphicData>
+        <researchPrerequisites>
+            <li>GW_AM_TacticaImperium</li>
+        </researchPrerequisites>
+    </ThingDef>
+
+    <WorkGiverDef ParentName="GWFabricationWorkGiverBase">
+        <defName>DoBillsMilitarumFabricationBench</defName>
+        <fixedBillGiverDefs>
+            <li>HP_AM_MilitarumFabricationBench</li>
+            <li>GW_AM_MilitarumArmorBench</li>
+        </fixedBillGiverDefs>
+    </WorkGiverDef>
+</Defs>
