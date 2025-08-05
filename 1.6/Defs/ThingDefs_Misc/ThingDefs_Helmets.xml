@@ -16,7 +16,7 @@
                 <li>GW_AM_MilitarumArmorBench</li>
             </recipeUsers>
         </recipeMaker>
-        <uiIconScale>1.6</uiIconScale>
+        <uiIconScale>1.0</uiIconScale>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
             <Flammability>0.25</Flammability>
