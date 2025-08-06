@@ -54,7 +54,7 @@
     <ThingDef ParentName="GW_HOI_AutogunBase">
         <defName>GW_HOI_Gun_Agripinaamkii</defName>
         <label>Agripinaa MKII</label>
-        <description>A fully-automatic autogun, similar to an assault rifle, that fires caseless solid-slug rounds. Compared to the assault rifles of modern rimworlds, these more advanced weapons boast greater damage, armor penetration, and range. \n\nThis particular pattern of autogun was infamous as the arm of the heretical Vraksian Traitor Militia during the Siege of Vraks. Opposing the Death Korps of Krieg and several chapters of Space Marines, the millions-strong heretic forces were supported by Chaos Space Marine warbands, daemons, and traitor Titans, holding their ground for seventeen years of unbroken battle. \n\nAt the end of the campaign, millions lay dead (including the entire original population of the planet) and Vraks Prime was declared a Dead World and cordoned off by order of the Inquisition.</description>
+        <description>A semi-automatic autogun, similar to an assault rifle, that fires caseless solid-slug rounds. Compared to the assault rifles of modern rimworlds, these more advanced weapons boast greater damage, armor penetration, and range.</description>
         <graphicData>
             <texPath>Weapons/Agripinaa MKII</texPath>
         </graphicData>
@@ -190,7 +190,7 @@
     <ThingDef ParentName="GW_HOI_AutogunBase">
         <defName>GW_HOI_Shotgun</defName>
         <label>Militarum shotgun</label>
-        <description>A pump-action shotgun used by the Astra Militarum and the Navis Imperialis. These weapons are harder-hitting than typical shotguns found on the rimworlds. \n\nImperial Guardsmen have also been known to use double-barrel shotguns. Some Elysian Drop Troopers, seeing close-combat much more frequently than a typical Guardsman, even prefer their shotguns over lasguns.</description>
+        <description>A pump-action shotgun used by some regiments of the Astra Militarum and the Navis Imperialis. These weapons are harder-hitting than typical shotguns found on the rimworlds. While this is a more improvised ar barebones model, better equipped regiments possess unique and improved shotguns.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
             <drawSize>0.8</drawSize>

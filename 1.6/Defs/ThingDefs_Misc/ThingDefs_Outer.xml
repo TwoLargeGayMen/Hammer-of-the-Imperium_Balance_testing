@@ -46,8 +46,8 @@
 	
 	<ThingDef ParentName="GW_HOI_OuterBase">
         <defName>GW_HOI_CommissarOuter</defName>
-        <label>Commissar jacket</label>
-        <description>A greatcoat with golden epaulets and a red lining, clearly identifying the wearer as an Imperial Commissar. \n\nA Commissar should be respected and must be feared, but never hated - otherwise, they will not last long. Some of the more free-spirited regiments, such as the Catachan Jungle Fighters, are notorious for “battlefield accidents”.</description>
+        <label>Cadian commissar overcoat</label>
+        <description>A custom-fit greatcoat issued for those who have earned the rank of Commissar. Note the epaulettes, a sign of authority with roots in the uniforms of ancient Terra.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>

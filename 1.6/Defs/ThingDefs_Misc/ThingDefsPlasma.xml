@@ -25,8 +25,8 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_HOI_Gun_PlasmaGun</defName>
-        <label>Cadian plasma gun</label>
-        <description>Magnacore pattern plasma gun for use by the Imperial Guard. Even though it is scaled for a baseline human, the plasma it fires is still a big threat even to armored targets.\n\nBeing a squad’s plasma gunner is a dubious honor. While a plasma gunner has the power of the sun in their hands, that same power could also blast them to pieces with one too many trigger pulls.</description>
+        <label>Plasma gun M35 Magnacore pattern</label>
+        <description>A smaller plasma gun for use by the Imperial Guard. Even though it is scaled for a baseline human, the plasma it fires is still a big threat even to armored targets.\n\nBeing a squad’s plasma gunner is a dubious honor. While a plasma gunner has the power of the sun in their hands, that same power could also blast them to pieces with one too many trigger pulls.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
             <drawSize>1.2</drawSize>
@@ -155,7 +155,7 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_HOI_Gun_MeltaGun</defName>
-        <label>Cadian meltagun</label>
+        <label>Meltagun Cadian pattern</label>
         <description>A smaller meltagun for use by the Imperial Guard. Even though it is scaled for a baseline human, it remains a potent anti-armor weapon in close-quarters. \n\nMelta weapons are often considered an alternative to plasma weapons. While their range is significantly less than their plasma counterparts, no one has ever seen a meltagun overheat and explode like a plasma gun.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>
@@ -270,7 +270,7 @@
 
     <ThingDef ParentName="BaseHumanMakeableGun">
         <defName>GW_HOI_PlasmaPistol</defName>
-        <label>Ryza plasma pistol</label>
+        <label>Plasma pistol Magnacore pattern</label>
         <description>A human-sized plasma pistol, designed on the Forge World of Ryza. Its relatively tiny size cuts deeply into its firepower and range, but a plasma weapon is still a plasma weapon. \n\nThis particular pattern of plasma pistol was popular with Inquisitors and their retinue. Hunters of aliens, mutants, and heretics across the galaxy, the Holy Orders of the Emperor’s Inquisition acted as the secret police of the Imperium of Man.</description>
         <techLevel>Spacer</techLevel>
         <graphicData>

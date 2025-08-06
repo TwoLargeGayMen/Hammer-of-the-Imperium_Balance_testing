@@ -54,12 +54,12 @@
     <ThingDef ParentName="GW_HOI_OnSkinBase">
         <defName>GW_HOI_Cadian_Fatigues</defName>
         <label>Cadian fatigues</label>
-	    <description>Combat fatigues used by the Cadian Shock Troops. Cadia stands. \n\nThe planet of Cadia was situated next to the infamous Eye of Terror, the largest Warp rift in the galaxy. As such, it was under constant siege, and every single Cadian was trained to fight for their Fortress World - one in ten Cadians were assigned to the Cadian Interior Guard, the world’s Planetary Defense Force.</description>
+	    <description>Simple fatigues worn by all members of the Cadian Guard. The simple, cheap materials provide modest insulation from the elements but offer little protection in the face of bullets, blades, or teeth.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Onskin/CadianFatigues_Male_south</texPath>
+            <texPath>Things/Cadian/Onskin/GW_HOI_CadianFatigues_Male_south</texPath>
         </graphicData>
         <costStuffCount>80</costStuffCount>
         <statBases>
@@ -75,7 +75,39 @@
 			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
 		</equippedStatOffsets>
         <apparel>
-            <wornGraphicPath>Things/Cadian/Onskin/CadianFatigues</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianFatigues</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_HOI_OnSkinBase">
+        <defName>GW_HOI_Cadian_CrewJumpsuit</defName>
+        <label>Cadian jumpsuit</label>
+	    <description>Rugged, flexible, single-piece fatigues. Its numerous pockets and tool-belts make it a favored outfit for Cadia's artillerists and tank crews.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Onskin/GW_HOI_CadianCrewJumpsuit_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+			<Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <MarketValue>150</MarketValue>
+        </statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianCrewJumpsuit</wornGraphicPath>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kCadianUniform</li>
@@ -85,13 +117,13 @@
 
     <ThingDef ParentName="GW_HOI_OnSkinBase">
         <defName>GW_HOI_CadianCommanderFatigues</defName>
-        <label>Cadian Commander Uniform</label>
-	    <description>WIP.</description>
+        <label>Cadian officer uniform</label>
+	    <description>Similar to standard fatigues, the Cadian officer's uniform sports a longer coat. While a modest change compared to the more ostentateous garb of other regimental officers, this uniform cuts an imposing figure, inspiring awe and obedience among the officer's subordinates.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/CadianCommander/Onskin/GW_HOI_CadianCommanderOnskin</texPath>
+            <texPath>Things/Cadian/Onskin/GW_HOI_CadianOfficerFatigues_Male_south</texPath>
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <statBases>
@@ -109,7 +141,7 @@
             <MentalBreakThreshold>0.05</MentalBreakThreshold>
 		</equippedStatOffsets>
         <apparel>
-            <wornGraphicPath>Things/Cadian/CadianCommander/Onskin/GW_HOI_CadianCommander</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianOfficerFatigues_Male_south</wornGraphicPath>
             <tags>
                 <li>40kCadianGuardOfficer</li>
             </tags>
@@ -120,13 +152,13 @@
 
     <ThingDef ParentName="GW_HOI_OnSkinBase">
         <defName>GW_HOI_CommissarUniform</defName>
-        <label>Commissar uniform</label>
-	<description>A distinctive uniform made for an Imperial Commissar of the Astra Militarum. \n\nCommissars are political officers, ensuring the loyalty of their Guardsmen to the Imperium. As well as providing oratory and in-battle inspiration, they also have absolute authority to punish heresy, cowardice, and gross incompetence - all the way to summary execution, and all the way up to the Regimental Commander they were assigned to.</description>
+        <label>Cadian Commissar uniform</label>
+		<description>Trained in the offworld academy of the Schola Progenium, every Commisar is taught to command obedience by any means necessary. While some inspire awe through great deeds, most settle for commanding fear from the end of the bolter.</description>
        <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Commissar/Display/CommissarUniform</texPath>
+            <texPath>Things/Cadian/Onskin/GW_HOI_CadianCommissarUniform_Male_south</texPath>
         </graphicData>
         <costStuffCount>90</costStuffCount>
         <equippedStatOffsets>
@@ -143,7 +175,7 @@
             <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
         </statBases>
         <apparel>
-            <wornGraphicPath>Things/Commissar/Onskin/CommissarUniform</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianCommissarUniform</wornGraphicPath>
             <tags>
                 <li>40kCommissar</li>
                 <li>40kCommissarOnSkin</li>

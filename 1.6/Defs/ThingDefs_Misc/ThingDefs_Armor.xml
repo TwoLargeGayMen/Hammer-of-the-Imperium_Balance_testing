@@ -49,7 +49,7 @@
     <ThingDef ParentName="GW_HOI_ArmorBase">
         <defName>GW_HOI_Cadian_FlakArmor</defName>
         <label>Cadian flak armor</label>
-        <description>A suit of Flak Armor, protecting the chest and shoulders. This armor pattern was used by the Cadian Shock Troops, as well as its many imitators. This is normally made of low-grade ceramite, but necessity means that rimworld steel has become an acceptable alternative. \n\nThe planet of Cadia broke before the Guard did. The leader of the 13th Black Crusade, Abbadon the Despoiler, resorted to throwing a massive, ancient voidship at the planet, knowing that he was about to lose the battle of Cadia. The resulting devastation destroyed the planet and split the Milky Way in twain, the Eye of Terror expanding into the Great Rift. \n\nSo began the Era Indomitus.</description>
+        <description>The iconic Cadian Flak Armor is a testament to both reliability and resilience. Crafted for the soldiers of Cadia, this battle-tested armor strikes a balance between durability and mobility. The distinctive design not only offers protection against small-arms fire, but also stands as a symbol of the regiment's unflinching resolve.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <skillRequirements>
@@ -57,7 +57,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Middle/FlakArmor_Male_south</texPath>
+            <texPath>Things/Cadian/Middle/GW_HOI_CadianCrewFlakArmor</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>15000</WorkToMake>
@@ -79,7 +79,57 @@
 			<HP_Ceramite>20</HP_Ceramite>
         </costList>	
         <apparel>
-            <wornGraphicPath>Things/Cadian/Middle/FlakArmor</wornGraphicPath>
+			<developmentalStageFilter>Child,Adult</developmentalStageFilter>
+            <!-- <wornGraphicPath>Things/Cadian/Middle/GW_HOI_CadianCrewFlakArmor</wornGraphicPath> -->
+			<wornGraphicPaths>
+				<li>Things/Cadian/Middle/GW_HOI_CadianFlakArmor</li>
+			</wornGraphicPaths>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianArmor</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+            <!-- Cadian Crew Armor  -->
+
+    <ThingDef ParentName="GW_HOI_ArmorBase">
+        <defName>GW_HOI_Cadian_CrewArmor</defName>
+        <label>Cadian crew armor</label>
+        <description>This light flak armor has little use in direct combat, but offers rudimentary protection for tank and artillery crews. Cadian combat doctrine favors liberal use of war machines and is thus incentivised to keep those who man them alive.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Middle/GW_HOI_CadianCrewFlakArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>15000</WorkToMake>
+            <MaxHitPoints>800</MaxHitPoints>
+            <Mass>4</Mass>
+            <ArmorRating_Sharp>0.79</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.41</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.48</ArmorRating_Heat>
+            <Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>55</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>20</HP_Ceramite>
+        </costList>	
+        <apparel>
+            <!-- <wornGraphicPath>Things/Cadian/Middle/GW_HOI_CadianCrewFlakArmor</wornGraphicPath> -->
+			<wornGraphicPaths>
+				<li>Things/Cadian/Middle/GW_HOI_CadianCrewFlakArmor</li>
+			</wornGraphicPaths>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kCadianArmor</li>
@@ -91,8 +141,8 @@
 
     <ThingDef ParentName="GW_HOI_ArmorBase">
         <defName>GW_HOI_CadianCommanderArmor</defName>
-        <label>Cadian Commander armor</label>
-        <description>WIP.</description>
+        <label>Cadian castellan armor</label>
+        <description>Light, durable, and sporting the distinct markings, to don the Castellan Armor is to take on the responsibilities of command. While few commanders enter the battlefield, the Castellan is always prepared to take up arms and lead from the front.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
             <skillRequirements>
@@ -100,7 +150,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/CadianCommander/Middle/GW_HOI_CadianCommanderMiddle_Male_south</texPath>
+            <texPath>Things/Cadian/Middle/GW_HOI_CadianCastellanArmor</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>18000</WorkToMake>
@@ -125,7 +175,52 @@
 			<HP_Ceramite>25</HP_Ceramite>
         </costList>	
         <apparel>
-            <wornGraphicPath>Things/Cadian/CadianCommander/Middle/GW_HOI_CadianCommanderMiddle</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Middle/GW_HOI_CadianCastellanArmor</wornGraphicPath>
+            <tags>
+                <li>40kCadianOfficer</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+	<!-- Cadian Officer -->
+
+    <ThingDef ParentName="GW_HOI_ArmorBase">
+        <defName>GW_HOI_CadianOfficerArmor</defName>
+        <label>Cadian Officer armor</label>
+        <description>More durable than humble Flak, Carapace armor is issues to those considered to be less expendible than the rank-and-file. This suit of Carapace has been modified with a built-in gorget, denoting an Officer's rank. To wear such armor without the proper rank is considered "Impersonation of an officer" and grounds for immediate execution.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Middle/GW_HOI_CadianOfficerArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>18000</WorkToMake>
+            <MaxHitPoints>850</MaxHitPoints>
+			<MarketValue>1250</MarketValue>
+            <Mass>5</Mass>
+            <ArmorRating_Sharp>0.82</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.43</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.50</ArmorRating_Heat>
+            <Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+            <EquipDelay>3</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+			<SocialImpact>0.1</SocialImpact>
+			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
+        </equippedStatOffsets>
+        <costList>
+            <Steel>60</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<HP_Ceramite>25</HP_Ceramite>
+        </costList>	
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Middle/GW_HOI_CadianOfficerArmor</wornGraphicPath>
             <tags>
                 <li>40kCadianOfficer</li>
             </tags>
@@ -136,8 +231,8 @@
 
     <ThingDef ParentName="GW_HOI_ArmorBase">
         <defName>GW_HOI_CadianKasrkin_FlakArmor</defName>
-        <label>Kasrkin flak armor</label>
-        <description>A full-body suit of Flak Armor. While the Kasrkin used to wear carapace armor like the Tempestus Scions do, they have had to make do with this in recent times. \n\nDuring the Fall of Cadia, a regiment of Kasrkin battled against Khornate Berserkers. The Chaos Marines expected fifty dead Guardsmen to one dead Berserker. The Kasrkin achieved thirty-to-one instead - a feat so impressive that the commanding Daemon Prince regarded it as unthinkable.</description>
+        <label>Karskin carapace armor</label>
+        <description>Crafted from layers of Ceramite and Armaplas, Carapace armor is favored by officers and elite soldiers for its supreme protection and durability. This particular model is favored by the Kasrkin elites, prized for its ability to keep them fighting even in the face of withering gunfire.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
@@ -145,7 +240,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Middle/KasrkinFlakArmor_Male_south</texPath>
+            <texPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceArmor</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>52000</WorkToMake>
@@ -176,7 +271,75 @@
 				<li MayRequire="ceteam.combatextended">Hands</li>
 				<li MayRequire="ceteam.combatextended">Feet</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Cadian/Middle/KasrkinFlakArmor</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceArmor</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kKasrkinArmor</li>
+            </tags>
+        </apparel>
+	    <modExtensions>
+            <li Class="CombatExtended.PartialArmorExt" MayRequire="ceteam.combatextended">
+                <stats>		  				  
+                    <li>
+                        <ArmorRating_Sharp>0.7</ArmorRating_Sharp>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                    <li>
+                        <ArmorRating_Blunt>0.7</ArmorRating_Blunt>
+                        <parts>
+                            <li>Hand</li>
+                        </parts>
+                    </li>
+                </stats>
+            </li>
+	    </modExtensions>
+    </ThingDef>  
+
+    <ThingDef ParentName="GW_HOI_ArmorBase">
+        <defName>GW_HOI_CadianKasrkin_HeavyArmor</defName>
+        <label>Kasrkin heavy armor</label>
+        <description>Heavier and more durable than even standard Carapace, this armor exchanges maneuverability for additional protection.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
+            <skillRequirements>
+                <Crafting>9</Crafting>
+            </skillRequirements>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceHeavyArmor</texPath>
+        </graphicData>
+        <statBases>
+            <WorkToMake>60000</WorkToMake>
+            <MaxHitPoints>1100</MaxHitPoints>
+			<MarketValue>1500</MarketValue>
+            <Mass>10.5</Mass>
+            <ArmorRating_Sharp>1.01</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.54</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.60</ArmorRating_Heat>
+            <Insulation_Cold>32.0</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+            <EquipDelay>6</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <MoveSpeed>-0.1</MoveSpeed>
+        </equippedStatOffsets>
+		<costList>
+			<Steel>120</Steel>
+			<Plasteel>70</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<HP_Ceramite>30</HP_Ceramite>
+            <!-- <DevilstrandCloth>10</DevilstrandCloth> -->
+        </costList>
+        <apparel>
+            <bodyPartGroups>
+                <li>Legs</li>
+                <li>Arms</li>
+				<li MayRequire="ceteam.combatextended">Hands</li>
+				<li MayRequire="ceteam.combatextended">Feet</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceHeavyArmor</wornGraphicPath>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kKasrkinArmor</li>

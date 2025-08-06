@@ -70,7 +70,7 @@
 
     <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Kantrael</defName>
-        <label>Kantrael MG</label>
+        <label>Lasgun Kantrael M36 pattern</label>
         <description>The standard-issue lasgun of the Cadian Shock Troops, and widely copied by other Astra Militarum regiments. Lasguns fire a pulsed beam of laser light at the target, and are powered by rechargeable power packs. \n\nDuring one of the first deployments of Primaris Space Marines, one reckless Unnumbered Son decided to charge across open ground against a trench line of heretic Guardsmen. While their lasguns stood no chance of truly penetrating the Marine’s ceramite at first, each lasbolt dug a small pit in his armor. The Primaris Marine was essentially eroded to death in front of the Imperial battleline - a sobering sight for his peers, who now knew that even an Angel of Death can be cut down by mere mortals.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_CadianLasGun</texPath>
@@ -176,7 +176,7 @@
   
     <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Kantraeldefender</defName>
-        <label>Kantrael laspistol</label>
+        <label>Hellgun Cadian pattern</label>
         <description>A laspistol used by NCOs and officers of the Astra Militarum, particularly the Cadian Shock Troops. While its smaller size results in a lasbolt of lower power, its compactness makes it a useful sidearm. \n\nLasguns are often derided as “flashlights” - sometimes even by their own users. However, a Chaos Space Marine once made a wise observation - he who scoffs at the power of a lasgun has not charged across a field of a hundred of them.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_CadianLasPistol</texPath>
@@ -289,7 +289,7 @@
 
     <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Hellgun</defName>
-        <label>Ryza hellgun</label>
+        <label>Hellgun Cadian pattern</label>
         <description>Hellguns are a special type of high-powered lasgun, also known as a “hot-shot lasgun”. Instead of a standard power pack, hellguns feed from a backpack, allowing it to unleash a long burst of potent lasbolts. \n\nHellguns are generally seen only in the hands of elite Astra Militarum forces, such as the Tempestus Scions and the Cadian Kasrkin. Their superior penetration over normal lasguns gives hellguns a decent chance even against opponents wearing Power Armor.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_CadianHotshot</texPath>
@@ -404,7 +404,7 @@
 
     <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Longlas</defName>
-        <label>Longlas</label>
+        <label>Long-las Cadian pattern</label>
         <description>A variant of the lasgun built for long-range combat, formally known as the “Sniper Variant Lasgun”. Longlas power packs are more expensive than a standard power pack, but the lasbolts they power are far more potent. \n\nRatlings, an abhuman subspecies, are generally not employed often by the Astra Militarum due to their lower strength and hedonistic attitude. However, their short stature makes them excellent snipers and infiltrators. \n\nHowever, ratlings are also well-known as black marketeers. Many Guardsmen in need of extra rations, alcohol, and a few weapons that fell off the back of a truck have found luck in buying from a nearby ratling entrepreneur.</description>
         <graphicData>
             <drawSize>1.2</drawSize>

@@ -95,7 +95,7 @@
   
     <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
         <defName>GW_HOI_Melee_PowerFist</defName>
-        <label>Militarum power fist</label>
+        <label>Power fist Militarium Mk IIb</label>
         <description>A power fist suited for use by baseline humans. As it requires a somewhat-unwieldy exoskeleton to use, it is rarely seen in battle. Even so, a solid punch from this weapon can injure even an Astartes - assuming that the user can get that punch in. \n\nOther races have similar weapons, such as the Ork Power Klaw. The famous Ork-slaying Commissar, Sebastian Yarrick, used a power klaw as a prosthetic limb, having beheaded its Warboss owner at the cost of his right arm.</description>
         <possessionCount>1</possessionCount>
         <graphicData>

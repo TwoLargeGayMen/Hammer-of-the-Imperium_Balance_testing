@@ -70,6 +70,75 @@
                 </li>
             </options>
         </colorGenerator>
+    </ThingDef> 
+	
+    <ThingDef ParentName="ArmorMachineableBase">
+        <defName>GW_HOI_Cadian_CommissarGorget</defName>
+        <label>Cadian commissar gorget</label>
+        <description>A Cadian Commissar’s gorget, worn around the neck and denote ranking among the Commissar officers of a regiment.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+            <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>	
+            <recipeUsers Inherit="false">
+                <li>GW_AM_MilitarumArmorBench</li>
+            </recipeUsers>  
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Attachments/GW_HOI_CadianCommissarGorget_Male_south</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>3</drawSize>
+        </graphicData>
+        <costList>
+            <Steel>10</Steel>
+        </costList>
+        <thingCategories>
+            <li>ApparelUtility</li>
+        </thingCategories>
+        <tradeTags>
+            <li>HPUtility</li>
+            <li>GW_AM_Utility</li>
+        </tradeTags>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>800</WorkToMake>
+            <Mass>1</Mass> 
+            <Flammability>0.25</Flammability>
+            <StuffEffectMultiplierArmor>0.20</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.05</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.05</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>0.8</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <SocialImpact>0.8</SocialImpact>
+        </equippedStatOffsets>	
+        <apparel>
+            <useWornGraphicMask>true</useWornGraphicMask>
+            <bodyPartGroups>
+                <li>Waist</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Cadian/Attachments/GW_HOI_CadianCommissarGorget</wornGraphicPath>
+            <wornGraphicData/>
+            <layers>
+                <li>Belt</li>
+            </layers>
+            <tags>
+                <li>40kCadianOfficer</li>
+            </tags>
+            <defaultOutfitTags>
+                <li>Soldier</li>
+            </defaultOutfitTags>
+            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+        </apparel>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <min>(97, 113, 51)</min>
+                    <max>(85, 100, 45)</max>
+                </li>
+            </options>
+        </colorGenerator>
     </ThingDef>  
 	
 	
