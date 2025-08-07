@@ -47,7 +47,7 @@
 	<!-- Cadian Webbing -->
 
 	<ThingDef ParentName="GW_HOI_MiddleBase">
-        <defName>GW_HOI_CommissarMiddle</defName>
+        <defName>GW_HOI_CadianCombatWebbing</defName>
         <label>cadian combat webbing</label>
         <description>WIP.</description>
         <recipeMaker>

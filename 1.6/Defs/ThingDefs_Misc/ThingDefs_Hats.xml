@@ -100,7 +100,7 @@
 	<!-- Cadian crew cap -->
 
 	<ThingDef ParentName="GW_HOI_Hat_CapBase">
-		<defName>GW_HOI_Cadian_Fieldcap</defName>
+		<defName>GW_HOI_Cadian_Crewcap</defName>
 		<label>Cadian crew cap</label>
 		<description>The deadliness of an Imperial tank is surpassed only by its utter disregard for the safety of its drivers. Padded caps like these are worn by tank crews to ensure that a sudden stop (and the ensuing impact with the hull) doesn't crack the driver's skull like an egg.</description>
 		<graphicData>

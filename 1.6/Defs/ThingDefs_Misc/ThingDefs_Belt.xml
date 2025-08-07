@@ -84,7 +84,7 @@
             </recipeUsers>  
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Attachments/GW_HOI_CadianCommissarGorget_Male_south</texPath>
+            <texPath>Things/Cadian/Attachment/GW_HOI_CadianCommissarGorget_Male_south</texPath>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
             <drawSize>3</drawSize>

@@ -172,7 +172,7 @@
 		<label>battleline backpack</label>
 		<description>A standard backpack utilized by infantry to aid in the transport of extra equipment.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Cadian/GW_HOI_CadianBattlelineBackpack_north</texPath>
+			<texPath>Things/Backpacks/GW_HOI_CadianBattlelineBackpack_north</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -193,7 +193,7 @@
 			<CarryBulk MayRequire="CETeam.CombatExtended">5</CarryBulk>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Backpacks/Cadian/GW_HOI_CadianBattlelineBackpack</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/GW_HOI_CadianBattlelineBackpack</wornGraphicPath>
 			<drawData>
 				<dataSouth>
 					<offset>(0.0, -0.1, 0.0)</offset>
@@ -270,7 +270,7 @@
 		<label>Karskin medicae backpack</label>
 		<description>A backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nWhile the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Cadian/GW_HOI_KarskinMedicaeBackpack_north</texPath>
+			<texPath>Things/Backpacks/GW_HOI_KarskinMedicaeBackpack_north</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -295,7 +295,7 @@
 			<MedicineIndustrial>10</MedicineIndustrial>
 		</costList>
 		<apparel>
-			<wornGraphicPath>Things/Backpacks/Cadian/GW_HOI_KarskinMedicaeBackpack</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinMedicaeBackpack</wornGraphicPath>
 			<drawData>
 				<dataSouth>
 					<offset>(0.0, -0.1, 0.0)</offset>
@@ -321,7 +321,7 @@
 		<label>Vox-caster backpack</label>
 		<description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster communicates with all nearby soldiers, increasing their mobility and shooting accuracy.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Cadian/GW_HOI_CadianVoxBackpack_north</texPath>
+			<texPath>Things/Backpacks/GW_HOI_CadianVoxBackpack_north</texPath>
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -362,7 +362,7 @@
 					<offset>(0.0, 0.1, 0.4)</offset>
 				</dataNorth>
 			</drawData>
-			<wornGraphicPath>Things/Backpacks/Cadian/GW_HOI_CadianVoxBackpack</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/GW_HOI_CadianVoxBackpack</wornGraphicPath>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -374,7 +374,7 @@
 		<label>Karskin vox-caster backpack</label>
 		<description>An adapted version of the standard Kasrkin backpack, it comes with vox network accessibility, allowing for the unit to communicate with distant vox signals.\n\nIt provides power to weapons.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Cadian/GW_HOI_KarskinVoxBackpack_north</texPath>
+			<texPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</texPath>
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -415,7 +415,7 @@
 					<offset>(0.0, 0.1, 0.4)</offset>
 				</dataNorth>
 			</drawData>
-			<wornGraphicPath>Things/Backpacks/Cadian/GW_HOI_KarskinVoxBackpack_north</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</wornGraphicPath>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -526,7 +526,7 @@
 		<label>Karskin backpack</label>
 		<description>A compact, armored power unit integrated into gear. Supplies energy to integrated critical systems and their special equipment.\n\nIt provides power to weapons.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Cadian/GW_HOI_KarskinPowerBackpack_north</texPath>
+			<texPath>Things/Backpacks/GW_HOI_KarskinPowerBackpack_north</texPath>
 			<drawSize>(1.5,1.5)</drawSize>
 		</graphicData>
 		<recipeMaker>
@@ -559,7 +559,7 @@
 		<apparel>
 			<drawData>
 			</drawData>
-			<wornGraphicPath>Things/Backpacks/Cadian/GW_HOI_KarskinPowerBackpack</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinPowerBackpack</wornGraphicPath>
 			<tags>
 				<li>40kKarskinBackpack</li>
 			</tags>
