@@ -84,6 +84,38 @@
     </ThingDef>
 
     <ThingDef ParentName="GW_HOI_OnSkinBase">
+        <defName>GW_HOI_Cadian_FatiguesGreen</defName>
+        <label>Cadian fatigues(green)</label>
+	    <description>Simple fatigues worn by all members of the Cadian Guard. The simple, cheap materials provide modest insulation from the elements but offer little protection in the face of bullets, blades, or teeth.</description>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <graphicData>
+            <texPath>Things/Cadian/Onskin/CadianFatigues_Male_south</texPath>
+        </graphicData>
+        <costStuffCount>80</costStuffCount>
+        <statBases>
+            <MaxHitPoints>150</MaxHitPoints>
+            <WorkToMake>8000</WorkToMake>
+			<Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
+            <MarketValue>150</MarketValue>
+        </statBases>
+		<equippedStatOffsets>
+			<WorkSpeedGlobal>0.05</WorkSpeedGlobal>
+		</equippedStatOffsets>
+        <apparel>
+            <wornGraphicPath>Things/Cadian/Onskin/CadianFatigues</wornGraphicPath>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianUniform</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+
+    <ThingDef ParentName="GW_HOI_OnSkinBase">
         <defName>GW_HOI_Cadian_CrewJumpsuit</defName>
         <label>Cadian jumpsuit</label>
 	    <description>Rugged, flexible, single-piece fatigues. Its numerous pockets and tool-belts make it a favored outfit for Cadia's artillerists and tank crews.</description>
