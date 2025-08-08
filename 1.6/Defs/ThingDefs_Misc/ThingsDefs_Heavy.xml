@@ -222,7 +222,7 @@
                 <warmupTime>0.4</warmupTime>
                 <range>22</range>
 				<burstShotCount>1</burstShotCount>
-                <soundCast>GW_Bolt_Pistol_Sound</soundCast>
+                <soundCast>GW_Heavy_Bolt_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
@@ -307,7 +307,7 @@
                 <warmupTime>0.9</warmupTime>
                 <range>26</range>
 				<burstShotCount>1</burstShotCount>
-                <soundCast>GW_Bolt_Gun_Sound</soundCast>
+                <soundCast>GW_Heavy_Bolt_Gun_Sound</soundCast>
                 <soundCastTail>GunTail_Medium</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
             </li>
