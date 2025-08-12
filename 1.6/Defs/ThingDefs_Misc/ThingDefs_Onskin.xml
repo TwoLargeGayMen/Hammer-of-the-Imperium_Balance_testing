@@ -47,6 +47,12 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
         </apparel>
+		<!-- <modExtensions> -->
+			<!-- <li Class="VEF.Apparels.ApparelExtension"> -->
+                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
+				<!-- <hideHead>false</hideHead> -->
+            <!-- </li> -->
+	    <!-- </modExtensions> -->
     </ThingDef>
 
             <!-- Cadian Fatigues -->
