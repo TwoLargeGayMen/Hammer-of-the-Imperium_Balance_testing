@@ -441,7 +441,7 @@
         <description>A pair of heavy bolters aimed and fired by the Tarantula turret's Machine Spirit.</description>
         <recoilPower>3</recoilPower>
         <graphicData>
-            <texPath>Things/Building/Emplacement/TarantulaTurret_Top</texPath>
+            <texPath>Things/Building/Emplacement/TarantulaTurret_Topbolt</texPath>
             <drawSize>(1,1)</drawSize>
         </graphicData>
         <statBases>
@@ -477,7 +477,7 @@
         <description>A Tarantula auto-turret used by Astra Militarum forces. This version contains a pair of lascannons, able to punch through the armor of heavy infantry and APCs. \n\nTarantula turrets, though somewhat exotic, appeal greatly to Imperial Guard commanders. Unlike a human sentry, they will never fall asleep on duty or attempt mating with a “friendly” xenos approaching their post.</description>
         <thingClass>Building_TurretGun</thingClass>
         <drawerType>MapMeshAndRealTime</drawerType>
-        <uiIconPath>Things/Building/Emplacement/TarantulaTurret_LasCannon_UI</uiIconPath>
+        <uiIconPath>Things/Building/Emplacement/TarantulaTurretlas_UI</uiIconPath>
         <uiIconScale>1.1</uiIconScale>
         <graphicData>
             <texPath>Things/Building/Emplacement/TarantulaTurret_Base</texPath>
@@ -552,7 +552,7 @@
         <description>A pair of lascannons, aimed and fired by the Tarantula turret's Machine Spirit.</description>
         <recoilPower>3</recoilPower>
         <graphicData>
-            <texPath>Things/Building/Emplacement/TarantulaTurret_LasCannon_Top</texPath>
+            <texPath>Things/Building/Emplacement/TarantulaTurretlas_Top</texPath>
             <drawSize>(1,1)</drawSize>
         </graphicData>
         <statBases>
