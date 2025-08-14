@@ -8,7 +8,7 @@
 		<description>An infantry fighting vehicle used by the Imperial Guard. It is able to transport twelve soldiers into battle, then cover them with a twin-linked heavy bolter on top and a heavy bolter mounted to the turret. \n\nGuardsmen carried by a Chimera are sometimes referred to as an “Armored Fist” squad. The Armageddon Steel Legion are a regiment of such squads, riding into battle inside their Chimeras and then deploying under fire to overwhelm the shattered defenders. \n\n&lt;color=#bb8f04&gt;Crew:&lt;/color&gt; Driver x1, Gunner x1, Passenger x12\n&lt;color=#bb8f04&gt;Fuel type:&lt;/color&gt; Chemfuel</description>
 		<designationCategory>VF_Vehicles</designationCategory>
 		<graphicData>
-			<texPath>Things/Vehicles/Chimera/Chimera</texPath>
+			<texPath>Things/Vehicles/Chimera/BaseBody/Chimera_Chassis_Base</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
 			<drawSize>(5, 5)</drawSize>
 		</graphicData>

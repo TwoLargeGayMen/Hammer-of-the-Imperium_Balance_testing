@@ -1,0 +1,239 @@
+<Defs>
+
+	<Vehicles.UpgradeTreeDef>
+		<defName>GW_HOI_Chimera_UpgradeTree</defName>
+		
+		<nodes>
+			<li>
+				<key>ChimeraTurretMount</key>
+				<label>Turret Mount</label>
+				<description>WIP.</description>
+				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				
+				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				
+				<gridCoordinate>(5, 16)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<graphicOverlays>
+					<li>
+						<graphicData>
+							<texPath>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform</texPath>
+							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
+							<drawOffset>(0,0,0)</drawOffset>
+							<drawSize>(5,5)</drawSize>
+							<layer>1</layer>
+							<shaderType>Cutout</shaderType>
+						</graphicData>
+					</li>
+				</graphicOverlays>
+			</li>
+			<li>
+				<key>ChimeraHeavyBolterUpgrade</key>
+				<label>TopGun</label>
+				<description>WIP.</description>
+				<disableIfUpgradeNodesEnabled>
+					<li>ChimeraMultiMeltaUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<prerequisiteNodes>
+					<li>ChimeraTurretMount</li>
+				</prerequisiteNodes>
+				<icon>Things/Vehicles/Chimera/Turret/Chimera_Bolter_Turret</icon>
+				
+				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<GW_VehicleCannon>1</GW_VehicleCannon>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				
+				<gridCoordinate>(5, 11)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Chimera_MainBolter</turretDef>
+								<renderProperties>
+									<north>(0.2, 0.9)</north>
+									<south>(-0.2, -0.5)</south>
+									<east>(0.3, 0.1)</east>
+									<west>(-0.3, -0.1)</west>
+								</renderProperties>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.75)</aimPieOffset>
+								<drawLayer>3</drawLayer>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+			</li>
+			<li>
+				<key>ChimeraMultiLaserUpgrade</key>
+				<label>TopGun</label>
+				<description>WIP.</description>
+				<disableIfUpgradeNodesEnabled>
+					<li>ChimeraHeavyBolterUpgrade</li>
+				</disableIfUpgradeNodesEnabled>
+				<prerequisiteNodes>
+					<li>ChimeraTurretMount</li>
+				</prerequisiteNodes>
+				<icon>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</icon>
+				
+				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<GW_VehicleCannon>1</GW_VehicleCannon>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				
+				<gridCoordinate>(5, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Chimera_MainLaser</turretDef>
+								<renderProperties>
+									<north>(0.2, 0.9)</north>
+									<south>(-0.2, -0.5)</south>
+									<east>(0.3, 0.1)</east>
+									<west>(-0.3, -0.1)</west>
+								</renderProperties>
+								<gizmoLabel>Main Turret</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0, 1.75)</aimPieOffset>
+								<drawLayer>3</drawLayer>
+								<key>mainTurret</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+			</li>
+			<li>
+				<key>SideSponsonUpgrade</key>
+				<label>Side-Bolters</label>
+				<description>WIP</description>
+				<icon>Things/Vehicles/Chimera/Chimera_CannonSide</icon>
+				<work>5000</work>
+				<gridCoordinate>(11, 5)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				<disableIfUpgradeNodesEnabled/>
+				<upgrades>
+					<li Class="Vehicles.TurretUpgrade">
+						<turrets>
+							<li>
+								<turretDef>GW_Chimera_Sponsor</turretDef>
+								<renderProperties>
+									<north>(0.75, -1.55)</north>
+									<south>(-0.75, 1.85)</south>
+									<east>(-1.7, -0.35)</east>
+									<west>(1.7, 1.1)</west>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side bolter 1</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(45,135)</angleRestricted>
+								<key>sideSponsonA</key>
+							</li>
+							<li>
+								<turretDef>GW_Chimera_Sponsor</turretDef>
+								<renderProperties>
+									<north>(0.75, -0.85)</north>									
+									<south>(-0.75, 1.15)</south>
+									<east>(-1.05, -0.35)</east>
+									<west>(1.05, 1.1)</west>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side bolter 2</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(45,135)</angleRestricted>
+								<key>sideSponsonB</key>
+							</li>
+							<li>
+								<turretDef>GW_Chimera_Sponsor</turretDef>
+								<renderProperties>
+									<north>(0.75, -0.2)</north>
+									<south>(-0.75, 0.5)</south>
+									<east>(-0.4, -0.35)</east>
+									<west>(0.4, 1.1)</west>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side bolter 3</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(45,135)</angleRestricted>
+								<key>sideSponsonC</key>
+							</li>
+							<li>
+								<turretDef>GW_Chimera_Sponsor</turretDef>
+								<renderProperties>
+									<north>(-0.75, -1.55)</north>
+									<south>(0.75, 1.85)</south>
+									<east>(-1.7, 1.1)</east>
+									<west>(1.7, -0.35)</west>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side bolter 4</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(-135,-45)</angleRestricted>
+								<key>sideSponsonD</key>
+							</li>
+							<li>
+								<turretDef>GW_Chimera_Sponsor</turretDef>
+								<renderProperties>
+									<north>(-0.75, -0.85)</north>
+									<south>(0.75, 1.15)</south>
+									<east>(-1.05, 1.1)</east>
+									<west>(1.05, -0.35)</west>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side bolter 5</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(-135,-45)</angleRestricted>
+								<key>sideSponsonE</key>
+							</li>
+							<li>
+								<turretDef>GW_Chimera_Sponsor</turretDef>
+								<renderProperties>
+									<north>(-0.75, -0.2)</north>
+									<south>(0.75, 0.5)</south>
+									<east>(-0.4, 1.1)</east>
+									<west>(0.4, -0.35)</west>
+								</renderProperties>
+								<drawLayer>2</drawLayer>
+								<gizmoLabel>side bolter 6</gizmoLabel>
+								<angleRestricted/>
+								<aimPieOffset>(0.0, 0.2)</aimPieOffset>
+								<angleRestricted>(-135,-45)</angleRestricted>
+								<key>sideSponsonF</key>
+							</li>
+						</turrets>
+					</li>
+				</upgrades>
+				<ingredients>
+					<Steel>100</Steel>
+					<GW_VehicleCannon>6</GW_VehicleCannon>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+			</li>
+		</nodes>
+	</Vehicles.UpgradeTreeDef>
+
+</Defs>
