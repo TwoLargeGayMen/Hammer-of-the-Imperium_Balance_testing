@@ -5,6 +5,191 @@
 		
 		<nodes>
 			<li>
+				<key>ImprovedEngine</key>
+				<label>Improved Engine</label>
+				<description>Monthly updates with costs, production and access to the management tables for council members. Fuel consumption increased + Mov. speed + Accel. Speed.</description>
+				
+				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				
+				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				
+				<gridCoordinate>(10, 16)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>FuelConsumptionRate</def>
+								<value>2</value>
+							</li>
+						</statCategories>
+						<vehicleStats>
+							<li MayRequire="oskarpotocki.vanillavehiclesexpanded">
+								<def>AccelerationRate</def>
+								<value>0.03</value>
+							</li>
+							<li>
+								<def>MoveSpeed</def>
+								<value>2</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>	
+			</li>
+			<li>
+				<key>ImprovedAspiration</key>
+				<label>Improved aspiration</label>
+				<description>Adapted filters and aspiration system to the planetary surface. Acceleration + minor mov. Speed.</description>
+				
+				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				
+				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
+				
+				<gridCoordinate>(15, 16)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<statCategories>
+							<li>
+								<def>FuelConsumptionRate</def>
+								<value>2</value>
+							</li>
+						</statCategories>
+						<vehicleStats>
+							<li MayRequire="oskarpotocki.vanillavehiclesexpanded">
+								<def>AccelerationRate</def>
+								<value>0.03</value>
+							</li>
+							<li>
+								<def>MoveSpeed</def>
+								<value>2</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>	
+			</li>
+			<li>
+				<key>ImprovedArmor</key>
+				<label>Improved Armor</label>
+				<description>Increased inner and platings and armor. Blunt &amp; Sharp armor + weight increase.</description>
+				
+				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(20, 16)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<stats>
+							<li>
+								<def>ArmorRating_Blunt</def>
+								<value>0.25</value>
+							</li>
+							<li>
+								<def>ArmorRating_Sharp</def>
+								<value>0.25</value>
+							</li>
+						</stats>
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>10</value>
+							</li>
+							<li>
+								<def>MoveSpeed</def>
+								<value>1</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>	
+			</li>
+			<li>
+				<key>DozerBlade</key>
+				<label>Dozer blade</label>
+				<description>Adds dozer blades to the front of the vehicle. \nPositives - Increased bumper health, good collision damage \nNegatives - Weight increase, decreases speed and acceleration</description>
+				
+				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(10, 21)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<stats>
+							<li>
+								<def>ArmorRating_Blunt</def>
+								<value>0.25</value>
+							</li>
+							<li>
+								<def>ArmorRating_Sharp</def>
+								<value>0.25</value>
+							</li>
+						</stats>
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>10</value>
+							</li>
+							<li>
+								<def>MoveSpeed</def>
+								<value>1</value>
+							</li>
+						</vehicleStats>
+					</li>
+				</upgrades>	
+			</li>
+			<li>
+				<key>ImprovedTrack</key>
+				<label>Improved Track</label>
+				<description>WIP.</description>
+				
+				<icon>Things/Vehicles/Chimera/Wheels/Chimera_TankTreads_east</icon>
+				
+				<work>2000</work>
+				
+				<gridCoordinate>(15, 21)</gridCoordinate>
+				<drawSize>(80, 80)</drawSize>
+				
+				<upgrades>
+					<li Class = "Vehicles.StatUpgrade">
+						<vehicleStats>
+							<li>
+								<def>Mass</def>
+								<value>100</value>
+							</li>
+							<li>
+								<def>MoveSpeed</def>
+								<value>-3</value>
+							</li>
+						</vehicleStats>
+					</li>
+					<li Class = "Vehicles.VehicleUpgrade">
+						<health>
+							<li>
+								<key>FrontArmorPlating</key>
+								<value>100</value>
+							</li>
+						</health>
+					</li>
+				</upgrades>	
+			</li>
+			<li>
 				<key>ChimeraTurretMount</key>
 				<label>Turret Mount</label>
 				<description>WIP.</description>
@@ -53,7 +238,7 @@
 					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 				
-				<gridCoordinate>(5, 11)</gridCoordinate>
+				<gridCoordinate>(10, 11)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
@@ -97,7 +282,7 @@
 					<ComponentIndustrial>4</ComponentIndustrial>
 				</ingredients>
 				
-				<gridCoordinate>(5, 5)</gridCoordinate>
+				<gridCoordinate>(5, 11)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				
 				<upgrades>
@@ -127,7 +312,7 @@
 				<description>WIP</description>
 				<icon>Things/Vehicles/Chimera/Chimera_CannonSide</icon>
 				<work>5000</work>
-				<gridCoordinate>(11, 5)</gridCoordinate>
+				<gridCoordinate>(5, 21)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
 				<disableIfUpgradeNodesEnabled/>
 				<upgrades>
