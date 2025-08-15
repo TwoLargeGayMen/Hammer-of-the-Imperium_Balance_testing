@@ -88,6 +88,11 @@
 				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
 				
 				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
 				
 				<gridCoordinate>(20, 16)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
@@ -125,6 +130,11 @@
 				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
 				
 				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
 				
 				<gridCoordinate>(10, 21)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
@@ -162,6 +172,11 @@
 				<icon>Things/Vehicles/Chimera/Wheels/Chimera_TankTreads_east</icon>
 				
 				<work>2000</work>
+				<ingredients>
+					<Steel>100</Steel>
+					<HP_Ceramite>100</HP_Ceramite>
+					<ComponentIndustrial>4</ComponentIndustrial>
+				</ingredients>
 				
 				<gridCoordinate>(15, 21)</gridCoordinate>
 				<drawSize>(80, 80)</drawSize>
