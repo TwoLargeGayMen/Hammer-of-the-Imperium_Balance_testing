@@ -9,7 +9,7 @@
 				<label>Improved Engine</label>
 				<description>Monthly updates with costs, production and access to the management tables for council members. Fuel consumption increased + Mov. speed + Accel. Speed.</description>
 				
-				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				<icon>Things/Item/Resource/VehicleParts/Vehicle_Engine</icon>
 				
 				<work>2000</work>
 				<ingredients>
@@ -47,7 +47,7 @@
 				<label>Improved aspiration</label>
 				<description>Adapted filters and aspiration system to the planetary surface. Acceleration + minor mov. Speed.</description>
 				
-				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
+				<icon>Things/Item/Resource/VehicleParts/Vehicle_Exhaust</icon>
 				
 				<work>2000</work>
 				<ingredients>
