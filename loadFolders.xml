@@ -8,7 +8,7 @@
     <li>/</li>
     <li>Common</li>
     <li>1.5</li>
-    <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li>
+    <!-- <li IfModActive="Ludeon.RimWorld.Royalty">1.5/Royalty</li> -->
     <li IfModActive = "SmashPhil.VehicleFramework">1.5/Mods/Vehicles</li>
     <li IfModActive="Phonicmas.40kAbhumans">1.5/Mods/Abhumans</li>
   </v1.5>
@@ -16,7 +16,7 @@
     <li>/</li>
     <li>Common</li>
     <li>1.6</li>
-    <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Royalty</li>
+    <!-- <li IfModActive="Ludeon.RimWorld.Royalty">1.6/Royalty</li> -->
     <li IfModActive = "SmashPhil.VehicleFramework">1.6/Mods/Vehicles</li>
     <li IfModActive="Phonicmas.40kAbhumans">1.6/Mods/Abhumans</li>
   </v1.6>
