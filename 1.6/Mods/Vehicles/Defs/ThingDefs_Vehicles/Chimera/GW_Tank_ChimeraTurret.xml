@@ -45,6 +45,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/Chimera/Chimera_CannonSide</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Chimera/Chimera_CannonSide</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -102,6 +103,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/Chimera/Turret/Chimera_Bolter_Turret</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Chimera/Turret/Chimera_Bolter_Turret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -177,6 +179,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -234,6 +237,7 @@
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/Chimera/Chimera_CannonSide</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/Chimera/Chimera_CannonSide</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
