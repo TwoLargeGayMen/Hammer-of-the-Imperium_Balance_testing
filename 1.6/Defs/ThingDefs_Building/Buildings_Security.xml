@@ -442,7 +442,7 @@
         <recoilPower>3</recoilPower>
         <graphicData>
             <texPath>Things/Building/Emplacement/TarantulaTurret_Topbolt</texPath>
-            <drawSize>(1,1)</drawSize>
+            <drawSize>(0.75,0.75)</drawSize>
         </graphicData>
         <statBases>
             <Mass>15</Mass>
