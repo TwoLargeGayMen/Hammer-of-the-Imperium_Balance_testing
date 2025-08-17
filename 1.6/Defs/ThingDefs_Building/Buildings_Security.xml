@@ -425,7 +425,7 @@
         </statBases>
         <building>
             <turretGunDef>GW_HOI_BuildingGun_TarantulaHeavyBolter</turretGunDef>
-            <turretBurstCooldownTime>2</turretBurstCooldownTime>
+            <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
         </building>
         <placeWorkers>
             <li>PlaceWorker_TurretTop</li>
@@ -445,20 +445,20 @@
             <drawSize>(0.75,0.75)</drawSize>
         </graphicData>
         <statBases>
-            <Mass>15</Mass>
-            <AccuracyTouch>0.85</AccuracyTouch>
-            <AccuracyShort>0.75</AccuracyShort>
-            <AccuracyMedium>0.70</AccuracyMedium>
-            <AccuracyLong>0.60</AccuracyLong>
-            <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
-            <DeteriorationRate>0</DeteriorationRate>
-            <Flammability>0</Flammability>
-        </statBases>
+			<AccuracyTouch>0.28</AccuracyTouch>
+			<AccuracyShort>0.72</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.5</AccuracyLong>
+			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<DeteriorationRate>0</DeteriorationRate>
+			<Mass>40</Mass>
+			<Flammability>0</Flammability>
+		</statBases>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
-                <defaultProjectile>GW_Bullet_HeavyBolter</defaultProjectile>
-                <warmupTime>2</warmupTime>
+                <defaultProjectile>GW_Bullet_TarantulaHeavyBolter</defaultProjectile>
+                <warmupTime>0</warmupTime>
                 <range>30</range>
                 <ticksBetweenBurstShots>10</ticksBetweenBurstShots>
                 <burstShotCount>10</burstShotCount>
@@ -469,6 +469,21 @@
             </li>
         </verbs>
     </ThingDef>
+	<ThingDef ParentName="BaseBullet">
+        <defName>GW_Bullet_TarantulaHeavyBolter</defName>
+        <label>bolter round</label>
+        <graphicData>
+          <texPath>Things/Projectiles/Bolter_Projectile</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <projectile>
+          <damageDef>Bullet</damageDef>
+          <damageAmountBase>25</damageAmountBase>
+          	<armorPenetrationBase>0.35</armorPenetrationBase>
+          <stoppingPower>1</stoppingPower>
+          <speed>88</speed>
+        </projectile>
+      </ThingDef>
 
         <!-- Tarantula Lascannon -->
     <ThingDef ParentName="AutocannonTurret">
@@ -531,11 +546,11 @@
             </li>
         </comps>
         <statBases>
-            <ShootingAccuracyTurret>1.20</ShootingAccuracyTurret> <!-- A lot more accurate than the heavy bolter -->
+			<ShootingAccuracyTurret>0.98</ShootingAccuracyTurret> <!-- like level 14 human shooter -->
         </statBases>
         <building>
             <turretGunDef>GW_HOI_BuildingGun_TarantulaLascannon</turretGunDef>
-            <turretBurstCooldownTime>3</turretBurstCooldownTime>
+            <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
         </building>
         <placeWorkers>
             <li>PlaceWorker_TurretTop</li>
@@ -555,21 +570,21 @@
             <texPath>Things/Building/Emplacement/TarantulaTurretlas_Top</texPath>
             <drawSize>(1,1)</drawSize>
         </graphicData>
-        <statBases>
-            <AccuracyTouch>0.22</AccuracyTouch>
-            <AccuracyShort>0.43</AccuracyShort>
-            <AccuracyMedium>0.54</AccuracyMedium>
-            <AccuracyLong>0.95</AccuracyLong>
-            <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
-            <DeteriorationRate>0</DeteriorationRate>
-            <Mass>15</Mass>
-            <Flammability>0</Flammability>
-        </statBases>
+		<statBases>
+		  <AccuracyTouch>0.22</AccuracyTouch>
+		  <AccuracyShort>0.33</AccuracyShort>
+		  <AccuracyMedium>0.44</AccuracyMedium>
+		  <AccuracyLong>0.95</AccuracyLong>
+		  <RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
+		  <DeteriorationRate>0</DeteriorationRate>
+		  <Mass>40</Mass>
+		  <Flammability>0</Flammability>
+		</statBases>
         <verbs>
             <li>
                 <verbClass>Verb_Shoot</verbClass>
                 <defaultProjectile>GW_LascanonShot</defaultProjectile>
-                <warmupTime>2</warmupTime>
+                <warmupTime>0</warmupTime>
                 <range>40</range>
                 <ticksBetweenBurstShots>17</ticksBetweenBurstShots>
                 <burstShotCount>1</burstShotCount>
@@ -579,6 +594,40 @@
                 <consumeFuelPerShot>1</consumeFuelPerShot>
             </li>
         </verbs>
+    </ThingDef>
+	<ThingDef ParentName="GW_LaserBullet">
+        <defName>GW_LascanonShot</defName>
+        <label>lascannon shot</label>
+        <description>An heavily charged beam of focused light fired from a lascannon.</description>
+		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
+        <drawOffscreen>true</drawOffscreen>
+        <graphicData>
+            <graphicClass>Graphic_Single</graphicClass>
+            <texPath>Things/Projectiles/Las_Bolt</texPath>
+            <shaderType>TransparentPostLight</shaderType>
+            <drawSize>1.5</drawSize>
+        </graphicData>
+        <projectile>
+            <damageDef>Burn</damageDef>
+            <damageAmountBase>40</damageAmountBase>
+            <armorPenetrationBase>0.7</armorPenetrationBase>
+            <stoppingPower>1</stoppingPower>
+			<speed>1000</speed>
+        </projectile>
+		<modExtensions>
+			<li Class="taranchuk_lasers.LaserProperties">
+				<damageTickRate>9</damageTickRate>
+				<lifetimeTicks>8</lifetimeTicks>
+				<beamWidth>1</beamWidth>
+				<beamWidthDrawScale>1</beamWidthDrawScale>
+				<sweepRatePerTick>0</sweepRatePerTick>
+				<maxSweepAngle>0</maxSweepAngle>
+				<damageThingsAcrossBeamLine>False</damageThingsAcrossBeamLine>
+				<debugCells>False</debugCells>
+				<textureScrollOffsetPerTick>(0,0)</textureScrollOffsetPerTick>
+				<lockOnTarget>False</lockOnTarget>
+			</li>
+		</modExtensions>
     </ThingDef>
 
     <!-- Earthshaker Artillery -->
