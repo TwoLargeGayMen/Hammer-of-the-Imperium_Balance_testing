@@ -179,7 +179,7 @@
             <MentalBreakThreshold>0.05</MentalBreakThreshold>
 		</equippedStatOffsets>
         <apparel>
-            <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianOfficerFatigues_Male_south</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianOfficerFatigues</wornGraphicPath>
             <tags>
                 <li>40kCadianGuardOfficer</li>
             </tags>
