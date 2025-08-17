@@ -251,7 +251,7 @@
 				<label>Hull Flamer</label>
 				<description>Forward hull-mounted weapon upgrade\n\nUsing promethium fuel, it projects a spray of volatile chemicals that, when ignited, produce a massive jet of flame that burns and clings to anything it touches. They are generally employed in anti-infantry roles.\n\n&lt;color=#bb8f04&gt;Ammo:&lt;/color&gt; Chemfuel</description>
 				<disableIfUpgradeNodesEnabled />
-				<icon>Things/Vehicles/Chimera/Turret/Chimera_Bolter_Turret</icon>
+				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_HeavyFlamers</icon>
 				
 				<work>2000</work>
 				<ingredients>
