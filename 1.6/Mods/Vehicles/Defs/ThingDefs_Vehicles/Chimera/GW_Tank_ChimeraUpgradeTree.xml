@@ -125,7 +125,7 @@
 			<li>
 				<key>DozerBlade</key>
 				<label>Dozer blade</label>
-				<description>Adds dozer blades to the front of the vehicle. \nPositives - Increased bumper health, good collision damage \nNegatives - Weight increase, decreases speed and acceleration</description>
+				<description>Initially designed for moving large quantities of earth, these heavy-duty ceramite blades serve as additional reinforcement, rendering an already resilient tank into a bulwark of steel and fury. In the event that munitions run dry, then these blades allow the tank to serve as an impromptu battering ram</description>
 				
 				<icon>Things/Vehicles/LemanRuss/DozerBlade/GW_HOI_LemanRuss_Dozer_east</icon>
 				
@@ -180,7 +180,7 @@
 			<li>
 				<key>ImprovedTrack</key>
 				<label>Improved Track</label>
-				<description>WIP.</description>
+				<description>The standard issue tracks for the Chimera, and generally found on most light Imperial tracked vehicles, they allow it to cross a variety of terrain, including water</description>
 				
 				<icon>Things/Vehicles/Chimera/Wheels/Chimera_TankTreads_east</icon>
 				
@@ -249,7 +249,7 @@
 			<li>
 				<key>ChimeraHullFlamer</key>
 				<label>Hull Flamer</label>
-				<description>WIP.</description>
+				<description>Forward hull-mounted weapon upgrade\n\nUsing promethium fuel, it projects a spray of volatile chemicals that, when ignited, produce a massive jet of flame that burns and clings to anything it touches. They are generally employed in anti-infantry roles.\n\n&lt;color=#bb8f04&gt;Ammo:&lt;/color&gt; Chemfuel</description>
 				<disableIfUpgradeNodesEnabled />
 				<icon>Things/Vehicles/Chimera/Turret/Chimera_Bolter_Turret</icon>
 				
