@@ -190,6 +190,10 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>GW_HOI_Cadian_CrewHelmet</thingDef>
 				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>GW_HOI_Cadian_Fatigues</thingDef>
+				</li>
 				<li Class="ScenPart_CreateIncident">
 					<def>CreateIncident</def>
 					<incident>RaidEnemy</incident>
@@ -255,7 +259,7 @@
 			<li>40kCadianGuard</li>
 		</apparelTags>
 		<apparelRequired>
-			<li>GW_HOI_Cadian_Fatigues</li>
+			<!-- <li>GW_HOI_Cadian_Fatigues</li> -->
 		</apparelRequired>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<apparelMoney>1000~2000</apparelMoney>
