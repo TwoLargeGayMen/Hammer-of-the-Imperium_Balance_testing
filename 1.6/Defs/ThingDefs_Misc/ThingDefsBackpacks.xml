@@ -222,6 +222,7 @@
 			<texPath>Things/Backpacks/Medical_Pack_Display</texPath>
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
+		<uiIconPath>Things/Backpacks/Medical_Pack_Display</uiIconPath>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
@@ -274,7 +275,7 @@
 			<drawSize>(2,2)</drawSize>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>20200</WorkToMake>
@@ -378,7 +379,7 @@
 			<drawSize>(1.25,1.25)</drawSize>
 		</graphicData>
 		<recipeMaker>
-			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
 		</recipeMaker>
 		<statBases>
 			<WorkToMake>44000</WorkToMake>

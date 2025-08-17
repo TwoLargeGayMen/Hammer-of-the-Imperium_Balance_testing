@@ -184,7 +184,7 @@
         <uiIconScale>1.5</uiIconScale>
         <soundInteract>Interact_Autopistol</soundInteract>
         <recipeMaker>
-		<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+		<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
             <skillRequirements>
                 <Crafting>7</Crafting>
             </skillRequirements>
