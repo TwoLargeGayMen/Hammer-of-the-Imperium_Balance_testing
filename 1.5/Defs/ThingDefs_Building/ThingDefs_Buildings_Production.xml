@@ -12,7 +12,7 @@
             <li>GW_Make_ComponentRelic</li>
         </recipes>
         <graphicData>
-            <texPath>Things/Building/Production/MilitarumWeaponBench/AstraMilitarumBench_Weapon</texPath>
+            <texPath>Things/Building/Production/MilitarumWeaponBench/GW_HOI_AstraMilitarumBench_Weapon</texPath>
         </graphicData>
         <researchPrerequisites>
             <li>GW_AM_TacticaImperium</li>
@@ -31,7 +31,7 @@
             <li>GW_Make_ComponentRelic</li>
         </recipes>
         <graphicData>
-            <texPath>Things/Building/Production/MilitarumArmorBench/AstraMilitarumBench_Armor</texPath>
+            <texPath>Things/Building/Production/MilitarumArmorBench/GW_HOI_AstraMilitarumBench_Armor</texPath>
         </graphicData>
         <researchPrerequisites>
             <li>GW_AM_TacticaImperium</li>

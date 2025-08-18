@@ -215,7 +215,7 @@
         <label>Kantrael MG-t</label>
         <description>A modified Kantrael MG lasgun, used in the hive city of Tertium. Well-suited to close-quarters battle, it has slightly boosted firepower, better handling, and increased accuracy up close, but suffers at longer distances.</description>
         <graphicData>
-            <texPath>Weapons/Kantrael MG-t</texPath>
+            <texPath>Weapons/GW_HOI_CadianLasGun</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>20500</WorkToMake>
@@ -281,7 +281,7 @@
         <label>MK4 lascarbine</label>
         <description>A shortened lasgun, better suited for combat in denser environments. This particular model of lasgun is popular with the Catachan Jungle Fighters. \n\nJungle worlds can be found across the Imperium, and many are so deadly that they can be considered an enemy in themselves. They often pale in comparison to Catachan, however - some Jungle Fighters deployed to the Ork-infested Equatorial Jungle of Armageddon described their situation as being akin to paid leave.</description>
         <graphicData>
-            <texPath>Weapons/MK4 Lascarbine</texPath>
+            <texPath>Weapons/GW_HOI_CadianLasPistol</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>20000</WorkToMake>
@@ -551,7 +551,7 @@
         <label>Kantrael MG Defender</label>
         <description>A laspistol used by NCOs and officers of the Astra Militarum, particularly the Cadian Shock Troops. While its smaller size results in a lasbolt of lower power, its compactness makes it a useful sidearm. \n\nLasguns are often derided as “flashlights” - sometimes even by their own users. However, a Chaos Space Marine once made a wise observation - he who scoffs at the power of a lasgun has not charged across a field of a hundred of them.</description>
         <graphicData>
-            <texPath>Weapons/Kantrael MG Defender</texPath>
+            <texPath>Weapons/GW_HOI_CadianLasPistol</texPath>
         </graphicData>
         <uiIconScale>1.5</uiIconScale>
         <soundInteract>Interact_Autopistol</soundInteract>
@@ -698,7 +698,7 @@
         <label>Ryza hellgun</label>
         <description>Hellguns are a special type of high-powered lasgun, also known as a “hot-shot lasgun”. Instead of a standard power pack, hellguns feed from a backpack, allowing it to unleash a long burst of potent lasbolts. \n\nHellguns are generally seen only in the hands of elite Astra Militarum forces, such as the Tempestus Scions and the Cadian Kasrkin. Their superior penetration over normal lasguns gives hellguns a decent chance even against opponents wearing Power Armor.</description>
         <graphicData>
-            <texPath>Weapons/Hellgun</texPath>
+            <texPath>Weapons/GW_HOI_CadianHotshot</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>32000</WorkToMake>

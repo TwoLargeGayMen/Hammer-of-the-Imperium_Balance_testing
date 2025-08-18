@@ -347,7 +347,7 @@
 		<label>Elysian jetpack</label>
         <description>A modified grav-chute specifically tailored for the Elysian Drop Troops of the Astra Militarum. Normally, grav-chutes are only meant to slow a user’s fall onto the battlefield, but this design has been improved to allow for a burst of ascension before descent, like a jump-pack. \n\nThe airborne insertions once favored by the Elysians are a very rare occurrence in modern times. This jetpack is something of a compromise - allowing the Elysians to jump straight into the fray and unleash hell upon the enemy, just as they did before.</description>
 		<graphicData>
-			<texPath>Things/ElysianDrop/Backpack/Elysium_Jetpack_Display</texPath>
+			<texPath>Things/Backpacks/Elysium_Jetpack_Display</texPath>
 			<drawSize>(2,2)</drawSize>	
 		</graphicData>
 		<recipeMaker>
@@ -418,7 +418,7 @@
                     <offset>(0.0, -0.1, 0.0)</offset>
 				</dataSouth>
 			</drawData>
-			<wornGraphicPath>Things/ElysianDrop/Backpack/Elysium_Jetpack</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/Elysium_Jetpack</wornGraphicPath>
 			<tags>
 				<li>40kElysian</li>
 				<li>40kElysianJetpack</li>

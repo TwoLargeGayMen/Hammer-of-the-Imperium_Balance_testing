@@ -110,7 +110,7 @@
         <label>Sanctified MK4 lascarbine</label>
         <description>A MK4 lascarbine that has been sanctified by its previous owner. Sanctification rituals have been recorded to be effective - as belief affects the Warp, so does it affect the daemons spawned from it. \n\nThe four Gods of Chaos - Khorne, Nurgle, Tzeentch, and Slaanesh - feed on the emotions of sapient beings in realspace. Since they are the gods of war, illness, scheming, and excess respectively, they wield incredible power, some of which is used to spawn daemons.</description>
         <graphicData>
-            <texPath>Weapons/Sanctified MK4 Lascarbine</texPath>
+            <texPath>Weapons/Sanctified Kantrael MG</texPath>
         </graphicData>
         <statBases>
             <Mass>3.4</Mass>

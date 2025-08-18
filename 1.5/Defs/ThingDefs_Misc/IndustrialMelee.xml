@@ -41,7 +41,7 @@
         <label>Militarum chainsword</label>
         <description>A one-handed chainsword fit for use by a baseline human. While it is smaller and thus less deadly than an Astartes chainsword, it can still rip through enemy flesh with horrifying efficiency. \n\nChainswords are sometimes granted to officers of the Astra Militarum, including some Commissars. Various mercenary outfits and particularly well-equipped gangers can also be found using them.</description>
         <graphicData>
-            <texPath>Weapons/Chainsword</texPath>
+            <texPath>Weapons/GW_HOI_ChainSword</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>18000</WorkToMake>
@@ -80,7 +80,7 @@
         <label>Short chainsword</label>
         <description>A shorter chainsword scaled for use by soldiers of the Astra Militarum. While somewhat weaker than their full-length counterparts, they make up for it with faster movement speed. \n\nThis design’s short length has earned it the favor of Navis Imperialis (Imperial Navy) voidsmen. Fighting in the tight confines of a voidship means that longer weapons can become unwieldy, potentially causing the user’s death.</description>
         <graphicData>
-            <texPath>Weapons/Chain Shortsword</texPath>
+            <texPath>Weapons/GW_HOI_ChainSword</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>14000</WorkToMake>
@@ -123,7 +123,7 @@
         <description>An entrenching tool used by Imperial Guardsmen to dig in, and as a sturdy melee weapon. A solid strike to the head from one of these shovels can do considerable damage to an enemy heretic. \n\nThe Death Korps of Krieg, being specialists in trench warfare, are heavily associated with these shovels.</description>
         <possessionCount>1</possessionCount>
         <graphicData>
-            <texPath>Weapons/Trench Shovel</texPath>
+            <texPath>Weapons/DKoK_Shovel</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
         <uiIconScale>1.2</uiIconScale>
@@ -195,7 +195,7 @@
         <label>Combat knife</label>
         <description>A simple fighting knife of Imperial design, suitable for a baseline human. Slight improvements have given it an edge over the typical knives found on rimworlds. \n\nDespite the power of the horrifying monstrosities that the Astra Militarum has been pitted against, knives like these have saved an uncountable number of Guardsmen from a gruesome death.</description>
         <graphicData>
-            <texPath>Weapons/CombatKnife</texPath>
+            <texPath>Weapons/GW_HOI_CombatKnife</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>3200</WorkToMake>
