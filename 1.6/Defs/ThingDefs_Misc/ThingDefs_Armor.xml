@@ -231,7 +231,7 @@
 
     <ThingDef ParentName="GW_HOI_ArmorBase">
         <defName>GW_HOI_CadianKasrkin_FlakArmor</defName>
-        <label>Karskin carapace armor</label>
+        <label>Kasrkin carapace armor</label>
         <description>Crafted from layers of Ceramite and Armaplas, Carapace armor is favored by officers and elite soldiers for its supreme protection and durability. This particular model is favored by the Kasrkin elites, prized for its ability to keep them fighting even in the face of withering gunfire.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -240,7 +240,6 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceArmor</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>52000</WorkToMake>
@@ -271,7 +270,6 @@
 				<li MayRequire="ceteam.combatextended">Hands</li>
 				<li MayRequire="ceteam.combatextended">Feet</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceArmor</wornGraphicPath>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kKasrkinArmor</li>
@@ -308,7 +306,6 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceHeavyArmor</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>60000</WorkToMake>
@@ -339,7 +336,6 @@
 				<li MayRequire="ceteam.combatextended">Hands</li>
 				<li MayRequire="ceteam.combatextended">Feet</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Cadian/Middle/GW_HOI_KarskinCarapaceHeavyArmor</wornGraphicPath>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kKasrkinArmor</li>

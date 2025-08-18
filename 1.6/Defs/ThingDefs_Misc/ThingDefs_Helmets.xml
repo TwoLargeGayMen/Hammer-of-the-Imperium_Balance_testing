@@ -254,7 +254,6 @@
         <label>Kasrkin helmet</label>
         <description>Also made of Carapace armor, the Kasrkin helmet comes standard with a rebreather mask and an array of sensors, providing Cadia's elite warriors with every possible advantage.</description>
         <graphicData>
-            <texPath>Things/Cadian/Headgear/GW_HOI_KarskinCarapaceHelmet_south</texPath>
         </graphicData>
         <costList>
             <Steel>70</Steel>
@@ -283,7 +282,6 @@
         </recipeMaker>
         <apparel>
             <immuneToToxGasExposure>true</immuneToToxGasExposure>
-            <wornGraphicPath>Things/Cadian/Headgear/GW_HOI_KarskinCarapaceHelmet</wornGraphicPath>
             <bodyPartGroups Inherit="False">
                 <li>FullHead</li>
             </bodyPartGroups>
