@@ -268,7 +268,7 @@
 
 	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_KarskinMedicalBackpack</defName>
-		<label>Karskin medicae backpack</label>
+		<label>Kasrkin medicae backpack</label>
 		<description>A backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nWhile the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_KarskinMedicaeBackpack_north</texPath>
@@ -372,7 +372,7 @@
 
 	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_KarskinVoxBackpack</defName>
-		<label>Karskin vox-caster backpack</label>
+		<label>Kasrkin vox-caster backpack</label>
 		<description>An adapted version of the standard Kasrkin backpack, it comes with vox network accessibility, allowing for the unit to communicate with distant vox signals.\n\nIt provides power to weapons.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</texPath>
@@ -538,7 +538,7 @@
 	
 	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_KarskinPowerBackpack</defName>
-		<label>Karskin backpack</label>
+		<label>Kasrkin backpack</label>
 		<description>A compact, armored power unit integrated into gear. Supplies energy to integrated critical systems and their special equipment.\n\nIt provides power to weapons.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_KarskinPowerBackpack_north</texPath>
