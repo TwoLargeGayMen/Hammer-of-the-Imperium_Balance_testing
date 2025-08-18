@@ -513,7 +513,7 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianCommissarCap_south</wornGraphicPath>
+			<wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianCommissarCap</wornGraphicPath>
 			<tags>
 				<li>40kCommissar</li>
 				<li>40kCommissarCap</li>

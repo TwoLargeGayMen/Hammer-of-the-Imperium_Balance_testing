@@ -117,7 +117,7 @@
             <bodyPartGroups>
                 <li>Waist</li>
             </bodyPartGroups>
-            <wornGraphicPath>Things/Cadian/Attachments/GW_HOI_CadianCommissarGorget</wornGraphicPath>
+            <wornGraphicPath>Things/Cadian/Attachment/GW_HOI_CadianCommissarGorget</wornGraphicPath>
             <wornGraphicData/>
             <layers>
                 <li>Belt</li>
@@ -195,6 +195,20 @@
                 <li>Soldier</li>
             </defaultOutfitTags>
             <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+			<drawData>
+				<dataSouth>
+					<offset>(0.0, -0.00, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<offset>(0.2, 0.0, 0.1)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.2, 0.0, 0.1)</offset>
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.0, 0.0)</offset>
+				</dataNorth>
+			</drawData>
         </apparel>
         <tradeTags>
 			<li>HPUtility</li>
