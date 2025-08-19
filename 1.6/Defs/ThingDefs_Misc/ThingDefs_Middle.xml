@@ -49,7 +49,7 @@
 	<ThingDef ParentName="GW_HOI_MiddleBase">
         <defName>GW_HOI_CadianCombatWebbing</defName>
         <label>cadian combat webbing</label>
-        <description>WIP.</description>
+        <description>Standard webbings adapted to carry extra pouches and equipment close to the guard's body, for battlefield flexibility.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
@@ -111,7 +111,7 @@
 
 	<ThingDef ParentName="GW_HOI_MiddleBase">
         <defName>GW_HOI_CommissarMiddle</defName>
-        <label>Cadian Commissar breastplate</label>
+        <label>Cadian commissar breastplate</label>
         <description>A breastplate which bears the distinguishing marks of a Commissar's rank. Such protection is popular among commissars who prefer to lead from the front rather than barking commands from the safety of the back lines.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
@@ -171,8 +171,8 @@
 
 	<ThingDef ParentName="GW_HOI_MiddleBase">
         <defName>GW_HOI_CadianPsykerJacket</defName>
-        <label>cadian psyker jacket</label>
-        <description>WIP.</description>
+        <label>Sanctioned psyker jacket</label>
+        <description>The garb of a sanctioned psyker. Every day, psychically active children are whisked away on the ominous Black Ships where they undergo a hellish process designed to temper their powers. Those who emerge with their souls intact become Sanctioned Psykers, trained to wield their volatile powers in the name of the Imperium.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
         </recipeMaker>

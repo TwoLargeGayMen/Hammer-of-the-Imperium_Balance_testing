@@ -219,8 +219,8 @@
 			</li>
 			<li>
 				<key>ChimeraTurretMount</key>
-				<label>Turret Mount</label>
-				<description>WIP.</description>
+				<label>Turret mount</label>
+				<description>Chimera turret mount is a rotating weapon platform that allows various armaments to engage targets with flexible aiming and 360-degree coverage.</description>
 				<icon>Things/Vehicles/Chimera/TurretPlatform/Chimera_TurretPlatform_south</icon>
 				
 				<work>2000</work>
@@ -290,8 +290,8 @@
 			</li>
 			<li>
 				<key>ChimeraHeavyBolterUpgrade</key>
-				<label>TopGun</label>
-				<description>WIP.</description>
+				<label>Heavy bolter turret</label>
+				<description>Chimera heavy bolter is a turret-mounted, rapid-fire projectile weapon, designed to suppress infantry and light vehicles with sustained fire.</description>
 				<disableIfUpgradeNodesEnabled>
 					<li>ChimeraMultiMeltaUpgrade</li>
 					<li>ChimeraMultiAutocannonUpgrade</li>
@@ -336,8 +336,8 @@
 			</li>
 			<li>
 				<key>ChimeraMultiLaserUpgrade</key>
-				<label>TopGun</label>
-				<description>WIP.</description>
+				<label>Multi-laser turret</label>
+				<description>Chimera multi-laser is a turret-mounted energy weapon that fires rapid, concentrated laser beams, effective against infantry and lightly armored targets.</description>
 				<disableIfUpgradeNodesEnabled>
 					<li>ChimeraHeavyBolterUpgrade</li>
 					<li>ChimeraMultiAutocannonUpgrade</li>
@@ -382,8 +382,8 @@
 			</li>
 			<li>
 				<key>ChimeraMultiAutocannonUpgrade</key>
-				<label>TopGun</label>
-				<description>WIP.</description>
+				<label>Autocannon turret</label>
+				<description>Chimera autocannon turret is a rotating, rapid-fire weapon platform that delivers high-velocity shells, effective against infantry and lightly armored vehicles.</description>
 				<disableIfUpgradeNodesEnabled>
 					<li>ChimeraHeavyBolterUpgrade</li>
 					<li>ChimeraMultiLaserUpgrade</li>
@@ -428,8 +428,8 @@
 			</li>
 			<li>
 				<key>ChimeraInfernalCannonUpgrade</key>
-				<label>TopGun</label>
-				<description>WIP.</description>
+				<label>Inferno turret</label>
+				<description>Chimera inferno turret is a rotating flamethrower weapon, projecting streams of fire to clear infantry and light obstacles in close-range combat.</description>
 				<disableIfUpgradeNodesEnabled>
 					<li>ChimeraHeavyBolterUpgrade</li>
 					<li>ChimeraMultiLaserUpgrade</li>
@@ -475,7 +475,7 @@
 			<li>
 				<key>SideSponsonUpgrade</key>
 				<label>Side-Bolters</label>
-				<description>WIP</description>
+				<description>Chimera sponson bolter turrets are side-mounted rapid-fire weapons, ideal for engaging infantry and light threats along the vehicle’s flanks.</description>
 				<icon>Things/Vehicles/Chimera/Chimera_CannonSide</icon>
 				<work>5000</work>
 				<gridCoordinate>(20, 21)</gridCoordinate>

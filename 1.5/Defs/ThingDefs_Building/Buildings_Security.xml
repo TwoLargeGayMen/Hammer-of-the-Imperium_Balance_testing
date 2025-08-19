@@ -584,8 +584,8 @@
     <!-- Earthshaker Artillery -->
       <ThingDef ParentName="BaseArtilleryBuilding">
     <defName>GW_HOI_Turret_Earthshaker</defName>
-    <label>earthshaker</label>
-    <description>Earthshaker, WIP.</description>
+    <label>Earthshaker (Basilisk)</label>
+    <description>The Basilisk is a tracked artillery vehicle armed with a massive Earthshaker Cannon, designed to deliver devastating long-range bombardments. Lightly armored and vulnerable in close combat, it excels at pounding distant targets and breaking enemy lines before the main force moves in.</description>
     <thingClass>Building_TurretGun</thingClass>
     <graphicData>
       <texPath>Things/Building/Emplacement/GW_Earthshaker_Base</texPath>
@@ -654,8 +654,8 @@
 
   <ThingDef ParentName="BaseArtilleryWeapon">
     <defName>GW_HOI_Artillery_Earthshaker</defName>
-    <label>earthshaker</label>
-    <description>Earthshaker, WIP.</description>
+    <label>Earthshaker (Basilisk)</label>
+    <description>The Basilisk is a tracked artillery vehicle armed with a massive Earthshaker Cannon, designed to deliver devastating long-range bombardments. Lightly armored and vulnerable in close combat, it excels at pounding distant targets and breaking enemy lines before the main force moves in.</description>
     <recoilPower>5</recoilPower>
 	<recoilRelaxation>5</recoilRelaxation>
     <graphicData>

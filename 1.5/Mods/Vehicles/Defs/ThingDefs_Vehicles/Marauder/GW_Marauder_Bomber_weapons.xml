@@ -134,7 +134,7 @@
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 			<defName>GW_Marauder_Assault</defName>
 			<label>assault cannon turret</label>
-			<description>Mo Dakka, WIP</description>
+			<description>Marauder assault cannon turret is a rotating, high-rate-of-fire weapon that unleashes a storm of explosive rounds, effective against infantry, light vehicles, and aircraft.</description>
 			<turretType>Rotatable</turretType>
 
 			<shotSound>Shot_Autocannon</shotSound>
@@ -205,7 +205,7 @@
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 			<defName>GW_Marauder_NoseAutoCannons</defName>
 			<label>twin-linked autocannons</label>
-			<description>Mo Dakka, WIP</description>
+			<description>Marauder autocannons are turret-mounted rapid-fire weapons, designed to engage infantry and light vehicles with sustained, high-velocity fire.</description>
 			<turretType>Static</turretType>
 
 			<shotSound>Shot_Autocannon</shotSound>
