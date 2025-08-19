@@ -41,7 +41,7 @@
             <EquipDelay>0.8</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.8</SocialImpact>
+            <SocialImpact>0.15</SocialImpact>
         </equippedStatOffsets>	
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
@@ -110,7 +110,7 @@
             <EquipDelay>0.8</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <SocialImpact>0.8</SocialImpact>
+            <SocialImpact>0.1</SocialImpact>
         </equippedStatOffsets>	
         <apparel>
             <useWornGraphicMask>true</useWornGraphicMask>
