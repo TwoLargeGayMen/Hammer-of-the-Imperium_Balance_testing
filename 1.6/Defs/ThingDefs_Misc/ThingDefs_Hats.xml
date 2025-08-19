@@ -99,82 +99,82 @@
 
 	<!-- Cadian crew cap -->
 
-	<ThingDef ParentName="GW_HOI_Hat_CapBase">
-		<defName>GW_HOI_Cadian_Crewcap</defName>
-		<label>Cadian crew cap</label>
-		<description>The deadliness of an Imperial tank is surpassed only by its utter disregard for the safety of its drivers. Padded caps like these are worn by tank crews to ensure that a sudden stop (and the ensuing impact with the hull) doesn't crack the driver's skull like an egg.</description>
-		<graphicData>
-			<texPath>Things/Cadian/Headgear/GW_HOI_CadianFieldCap_south</texPath>
-		</graphicData>
-		<costStuffCount>95</costStuffCount>
-		<statBases>
-			<WorkToMake>8500</WorkToMake>
-			<MarketValue>120</MarketValue>
-			<MaxHitPoints>120</MaxHitPoints>
-			<Mass>1</Mass>
-			<StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<SocialImpact>0.05</SocialImpact>
-		</equippedStatOffsets>
-		<recipeMaker>
-			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-		</recipeMaker>
-		<apparel>
-			<wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianFieldCap</wornGraphicPath>
-			<tags>
-				<li>40kCadianGuard</li>
-				<li>40kCadianHats</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-		</apparel>
-	</ThingDef>
+	<!-- <ThingDef ParentName="GW_HOI_Hat_CapBase"> -->
+		<!-- <defName>GW_HOI_Cadian_Crewcap</defName> -->
+		<!-- <label>Cadian crew cap</label> -->
+		<!-- <description>The deadliness of an Imperial tank is surpassed only by its utter disregard for the safety of its drivers. Padded caps like these are worn by tank crews to ensure that a sudden stop (and the ensuing impact with the hull) doesn't crack the driver's skull like an egg.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Cadian/Headgear/GW_HOI_CadianFieldCap_south</texPath> -->
+		<!-- </graphicData> -->
+		<!-- <costStuffCount>95</costStuffCount> -->
+		<!-- <statBases> -->
+			<!-- <WorkToMake>8500</WorkToMake> -->
+			<!-- <MarketValue>120</MarketValue> -->
+			<!-- <MaxHitPoints>120</MaxHitPoints> -->
+			<!-- <Mass>1</Mass> -->
+			<!-- <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor> -->
+			<!-- <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold> -->
+			<!-- <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat> -->
+		<!-- </statBases> -->
+		<!-- <equippedStatOffsets> -->
+			<!-- <SocialImpact>0.05</SocialImpact> -->
+		<!-- </equippedStatOffsets> -->
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite> -->
+		<!-- </recipeMaker> -->
+		<!-- <apparel> -->
+			<!-- <wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianFieldCap</wornGraphicPath> -->
+			<!-- <tags> -->
+				<!-- <li>40kCadianGuard</li> -->
+				<!-- <li>40kCadianHats</li> -->
+			<!-- </tags> -->
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Worker</li> -->
+			<!-- </defaultOutfitTags> -->
+		<!-- </apparel> -->
+	<!-- </ThingDef> -->
   
 	<!-- Cadian Crusher Cap -->
 
-	<ThingDef ParentName="GW_HOI_Hat_CapBase">
-		<defName>GW_HOI_Cadian_CrusherCap</defName>
-		<label>Cadian crusher cap</label>
-		<description>An officer’s cap, worn by high-ranking Cadian Shock Troopers. \n\nThe Astra Militarum forces here, like the rest of the stranded Imperial fleet, are in dire straits. Without Warp travel, the Guard’s strongest assets - their sheer weight in manpower - can no longer be counted upon.</description>
-		<graphicData>
-			<texPath>Things/Cadian/Headgear/GW_HOI_CadianOfficerCap_south</texPath>
-		</graphicData>
-		<costStuffCount>60</costStuffCount>
-		<statBases>
-			<WorkToMake>20000</WorkToMake>
-			<Mass>0.5</Mass>
-			<MaxHitPoints>150</MaxHitPoints>
-			<MarketValue>150</MarketValue>
-			<StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-			<StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold>
-			<StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-		</statBases>
-		<equippedStatOffsets>
-			<SocialImpact>0.1</SocialImpact>
-			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
-			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset>
-		</equippedStatOffsets>
-		<recipeMaker>
-			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
-			<skillRequirements>
-				<Crafting>5</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<apparel>
-			<wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianOfficerCap</wornGraphicPath>
-			<tags>
-				<li>40kCadianGuard</li>
-				<li>40kCadianOfficerHats</li>
-			</tags>
-			<defaultOutfitTags>
-				<li>Worker</li>
-			</defaultOutfitTags>
-		</apparel>
-	</ThingDef>
+	<!-- <ThingDef ParentName="GW_HOI_Hat_CapBase"> -->
+		<!-- <defName>GW_HOI_Cadian_CrusherCap</defName> -->
+		<!-- <label>Cadian crusher cap</label> -->
+		<!-- <description>An officer’s cap, worn by high-ranking Cadian Shock Troopers. \n\nThe Astra Militarum forces here, like the rest of the stranded Imperial fleet, are in dire straits. Without Warp travel, the Guard’s strongest assets - their sheer weight in manpower - can no longer be counted upon.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Things/Cadian/Headgear/GW_HOI_CadianOfficerCap_south</texPath> -->
+		<!-- </graphicData> -->
+		<!-- <costStuffCount>60</costStuffCount> -->
+		<!-- <statBases> -->
+			<!-- <WorkToMake>20000</WorkToMake> -->
+			<!-- <Mass>0.5</Mass> -->
+			<!-- <MaxHitPoints>150</MaxHitPoints> -->
+			<!-- <MarketValue>150</MarketValue> -->
+			<!-- <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor> -->
+			<!-- <StuffEffectMultiplierInsulation_Cold>0.2</StuffEffectMultiplierInsulation_Cold> -->
+			<!-- <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat> -->
+		<!-- </statBases> -->
+		<!-- <equippedStatOffsets> -->
+			<!-- <SocialImpact>0.1</SocialImpact> -->
+			<!-- <MentalBreakThreshold>-0.05</MentalBreakThreshold> -->
+			<!-- <SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.1</SlaveSuppressionOffset> -->
+		<!-- </equippedStatOffsets> -->
+		<!-- <recipeMaker> -->
+			<!-- <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite> -->
+			<!-- <skillRequirements> -->
+				<!-- <Crafting>5</Crafting> -->
+			<!-- </skillRequirements> -->
+		<!-- </recipeMaker> -->
+		<!-- <apparel> -->
+			<!-- <wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianOfficerCap</wornGraphicPath> -->
+			<!-- <tags> -->
+				<!-- <li>40kCadianGuard</li> -->
+				<!-- <li>40kCadianOfficerHats</li> -->
+			<!-- </tags> -->
+			<!-- <defaultOutfitTags> -->
+				<!-- <li>Worker</li> -->
+			<!-- </defaultOutfitTags> -->
+		<!-- </apparel> -->
+	<!-- </ThingDef> -->
 
 	<!-- Eyes -->
 	<ThingDef Abstract="true" ParentName="GW_HOI_HatBase" Name="GW_HOI_Hat_EyesBase">
@@ -487,7 +487,7 @@
 		<label>Cadian officer cap</label>
 		<description>An ornate cap commonly worn by officers of the Astra Militarum. The Intricate Death's Head emblazoned on the front sends a wordless message; To defy The Emperor is to meet a swift, inevitable death.</description>
 		<graphicData>
-			<texPath>Things/Cadian/Headgear/GW_HOI_CadianCommissarCap_south</texPath>
+			<texPath>Things/Cadian/Headgear/GW_HOI_CadianOfficerCap_south</texPath>
 		</graphicData>
 		<costStuffCount>40</costStuffCount>
 		<statBases>
@@ -513,7 +513,7 @@
 			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
 		</equippedStatOffsets>
 		<apparel>
-			<wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianCommissarCap</wornGraphicPath>
+			<wornGraphicPath>Things/Cadian/Headgear/GW_HOI_CadianOfficerCap</wornGraphicPath>
 			<tags>
 				<li>40kCommissar</li>
 				<li>40kCommissarCap</li>
