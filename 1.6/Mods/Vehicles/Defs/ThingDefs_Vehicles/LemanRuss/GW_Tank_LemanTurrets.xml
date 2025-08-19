@@ -81,6 +81,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_BattleCannon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_BattleCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -134,6 +135,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinLascannons</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinLascannons</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -193,7 +195,8 @@
 				<label>Auto</label>
 				<texPath>UI/Gizmos/FireRate_Auto</texPath>
 			</li>
-			</fireModes>
+		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinAutocannons</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinAutocannons</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -259,6 +262,7 @@
 			</li>
 		</fireModes>
 
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PunisherGatlingCannon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PunisherGatlingCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -308,6 +312,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PlasmaDestroyer</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PlasmaDestroyer</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -364,6 +369,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_VanquisherCannon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_VanquisherCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -420,6 +426,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_DemolisherCannon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_DemolisherCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -467,6 +474,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_SponsonTurret_Lascannon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Lascannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -508,6 +516,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_MultiMeltas</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_MultiMeltas</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
@@ -548,6 +557,7 @@
 				<texPath>UI/Gizmos/FireRate_Single</texPath>
 			</li>
 		</fireModes>
+		<gizmoIconTexPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_PlasmaCannon</gizmoIconTexPath>
 		<graphicData>
 			<texPath>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_PlasmaCannon</texPath>
 			<graphicClass>Vehicles.Graphic_Turret</graphicClass>
