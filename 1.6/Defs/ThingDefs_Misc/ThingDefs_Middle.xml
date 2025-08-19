@@ -85,7 +85,7 @@
             <EquipDelay>3</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-            <RangedCooldownFactor>-0.05</RangedCooldownFactor>
+            <RangedCooldownFactor>-0.15</RangedCooldownFactor>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
         </equippedStatOffsets>
         <apparel>
