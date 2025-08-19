@@ -94,6 +94,9 @@
                 <li>40kCommissar</li>
                 <li>40kCommissarMiddle</li>
             </tags>
+			<layers Inherit="False">
+                <li>Belt</li>
+            </layers>
 			<bodyPartGroups>
                 <li>Torso</li>
                 <!-- <li>Neck</li> -->
