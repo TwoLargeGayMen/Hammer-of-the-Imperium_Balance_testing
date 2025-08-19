@@ -418,6 +418,9 @@
 		<costStuffCount>55</costStuffCount>
 		<apparel>
 			<wornGraphicPath>Things/Priestgear/PriesthoodDown</wornGraphicPath>
+			<renderSkipFlags>
+				<li>None</li>
+			</renderSkipFlags>
 			<tags>
 				<li>40kPriest</li>
 				<li>40kPriestGear</li>
