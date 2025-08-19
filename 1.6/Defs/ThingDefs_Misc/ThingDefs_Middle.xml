@@ -86,7 +86,8 @@
         </statBases>
         <equippedStatOffsets>
             <RangedCooldownFactor>-0.15</RangedCooldownFactor>
-			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
+			<CarryingCapacity>20</CarryingCapacity>
+			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
         </equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianCombatWebbing</wornGraphicPath>
@@ -94,6 +95,9 @@
                 <li>40kCommissar</li>
                 <li>40kCommissarMiddle</li>
             </tags>
+			<layers Inherit="false">
+				<li>Belt</li>
+			</layers>
 			<bodyPartGroups>
                 <li>Torso</li>
                 <!-- <li>Neck</li> -->
