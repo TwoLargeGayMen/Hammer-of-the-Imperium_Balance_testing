@@ -441,7 +441,7 @@
         <apparelRequired>
             <li>GW_HOI_Cadian_OfficerGorget</li>
             <li>GW_HOI_CadianCommanderArmor</li>
-            <li>GW_HOI_Cadian_CrusherCap</li>
+            <li>GW_HOI_CadianOfficerCap</li>
             <li>GW_HOI_CadianCommanderFatigues</li>
         </apparelRequired>
     </PawnKindDef>
