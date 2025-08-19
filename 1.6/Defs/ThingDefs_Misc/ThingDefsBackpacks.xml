@@ -38,18 +38,18 @@
 		<apparel>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
-				<!-- <dataSouth> -->
-					<!-- <offset>(0.0, -0.01, 0.0)</offset> -->
-				<!-- </dataSouth> -->
-				<!-- <dataNorth> -->
-					<!-- <offset>(0.0, 0.05, 0.0)</offset> -->
-				<!-- </dataNorth> -->
-				<!-- <dataWest> -->
-					<!-- <offset>(0.2, 0.0, 0.0)</offset> -->
-				<!-- </dataWest> -->
-				<!-- <dataEast> -->
-					<!-- <offset>(-0.2, 0.0, 0.0)</offset> -->
-				<!-- </dataEast> -->
+				<dataSouth>
+					<offset>(0.0, -0.01, 0.0)</offset>
+				</dataSouth>
+				<dataNorth>
+					<offset>(0.0, 0.05, 0.0)</offset>
+				</dataNorth>
+				<dataWest>
+					<offset>(0.2, 0.0, 0.0)</offset>
+				</dataWest>
+				<dataEast>
+					<offset>(-0.2, 0.0, 0.0)</offset>
+				</dataEast>
 			</drawData>
 			<bodyPartGroups>
 				<li>Torso</li>
@@ -77,7 +77,7 @@
 		<description>A small backpack used by Imperial Guardsmen. It helps the user carry more equipment. \n\nEven the rookie Guardsman quickly learns to fend for themselves by grabbing what they can. A loose power pack here, an extra grenade there, a laspistol from a dead officer.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Small_Backpack_south</texPath>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
@@ -125,7 +125,7 @@
 		<description>A larger backpack for Astra Militarum use. While it helps carry even more equipment than smaller backpacks do, it slows down the user due to its bulk. \n\nThe veteran Guardsman knows that on the battlefield, supplies from the Munitorum are irregular at best and nonexistent at worst. Going through the pockets of the dead during a lull in the fighting may turn the stomach of a rookie, but it can and has saved lives - many a salvaged plasma pistol has been the salvation of a wise Guardsman.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Large_Backpack_south</texPath>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
@@ -173,7 +173,7 @@
 		<description>A standard backpack utilized by infantry to aid in the transport of extra equipment.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_CadianBattlelineBackpack_north</texPath>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
@@ -199,10 +199,10 @@
 					<offset>(0.0, -0.1, 0.0)</offset>
 				</dataSouth>
 				<dataWest>
-					<offset>(0.0, 0.0, 0.0)</offset>
+					<offset>(0.4, 0.0, 0.0)</offset>
 				</dataWest>
 				<dataEast>
-					<offset>(-0.0, 0.0, 0.0)</offset>
+					<offset>(-0.4, 0.0, 0.0)</offset>
 				</dataEast>
 				<dataNorth>
 					<offset>(0.0, 0.1, 0.0)</offset>
@@ -220,7 +220,7 @@
 		<description>A backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nWhile the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/Medical_Pack_Display</texPath>
-			<drawSize>(1,1)</drawSize>
+			<drawSize>(0.5,0.5)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Backpacks/Medical_Pack_Display</uiIconPath>
 		<recipeMaker>
@@ -272,7 +272,7 @@
 		<description>A backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nWhile the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_KarskinMedicaeBackpack_north</texPath>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -291,6 +291,8 @@
 			<!-- <MedicalOperationSpeed>0.2</MedicalOperationSpeed> -->
 			<MedicalSurgerySuccessChance>0.15</MedicalSurgerySuccessChance>
 		</equippedStatOffsets>
+		<stuffCategories Inherit="false" IsNull="True" />
+		<costStuffCount Inherit="false" />
 		<costList>
 			<Cloth>150</Cloth>
 			<MedicineIndustrial>10</MedicineIndustrial>
@@ -323,7 +325,7 @@
 		<description>A large backpack containing a vox-caster, an Imperial Guard device. Similar to a modern radio backpack, this vox-caster allows the user to communicate over long distances on the battlefield. This particular vox-caster communicates with all nearby soldiers, increasing their mobility and shooting accuracy.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_CadianVoxBackpack_north</texPath>
-			<drawSize>(1.25,1.25)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
@@ -341,8 +343,8 @@
 			<ComponentSpacer>1</ComponentSpacer>
 			<Steel>200</Steel>
 		</costList>
-		<costStuffCount Inherit="False"/>
-		<stuffCategories Inherit="False"/>
+		<stuffCategories Inherit="false" IsNull="True" />
+		<costStuffCount Inherit="false" />
 		<comps>
 			<li Class="GW40kHediffAura.CompProperties_ApparelGiveHediff">
 				<hediffDef>GW40k_AM_VoxAura</hediffDef>
@@ -351,16 +353,16 @@
 		<apparel>
 			<drawData>
 				<dataSouth>
-					<offset>(0.0, -0.01, 0.0)</offset>
+					<offset>(0.0, -0.01, 0.4)</offset>
 				</dataSouth>
 				<dataWest>
-					<offset>(0.0, 0.01, 0.0)</offset>
+					<offset>(0.3, 0.01, 0.4)</offset>
 				</dataWest>
 				<dataEast>
-					<offset>(-0.0, 0.0, 0.0)</offset>
+					<offset>(-0.3, 0.0, 0.4)</offset>
 				</dataEast>
 				<dataNorth>
-					<offset>(0.0, 0.1, 0.0)</offset>
+					<offset>(0.0, 0.1, 0.4)</offset>
 				</dataNorth>
 			</drawData>
 			<wornGraphicPath>Things/Backpacks/GW_HOI_CadianVoxBackpack</wornGraphicPath>
@@ -372,11 +374,11 @@
 
 	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_KarskinVoxBackpack</defName>
-		<label>Kasrkin vox-caster backpack</label>
+		<label>Karskin vox-caster backpack</label>
 		<description>An adapted version of the standard Kasrkin backpack, it comes with vox network accessibility, allowing for the unit to communicate with distant vox signals.\n\nIt provides power to weapons.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</texPath>
-			<drawSize>(1.25,1.25)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_CadianShockTroops</researchPrerequisite>
@@ -394,8 +396,8 @@
 			<ComponentSpacer>1</ComponentSpacer>
 			<Steel>200</Steel>
 		</costList>
-		<costStuffCount Inherit="False"/>
-		<stuffCategories Inherit="False"/>
+		<stuffCategories Inherit="false" IsNull="True" />
+		<costStuffCount Inherit="false" />
 		<comps>
 			<li Class="GW40kHediffAura.CompProperties_ApparelGiveHediff">
 				<hediffDef>GW40k_AM_VoxAura</hediffDef>
@@ -404,19 +406,19 @@
 		<apparel>
 			<drawData>
 				<dataSouth>
-					<offset>(0.0, -0.01, 0.0)</offset>
+					<offset>(0.0, -0.01, 0.4)</offset>
 				</dataSouth>
 				<dataWest>
-					<offset>(0.0, 0.01, 0.0)</offset>
+					<offset>(0.3, 0.01, 0.4)</offset>
 				</dataWest>
 				<dataEast>
-					<offset>(-0.0, 0.0, 0.0)</offset>
+					<offset>(-0.3, 0.0, 0.4)</offset>
 				</dataEast>
 				<dataNorth>
-					<offset>(0.0, 0.1, 0.0)</offset>
+					<offset>(0.0, 0.1, 0.4)</offset>
 				</dataNorth>
 			</drawData>
-			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack</wornGraphicPath>
+			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</wornGraphicPath>
 			<tags>
 				<li>GW_CadianBackpack</li>
 			</tags>
@@ -483,7 +485,7 @@
 		<description>The backpack of an Imperial Guard Enginseer, complete with an additional arm (or “mechadendrite”) and a servo skull. Though the mechadendrite is wired into the central nervous system, it is strangely modified into a more “plug-and-play” format, allowing any user to wear it and benefit from increased work speed. \n\nEnginseers are low-ranking tech-priests that are assigned to repair equipment and vehicles, and are a common sight in the Imperial Guard and Imperial Navy. This includes field repairs - enginseers are no stranger to enemy contact and will fight hard for the Omnissiah.</description>
 		<graphicData>
 			<texPath>Things/MilitarumEngineseerer/Backpack_north</texPath>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
@@ -516,20 +518,6 @@
 			<drawData>
 			</drawData>
 			<wornGraphicPath>Things/MilitarumEngineseerer/Backpack</wornGraphicPath>
-			<drawData>
-				<dataSouth>
-					<offset>(0.0, -0.01, 0.0)</offset>
-				</dataSouth>
-				<dataWest>
-					<offset>(0.0, 0.01, 0.0)</offset>
-				</dataWest>
-				<dataEast>
-					<offset>(-0.0, 0.0, 0.0)</offset>
-				</dataEast>
-				<dataNorth>
-					<offset>(0.0, 0.1, 0.0)</offset>
-				</dataNorth>
-			</drawData>
 			<tags>
 				<li>40kEngineerBackpack</li>
 			</tags>
@@ -538,11 +526,11 @@
 	
 	<ThingDef ParentName="GW_HOI_BackpackBase">
 		<defName>GW_HOI_KarskinPowerBackpack</defName>
-		<label>Kasrkin backpack</label>
+		<label>Karskin backpack</label>
 		<description>A compact, armored power unit integrated into gear. Supplies energy to integrated critical systems and their special equipment.\n\nIt provides power to weapons.</description>
 		<graphicData>
 			<texPath>Things/Backpacks/GW_HOI_KarskinPowerBackpack_north</texPath>
-			<drawSize>(1.5,1.5)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
@@ -562,10 +550,11 @@
 		</statBases>
 		<equippedStatOffsets>
 			<WorkSpeedGlobal>0.2</WorkSpeedGlobal>
-			<!-- <MechBandwidth MayRequire="ludeon.rimworld.biotech">2</MechBandwidth> -->
+			<CarryingCapacity>10</CarryingCapacity>
+			<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
 		</equippedStatOffsets>
-		<costStuffCount Inherit="False"/>
-		<stuffCategories Inherit="False" IsNull="True" />
+		<stuffCategories Inherit="false" IsNull="True" />
+		<costStuffCount Inherit="false" />
 		<costList>
 			<Steel>100</Steel>			
 			<ComponentIndustrial>5</ComponentIndustrial>
@@ -578,20 +567,6 @@
 			<tags>
 				<li>40kKarskinBackpack</li>
 			</tags>
-			<drawData>
-				<dataSouth>
-					<offset>(0.0, -0.01, 0.0)</offset>
-				</dataSouth>
-				<dataWest>
-					<offset>(0.0, 0.01, 0.0)</offset>
-				</dataWest>
-				<dataEast>
-					<offset>(-0.0, 0.0, 0.0)</offset>
-				</dataEast>
-				<dataNorth>
-					<offset>(0.0, 0.1, 0.0)</offset>
-				</dataNorth>
-			</drawData>
 		</apparel>
 	</ThingDef>	
 
