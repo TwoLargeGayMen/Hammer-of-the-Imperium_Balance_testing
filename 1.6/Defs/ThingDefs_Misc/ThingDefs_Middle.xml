@@ -75,8 +75,8 @@
 			<MarketValue>340</MarketValue>
             <Mass>2.5</Mass>
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-            <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-            <ArmorRating_Heat>0.1</ArmorRating_Heat>
+            <ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.08</ArmorRating_Heat>
             <Insulation_Cold>0.1</Insulation_Cold>
 			<Insulation_Heat>0.1</Insulation_Heat>
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
