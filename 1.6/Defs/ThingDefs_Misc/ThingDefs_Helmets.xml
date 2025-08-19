@@ -117,9 +117,6 @@
         <apparel>
 			<wornGraphicPaths>
 				<li>Things/Cadian/Headgear/GW_HOI_CadianFlakHelmet</li>
-				<li>Things/Cadian/Headgear/GW_HOI_CadianCrewFlakHelmet</li>
-				<li>Things/Cadian/Headgear/GW_HOI_CadianCrewSoftHelmet</li>
-				<li>Things/Cadian/Headgear/GW_HOI_CadianCastellanHelmet</li>
 			</wornGraphicPaths>
             <tags>
                 <li>40kCadianGuard</li>
@@ -128,14 +125,14 @@
         </apparel>
     </ThingDef>
 	
-    <!-- Cadian Helmet -->
+    <!-- Cadian Crew Helmet -->
 
     <ThingDef ParentName="GW_HOI_HelmetBase">
         <defName>GW_HOI_Cadian_CrewHelmet</defName>
         <label>Cadian crew helmet</label>
         <description>Tank crews who distinguish themselves may have the privelege of wearing more protective headgear. This helm in particular offers greater impact protection along with a set of earmuffs designed to protect the crew's hearing from being damaged by the tank cannon and its thunderous roar.</description>
         <graphicData>
-            <texPath>Things/Cadian/Headgear/GW_HOI_CadianFlakHelmet</texPath>
+            <texPath>Things/Cadian/Headgear/GW_HOI_CadianCrewFlakHelmet</texPath>
         </graphicData>
         <costList>
             <Steel>35</Steel>
@@ -175,7 +172,7 @@
         <label>Cadian castellan helmet</label>
         <description>A carapace helm accentuated with golden laurels, convey an air of regal command. The laurel wreath has been a symbol of command since the days of old Terra, its image persisting long after the plants extinction.</description>
         <graphicData>
-            <texPath>Things/Cadian/Headgear/GW_HOI_CadianFlakHelmet</texPath>
+            <texPath>Things/Cadian/Headgear/GW_HOI_CadianCastellanHelmet</texPath>
         </graphicData>
         <costList>
             <Steel>35</Steel>
