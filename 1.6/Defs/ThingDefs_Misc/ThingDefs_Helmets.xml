@@ -156,6 +156,42 @@
         <apparel>
 			<wornGraphicPaths>
 				<li>Things/Cadian/Headgear/GW_HOI_CadianCrewFlakHelmet</li>
+			</wornGraphicPaths>
+            <tags>
+                <li>40kCadianGuard</li>
+                <li>40kCadianHelmet</li>
+            </tags>
+        </apparel>
+    </ThingDef>
+	
+    <ThingDef ParentName="GW_HOI_HelmetBase">
+        <defName>GW_HOI_Cadian_CrewHelmetSoft</defName>
+        <label>Cadian crew soft-helmet</label>
+        <description>Tank crews who distinguish themselves may have the privelege of wearing more protective headgear. This helm in particular offers greater impact protection along with a set of earmuffs designed to protect the crew's hearing from being damaged by the tank cannon and its thunderous roar.</description>
+        <graphicData>
+            <texPath>Things/Cadian/Headgear/GW_HOI_CadianCrewSoftHelmet</texPath>
+        </graphicData>
+        <costList>
+            <Steel>35</Steel>
+			<ComponentIndustrial>1</ComponentIndustrial>
+			<HP_Ceramite>5</HP_Ceramite>
+        </costList>
+        <statBases>
+            <WorkToMake>10000</WorkToMake>
+			<MarketValue>400</MarketValue>
+			<MaxHitPoints>280</MaxHitPoints>
+            <Mass>2</Mass>
+            <ArmorRating_Sharp>0.27</ArmorRating_Sharp>
+            <ArmorRating_Blunt>0.17</ArmorRating_Blunt>
+            <ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<Insulation_Cold>0.5</Insulation_Cold>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <recipeMaker>
+            <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
+        </recipeMaker>
+        <apparel>
+			<wornGraphicPaths>
 				<li>Things/Cadian/Headgear/GW_HOI_CadianCrewSoftHelmet</li>
 			</wornGraphicPaths>
             <tags>
