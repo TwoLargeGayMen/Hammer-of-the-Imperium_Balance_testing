@@ -153,8 +153,8 @@
     </ThingDef>
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_Chimera_MainLaser</defName>
-		<label>Multi-Laser</label>
-		<description>WIP</description>
+		<label>Multi-laser</label>
+		<description>Chimera multi-laser is a turret-mounted energy weapon that fires rapid, concentrated laser beams, effective against infantry and lightly armored targets.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_Multi_Melta_Gun_Sound</shotSound>
 		<projectile>GW_HOI_Chimera_LascanonShot</projectile>

@@ -45,7 +45,7 @@
   <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_HighExplosive</defName>
     <label>132mm high-explosive shell</label>
-    <description>132mm, Earthshaker. big boom. WIP</description>
+    <description>132mm high explosive shell, devastating in power to anything which got hit by it, even if you dont get directly hit by it shockwave will kill you anyway.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/HE</texPath>
@@ -98,7 +98,7 @@
     <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_Smoke</defName>
     <label>132mm smoke shell</label>
-    <description>132mm, Earthshaker. Obscurant. WIP</description>
+    <description>132mm smoke shell which cover wide distance in smoke to reduce enemy vision and even block thier sight.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/Smoke</texPath>
@@ -149,7 +149,7 @@
     <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_Incendiary</defName>
     <label>132mm Incendiary shell</label>
-    <description>132mm, Earthshaker. Burns bright. WIP</description>
+    <description>132mm shell, sometimes you just need to burn enemies alive. Orks burn, Aeldari burn, anything can burn.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/Incendiary</texPath>
@@ -205,7 +205,7 @@
   <ThingDef ParentName="GW_HOI_MakeableShellBase">
     <defName>GW_HOI_132mm_AP</defName>
     <label>132mm AP shell</label>
-    <description>132mm, Earthshaker. Anti armor. WIP</description>
+    <description>132mm shell AP which Earthshaker uses against big slow targets like chaos baneblades or even imperial knights. Dont have such big impact radius like normal frag version but it have big armor penetration values.</description>
     <possessionCount>1</possessionCount>
     <graphicData>
       <texPath>Things/Ammo/GW_HOI_EarthshakerAmmo/AP</texPath>

@@ -7,8 +7,8 @@
 		<nodes>
 			<li>
 				<key>BattleCannonUpgrade</key>
-				<label>Battle Cannon</label>
-				<description>WIP</description>
+				<label>Battle cannon</label>
+				<description>Leman Russ Battle Cannon is a turret-mounted, high-caliber gun that fires powerful explosive shells, built to smash infantry formations, light vehicles, and fortifications with devastating blasts.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_BattleCannon</icon>
 				<work>7500</work>
 				<gridCoordinate>(5, 5)</gridCoordinate>
@@ -50,7 +50,7 @@
 			<li>
 				<key>AnnihilatorUpgrade</key>
 				<label>Annihilator</label>
-				<description>WIP</description>
+				<description>Leman Russ Annihilator is a variant armed with twin lascannons in its turret, designed to destroy heavily armored vehicles and fortified targets with precise, high-energy fire.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinLascannons</icon>
 				<work>7500</work>
 				<gridCoordinate>(10, 5)</gridCoordinate>
@@ -92,7 +92,7 @@
 			<li>
 				<key>ExterminatorUpgrade</key>
 				<label>Exterminator</label>
-				<description>WIP</description>
+				<description>Leman Russ Exterminator is a variant equipped with a twin-linked autocannon, built for sustained, rapid fire against infantry, light vehicles, and aircraft.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_TwinAutocannons</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 5)</gridCoordinate>
@@ -134,7 +134,7 @@
 			<li>
 				<key>PunisherUpgrade</key>
 				<label>Punisher</label>
-				<description>WIP</description>
+				<description>Leman Russ Punisher is armed with a Punisher Gatling Cannon, unleashing a torrent of high-velocity rounds to shred infantry and lightly armored targets with overwhelming firepower.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PunisherGatlingCannon</icon>
 				<work>7500</work>
 				<gridCoordinate>(20, 5)</gridCoordinate>
@@ -176,7 +176,7 @@
 			<li>
 				<key>ExecutionerUpgrade</key>
 				<label>Executioner</label>
-				<description>WIP</description>
+				<description>Leman Russ Executioner is armed with a plasma destroyer, firing superheated blasts of energy that melt through heavy infantry and armored targets with devastating effect.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_PlasmaDestroyer</icon>
 				<work>7500</work>
 				<gridCoordinate>(25, 5)</gridCoordinate>
@@ -219,7 +219,7 @@
 			<li>
 				<key>VanquisherUpgrade</key>
 				<label>Vanquisher</label>
-				<description>WIP</description>
+				<description>Leman Russ Vanquisher is fitted with a long-barreled cannon designed for precision, capable of destroying heavily armored vehicles at range with powerful, armor-piercing shells.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_VanquisherCannon</icon>
 				<work>7500</work>
 				<gridCoordinate>(30, 5)</gridCoordinate>
@@ -261,7 +261,7 @@
 			<li>
 				<key>DemolisherUpgrade</key>
 				<label>Demolisher</label>
-				<description>WIP</description>
+				<description>Leman Russ Demolisher is equipped with a short-barreled demolisher cannon, firing massive high-explosive shells that obliterate fortifications, heavy infantry, and vehicles at close range.</description>
 				<icon>Things/Vehicles/LemanRuss/MainTurret/GW_HOI_LemanRuss_MainTurret_DemolisherCannon</icon>
 				<work>7500</work>
 				<gridCoordinate>(35, 5)</gridCoordinate>
@@ -302,8 +302,8 @@
 			</li>
 			<li>
 				<key>HullBolterUpgrade</key>
-				<label>Hull Bolter</label>
-				<description>WIP</description>
+				<label>Hull bolter</label>
+				<description>Leman Russ hull bolter is a forward-mounted heavy bolter, providing sustained anti-infantry fire to support the tank’s main gun.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Bolters</icon>
 				<work>7500</work>
 				<gridCoordinate>(5, 10)</gridCoordinate>
@@ -352,8 +352,8 @@
 			</li>
 			<li>
 				<key>HullFlamerUpgrade</key>
-				<label>Hull Flamer</label>
-				<description>WIP</description>
+				<label>Hull flamer</label>
+				<description>Leman Russ hull flamer is a short-range, front-mounted weapon that projects streams of fire, ideal for clearing infantry and light obstacles directly in the tank’s path.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_HeavyFlamers</icon>
 				<work>7500</work>
 				<gridCoordinate>(10, 10)</gridCoordinate>
@@ -402,8 +402,8 @@
 			</li>
 			<li>
 				<key>HullLascannonUpgrade</key>
-				<label>Hull Lascannon</label>
-				<description>WIP</description>
+				<label>Hull lascannon</label>
+				<description>Leman Russ hull lascannon is a powerful, front-mounted energy weapon designed to penetrate heavy armor and destroy fortified targets with precision.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Lascannon</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 10)</gridCoordinate>
@@ -452,8 +452,8 @@
 			</li>
 			<li>
 				<key>SponsonBolterUpgrade</key>
-				<label>Sponson Bolters</label>
-				<description>WIP</description>
+				<label>Sponson bolters</label>
+				<description>Leman Russ sponson bolters are side-mounted rapid-fire weapons, effective against infantry and lightly armored targets, providing flanking support while the tank advances.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_Bolters</icon>
 				<work>7500</work>
 				<gridCoordinate>(5, 15)</gridCoordinate>
@@ -526,8 +526,8 @@
 			</li>
 			<li>
 				<key>SponsonFlamerUpgrade</key>
-				<label>Sponson Flamers</label>
-				<description>WIP</description>
+				<label>Sponson flamers</label>
+				<description>Leman Russ sponson flamers are side-mounted short-range weapons that project streams of fire to clear infantry and light obstacles along the tank’s flanks.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_HeavyFlamers</icon>
 				<work>7500</work>
 				<gridCoordinate>(10, 15)</gridCoordinate>
@@ -600,8 +600,8 @@
 			</li>
 			<li>
 				<key>SponsonMeltaUpgrade</key>
-				<label>Sponson Meltas</label>
-				<description>WIP</description>
+				<label>Sponson meltas</label>
+				<description>Leman Russ sponson meltas are side-mounted short-range weapons that unleash concentrated thermal blasts, designed to destroy heavily armored vehicles and fortifications.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_MultiMeltas</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 15)</gridCoordinate>
@@ -674,8 +674,8 @@
 			</li>
 			<li>
 				<key>SponsonPlasmaUpgrade</key>
-				<label>Sponson Plasma Cannons</label>
-				<description>WIP</description>
+				<label>Sponson plasma cannons</label>
+				<description>Leman Russ sponson plasma cannons are side-mounted high-energy weapons that fire superheated plasma bolts, capable of melting through armored vehicles and fortified positions with precision.</description>
 				<icon>Things/Vehicles/LemanRuss/SponsonGuns/GW_HOI_LemanRuss_SponsonTurret_PlasmaCannon</icon>
 				<work>7500</work>
 				<gridCoordinate>(20, 15)</gridCoordinate>
@@ -748,8 +748,8 @@
 			</li>
 			<li>
 				<key>DozerBlade</key>
-				<label>Dozer Blade</label>
-				<description>Reinforce the front bumper to allow this vehicle to deal more damage during collisions.</description>
+				<label>Dozer blade</label>
+				<description>Leman Russ dozer blade is a reinforced front attachment that allows the tank to clear obstacles, debris, and fortifications while providing additional frontal protection.</description>
 				<icon>Things/Vehicles/LemanRuss/DozerBlade/GW_HOI_LemanRuss_Dozer_east</icon>
 				<work>1800</work>
 				<gridCoordinate>(5, 20)</gridCoordinate>
@@ -847,8 +847,8 @@
 			</li>
 			<li>
 				<key>PintleStormBolterUpgrade</key>
-				<label>Pintle Storm Bolter</label>
-				<description>WIP</description>
+				<label>Pintle storm bolter</label>
+				<description>Leman Russ pintle storm bolter is a top-mounted, rapid-fire weapon, ideal for suppressing infantry and light threats while the tank maneuvers on the battlefield.</description>
 				<icon>Things/Item/Turrets/StormBolter/GW_PintleMounted_StormBolter</icon>
 				<work>7500</work>
 				<gridCoordinate>(15, 20)</gridCoordinate>
@@ -886,7 +886,7 @@
 			<!-- <li> -->
 				<!-- <key>PintleHeavyStubberUpgrade</key> -->
 				<!-- <label>Pintle Heavy Stubber</label> -->
-				<!-- <description>WIP</description> -->
+				<!-- <description>Leman Russ pintle heavy stubber is a top-mounted, rapid-fire weapon designed to provide suppressive fire against infantry and lightly armored targets.</description> -->
 				<!-- <icon>Things/Item/Turrets/HeavyStubber/GW_PintleMount_HeavyStubber</icon> -->
 				<!-- <work>7500</work> -->
 				<!-- <gridCoordinate>(20, 20)</gridCoordinate> -->

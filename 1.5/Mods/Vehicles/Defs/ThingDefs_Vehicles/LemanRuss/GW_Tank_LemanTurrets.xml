@@ -104,7 +104,7 @@
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_LemanRuss_AnnihilatorTurret</defName>
 		<label>Leman Russ annihilator cannons</label>
-		<description>Twin-linked lascannons, WIP</description>
+		<description>Leman Russ Annihilator cannons are twin lascannon weapons mounted in the turret, designed to destroy heavily armored vehicles and fortified positions with precise, high-energy shots.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_AM_Lascannon</shotSound>
 		<projectile>GW_LascanonShot</projectile>
@@ -150,7 +150,7 @@
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_LemanRuss_ExterminatorTurret</defName>
 		<label>Leman Russ exterminator cannons</label>
-		<description>Twin-linked auto-cannons, WIP</description>
+		<description>Leman Russ Exterminator cannons are twin-linked autocannons mounted in the turret, built for sustained rapid fire against infantry, light vehicles, and aircraft.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_Autocannon</shotSound>
 		<projectile>GW_Bullet_Autocannon</projectile>
@@ -210,7 +210,7 @@
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_LemanRuss_PunisherTurret</defName>
 		<label>Leman Russ punisher cannon</label>
-		<description>A turret-mounted Punisher Gatling Cannon, much dakka. WIP</description>
+		<description>ALeman Russ Punisher cannon is a Gatling-style weapon that fires a relentless hail of high-velocity rounds, ideal for shredding infantry and lightly armored targets.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_Autocannon</shotSound>
 		<projectile>GW_Bullet_Assaultcannon</projectile>
@@ -275,7 +275,7 @@
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_LemanRuss_ExecutionerTurret</defName>
 		<label>Leman Russ executioner plasma cannon</label>
-		<description>A turret-mounted Plasma Cannon used on the Leman Russ battle tank. WIP</description>
+		<description>Leman Russ plasma cannon is a high-energy turret-mounted weapon that fires superheated plasma bolts, capable of melting through armored targets and fortified positions with devastating effect.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>Shot_TurretSniper</shotSound>
 		<projectile>GW_Tank_PlasmaShot</projectile>
@@ -483,7 +483,7 @@
 	<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_LemanRuss_MultiMelta</defName>
 		<label>Multi-Melta</label>
-		<description>WIP</description>
+		<description>Leman Russ multimelta is a short-range, high-intensity energy weapon that melts through heavy armor and fortified targets with concentrated thermal blasts.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_Multi_Melta_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_MultiMelta</projectile>
@@ -523,8 +523,8 @@
 
 		<Vehicles.VehicleTurretDef ParentName="VehicleTurretBase">
 		<defName>GW_LemanRuss_PlasmaSponson</defName>
-		<label>Plasma Cannon</label>
-		<description>WIP</description>
+		<label>Sponson plasma cannon</label>
+		<description>Leman Russ plasma cannon sponsons are side-mounted high-energy weapons that fire superheated plasma bolts, designed to pierce armored vehicles and fortified positions with precision.</description>
 		<turretType>Rotatable</turretType>
 		<shotSound>GW_Plasma_Gun_Sound</shotSound>
 		<projectile>GW_Bullet_Plasma_CannonShot</projectile>
