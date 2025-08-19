@@ -105,6 +105,20 @@
                 <!-- <li>Arms</li> -->
                 <!-- <li>Legs</li> -->
             </bodyPartGroups>
+			<drawData>
+				<dataSouth>
+					<!-- <offset>(0.0, -0.01, 0.0)</offset> -->
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.3, 0.01, 0.4)</offset> -->
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(-0.3, 0.0, 0.4)</offset> -->
+				</dataEast>
+				<dataNorth>
+					<!-- <offset>(0.0, 0.1, 0.4)</offset> -->
+				</dataNorth>
+			</drawData>
         </apparel>
     </ThingDef>
 	
