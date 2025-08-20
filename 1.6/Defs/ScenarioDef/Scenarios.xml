@@ -261,14 +261,14 @@
 				<range>5~10</range>
 			</li>
 		</skills>
-		<apparelTags>
-			<li>40kCadianGuard</li>
+		<apparelTags Inherit="False">
+			<!-- <li>40kCadianGuard</li> -->
 		</apparelTags>
-		<apparelRequired>
-			<!-- <li>GW_HOI_Cadian_Fatigues</li> -->
+		<apparelRequired Inherit="False">
+			<li>GW_HOI_Cadian_Fatigues</li>
 		</apparelRequired>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelMoney>1000~2000</apparelMoney>
+		<apparelMoney>0~0</apparelMoney>
 		<initialResistanceRange>13~21</initialResistanceRange>
 	</PawnKindDef>
 </Defs>
