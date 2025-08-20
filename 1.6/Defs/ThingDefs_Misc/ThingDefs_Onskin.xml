@@ -82,6 +82,7 @@
 		</equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianFatigues</wornGraphicPath>
+			<developmentalStageFilter>Child,Adult</developmentalStageFilter>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kCadianUniform</li>
@@ -130,6 +131,7 @@
         </recipeMaker>
         <graphicData>
             <texPath>Things/Cadian/Onskin/GW_HOI_CadianCrewJumpsuit_Male_south</texPath>
+            <shaderType>Cutout</shaderType>			
         </graphicData>
         <costStuffCount>80</costStuffCount>
         <statBases>
@@ -146,6 +148,7 @@
 		</equippedStatOffsets>
         <apparel>
             <wornGraphicPath>Things/Cadian/Onskin/GW_HOI_CadianCrewJumpsuit</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
             <tags>
                 <li>40kCadianGuard</li>
                 <li>40kCadianUniform</li>

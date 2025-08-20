@@ -133,7 +133,7 @@
             <damageAmountBase>30</damageAmountBase>
             <armorPenetrationBase>0.70</armorPenetrationBase>
             <stoppingPower>2.0</stoppingPower>
-            <speed>50</speed>
+            <speed>1000</speed>
         </projectile>
         <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <modExtensions>
@@ -144,7 +144,7 @@
                 <beamWidthDrawScale>1</beamWidthDrawScale>
                 <sweepRatePerTick>0</sweepRatePerTick>
                 <maxSweepAngle>0</maxSweepAngle>
-                <damageThingsAcrossBeamLine>true</damageThingsAcrossBeamLine>
+                <damageThingsAcrossBeamLine>False</damageThingsAcrossBeamLine>
                 <debugCells>false</debugCells>
                 <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
                 <lockOnTarget>false</lockOnTarget>

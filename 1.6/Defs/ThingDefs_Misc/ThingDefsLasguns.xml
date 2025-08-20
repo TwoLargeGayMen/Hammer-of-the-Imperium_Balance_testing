@@ -176,7 +176,7 @@
   
     <ThingDef ParentName="GW_HOI_LasgunBase">
         <defName>GW_HOI_Gun_Kantraeldefender</defName>
-        <label>Hellgun Cadian pattern</label>
+        <label>Kantrael MG Defender</label>
         <description>A laspistol used by NCOs and officers of the Astra Militarum, particularly the Cadian Shock Troops. While its smaller size results in a lasbolt of lower power, its compactness makes it a useful sidearm. \n\nLasguns are often derided as “flashlights” - sometimes even by their own users. However, a Chaos Space Marine once made a wise observation - he who scoffs at the power of a lasgun has not charged across a field of a hundred of them.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_CadianLasPistol</texPath>

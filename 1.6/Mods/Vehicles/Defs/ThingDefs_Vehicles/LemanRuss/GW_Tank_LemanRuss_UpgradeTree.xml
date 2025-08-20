@@ -856,6 +856,9 @@
 				<disableIfUpgradeNodesEnabled>
 					<li>PintleHeavyStubberUpgrade</li>
 				</disableIfUpgradeNodesEnabled>
+				<prerequisiteNodes>
+					<li>BattleCannonUpgrade</li>
+				</prerequisiteNodes>
 				<upgrades>
 					<li Class = "Vehicles.TurretUpgrade">
 						<turrets>

@@ -199,10 +199,10 @@
 					<offset>(0.0, -0.1, 0.0)</offset>
 				</dataSouth>
 				<dataWest>
-					<offset>(0.4, 0.0, 0.0)</offset>
+					<!-- <offset>(0.4, 0.0, 0.0)</offset> -->
 				</dataWest>
 				<dataEast>
-					<offset>(-0.4, 0.0, 0.0)</offset>
+					<!-- <offset>(-0.4, 0.0, 0.0)</offset> -->
 				</dataEast>
 				<dataNorth>
 					<offset>(0.0, 0.1, 0.0)</offset>
@@ -219,7 +219,7 @@
 		<label>medicae backpack</label>
 		<description>A backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nWhile the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost.</description>
 		<graphicData>
-			<texPath>Things/Backpacks/Medical_Pack_Display</texPath>
+			<texPath>Things/Cadian/Webbing/GW_HOI_CadianMedicaeWebbing</texPath>
 			<drawSize>(0.5,0.5)</drawSize>
 		</graphicData>
 		<uiIconPath>Things/Backpacks/Medical_Pack_Display</uiIconPath>
@@ -245,7 +245,7 @@
 			<MedicineIndustrial>10</MedicineIndustrial>
 		</costList>
 		<apparel>
-			<wornGraphicPath>Things/Backpacks/Medical_Pack</wornGraphicPath>
+			<wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianMedicaeWebbing</wornGraphicPath>
 			<drawData>
 				<dataSouth>
 					<offset>(0.0, -0.1, 0.0)</offset>
@@ -415,7 +415,7 @@
 					<!-- <offset>(-0.3, 0.0, 0.4)</offset> -->
 				</dataEast>
 				<dataNorth>
-					<!-- <offset>(0.0, 0.1, 0.4)</offset> -->
+					<offset>(0.0, 0.1, 0.0)</offset>
 				</dataNorth>
 			</drawData>
 			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinVoxBackpack</wornGraphicPath>
@@ -564,6 +564,94 @@
 			<drawData>
 			</drawData>
 			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinPowerBackpack</wornGraphicPath>
+			<tags>
+				<li>40kKarskinBackpack</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="GW_HOI_BackpackBase">
+		<defName>GW_HOI_CadianFlamerWebbing</defName>
+		<label>Cadian flamer webbing</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Cadian/Webbing/GW_HOI_CadianFlamerWebbing</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>275</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<Mass>3.5</Mass>
+			<Flammability>1</Flammability>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<!-- <Insulation_Cold>5</Insulation_Cold> -->
+			<!-- <Insulation_Heat>5</Insulation_Heat> -->
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<stuffCategories Inherit="false" IsNull="True" />
+		<costStuffCount Inherit="false" />
+		<costList>
+			<Steel>100</Steel>			
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<HP_Ceramite>10</HP_Ceramite>
+			<Chemfuel>50</Chemfuel>
+		</costList>
+		<apparel>
+			<drawData>
+			</drawData>
+			<wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianFlamerWebbing</wornGraphicPath>
+			<tags>
+				<li>40kKarskinBackpack</li>
+			</tags>
+		</apparel>
+	</ThingDef>	
+	
+	<ThingDef ParentName="GW_HOI_BackpackBase">
+		<defName>GW_HOI_PowerpackWebbing</defName>
+		<label>Cadian powerpack webbing</label>
+		<description>ToDo.</description>
+		<graphicData>
+			<texPath>Things/Cadian/Webbing/GW_HOI_CadianPowerpackWebbing</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<recipeMaker>
+			<researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
+		</recipeMaker>
+		<statBases>
+			<WorkToMake>10000</WorkToMake>
+			<MaxHitPoints>275</MaxHitPoints>
+			<MarketValue>300</MarketValue>
+			<Mass>3.5</Mass>
+			<Flammability>1</Flammability>
+			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.12</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.15</ArmorRating_Heat>
+			<!-- <Insulation_Cold>5</Insulation_Cold> -->
+			<!-- <Insulation_Heat>5</Insulation_Heat> -->
+			<EquipDelay>2</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+		</equippedStatOffsets>
+		<stuffCategories Inherit="false" IsNull="True" />
+		<costStuffCount Inherit="false" />
+		<costList>
+			<Steel>100</Steel>			
+			<ComponentIndustrial>5</ComponentIndustrial>
+			<HP_Ceramite>10</HP_Ceramite>
+			<Chemfuel>50</Chemfuel>
+		</costList>
+		<apparel>
+			<drawData>
+			</drawData>
+			<wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianPowerpackWebbing</wornGraphicPath>
 			<tags>
 				<li>40kKarskinBackpack</li>
 			</tags>
