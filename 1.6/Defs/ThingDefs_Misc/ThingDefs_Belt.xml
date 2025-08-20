@@ -142,91 +142,76 @@
     </ThingDef>  
 	
 	
-	<ThingDef ParentName="ArmorMachineableBase">
-        <defName>GW_HOI_CommissarAttachment</defName>
-        <label>Commissar gorget</label>
-        <description>A Commissar’s gorget, worn around the neck. Unlike the gorget of Cadian officers, this version is made of leather or fabric. \n\nCommissars are graduates of the Schola Progenium. They are typically those with great oratory ability, as well as a healthy (but not quite exceptional) aptitude for combat. While some Commissars are excellent warriors, most of the best soldiers are instead sent to the Tempestus Scions.</description>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
-        </recipeMaker>
-        <graphicData>
-            <texPath>Things/Commissar/Display/CommissarGorget</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.5</drawSize>
-        </graphicData>
-        <costStuffCount>10</costStuffCount>
-        <stuffCategories>
-            <li>Metallic</li>
-        </stuffCategories>
-        <thingCategories>
-            <li>ApparelMisc</li>
-        </thingCategories>
-        <statBases>
-            <MaxHitPoints>80</MaxHitPoints>
-            <WorkToMake>1500</WorkToMake>
-            <Mass>0.3</Mass>
-            <!-- <StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor> -->
-            <!-- <StuffEffectMultiplierInsulation_Cold>0.20</StuffEffectMultiplierInsulation_Cold> -->
-            <!-- <StuffEffectMultiplierInsulation_Heat>0.85</StuffEffectMultiplierInsulation_Heat> -->
-            <EquipDelay>3</EquipDelay>
-        </statBases>
-		<equippedStatOffsets>
-			<SocialImpact>0.05</SocialImpact>
-			<SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset>
-		</equippedStatOffsets>
-		<apparel>
-            <useWornGraphicMask>true</useWornGraphicMask>
-            <wornGraphicPath>Things/Commissar/Attachments/CommissarGorget</wornGraphicPath>
-			<wornGraphicData>
-				<!-- <renderUtilityAsPack>true</renderUtilityAsPack> -->
-			</wornGraphicData>
-            <tags>
-                <li>40kCommissar</li>
-                <li>40kCommissarGorget</li>
-            </tags>
-			<bodyPartGroups>
-                <li>Torso</li>
-            </bodyPartGroups>
-            <layers>
-                <li>Belt</li>
-            </layers>
-            <defaultOutfitTags>
-                <li>Soldier</li>
-            </defaultOutfitTags>
-            <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-			<drawData>
-				<dataSouth>
-					<offset>(0.0, -0.00, 0.0)</offset>
-				</dataSouth>
-				<dataWest>
-					<offset>(0.2, 0.0, 0.1)</offset>
-				</dataWest>
-				<dataEast>
-					<offset>(-0.2, 0.0, 0.1)</offset>
-				</dataEast>
-				<dataNorth>
-					<offset>(0.0, 0.0, 0.0)</offset>
-				</dataNorth>
-			</drawData>
-        </apparel>
-        <tradeTags>
-			<li>HPUtility</li>
-            <li>GW_AM_Utility</li>
-        </tradeTags>
-		<modExtensions>
-			<!-- <li Class="VEF.Apparels.ApparelExtension" MayRequire="oskarpotocki.vanillafactionsexpanded.core"> -->
-				<!-- <apparelDrawSettings> -->
-                    <!-- <drawPosNorthOffset>(0, 0.0, 0)</drawPosNorthOffset> -->
-                    <!-- <drawPosSouthOffset>(0, 0.0, 0)</drawPosSouthOffset> -->
-                    <!-- <drawPosWestOffset>(0.37, 0.0,0.15)</drawPosWestOffset> -->
-                    <!-- <drawPosEastOffset>(-0.37, 0.0,0.15)</drawPosEastOffset> -->
-					<!-- <drawSize>(1.5,1.5)</drawSize> -->
-                <!-- </apparelDrawSettings> -->
-                <!-- <isUnifiedApparel>true</isUnifiedApparel> -->
-				<!-- <hideHead>false</hideHead> -->
-            <!-- </li> -->
-	    </modExtensions>
-    </ThingDef>
+	<!-- <ThingDef ParentName="ArmorMachineableBase"> -->
+        <!-- <defName>GW_HOI_CommissarAttachment</defName> -->
+        <!-- <label>Commissar gorget</label> -->
+        <!-- <description>A Commissar’s gorget, worn around the neck. Unlike the gorget of Cadian officers, this version is made of leather or fabric. \n\nCommissars are graduates of the Schola Progenium. They are typically those with great oratory ability, as well as a healthy (but not quite exceptional) aptitude for combat. While some Commissars are excellent warriors, most of the best soldiers are instead sent to the Tempestus Scions.</description> -->
+        <!-- <recipeMaker> -->
+            <!-- <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite> -->
+        <!-- </recipeMaker> -->
+        <!-- <graphicData> -->
+            <!-- <texPath>Things/Commissar/Display/CommissarGorget</texPath> -->
+            <!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<!-- <drawSize>1.5</drawSize> -->
+        <!-- </graphicData> -->
+        <!-- <costStuffCount>10</costStuffCount> -->
+        <!-- <stuffCategories> -->
+            <!-- <li>Metallic</li> -->
+        <!-- </stuffCategories> -->
+        <!-- <thingCategories> -->
+            <!-- <li>ApparelMisc</li> -->
+        <!-- </thingCategories> -->
+        <!-- <statBases> -->
+            <!-- <MaxHitPoints>80</MaxHitPoints> -->
+            <!-- <WorkToMake>1500</WorkToMake> -->
+            <!-- <Mass>0.3</Mass> -->
+            <!-- <EquipDelay>3</EquipDelay> -->
+        <!-- </statBases> -->
+		<!-- <equippedStatOffsets> -->
+			<!-- <SocialImpact>0.05</SocialImpact> -->
+			<!-- <SlaveSuppressionOffset MayRequire="Ludeon.Rimworld.Ideology">0.05</SlaveSuppressionOffset> -->
+		<!-- </equippedStatOffsets> -->
+		<!-- <apparel> -->
+            <!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+            <!-- <wornGraphicPath>Things/Commissar/Attachments/CommissarGorget</wornGraphicPath> -->
+			<!-- <wornGraphicData> -->
+			<!-- </wornGraphicData> -->
+            <!-- <tags> -->
+                <!-- <li>40kCommissar</li> -->
+                <!-- <li>40kCommissarGorget</li> -->
+            <!-- </tags> -->
+			<!-- <bodyPartGroups> -->
+                <!-- <li>Torso</li> -->
+            <!-- </bodyPartGroups> -->
+            <!-- <layers> -->
+                <!-- <li>Belt</li> -->
+            <!-- </layers> -->
+            <!-- <defaultOutfitTags> -->
+                <!-- <li>Soldier</li> -->
+            <!-- </defaultOutfitTags> -->
+            <!-- <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth> -->
+			<!-- <drawData> -->
+				<!-- <dataSouth> -->
+					<!-- <offset>(0.0, -0.00, 0.0)</offset> -->
+				<!-- </dataSouth> -->
+				<!-- <dataWest> -->
+					<!-- <offset>(0.2, 0.0, 0.1)</offset> -->
+				<!-- </dataWest> -->
+				<!-- <dataEast> -->
+					<!-- <offset>(-0.2, 0.0, 0.1)</offset> -->
+				<!-- </dataEast> -->
+				<!-- <dataNorth> -->
+					<!-- <offset>(0.0, 0.0, 0.0)</offset> -->
+				<!-- </dataNorth> -->
+			<!-- </drawData> -->
+        <!-- </apparel> -->
+        <!-- <tradeTags> -->
+			<!-- <li>HPUtility</li> -->
+            <!-- <li>GW_AM_Utility</li> -->
+        <!-- </tradeTags> -->
+		<!-- <modExtensions> -->
+	    <!-- </modExtensions> -->
+    <!-- </ThingDef> -->
 		
 </Defs>

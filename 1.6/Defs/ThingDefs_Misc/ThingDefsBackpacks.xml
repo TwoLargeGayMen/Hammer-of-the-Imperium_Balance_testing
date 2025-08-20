@@ -518,6 +518,20 @@
 			<drawData>
 			</drawData>
 			<wornGraphicPath>Things/MilitarumEngineseerer/Backpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+					<offset>(0.0, -0.01, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.3, 0.01, 0.4)</offset> -->
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(-0.3, 0.0, 0.4)</offset> -->
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>40kEngineerBackpack</li>
 			</tags>
@@ -564,6 +578,20 @@
 			<drawData>
 			</drawData>
 			<wornGraphicPath>Things/Backpacks/GW_HOI_KarskinPowerBackpack</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+					<offset>(0.0, -0.01, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.3, 0.01, 0.4)</offset> -->
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(-0.3, 0.0, 0.4)</offset> -->
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>40kKarskinBackpack</li>
 			</tags>
