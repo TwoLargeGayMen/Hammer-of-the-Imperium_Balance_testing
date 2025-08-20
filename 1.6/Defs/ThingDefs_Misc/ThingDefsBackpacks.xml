@@ -392,9 +392,10 @@
 			<EquipDelay>2</EquipDelay>
 		</statBases>
 		<costList>
-			<!-- <ComponentIndustrial>10</ComponentIndustrial> -->
+			<ComponentIndustrial>5</ComponentIndustrial>
 			<ComponentSpacer>1</ComponentSpacer>
-			<Steel>200</Steel>
+			<Steel>140</Steel>
+			<HP_Ceramite>10</HP_Ceramite>
 		</costList>
 		<stuffCategories Inherit="false" IsNull="True" />
 		<costStuffCount Inherit="false" />
