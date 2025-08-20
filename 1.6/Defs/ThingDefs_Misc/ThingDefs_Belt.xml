@@ -74,7 +74,7 @@
 	
     <ThingDef ParentName="ArmorMachineableBase">
         <defName>GW_HOI_Cadian_CommissarGorget</defName>
-        <label>Cadian commissar gorget</label>
+        <label>Cadian Commissar gorget</label>
         <description>A Cadian Commissar’s gorget, worn around the neck and denote ranking among the Commissar officers of a regiment.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>

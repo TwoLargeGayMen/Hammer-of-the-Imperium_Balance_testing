@@ -186,7 +186,7 @@
 
     <ThingDef ParentName="GW_HOI_ArmorBase">
         <defName>GW_HOI_CadianOfficerArmor</defName>
-        <label>Cadian Officer armor</label>
+        <label>Cadian officer armor</label>
         <description>More durable than humble Flak, Carapace armor is issues to those considered to be less expendible than the rank-and-file. This suit of Carapace has been modified with a built-in gorget, denoting an Officer's rank. To wear such armor without the proper rank is considered "Impersonation of an officer" and grounds for immediate execution.</description>
         <recipeMaker>
             <researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>

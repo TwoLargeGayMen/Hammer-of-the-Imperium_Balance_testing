@@ -53,7 +53,7 @@
 
     <ThingDef ParentName="GW_HOI_AutogunBase">
         <defName>GW_HOI_Gun_Agripinaamkii</defName>
-        <label>Agripinaa MKII</label>
+        <label>AAutogun Agripinaa MK II</label>
         <description>A semi-automatic autogun, similar to an assault rifle, that fires caseless solid-slug rounds. Compared to the assault rifles of modern rimworlds, these more advanced weapons boast greater damage, armor penetration, and range.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_AutogunSemi</texPath>
@@ -119,8 +119,8 @@
 
     <ThingDef ParentName="GW_HOI_AutogunBase">
         <defName>GW_HOI_Gun_Agripinaamkiitanker</defName>
-        <label>Autogun u90</label>
-        <description>A version of the Agripinaa MKII autogun designed for vehicle crews. Its shorter length makes it easier to maneuver inside the tight confines of a tank or APC, but some range is sacrificed. \n\nWeapon patterns are generally named after the forge world they were originally created in. This weapon was designed on the planet of Agripinaa (also known as the “Orb of a Thousand Scars”), an embattled forge world on the Cadian Front.</description>
+        <label>Autogun U90</label>
+        <description>A fully-automatic autogun, similar to a submachine gun, at fires caseless solid-slug rounds. Compared to the submachine guns of modern rimworlds, these more advanced weapons boast greater damage, armor penetration, and range.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_AutogunAuto</texPath>
         </graphicData>
