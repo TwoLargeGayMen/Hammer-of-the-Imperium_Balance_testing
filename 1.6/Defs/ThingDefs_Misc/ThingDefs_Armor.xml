@@ -57,7 +57,7 @@
             </skillRequirements>
         </recipeMaker>
         <graphicData>
-            <texPath>Things/Cadian/Middle/GW_HOI_CadianCrewFlakArmor</texPath>
+            <texPath>Things/Cadian/Middle/GW_HOI_CadianFlakArmor</texPath>
         </graphicData>
         <statBases>
             <WorkToMake>15000</WorkToMake>

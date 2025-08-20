@@ -16,8 +16,35 @@
 				<severityPerTrigger>1</severityPerTrigger>
 				<tickInterval>250</tickInterval>
 				<mote>GW40k_HOI_Vox_Aura</mote>
-				<uiIconEnabled>Things/Backpacks/Vox_Pack_north</uiIconEnabled>
-				<uiIconDisabled>Things/Backpacks/Vox_Pack_north</uiIconDisabled>
+				<uiIconEnabled>Things/Backpacks/GW_HOI_CadianVoxBackpack_north</uiIconEnabled>
+				<uiIconDisabled>Things/Backpacks/GW_HOI_CadianVoxBackpack_north</uiIconDisabled>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>				
+			</li>
+		</stages>
+	</HediffDef>
+	<HediffDef>
+	
+		<defName>GW40k_AM_KarskinVoxAura</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Karskin-Voxcaster</label>
+		<description>This pawn is using a vox backpack, allowing them to communicate with nearby pawns and increase their combat effectiveness.</description>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="GW40kHediffAura.HediffCompProperties_AuraAndMote">
+				<allyOrNeutralHediff>GW40k_AM_KarskinVoxAuraBuff</allyOrNeutralHediff>
+				<ownerFactionHediff>GW40k_AM_KarskinVoxAuraBuff</ownerFactionHediff>
+				<radius>7.5</radius>
+				<severityPerTrigger>1</severityPerTrigger>
+				<tickInterval>250</tickInterval>
+				<mote>GW40k_HOI_Vox_Aura</mote>
+				<uiIconEnabled>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</uiIconEnabled>
+				<uiIconDisabled>Things/Backpacks/GW_HOI_KarskinVoxBackpack_north</uiIconDisabled>
 			</li>
 		</comps>
 		<stages>
@@ -47,6 +74,31 @@
 				<statOffsets>
 					<PainShockThreshold>0.1</PainShockThreshold>
 					<AimingDelayFactor>-0.1</AimingDelayFactor>
+				</statOffsets>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef>
+		<defName>GW40k_AM_KarskinVoxAuraBuff</defName>
+		<hediffClass>HediffWithComps</hediffClass>
+		<label>Karskin-Voxcaster comms</label>
+		<description>This pawn is in range of a friendly pawn with a voxcaster. Their combat effectiveness is increased by their greater ability to communicate to one another.</description>
+		<initialSeverity>1</initialSeverity>
+		<maxSeverity>1</maxSeverity>
+		<isBad>false</isBad>
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<showRemainingTime>true</showRemainingTime>
+				<disappearsAfterTicks>250</disappearsAfterTicks>
+			</li>
+		</comps>
+		<stages>
+			<li>
+				<minSeverity>1</minSeverity>
+				<statOffsets>
+					<PainShockThreshold>0.12</PainShockThreshold>
+					<AimingDelayFactor>-0.12</AimingDelayFactor>
 				</statOffsets>
 			</li>
 		</stages>
