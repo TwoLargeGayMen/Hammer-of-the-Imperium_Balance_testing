@@ -381,98 +381,98 @@
 					</li>
 				</upgrades>
 			</li>
-			<li>
-				<key>ChimeraMultiAutocannonUpgrade</key>
-				<label>Autocannon turret</label>
-				<description>Chimera autocannon turret is a rotating, rapid-fire weapon platform that delivers high-velocity shells, effective against infantry and lightly armored vehicles.</description>
-				<disableIfUpgradeNodesEnabled>
-					<li>ChimeraHeavyBolterUpgrade</li>
-					<li>ChimeraMultiLaserUpgrade</li>
-					<li>ChimeraInfernalCannonUpgrade</li>
-				</disableIfUpgradeNodesEnabled>
-				<prerequisiteNodes>
-					<li>ChimeraTurretMount</li>
-				</prerequisiteNodes>
-				<icon>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</icon>
+			<!-- <li> -->
+				<!-- <key>ChimeraMultiAutocannonUpgrade</key> -->
+				<!-- <label>Autocannon turret</label> -->
+				<!-- <description>Chimera autocannon turret is a rotating, rapid-fire weapon platform that delivers high-velocity shells, effective against infantry and lightly armored vehicles.</description> -->
+				<!-- <disableIfUpgradeNodesEnabled> -->
+					<!-- <li>ChimeraHeavyBolterUpgrade</li> -->
+					<!-- <li>ChimeraMultiLaserUpgrade</li> -->
+					<!-- <li>ChimeraInfernalCannonUpgrade</li> -->
+				<!-- </disableIfUpgradeNodesEnabled> -->
+				<!-- <prerequisiteNodes> -->
+					<!-- <li>ChimeraTurretMount</li> -->
+				<!-- </prerequisiteNodes> -->
+				<!-- <icon>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</icon> -->
 				
-				<work>2000</work>
-				<ingredients>
-					<Steel>100</Steel>
-					<GW_VehicleCannon>1</GW_VehicleCannon>
-					<HP_Ceramite>100</HP_Ceramite>
-					<ComponentIndustrial>4</ComponentIndustrial>
-				</ingredients>
+				<!-- <work>2000</work> -->
+				<!-- <ingredients> -->
+					<!-- <Steel>100</Steel> -->
+					<!-- <GW_VehicleCannon>1</GW_VehicleCannon> -->
+					<!-- <HP_Ceramite>100</HP_Ceramite> -->
+					<!-- <ComponentIndustrial>4</ComponentIndustrial> -->
+				<!-- </ingredients> -->
 				
-				<gridCoordinate>(20, 11)</gridCoordinate>
-				<drawSize>(80, 80)</drawSize>
+				<!-- <gridCoordinate>(20, 11)</gridCoordinate> -->
+				<!-- <drawSize>(80, 80)</drawSize> -->
 				
-				<upgrades>
-					<li Class="Vehicles.TurretUpgrade">
-						<turrets>
-							<li>
-								<turretDef>GW_Chimera_MainLaser</turretDef>
-								<renderProperties>
-									<north>(0.2, 0.9)</north>
-									<south>(-0.2, -0.5)</south>
-									<east>(0.3, 0.1)</east>
-									<west>(-0.3, 0.7)</west>
-								</renderProperties>
-								<gizmoLabel>Main Turret</gizmoLabel>
-								<angleRestricted/>
-								<aimPieOffset>(0, 1.75)</aimPieOffset>
-								<drawLayer>3</drawLayer>
-								<key>mainTurret</key>
-							</li>
-						</turrets>
-					</li>
-				</upgrades>
-			</li>
-			<li>
-				<key>ChimeraInfernalCannonUpgrade</key>
-				<label>Inferno turret</label>
-				<description>Chimera inferno turret is a rotating flamethrower weapon, projecting streams of fire to clear infantry and light obstacles in close-range combat.</description>
-				<disableIfUpgradeNodesEnabled>
-					<li>ChimeraHeavyBolterUpgrade</li>
-					<li>ChimeraMultiLaserUpgrade</li>
-					<li>ChimeraMultiAutocannonUpgrade</li>
-				</disableIfUpgradeNodesEnabled>
-				<prerequisiteNodes>
-					<li>ChimeraTurretMount</li>
-				</prerequisiteNodes>
-				<icon>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</icon>
+				<!-- <upgrades> -->
+					<!-- <li Class="Vehicles.TurretUpgrade"> -->
+						<!-- <turrets> -->
+							<!-- <li> -->
+								<!-- <turretDef>GW_Chimera_MainLaser</turretDef> -->
+								<!-- <renderProperties> -->
+									<!-- <north>(0.2, 0.9)</north> -->
+									<!-- <south>(-0.2, -0.5)</south> -->
+									<!-- <east>(0.3, 0.1)</east> -->
+									<!-- <west>(-0.3, 0.7)</west> -->
+								<!-- </renderProperties> -->
+								<!-- <gizmoLabel>Main Turret</gizmoLabel> -->
+								<!-- <angleRestricted/> -->
+								<!-- <aimPieOffset>(0, 1.75)</aimPieOffset> -->
+								<!-- <drawLayer>3</drawLayer> -->
+								<!-- <key>mainTurret</key> -->
+							<!-- </li> -->
+						<!-- </turrets> -->
+					<!-- </li> -->
+				<!-- </upgrades> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <key>ChimeraInfernalCannonUpgrade</key> -->
+				<!-- <label>Inferno turret</label> -->
+				<!-- <description>Chimera inferno turret is a rotating flamethrower weapon, projecting streams of fire to clear infantry and light obstacles in close-range combat.</description> -->
+				<!-- <disableIfUpgradeNodesEnabled> -->
+					<!-- <li>ChimeraHeavyBolterUpgrade</li> -->
+					<!-- <li>ChimeraMultiLaserUpgrade</li> -->
+					<!-- <li>ChimeraMultiAutocannonUpgrade</li> -->
+				<!-- </disableIfUpgradeNodesEnabled> -->
+				<!-- <prerequisiteNodes> -->
+					<!-- <li>ChimeraTurretMount</li> -->
+				<!-- </prerequisiteNodes> -->
+				<!-- <icon>Things/Vehicles/Chimera/Turret/Chimera_Lasgun_Turret</icon> -->
 				
-				<work>2000</work>
-				<ingredients>
-					<Steel>100</Steel>
-					<GW_VehicleCannon>1</GW_VehicleCannon>
-					<HP_Ceramite>100</HP_Ceramite>
-					<ComponentIndustrial>4</ComponentIndustrial>
-				</ingredients>
+				<!-- <work>2000</work> -->
+				<!-- <ingredients> -->
+					<!-- <Steel>100</Steel> -->
+					<!-- <GW_VehicleCannon>1</GW_VehicleCannon> -->
+					<!-- <HP_Ceramite>100</HP_Ceramite> -->
+					<!-- <ComponentIndustrial>4</ComponentIndustrial> -->
+				<!-- </ingredients> -->
 				
-				<gridCoordinate>(15, 11)</gridCoordinate>
-				<drawSize>(80, 80)</drawSize>
+				<!-- <gridCoordinate>(15, 11)</gridCoordinate> -->
+				<!-- <drawSize>(80, 80)</drawSize> -->
 				
-				<upgrades>
-					<li Class="Vehicles.TurretUpgrade">
-						<turrets>
-							<li>
-								<turretDef>GW_Chimera_MainLaser</turretDef>
-								<renderProperties>
-									<north>(0.2, 0.9)</north>
-									<south>(-0.2, -0.5)</south>
-									<east>(0.3, 0.1)</east>
-									<west>(-0.3, 0.7)</west>
-								</renderProperties>
-								<gizmoLabel>Main Turret</gizmoLabel>
-								<angleRestricted/>
-								<aimPieOffset>(0, 1.75)</aimPieOffset>
-								<drawLayer>3</drawLayer>
-								<key>mainTurret</key>
-							</li>
-						</turrets>
-					</li>
-				</upgrades>
-			</li>
+				<!-- <upgrades> -->
+					<!-- <li Class="Vehicles.TurretUpgrade"> -->
+						<!-- <turrets> -->
+							<!-- <li> -->
+								<!-- <turretDef>GW_Chimera_MainLaser</turretDef> -->
+								<!-- <renderProperties> -->
+									<!-- <north>(0.2, 0.9)</north> -->
+									<!-- <south>(-0.2, -0.5)</south> -->
+									<!-- <east>(0.3, 0.1)</east> -->
+									<!-- <west>(-0.3, 0.7)</west> -->
+								<!-- </renderProperties> -->
+								<!-- <gizmoLabel>Main Turret</gizmoLabel> -->
+								<!-- <angleRestricted/> -->
+								<!-- <aimPieOffset>(0, 1.75)</aimPieOffset> -->
+								<!-- <drawLayer>3</drawLayer> -->
+								<!-- <key>mainTurret</key> -->
+							<!-- </li> -->
+						<!-- </turrets> -->
+					<!-- </li> -->
+				<!-- </upgrades> -->
+			<!-- </li> -->
 			<li>
 				<key>SideSponsonUpgrade</key>
 				<label>Side-Bolters</label>
