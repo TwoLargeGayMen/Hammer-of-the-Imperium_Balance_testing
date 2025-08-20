@@ -72,8 +72,8 @@
 			<li>
 				<minSeverity>1</minSeverity>
 				<statOffsets>
-					<PainShockThreshold>0.1</PainShockThreshold>
-					<AimingDelayFactor>-0.1</AimingDelayFactor>
+					<PainShockThreshold>0.12</PainShockThreshold>
+					<AimingDelayFactor>-0.12</AimingDelayFactor>
 				</statOffsets>
 			</li>
 		</stages>
