@@ -790,6 +790,7 @@
 							<texPath>Things/Vehicles/LemanRuss/DozerBlade/GW_HOI_LemanRuss_Dozer</texPath>
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawSize>(6,6)</drawSize>
+							<drawOffsetSouth>(0,0.1,0)</drawOffsetSouth>						
 							<layer>0</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
 						</graphicData>

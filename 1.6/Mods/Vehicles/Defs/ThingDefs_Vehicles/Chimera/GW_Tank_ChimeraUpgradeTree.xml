@@ -171,6 +171,7 @@
 							<graphicClass>Vehicles.Graphic_Vehicle</graphicClass>
 							<drawOffsetEast>(0,0,0.4)</drawOffsetEast>
 							<drawOffsetWest>(0,0,0.4)</drawOffsetWest>
+							<drawOffsetSouth>(0,0.1,0)</drawOffsetSouth>
 							<drawSize>(5,5)</drawSize>
 							<layer>1</layer>
 							<shaderType>CutoutComplexPattern</shaderType>
