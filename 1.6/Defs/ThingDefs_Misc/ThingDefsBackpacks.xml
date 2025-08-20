@@ -636,6 +636,20 @@
 			<drawData>
 			</drawData>
 			<wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianFlamerWebbing</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+					<offset>(0.0, -0.01, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.3, 0.01, 0.4)</offset> -->
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(-0.3, 0.0, 0.4)</offset> -->
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>40kKarskinBackpack</li>
 			</tags>
@@ -680,6 +694,20 @@
 			<drawData>
 			</drawData>
 			<wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianPowerpackWebbing</wornGraphicPath>
+			<drawData>
+				<dataSouth>
+					<offset>(0.0, -0.01, 0.0)</offset>
+				</dataSouth>
+				<dataWest>
+					<!-- <offset>(0.3, 0.01, 0.4)</offset> -->
+				</dataWest>
+				<dataEast>
+					<!-- <offset>(-0.3, 0.0, 0.4)</offset> -->
+				</dataEast>
+				<dataNorth>
+					<offset>(0.0, 0.1, 0.0)</offset>
+				</dataNorth>
+			</drawData>
 			<tags>
 				<li>40kKarskinBackpack</li>
 			</tags>
