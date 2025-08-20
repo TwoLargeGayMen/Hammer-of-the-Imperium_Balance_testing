@@ -262,78 +262,78 @@
 
 	<!--===== Ripper gun =====-->
 	
-	<ThingDef ParentName="GW_HOI_AutogunBase">
-        <defName>GW_HOI_Gun_Rippergun</defName>
-        <label>Ripper Gun</label>
-        <description>A heavy automatic shotgun used by Ogryns of the Astra Militarum. A rough-and-ready design that excels in close combat, this is about as complex as Ogryn weaponry can get. \n\nRipper guns are built solidly to withstand the rough handling of its unintelligent user. This includes being used as a club to bludgeon the nearest enemy to death.</description>
-        <possessionCount>1</possessionCount>
-        <graphicData>
-            <drawSize>1.2</drawSize>
-            <texPath>Weapons/GW_HOI_AH_RipperGun</texPath>
-        </graphicData>
-        <soundInteract>Interact_Shotgun</soundInteract>
-        <weaponClasses>
-            <li>ShortShots</li>
-        </weaponClasses>
-        <weaponTags>
-            <li>ShortShots</li>
-            <li>GW_Rippergun</li>
-        </weaponTags>
-        <statBases>
-            <Mass>4.3</Mass>
-            <WorkToMake>10000</WorkToMake>
-            <AccuracyTouch>0.70</AccuracyTouch>
-            <AccuracyShort>0.60</AccuracyShort>
-            <AccuracyMedium>0.40</AccuracyMedium>
-            <AccuracyLong>0.20</AccuracyLong>
-            <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown>
-            <MarketValue>450</MarketValue>
-        </statBases>
-        <costList>
-            <Steel>60</Steel>
-            <ComponentIndustrial>4</ComponentIndustrial>
-        </costList>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>5</Crafting>
-            </skillRequirements>
-            <displayPriority>430</displayPriority>
-        </recipeMaker>
-        <verbs>
-            <li Class="Shotgunz.Verb_Properties_Shotgunz">
-                <verbClass>Shotgunz.Verb_Shoot_Shotgunz</verbClass>
-                <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_HOI_ShotgunPellet</defaultProjectile>
-                <warmupTime>0.8</warmupTime>
-                <range>12</range>
-                <burstShotCount>3</burstShotCount>
-                <soundCast>Shot_Shotgun</soundCast>
-                <soundCastTail>GunTail_Heavy</soundCastTail>
-                <muzzleFlashScale>10</muzzleFlashScale>
-                <pellets>5</pellets>
-      </li>
-        </verbs>
-        <tools>
-            <li>
-                <label>stock</label>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
-            </li>
-            <li>
-                <label>barrel</label>
-                <capacities>
-                    <li>Blunt</li>
-                    <li>Poke</li>
-                </capacities>
-                <power>9</power>
-                <cooldownTime>2</cooldownTime>
-                <armorPenetration>0.13</armorPenetration>
-            </li>
-        </tools>
-    </ThingDef>
+	<!-- <ThingDef ParentName="GW_HOI_AutogunBase"> -->
+        <!-- <defName>GW_HOI_Gun_Rippergun</defName> -->
+        <!-- <label>Ripper Gun</label> -->
+        <!-- <description>A heavy automatic shotgun used by Ogryns of the Astra Militarum. A rough-and-ready design that excels in close combat, this is about as complex as Ogryn weaponry can get. \n\nRipper guns are built solidly to withstand the rough handling of its unintelligent user. This includes being used as a club to bludgeon the nearest enemy to death.</description> -->
+        <!-- <possessionCount>1</possessionCount> -->
+        <!-- <graphicData> -->
+            <!-- <drawSize>1.2</drawSize> -->
+            <!-- <texPath>Weapons/GW_HOI_AH_RipperGun</texPath> -->
+        <!-- </graphicData> -->
+        <!-- <soundInteract>Interact_Shotgun</soundInteract> -->
+        <!-- <weaponClasses> -->
+            <!-- <li>ShortShots</li> -->
+        <!-- </weaponClasses> -->
+        <!-- <weaponTags> -->
+            <!-- <li>ShortShots</li> -->
+            <!-- <li>GW_Rippergun</li> -->
+        <!-- </weaponTags> -->
+        <!-- <statBases> -->
+            <!-- <Mass>4.3</Mass> -->
+            <!-- <WorkToMake>10000</WorkToMake> -->
+            <!-- <AccuracyTouch>0.70</AccuracyTouch> -->
+            <!-- <AccuracyShort>0.60</AccuracyShort> -->
+            <!-- <AccuracyMedium>0.40</AccuracyMedium> -->
+            <!-- <AccuracyLong>0.20</AccuracyLong> -->
+            <!-- <RangedWeapon_Cooldown>2.5</RangedWeapon_Cooldown> -->
+            <!-- <MarketValue>450</MarketValue> -->
+        <!-- </statBases> -->
+        <!-- <costList> -->
+            <!-- <Steel>60</Steel> -->
+            <!-- <ComponentIndustrial>4</ComponentIndustrial> -->
+        <!-- </costList> -->
+        <!-- <recipeMaker> -->
+            <!-- <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite> -->
+            <!-- <skillRequirements> -->
+                <!-- <Crafting>5</Crafting> -->
+            <!-- </skillRequirements> -->
+            <!-- <displayPriority>430</displayPriority> -->
+        <!-- </recipeMaker> -->
+        <!-- <verbs> -->
+            <!-- <li Class="Shotgunz.Verb_Properties_Shotgunz"> -->
+                <!-- <verbClass>Shotgunz.Verb_Shoot_Shotgunz</verbClass> -->
+                <!-- <hasStandardCommand>true</hasStandardCommand> -->
+                <!-- <defaultProjectile>GW_HOI_ShotgunPellet</defaultProjectile> -->
+                <!-- <warmupTime>0.8</warmupTime> -->
+                <!-- <range>12</range> -->
+                <!-- <burstShotCount>3</burstShotCount> -->
+                <!-- <soundCast>Shot_Shotgun</soundCast> -->
+                <!-- <soundCastTail>GunTail_Heavy</soundCastTail> -->
+                <!-- <muzzleFlashScale>10</muzzleFlashScale> -->
+                <!-- <pellets>5</pellets> -->
+      <!-- </li> -->
+        <!-- </verbs> -->
+        <!-- <tools> -->
+            <!-- <li> -->
+                <!-- <label>stock</label> -->
+                <!-- <capacities> -->
+                    <!-- <li>Blunt</li> -->
+                <!-- </capacities> -->
+                <!-- <power>9</power> -->
+                <!-- <cooldownTime>2</cooldownTime> -->
+                <!-- <armorPenetration>0.13</armorPenetration> -->
+            <!-- </li> -->
+            <!-- <li> -->
+                <!-- <label>barrel</label> -->
+                <!-- <capacities> -->
+                    <!-- <li>Blunt</li> -->
+                    <!-- <li>Poke</li> -->
+                <!-- </capacities> -->
+                <!-- <power>9</power> -->
+                <!-- <cooldownTime>2</cooldownTime> -->
+                <!-- <armorPenetration>0.13</armorPenetration> -->
+            <!-- </li> -->
+        <!-- </tools> -->
+    <!-- </ThingDef> -->
 </Defs>
