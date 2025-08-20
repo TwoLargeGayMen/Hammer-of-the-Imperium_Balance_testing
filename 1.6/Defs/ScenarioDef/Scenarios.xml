@@ -97,10 +97,15 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>GW_HOI_CommissarOuter</thingDef>
 					<stuff>Synthread</stuff>
-				</li>
+				</li>				
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>GW_HOI_CommissarUniform</thingDef>
+					<stuff>Synthread</stuff>
+				</li>
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>GW_HOI_CommissarCap</thingDef>
 					<stuff>Synthread</stuff>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
