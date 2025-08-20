@@ -212,29 +212,29 @@
 	</ResearchProjectDef>
 
 			<!--Abhumans-->
-	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
-		<defName>GW_AM_AbhumanIntegration</defName>
-		<label>abhuman integration</label>
-        <description>Research the Abhumans of the Imperial Guard - stable mutations of the human baseline.</description>
-		<prerequisites>
-			<li>GW_AM_MilitariumArmor</li>
-		</prerequisites>
-        <baseCost>500</baseCost>
-		<researchViewX>4.00</researchViewX>
-		<researchViewY>5.70</researchViewY>
-	</ResearchProjectDef>
+	<!-- <ResearchProjectDef ParentName="GW_AM_HoITechBase"> -->
+		<!-- <defName>GW_AM_AbhumanIntegration</defName> -->
+		<!-- <label>abhuman integration</label> -->
+        <!-- <description>Research the Abhumans of the Imperial Guard - stable mutations of the human baseline.</description> -->
+		<!-- <prerequisites> -->
+			<!-- <li>GW_AM_MilitariumArmor</li> -->
+		<!-- </prerequisites> -->
+        <!-- <baseCost>500</baseCost> -->
+		<!-- <researchViewX>4.00</researchViewX> -->
+		<!-- <researchViewY>5.70</researchViewY> -->
+	<!-- </ResearchProjectDef> -->
 
-	<ResearchProjectDef ParentName="GW_AM_HoITechBase">
-		<defName>GW_AM_OgrynIntegration</defName>
-		<label>ogryn integration</label>
-        <description>Produce gear of the Ogryns - huge but unintelligent abhumans evolved on a cold, high-gravity prison planet.</description>
-		<prerequisites>
-			<li>GW_AM_AbhumanIntegration</li>
-		</prerequisites>
-        <baseCost>1500</baseCost>
-		<researchViewX>5.00</researchViewX>
-		<researchViewY>5.40</researchViewY>
-	</ResearchProjectDef>
+	<!-- <ResearchProjectDef ParentName="GW_AM_HoITechBase"> -->
+		<!-- <defName>GW_AM_OgrynIntegration</defName> -->
+		<!-- <label>ogryn integration</label> -->
+        <!-- <description>Produce gear of the Ogryns - huge but unintelligent abhumans evolved on a cold, high-gravity prison planet.</description> -->
+		<!-- <prerequisites> -->
+			<!-- <li>GW_AM_AbhumanIntegration</li> -->
+		<!-- </prerequisites> -->
+        <!-- <baseCost>1500</baseCost> -->
+		<!-- <researchViewX>5.00</researchViewX> -->
+		<!-- <researchViewY>5.40</researchViewY> -->
+	<!-- </ResearchProjectDef> -->
 
 	<!--<ResearchProjectDef ParentName="GW_AM_HoITechBase">
 		<defName>GW_AM_RatlingIntegration</defName>
