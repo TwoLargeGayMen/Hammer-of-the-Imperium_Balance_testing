@@ -401,7 +401,7 @@
 		<costStuffCount Inherit="false" />
 		<comps>
 			<li Class="GW40kHediffAura.CompProperties_ApparelGiveHediff">
-				<hediffDef>GW40k_AM_VoxAura</hediffDef>
+				<hediffDef>GW40k_AM_KarskinVoxAura</hediffDef>
 			</li>
 		</comps>
 		<apparel>
