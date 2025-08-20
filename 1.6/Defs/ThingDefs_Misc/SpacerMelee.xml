@@ -2,7 +2,7 @@
 <Defs>
     <ThingDef Abstract="true" Name="GW_HOI_PowerSwordBase" ParentName="BaseMeleeWeapon_Sharp_Quality">
         <possessionCount>1</possessionCount>
-        <description>An Astra Militarum power sword. Sometimes issued to Imperial Guard officers, the disruptive power field of the blade helps the user to cut through enemy flesh and armor.\n\nWhile baseline humans seem ill-suited for battle in a galaxy of super soldiers, psykers, and high technology, it is only the foolish opponent that underestimates the sheer grit of Humanity.</description>
+        <description>A Munitorium pattern power sword issued to officers after acts of valor. When activated, the blade becomes sheathed in a lethal haze of a disruptive energy field. This field allows the blade to slice through armor and flesh alike.\n\nOperates at full capacity only when a power pack is equiped.</description>
         <graphicData>
             <graphicClass>Graphic_Single</graphicClass>
             <shaderType>CutoutComplex</shaderType>
@@ -81,7 +81,7 @@
   
     <ThingDef ParentName="GW_HOI_PowerSwordBase">
         <defName>GW_HOI_Melee_PowerSword</defName>
-        <label>Militarum power sword</label>
+        <label>Power sword Munitorum Mk III</label>
         <weaponTags>
             <li>GW_HOI_CommissarMelee</li>
         </weaponTags>
