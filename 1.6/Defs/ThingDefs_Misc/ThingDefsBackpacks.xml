@@ -220,9 +220,9 @@
 		<description>A backpack containing medical supplies. Wearing it assists the user in tending to wounded troops in the field, yielding better tend quality. \n\nWhile the Guardsmen of the Astra Militarum are indeed expendable, they are still resources to be conserved, and combat medics save wounded soldiers who would otherwise be lost.</description>
 		<graphicData>
 			<texPath>Things/Cadian/Webbing/GW_HOI_CadianMedicaeWebbing</texPath>
-			<drawSize>(0.5,0.5)</drawSize>
+			<drawSize>(1,1)</drawSize>
 		</graphicData>
-		<uiIconPath>Things/Backpacks/Medical_Pack_Display</uiIconPath>
+		<uiIconPath>Things/Cadian/Webbing/GW_HOI_CadianMedicaeWebbing</uiIconPath>
 		<recipeMaker>
 			<researchPrerequisite>GW_AM_MilitariumArmor</researchPrerequisite>
 		</recipeMaker>
@@ -248,13 +248,13 @@
 			<wornGraphicPath>Things/Cadian/Webbing/GW_HOI_CadianMedicaeWebbing</wornGraphicPath>
 			<drawData>
 				<dataSouth>
-					<offset>(0.0, -0.1, 0.0)</offset>
+					<!-- <offset>(0.0, -0.1, 0.0)</offset> -->
 				</dataSouth>
 				<dataWest>
-					<offset>(0.3, 0.0, 0.0)</offset>
+					<!-- <offset>(0.3, 0.0, 0.0)</offset> -->
 				</dataWest>
 				<dataEast>
-					<offset>(-0.3, 0.0, 0.0)</offset>
+					<!-- <offset>(-0.3, 0.0, 0.0)</offset> -->
 				</dataEast>
 				<dataNorth>
 					<offset>(0.0, 0.1, 0.0)</offset>
