@@ -303,6 +303,8 @@
             <HP_Adamantium>20</HP_Adamantium>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
+		<costStuffCount Inherit="False" />
+		<stuffCategories Inherit="False" IsNull="True" />
         <tools>
             <li>
                 <label>handle</label>
