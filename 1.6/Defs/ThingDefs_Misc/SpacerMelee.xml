@@ -161,79 +161,79 @@
 	
 	<!--===== Power Maul =====-->
 	
-	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-        <defName>GW_HOI_Melee_PowerMaul</defName>
-        <label>Ogryn power maul</label>
-        <description>A large mace coated in a disruptive power field. A suitable size for an Ogryn’s fist, a strike from this weapon can crack sturdy armor or sweep aside a mass of weaker foes. \n\nOgryns hail from a high-gravity prison world. While their strength is great, their intelligence is lacking, so simpler weapons are better for them.</description>
-        <possessionCount>1</possessionCount>
-        <graphicData>
-            <texPath>Weapons/Power_Maul</texPath>
-            <graphicClass>Graphic_Single</graphicClass>
-			<drawSize>1.2</drawSize>
-        </graphicData>
-        <uiIconScale>1.2</uiIconScale>
-        <techLevel>Spacer</techLevel>
-        <statBases>
-            <WorkToMake>42000</WorkToMake>
-            <Mass>4.8</Mass>
-        </statBases>
-        <equippedAngleOffset>-65</equippedAngleOffset>
-        <recipeMaker>
-            <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite>
-            <skillRequirements>
-                <Crafting>10</Crafting>
-            </skillRequirements>
-            <recipeUsers Inherit="false">
-                <li>HP_AM_MilitarumFabricationBench</li>
-            </recipeUsers>
-            <displayPriority>400</displayPriority>
-        </recipeMaker>
-        <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
-        <costStuffCount>75</costStuffCount>
-        <costList>
-            <Plasteel>85</Plasteel>
-            <ComponentSpacer>2</ComponentSpacer>
-        </costList>
-        <weaponTags>
-            <li>SpacerMeleeDecent</li>
-            <li>GW_AM_SpacerMelee</li>
-            <li>GW_PowerMaul</li>
-        </weaponTags>
-        <tradeTags>
-            <li>HPMelee</li>
-            <li>GW_AM_SpacerMelee</li>
-        </tradeTags>
-        <weaponClasses>
-            <li>Melee</li>
-        </weaponClasses>
-        <tools>
-			<li>
-                <label>handle</label>
-                <capacities>
-                    <li>Poke</li>
-                </capacities>
-                <power>16</power>
-                <cooldownTime>1.75</cooldownTime>
-				<armorPenetration>0.24</armorPenetration>
-            </li>
-            <li>
-                <label>head</label>
-				<labelUsedInLogging>false</labelUsedInLogging>
-                <capacities>
-                    <li>Blunt</li>
-                </capacities>
-                <power>36</power>
-                <cooldownTime>3.25</cooldownTime>
-				<extraMeleeDamages>
-					<li>
-						<def>Bomb</def>
-						<amount>5</amount>
-					</li>
-				</extraMeleeDamages>
-				<armorPenetration>0.48</armorPenetration>
-            </li>
-        </tools>
-    </ThingDef>
+	<!-- <ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality"> -->
+        <!-- <defName>GW_HOI_Melee_PowerMaul</defName> -->
+        <!-- <label>Ogryn power maul</label> -->
+        <!-- <description>A large mace coated in a disruptive power field. A suitable size for an Ogryn’s fist, a strike from this weapon can crack sturdy armor or sweep aside a mass of weaker foes. \n\nOgryns hail from a high-gravity prison world. While their strength is great, their intelligence is lacking, so simpler weapons are better for them.</description> -->
+        <!-- <possessionCount>1</possessionCount> -->
+        <!-- <graphicData> -->
+            <!-- <texPath>Weapons/Power_Maul</texPath> -->
+            <!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <drawSize>1.2</drawSize> -->
+        <!-- </graphicData> -->
+        <!-- <uiIconScale>1.2</uiIconScale> -->
+        <!-- <techLevel>Spacer</techLevel> -->
+        <!-- <statBases> -->
+            <!-- <WorkToMake>42000</WorkToMake> -->
+            <!-- <Mass>4.8</Mass> -->
+        <!-- </statBases> -->
+        <!-- <equippedAngleOffset>-65</equippedAngleOffset> -->
+        <!-- <recipeMaker> -->
+            <!-- <researchPrerequisite>GW_AM_OgrynIntegration</researchPrerequisite> -->
+            <!-- <skillRequirements> -->
+                <!-- <Crafting>10</Crafting> -->
+            <!-- </skillRequirements> -->
+            <!-- <recipeUsers Inherit="false"> -->
+                <!-- <li>HP_AM_MilitarumFabricationBench</li> -->
+            <!-- </recipeUsers> -->
+            <!-- <displayPriority>400</displayPriority> -->
+        <!-- </recipeMaker> -->
+        <!-- <stuffCategories> -->
+			<!-- <li>Metallic</li> -->
+		<!-- </stuffCategories> -->
+        <!-- <costStuffCount>75</costStuffCount> -->
+        <!-- <costList> -->
+            <!-- <Plasteel>85</Plasteel> -->
+            <!-- <ComponentSpacer>2</ComponentSpacer> -->
+        <!-- </costList> -->
+        <!-- <weaponTags> -->
+            <!-- <li>SpacerMeleeDecent</li> -->
+            <!-- <li>GW_AM_SpacerMelee</li> -->
+            <!-- <li>GW_PowerMaul</li> -->
+        <!-- </weaponTags> -->
+        <!-- <tradeTags> -->
+            <!-- <li>HPMelee</li> -->
+            <!-- <li>GW_AM_SpacerMelee</li> -->
+        <!-- </tradeTags> -->
+        <!-- <weaponClasses> -->
+            <!-- <li>Melee</li> -->
+        <!-- </weaponClasses> -->
+        <!-- <tools> -->
+			<!-- <li> -->
+                <!-- <label>handle</label> -->
+                <!-- <capacities> -->
+                    <!-- <li>Poke</li> -->
+                <!-- </capacities> -->
+                <!-- <power>16</power> -->
+                <!-- <cooldownTime>1.75</cooldownTime> -->
+				<!-- <armorPenetration>0.24</armorPenetration> -->
+            <!-- </li> -->
+            <!-- <li> -->
+                <!-- <label>head</label> -->
+				<!-- <labelUsedInLogging>false</labelUsedInLogging> -->
+                <!-- <capacities> -->
+                    <!-- <li>Blunt</li> -->
+                <!-- </capacities> -->
+                <!-- <power>36</power> -->
+                <!-- <cooldownTime>3.25</cooldownTime> -->
+				<!-- <extraMeleeDamages> -->
+					<!-- <li> -->
+						<!-- <def>Bomb</def> -->
+						<!-- <amount>5</amount> -->
+					<!-- </li> -->
+				<!-- </extraMeleeDamages> -->
+				<!-- <armorPenetration>0.48</armorPenetration> -->
+            <!-- </li> -->
+        <!-- </tools> -->
+    <!-- </ThingDef> -->
 </Defs>
