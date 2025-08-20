@@ -195,24 +195,24 @@
             <texPath>Things/Cadian/CadianPsyker/CadianPsykerMiddle/GW_HOI_CadianPsykerMiddle</texPath>
             <graphicClass>Graphic_Single</graphicClass>
         </graphicData>
-        <costStuffCount>70</costStuffCount>
-        <stuffCategories>
-			<li>Fabric</li>
-			<li>Leathery</li>
-        </stuffCategories>
         <thingCategories>
             <li>ApparelMisc</li>
         </thingCategories>
         <statBases>
             <MaxHitPoints>150</MaxHitPoints>
-            <WorkToMake>22000</WorkToMake>
-			<MarketValue>175</MarketValue>
+            <WorkToMake>35000</WorkToMake>
+			<MarketValue>500</MarketValue>
             <Mass>1.5</Mass>
             <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
             <StuffEffectMultiplierInsulation_Cold>0.3</StuffEffectMultiplierInsulation_Cold>
             <StuffEffectMultiplierInsulation_Heat>0.2</StuffEffectMultiplierInsulation_Heat>
             <EquipDelay>3</EquipDelay>
         </statBases>
+        	<costList>
+			    <Cloth>100</Cloth>			
+			    <Gold>2</Gold>
+			    <HP_Ceramite>10</HP_Ceramite>
+        </costList>	
         <equippedStatOffsets>
 			<PsychicSensitivity>0.1</PsychicSensitivity>
 			<PsychicEntropyMax MayRequire="ludeon.rimworld.royalty">6</PsychicEntropyMax>

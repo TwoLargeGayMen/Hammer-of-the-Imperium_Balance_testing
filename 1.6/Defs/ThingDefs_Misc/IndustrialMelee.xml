@@ -279,21 +279,23 @@
 	
 	<ThingDef ParentName="GW_HOI_IndustrialSharpBase">
         <defName>GW_HOI_Melee_PsykerForceStaff</defName>
-        <label>Psyker Force Staff</label>
-        <description>ToDo.</description>
+        <label>Force staff Equinox MK II</label>
+        <description>Through the intricate psi-convectors of a force staff, a psyker harnesses the pure energy of the Warp, unleashing it upon their enemies in ferocious psychic cavalcades.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_SanctionedForceStaff</texPath>
         </graphicData>
         <statBases>
-            <WorkToMake>6400</WorkToMake>
+            <WorkToMake>38000</WorkToMake>
             <Mass>7</Mass>
-            <MarketValue>440</MarketValue>
+            <MarketValue>560</MarketValue>
         </statBases>
         <recipeMaker>
             <researchPrerequisite>GW_AM_OfficersOfAM</researchPrerequisite>
         </recipeMaker>
         <equippedStatOffsets>
-            <PsychicSensitivity>1</PsychicSensitivity>
+            <PsychicSensitivity>0.40</PsychicSensitivity>
+            <PsychicEntropyRecoveryRate MayRequire="ludeon.rimworld.royalty">0.1</PsychicEntropyRecoveryRate>
+            <PsychicEntropyMax MayRequire="ludeon.rimworld.royalty">6</PsychicEntropyMax>
 		</equippedStatOffsets>
 		<equippedAngleOffset>25</equippedAngleOffset>
         <costList>
