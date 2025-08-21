@@ -222,8 +222,8 @@
 		<description>A colony of recently crashlanded Imperial Guard.</description>
 		<isPlayer>true</isPlayer>
 		<basicMemberKind>GW_HOI_FaultyRecon</basicMemberKind>
-		<pawnSingular>Guardsman</pawnSingular>
-		<pawnsPlural>Guardsmans</pawnsPlural>
+		<pawnSingular>Guardsmen</pawnSingular>
+		<pawnsPlural>Guardsmens</pawnsPlural>
 		<techLevel>Industrial</techLevel>
 		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
