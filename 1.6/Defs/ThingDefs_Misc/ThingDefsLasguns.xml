@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-    <ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
         <defName>GW_HOI_Bullet_Lasgun</defName>
         <label>Laser</label>
         <description>a laser</description>
-        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-        <drawOffscreen>true</drawOffscreen>
-        <seeThroughFog>true</seeThroughFog>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectiles/Las_Bolt</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>12</damageAmountBase>
@@ -22,18 +13,6 @@
             <speed>1000</speed>
         </projectile>
         <modExtensions>
-            <li Class="taranchuk_lasers.LaserProperties">
-                <damageTickRate>9</damageTickRate>
-                <lifetimeTicks>8</lifetimeTicks>
-                <beamWidth>0.5</beamWidth>
-                <beamWidthDrawScale>1</beamWidthDrawScale>
-                <sweepRatePerTick>0</sweepRatePerTick>
-                <maxSweepAngle>0</maxSweepAngle>
-                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
-                <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
-                <lockOnTarget>false</lockOnTarget>
-            </li>
         </modExtensions>
     </ThingDef>
 
@@ -138,19 +117,10 @@
   
   <!-- ====================== Kantrael MG Defender  ===================== -->
 
-      <ThingDef ParentName="BaseBullet">
+      <ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
         <defName>GW_HOI_Bullet_Laspistol</defName>
         <label>Laser</label>
         <description>a laser</description>
-        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-        <drawOffscreen>true</drawOffscreen>
-        <seeThroughFog>true</seeThroughFog>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectiles/Las_Bolt</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>8</damageAmountBase>
@@ -159,18 +129,6 @@
             <speed>1000</speed>
         </projectile>
         <modExtensions>
-            <li Class="taranchuk_lasers.LaserProperties">
-                <damageTickRate>9</damageTickRate>
-                <lifetimeTicks>8</lifetimeTicks>
-                <beamWidth>1</beamWidth>
-                <beamWidthDrawScale>1</beamWidthDrawScale>
-                <sweepRatePerTick>0</sweepRatePerTick>
-                <maxSweepAngle>0</maxSweepAngle>
-                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
-                <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
-                <lockOnTarget>false</lockOnTarget>
-            </li>
         </modExtensions>
     </ThingDef>
   
@@ -251,19 +209,10 @@
   
   <!-- ====================== Ryza Hellgun  ===================== -->
 
-    <ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
         <defName>GW_HOI_Bullet_hellgun</defName>
         <label>Laser</label>
         <description>a laser</description>
-        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-        <drawOffscreen>true</drawOffscreen>
-        <seeThroughFog>true</seeThroughFog>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectiles/Las_Bolt</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>13</damageAmountBase>
@@ -272,18 +221,6 @@
             <speed>1000</speed>
         </projectile>
         <modExtensions>
-            <li Class="taranchuk_lasers.LaserProperties">
-                <damageTickRate>9</damageTickRate>
-                <lifetimeTicks>8</lifetimeTicks>
-                <beamWidth>1</beamWidth>
-                <beamWidthDrawScale>1</beamWidthDrawScale>
-                <sweepRatePerTick>0</sweepRatePerTick>
-                <maxSweepAngle>0</maxSweepAngle>
-                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
-                <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
-                <lockOnTarget>false</lockOnTarget>
-            </li>
         </modExtensions>
     </ThingDef>
 
@@ -366,19 +303,10 @@
   
   <!-- ====================== Longlas  ===================== -->
 
-  <ThingDef ParentName="BaseBullet">
+  <ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
         <defName>GW_HOI_Bullet_Longlas</defName>
         <label>Laser</label>
         <description>a laser</description>
-        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-        <drawOffscreen>true</drawOffscreen>
-        <seeThroughFog>true</seeThroughFog>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectiles/Las_Bolt</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>27</damageAmountBase>
@@ -387,18 +315,6 @@
             <speed>1000</speed>
         </projectile>
         <modExtensions>
-            <li Class="taranchuk_lasers.LaserProperties">
-                <damageTickRate>9</damageTickRate>
-                <lifetimeTicks>8</lifetimeTicks>
-                <beamWidth>1</beamWidth>
-                <beamWidthDrawScale>1</beamWidthDrawScale>
-                <sweepRatePerTick>0</sweepRatePerTick>
-                <maxSweepAngle>0</maxSweepAngle>
-                <damageThingsAcrossBeamLine>false</damageThingsAcrossBeamLine>
-                <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, 0)</textureScrollOffsetPerTick>
-                <lockOnTarget>false</lockOnTarget>
-            </li>
         </modExtensions>
     </ThingDef>
 

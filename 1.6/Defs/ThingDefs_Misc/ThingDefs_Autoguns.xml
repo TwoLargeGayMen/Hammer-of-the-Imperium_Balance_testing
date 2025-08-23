@@ -224,17 +224,17 @@
             <displayPriority>430</displayPriority>
         </recipeMaker>
         <verbs>
-            <li Class="Shotgunz.Verb_Properties_Shotgunz">
-                <verbClass>Shotgunz.Verb_Shoot_Shotgunz</verbClass>
+            <li>
+                <verbClass>Verb_Shoot</verbClass>
                 <hasStandardCommand>true</hasStandardCommand>
-                <defaultProjectile>GW_HOI_ShotgunPellet</defaultProjectile>
+                <defaultProjectile>Bullet_Shotgun</defaultProjectile>
                 <warmupTime>0.65</warmupTime>
                 <range>15</range>
-                <burstShotCount>1</burstShotCount>
+                <burstShotCount>6</burstShotCount>
+				<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
                 <soundCast>Shot_Shotgun</soundCast>
                 <soundCastTail>GunTail_Heavy</soundCastTail>
                 <muzzleFlashScale>9</muzzleFlashScale>
-                <pellets>6</pellets>
       </li>
         </verbs>
         <tools>

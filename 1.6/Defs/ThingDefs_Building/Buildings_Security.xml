@@ -595,18 +595,10 @@
             </li>
         </verbs>
     </ThingDef>
-	<ThingDef ParentName="GW_LaserBullet">
+	<ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
         <defName>GW_LascanonShot</defName>
         <label>lascannon shot</label>
         <description>An heavily charged beam of focused light fired from a lascannon.</description>
-		<thingClass>taranchuk_lasers.LaserProjectile</thingClass>
-        <drawOffscreen>true</drawOffscreen>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectiles/Las_Bolt</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1.5</drawSize>
-        </graphicData>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>40</damageAmountBase>
@@ -615,18 +607,6 @@
 			<speed>1000</speed>
         </projectile>
 		<modExtensions>
-			<li Class="taranchuk_lasers.LaserProperties">
-				<damageTickRate>9</damageTickRate>
-				<lifetimeTicks>8</lifetimeTicks>
-				<beamWidth>1</beamWidth>
-				<beamWidthDrawScale>1</beamWidthDrawScale>
-				<sweepRatePerTick>0</sweepRatePerTick>
-				<maxSweepAngle>0</maxSweepAngle>
-				<damageThingsAcrossBeamLine>False</damageThingsAcrossBeamLine>
-				<debugCells>False</debugCells>
-				<textureScrollOffsetPerTick>(0,0)</textureScrollOffsetPerTick>
-				<lockOnTarget>False</lockOnTarget>
-			</li>
 		</modExtensions>
     </ThingDef>
 

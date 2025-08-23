@@ -116,18 +116,13 @@
     </ThingDef>
 
   <!-- ====================== Melta Gun  ===================== -->
-    <ThingDef ParentName="BaseBullet">
+    <ThingDef ParentName="GW_LaserBullet" Class="VEF.Weapons.LaserBeamDef">
         <defName>GW_HOI_Bullet_MeltaGun</defName>
         <label>Melta</label>
         <description>melta beam</description>
-        <drawOffscreen>true</drawOffscreen>
-        <seeThroughFog>true</seeThroughFog>
-        <graphicData>
-            <graphicClass>Graphic_Single</graphicClass>
-            <texPath>Things/Projectiles/Melta_Projectile</texPath>
-            <shaderType>TransparentPostLight</shaderType>
-            <drawSize>1</drawSize>
-        </graphicData>
+		<textures>
+			<li>Things/Projectiles/Melta_Projectile</li>
+		</textures>
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>30</damageAmountBase>
@@ -135,21 +130,7 @@
             <stoppingPower>2.0</stoppingPower>
             <speed>1000</speed>
         </projectile>
-        <thingClass>taranchuk_lasers.LaserProjectile</thingClass>
         <modExtensions>
-            <li Class="taranchuk_lasers.LaserProperties">
-                <damageTickRate>9</damageTickRate>
-                <lifetimeTicks>40</lifetimeTicks>
-                <beamWidth>1.5</beamWidth>
-                <beamWidthDrawScale>1</beamWidthDrawScale>
-                <sweepRatePerTick>0</sweepRatePerTick>
-                <maxSweepAngle>0</maxSweepAngle>
-                <damageThingsAcrossBeamLine>False</damageThingsAcrossBeamLine>
-                <debugCells>false</debugCells>
-                <textureScrollOffsetPerTick>(0, -0.1)</textureScrollOffsetPerTick>
-                <lockOnTarget>false</lockOnTarget>
-                <!-- <endEffecterDef>GW_MeltaEffecter</endEffecterDef>  -->
-            </li>
         </modExtensions>
     </ThingDef>
 
