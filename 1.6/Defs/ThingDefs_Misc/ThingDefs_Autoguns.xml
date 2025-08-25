@@ -53,7 +53,7 @@
 
     <ThingDef ParentName="GW_HOI_AutogunBase">
         <defName>GW_HOI_Gun_Agripinaamkii</defName>
-        <label>AAutogun Agripinaa MK II</label>
+        <label>Autogun Agripinaa MK II</label>
         <description>A semi-automatic autogun, similar to an assault rifle, that fires caseless solid-slug rounds. Compared to the assault rifles of modern rimworlds, these more advanced weapons boast greater damage, armor penetration, and range.</description>
         <graphicData>
             <texPath>Weapons/GW_HOI_AutogunSemi</texPath>
