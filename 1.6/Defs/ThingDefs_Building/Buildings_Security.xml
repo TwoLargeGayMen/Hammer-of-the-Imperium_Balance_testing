@@ -425,6 +425,7 @@
         </statBases>
         <building>
             <turretGunDef>GW_HOI_BuildingGun_TarantulaHeavyBolter</turretGunDef>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
             <turretBurstCooldownTime>3.5</turretBurstCooldownTime>
         </building>
         <placeWorkers>
@@ -550,6 +551,8 @@
         </statBases>
         <building>
             <turretGunDef>GW_HOI_BuildingGun_TarantulaLascannon</turretGunDef>
+			<turretTopDrawSize>2.5</turretTopDrawSize>
+			<turretTopOffset>(0,0.5)</turretTopOffset>
             <turretBurstCooldownTime>3.2</turretBurstCooldownTime>
         </building>
         <placeWorkers>
