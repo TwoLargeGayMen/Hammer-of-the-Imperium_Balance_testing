@@ -13,9 +13,8 @@
             <li>IndustrialMeleeDecent</li>
             <li>GW_AM_IndustrialMelee</li>
         </weaponTags>
-        <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+        <stuffCategories IsNull="True" Inherit="False" />
+		<costStuffCount Inherit="False" />
         <tradeTags>
             <li>HPMelee</li>
             <li>GW_AM_IndustrialMelee</li>

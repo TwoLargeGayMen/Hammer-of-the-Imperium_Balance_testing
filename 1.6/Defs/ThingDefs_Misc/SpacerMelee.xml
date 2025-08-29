@@ -21,9 +21,8 @@
             <Plasteel>50</Plasteel>
             <ComponentSpacer>2</ComponentSpacer>
         </costList>
-        <stuffCategories>
-			<li>Metallic</li>
-		</stuffCategories>
+        <stuffCategories IsNull="True" Inherit="False" />
+		<costStuffCount Inherit="False" />
         <tradeTags>
             <li>HPMelee</li>
             <li>GW_AM_SpacerMelee</li>
