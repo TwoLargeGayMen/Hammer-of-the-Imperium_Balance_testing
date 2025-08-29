@@ -15,6 +15,7 @@
         </weaponTags>
         <stuffCategories IsNull="True" Inherit="False" />
 		<costStuffCount Inherit="False" />
+		<smeltable>False</smeltable>
         <tradeTags>
             <li>HPMelee</li>
             <li>GW_AM_IndustrialMelee</li>
@@ -111,7 +112,7 @@
 		<equippedStatOffsets>
       <MoveSpeed>0.20</MoveSpeed>
 		</equippedStatOffsets>
-        <costStuffCount>40</costStuffCount>
+        <!-- <costStuffCount>40</costStuffCount> -->
         <tools>
             <li>
                 <label>handle</label>

@@ -73,7 +73,7 @@
             </recipeUsers>
             <displayPriority>400</displayPriority>
         </recipeMaker>
-        <costStuffCount>60</costStuffCount>
+        <!-- <costStuffCount>60</costStuffCount> -->
     </ThingDef>
   
   <!-- ====================== Power Sword ===================== -->
