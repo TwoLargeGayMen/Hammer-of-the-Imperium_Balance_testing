@@ -113,6 +113,9 @@
       <MoveSpeed>0.20</MoveSpeed>
 		</equippedStatOffsets>
         <!-- <costStuffCount>40</costStuffCount> -->
+		<costList>
+            <Steel>80</Steel>
+        </costList>
         <tools>
             <li>
                 <label>handle</label>
