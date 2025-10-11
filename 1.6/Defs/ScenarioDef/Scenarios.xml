@@ -13,10 +13,17 @@
 				<factionDef>GW_HOI_FaultyRecon</factionDef>
 			</playerFaction>
 			<parts>
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-					<def>ConfigPage_ConfigureStartingPawns</def>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
 					<pawnChoiceCount>5</pawnChoiceCount>
-					<pawnCount>5</pawnCount>
+					<leftBehindPawnKind>GW_HOI_FaultyRecon_Starter</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>GW_HOI_FaultyRecon_Starter</kindDef>
+							<count>5</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
 				</li>
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
@@ -97,7 +104,7 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>GW_HOI_CommissarOuter</thingDef>
 					<stuff>Synthread</stuff>
-				</li>				
+				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
 					<thingDef>GW_HOI_CommissarUniform</thingDef>
@@ -124,9 +131,9 @@
 					<stuff>Cloth</stuff>
 				</li>
 				<li Class="ScenPart_GameStartDialog">
-				  <def>GameStartDialog</def>
-				  <text>Five freshly trained recruits of the Imperial Guard have been dispatched to a distant planet, reported to be barren and devoid of life. Their mission was simple: establish an observation post and prepare the site for a future military base. But moments after landing, it became clear the intelligence reports were wrong — the planet is not empty, and its inhabitants are far from welcoming..</text>
-				  <closeSound>GameStartSting</closeSound>
+					<def>GameStartDialog</def>
+					<text>Five freshly trained recruits of the Imperial Guard have been dispatched to a distant planet, reported to be barren and devoid of life. Their mission was simple: establish an observation post and prepare the site for a future military base. But moments after landing, it became clear the intelligence reports were wrong — the planet is not empty, and its inhabitants are far from welcoming..</text>
+					<closeSound>GameStartSting</closeSound>
 				</li>
 			</parts>
 		</scenario>
@@ -145,10 +152,17 @@
 				<factionDef>GW_HOI_FaultyRecon</factionDef>
 			</playerFaction>
 			<parts>
-				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
-					<def>ConfigPage_ConfigureStartingPawns</def>
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns_KindDefs">
+					<def>ConfigurePawnsKindDefs</def>
 					<pawnChoiceCount>1</pawnChoiceCount>
-					<pawnCount>1</pawnCount>
+					<leftBehindPawnKind>GW_HOI_FaultyRecon_Starter</leftBehindPawnKind>
+					<kindCounts>
+						<li>
+							<kindDef>GW_HOI_FaultyRecon_Starter</kindDef>
+							<count>1</count>
+							<requiredAtStart>true</requiredAtStart>
+						</li>
+					</kindCounts>
 				</li>
 				<li Class="ScenPart_PlayerPawnsArriveMethod">
 					<def>PlayerPawnsArriveMethod</def>
@@ -193,9 +207,9 @@
 					<allowRoofed>True</allowRoofed>
 				</li>
 				<li Class="ScenPart_GameStartDialog">
-				  <def>GameStartDialog</def>
-				  <text>The crash came without warning — one moment the sky was clear, the next it was fire and screaming metal. You are the sole survivor of an airship disaster, stranded in an unforgiving wilderness on a remote rimworld. With nothing but the clothes on your back and whatever you can scavenge from the wreckage, you must endure hunger, weather, and whatever prowls the darkness. No one is coming. If you are to live, it will be because you made yourself too stubborn to die.</text>
-				  <closeSound>GameStartSting</closeSound>
+					<def>GameStartDialog</def>
+					<text>The crash came without warning — one moment the sky was clear, the next it was fire and screaming metal. You are the sole survivor of an airship disaster, stranded in an unforgiving wilderness on a remote rimworld. With nothing but the clothes on your back and whatever you can scavenge from the wreckage, you must endure hunger, weather, and whatever prowls the darkness. No one is coming. If you are to live, it will be because you made yourself too stubborn to die.</text>
+					<closeSound>GameStartSting</closeSound>
 				</li>
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
@@ -251,11 +265,37 @@
 	</FactionDef>
 
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>GW_HOI_FaultyRecon</defName>
+		<defName>GW_HOI_FaultyRecon_Starter</defName>
 		<label>cadian conscript</label>
 		<defaultFactionType>GW_HOI_FaultyRecon</defaultFactionType>
 		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<fixedGender>Male</fixedGender>
+		<skills>
+			<li>
+				<skill>Melee</skill>
+				<range>5~10</range>
+			</li>
+			<li>
+				<skill>Shooting</skill>
+				<range>5~10</range>
+			</li>
+		</skills>
+		<apparelTags Inherit="False">
+			<!-- <li>40kCadianGuard</li> -->
+		</apparelTags>
+		<apparelRequired Inherit="False">
+			<li>GW_HOI_Cadian_Fatigues</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelMoney>0~0</apparelMoney>
+		<initialResistanceRange>13~21</initialResistanceRange>
+	</PawnKindDef>
+
+	<PawnKindDef ParentName="BasePlayerPawnKind">
+		<defName>GW_HOI_FaultyRecon</defName>
+		<label>cadian conscript</label>
+		<defaultFactionType>GW_HOI_FaultyRecon</defaultFactionType>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
 		<skills>
 			<li>
 				<skill>Melee</skill>
