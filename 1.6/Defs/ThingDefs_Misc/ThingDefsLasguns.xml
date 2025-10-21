@@ -8,8 +8,8 @@
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>12</damageAmountBase>
-            <armorPenetrationBase>0.20</armorPenetrationBase>
-            <stoppingPower>0.3</stoppingPower>
+            <armorPenetrationBase>0.45</armorPenetrationBase>
+            <stoppingPower>0.5</stoppingPower>
             <speed>1000</speed>
         </projectile>
         <modExtensions>
@@ -58,9 +58,9 @@
             <WorkToMake>15000</WorkToMake>
             <Mass>3.5</Mass>
             <AccuracyTouch>0.60</AccuracyTouch>
-            <AccuracyShort>0.70</AccuracyShort>
-            <AccuracyMedium>0.65</AccuracyMedium>
-            <AccuracyLong>0.55</AccuracyLong>
+            <AccuracyShort>0.80</AccuracyShort>
+            <AccuracyMedium>0.75</AccuracyMedium>
+            <AccuracyLong>0.60</AccuracyLong>
             <RangedWeapon_Cooldown>1.00</RangedWeapon_Cooldown>
             <MarketValue>400</MarketValue>
         </statBases>
@@ -124,7 +124,7 @@
         <projectile>
             <damageDef>Burn</damageDef>
             <damageAmountBase>8</damageAmountBase>
-            <armorPenetrationBase>0.15</armorPenetrationBase>
+            <armorPenetrationBase>0.25</armorPenetrationBase>
             <stoppingPower>0.3</stoppingPower>
             <speed>1000</speed>
         </projectile>
@@ -217,7 +217,7 @@
             <damageDef>Burn</damageDef>
             <damageAmountBase>13</damageAmountBase>
             <armorPenetrationBase>0.22</armorPenetrationBase>
-            <stoppingPower>0.3</stoppingPower>
+            <stoppingPower>0.75</stoppingPower>
             <speed>1000</speed>
         </projectile>
         <modExtensions>
@@ -234,8 +234,8 @@
         <statBases>
             <WorkToMake>25000</WorkToMake>
             <Mass>5</Mass>
-            <AccuracyTouch>0.40</AccuracyTouch>
-            <AccuracyShort>0.50</AccuracyShort>
+            <AccuracyTouch>0.60</AccuracyTouch>
+            <AccuracyShort>0.70</AccuracyShort>
             <AccuracyMedium>0.40</AccuracyMedium>
             <AccuracyLong>0.30</AccuracyLong>
             <RangedWeapon_Cooldown>1.2</RangedWeapon_Cooldown>
