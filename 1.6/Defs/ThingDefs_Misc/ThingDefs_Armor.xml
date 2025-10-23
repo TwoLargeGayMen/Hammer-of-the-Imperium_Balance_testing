@@ -119,7 +119,7 @@
         </statBases>
         <equippedStatOffsets>
 			<MentalBreakThreshold>-0.05</MentalBreakThreshold>
-            <MoveSpeed>1<MoveSpeed>
+            <MoveSpeed>1</MoveSpeed>
         </equippedStatOffsets>
         <costList>
             <Steel>55</Steel>

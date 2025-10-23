@@ -122,7 +122,7 @@
         <label>Laser</label>
         <description>a laser</description>
         <projectile>
-            <damageDef>beam</damageDef>
+            <damageDef>Beam</damageDef>
             <damageAmountBase>10</damageAmountBase>
             <armorPenetrationBase>0.25</armorPenetrationBase>
             <stoppingPower>0.3</stoppingPower>
